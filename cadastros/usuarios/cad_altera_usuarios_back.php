@@ -37,7 +37,7 @@
     else	
         echo "<script type='text/javascript'>alert('Erro na Gravação !!!')</script>";
 
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_produtos_front.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_usuarios_front.php'>";
 
     // Fechando conexão com o Banco de Dados
     pg_close($conecta);
