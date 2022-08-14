@@ -28,10 +28,10 @@
             width="100%" scrolling="no" allowfullscreen>
         </iframe>
 
-        <a href='cad_novo_usuario_front.php'>+ Novo Usuario</a><br><br>
+        <a href='cad_novo_usuarios_front.php'>+ Novo Usuario</a><br><br>
 
         <?php
-            include "cad_pesq_usuario_back.php";
+            include "cad_pesq_usuarios_back.php";
 
             if ($qtde == 0) {
                 echo "Não foi encontrado nenhum usuario !!!<br><br>";
@@ -122,8 +122,8 @@
                             ".$linha['estado']."
                         </div>
                         <div class='cell cellAcoes'>
-                            <a href='cad_altera_usuarios_front.php?cod_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
-                            <a href='cad_exclui_usuarios_front.php?cod_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
+                            <a href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
+                            <a href='cad_exclui_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                         </div>
                     </div> "; 
                 } 

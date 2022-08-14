@@ -3,7 +3,7 @@
 
     /* a variável $cod_produto deve já ter sido atribuída na página pai, antes do include
        para esse arquivo */
-    $sql="SELECT * FROM caricactoUsuario WHERE id_produto = $id_produto;";
+    $sql="SELECT * FROM caricactoUsuario WHERE id_usuario = $id_usuario;";
 
     $resultado=pg_query($conecta,$sql);
     $qtde=pg_num_rows($resultado);

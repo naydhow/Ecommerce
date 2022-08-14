@@ -3,7 +3,7 @@
     include "../utils/conexao.php"; 
 
     //dados enviados do script exclui_prod_chamada_confirma_exclusao_logica.php
-    $id_produto = $_POST['id_produto'];
+    $id_usuario = $_POST['id_usuario'];
     
     // Padrão para data no servidor do kinghost está americano (se atentar!!)
     $data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos

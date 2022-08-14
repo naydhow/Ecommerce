@@ -17,9 +17,8 @@
 
     // Inserção
     $sql="INSERT INTO caricactoUsuario
-          (id_usuario, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado, user_adm)
+          (nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado, user_adm)
           VALUES (
-            DEFAULT,
                 '$nome',
                 '$telefone',
                 $email, 

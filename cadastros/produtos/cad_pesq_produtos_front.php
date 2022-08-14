@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Pesquisa de Produtos</title>
-        <link rel="stylesheet" href="../css/style_header.css">
+        <link rel="stylesheet" href="../css/cabecalho.css">
     </head>
     <body>
         <style>
@@ -101,8 +101,8 @@
                             ".$linha['estoque']."
                         </div>
                         <div class='cell cellAcoes'>
-                            <a href='cad_altera_produtos_front.php?cod_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
-                            <a href='cad_exclui_produtos_front.php?cod_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
+                            <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
+                            <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                         </div>
                     </div> "; 
                 } 
