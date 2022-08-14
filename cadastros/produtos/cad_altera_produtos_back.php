@@ -1,6 +1,8 @@
 <?php
     include "../utils/conexao.php"; 
 
+    //É só um teste
+
     //dados enviados do script altera_prod_lista.php
     $nome=$_POST["nome"];
     $descricao=$_POST["descricao"];
