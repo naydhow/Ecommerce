@@ -39,6 +39,6 @@
 
      <br><br>
     <input type="submit" value="Confirma exclusão">
-    <input type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?cod_produto=<?php echo $id_produto ?>';">
+    <input type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?id_produto=<?php echo $id_produto ?>';">
     <input type="button" value="Voltar" onclick="location.href='cad_pesq_produtos_front.php';">
 </form>
