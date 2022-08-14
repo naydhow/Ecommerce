@@ -3,14 +3,19 @@
 
     //dados enviados do script altera_prod_lista.php
     $nome=$_POST["nome"];
-    $descricao=$_POST["descricao"];
-    $preco=$_POST["preco"];
-    $custo=$_POST["custo"];
-    $margem_lucro=$_POST["margem_lucro"];
-    $icms=$_POST["icms"];
-    $estoque=$_POST["estoque"];
+    $telefone=$_POST["telefone"];
+    $email=$_POST["email"];
+    $senha=$_POST["senha"];
+    $sexo=$_POST["sexo"];
+    $data_nasc=$_POST["data_nasc"];
+    $cpf=$_POST["cpf"];
+    $cep=$_POST["cep"];
+    $endereco=$_POST["endereco"];
+    $cidade=$_POST["cidade"];
+    $estado=$_POST["estado"];
+    // $user_adm=$_POST["user_adm"];
 
-    $sql="UPDATE caricactoProduto 
+    $sql="UPDATE caricactoUsuario
              SET nome = '$nome',
                  descricao = '$descricao',
                  preco = $preco, 
