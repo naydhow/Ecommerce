@@ -25,27 +25,27 @@
         </label>
         <label>
             <strong>Preço:</strong><br />
-            <input type="text" name="preco" /><br />
+            <input type="number" name="preco" /><br />
             <br />
         </label>
         <label>
             <strong>Custo:</strong><br />
-            <input type="text" name="custo"  /><br />
+            <input type="number" name="custo"  /><br />
             <br />
         </label>
         <label>
             <strong>Margem de Lucro:</strong><br />
-            <input type="text" name="margem_lucro" /><br />
+            <input type="number" name="margem_lucro" /><br />
             <br />
         </label>
         <label>
             <strong>ICMS:</strong><br />
-            <input type="text" name="icms" /><br />
+            <input type="number" name="icms" /><br />
             <br />
         </label>
         <label>
             <strong>Estoque:</strong><br />
-            <input type="text" name="estoque" /><br />
+            <input type="number" name="estoque" /><br />
             <br />
         </label>
         <input type="submit" name="button" id="button" value="Enviar" />

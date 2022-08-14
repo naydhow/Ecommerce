@@ -9,7 +9,7 @@
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
     $estoque=$_POST['estoque'];
-    $excluido='n';
+    $excluido='FALSE';
 
     // Inserção
     $sql="INSERT INTO caricactoProduto
