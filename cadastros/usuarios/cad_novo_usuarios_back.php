@@ -43,7 +43,7 @@
         echo "alert('Usuario salvo com sucesso!')";
         echo '</script>';	
 
-        header("Location: cad_novo_usuario_front.php");
+        header("Location: cad_novo_usuarios_front.php");
     }   
     else
     {

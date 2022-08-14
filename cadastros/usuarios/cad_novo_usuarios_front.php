@@ -69,7 +69,7 @@
             <br />
         </label>
         <input type="submit" name="button" id="button" value="Enviar" />
-        <a href='cad_pesq_usuario_front.php'>Voltar</a><br><br>
+        <a href='cad_pesq_usuarios_front.php'>Voltar</a><br><br>
     </form> 
 </body>
 </html>

@@ -5,11 +5,11 @@
 
 <?php
        $id_usuario = $_GET["id_usuario"];
-       include "cad_getinfo_usuario_back.php"; 
+       include "cad_getinfo_usuarios_back.php"; 
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
-<form action="cad_exclui_usuario_back.php" method="post">
+<form action="cad_exclui_usuarios_back.php" method="post">
     <h1>Confirmação: Exclusão de Usuarios</h1>
     Id do usuario
     <input type="text" name="id_usuario" 
@@ -51,6 +51,6 @@
 
      <br><br>
     <input type="submit" value="Confirma exclusão">
-    <input type="button" value="Editar" onclick="location.href='cad_altera_usuario_front.php?id_usuario=<?php echo $id_usuario ?>';">
-    <input type="button" value="Voltar" onclick="location.href='cad_pesq_usuario_front.php';">
+    <input type="button" value="Editar" onclick="location.href='cad_altera_usuarios_front.php?id_usuario=<?php echo $id_usuario ?>';">
+    <input type="button" value="Voltar" onclick="location.href='cad_pesq_usuarios_front.php';">
 </form>
