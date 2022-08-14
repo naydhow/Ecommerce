@@ -4,8 +4,8 @@
 </iframe>
 
 <?php
-       $cod_produto = $_GET["cod_produto"];
-       include "cad_getinfo_produto_back.php"; 
+       $id_produto = $_GET["id_produto"];
+       include "cad_getinfo_produtos_back.php"; 
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
