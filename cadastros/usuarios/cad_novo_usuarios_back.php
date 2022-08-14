@@ -3,26 +3,36 @@
     
     // Recuperação de dados
     $nome=$_POST['nome'];
-    $descricao=$_POST['descricao'];
-    $preco=$_POST['preco'];
-    $custo=$_POST['custo'];
-    $margem_lucro=$_POST['margem_lucro'];
-    $icms=$_POST['icms'];
-    $estoque=$_POST['estoque'];
-    $excluido='n';
+    $telefone=$_POST['telefone'];
+    $email=$_POST['email'];
+    $senha=$_POST['senha'];
+    $sexo=$_POST['sexo'];
+    $data_nasc=$_POST['data_nasc'];
+    $cpf=$_POST['cpf'];
+    $cep=$_POST['cep'];
+    $endereco=$_POST['endereco'];
+    $cidade=$_POST['cidade'];
+    $estado=$_POST['estado'];
+    $user_adm=$_POST['F']; //true e false maiusculo
 
     // Inserção
-    $sql="INSERT INTO caricactoProduto
-          (nome, descricao, preco, custo, margem_lucro, icms, estoque, excluido)
+    $sql="INSERT INTO caricactoUsuario
+          (id_usuario, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado, user_adm)
           VALUES (
+            DEFAULT,
                 '$nome',
-                '$descricao',
-                $preco, 
-                $custo,
-                $margem_lucro,
-                $icms,
-                $estoque, 
-            '$excluido');";
+                '$telefone',
+                $email, 
+                $senha,
+                $sexo,
+                $data_nasc,
+                $cpf, 
+                $cep, 
+                $endereco, 
+                $cidade, 
+                $estado,
+                $user_adm);
+                ";
     
     // Execução
     $resultado=pg_query($conecta,$sql);
@@ -31,10 +41,10 @@
     if ($linhas > 0)
     {
         echo '<script language="javascript">';
-        echo "alert('Produto salvo com sucesso!')";
+        echo "alert('Usuario salvo com sucesso!')";
         echo '</script>';	
 
-        header("Location: cad_novo_produtos_front.php");
+        header("Location: cad_novo_usuario_front.php");
     }   
     else
     {
