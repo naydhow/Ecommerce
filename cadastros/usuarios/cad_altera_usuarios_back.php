@@ -17,13 +17,17 @@
 
     $sql="UPDATE caricactoUsuario
              SET nome = '$nome',
-                 descricao = '$descricao',
-                 preco = $preco, 
-                 custo = $custo,
-                 margem_lucro = $margem_lucro,
-                 icms = $icms,
-                 estoque = $estoque 
-           WHERE id_produto = $id_produto;";
+                 telefone = '$telefone',
+                 email = $email, 
+                 senha = $senha,
+                 sexo = $sexo,
+                 data_nasc = $data_nasc,
+                 cpf = $cpf, 
+                 cep = $cep, 
+                 endereco = $endereco, 
+                 cidade = $cidade, 
+                 estado = $estado, 
+           WHERE id_usuario = $id_usuario;";
     
     $resultado=pg_query($conecta,$sql);
     $qtde=pg_affected_rows($resultado);
