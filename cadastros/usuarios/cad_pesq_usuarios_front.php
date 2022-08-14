@@ -2,8 +2,8 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Pesquisa de Produtos</title>
-        <link rel="stylesheet" href="../css/style_header.css">
+        <title>Pesquisa de Usuarios</title>
+        <link rel="stylesheet" href="../css/cabecalho.css">
     </head>
     <body>
         <style>
@@ -28,13 +28,13 @@
             width="100%" scrolling="no" allowfullscreen>
         </iframe>
 
-        <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
+        <a href='cad_novo_usuario_front.php'>+ Novo Usuario</a><br><br>
 
         <?php
-            include "cad_pesq_produtos_back.php";
+            include "cad_pesq_usuario_back.php";
 
             if ($qtde == 0) {
-                echo "Não foi encontrado nenhum produto !!!<br><br>";
+                echo "Não foi encontrado nenhum usuario !!!<br><br>";
                 return;
             }
 
@@ -43,28 +43,37 @@
             <div class='table'>
                 <div class='row'>
                     <div class='cell cellId cellHeader'>
-                        id. Produto
+                        id. Usuario
                     </div>
                     <div class='cell cellNome cellHeader'>
                         Nome
                     </div>
-                    <div class='cell cellDescricao cellHeader'>
-                        Descrição
+                    <div class='cell cellTelefone cellHeader'>
+                        Telefone
                     </div>
-                    <div class='cell cellPreco cellHeader'>
-                        Preço
+                    <div class='cell cellEmail cellHeader'>
+                        Email
                     </div>
-                    <div class='cell cellCusto cellHeader'>
-                        Custo
+                    <div class='cell cellSenha cellHeader'>
+                        Senha
                     </div>
-                    <div class='cell cellMargemLucro cellHeader'>
-                        Margem de Lucro
+                    <div class='cell cellData_nasc cellHeader'>
+                        Data de Nascimento
                     </div>
-                    <div class='cell cellIcms cellHeader'>
-                        ICMS
+                    <div class='cell cellCPF cellHeader'>
+                        CPF
                     </div>
-                    <div class='cell cellEstoque cellHeader'>
-                        Estoque
+                    <div class='cell cellCEP cellHeader'>
+                        CEP
+                    </div>
+                    <div class='cell cellEndereco cellHeader'>
+                        Endereco
+                    </div>
+                    <div class='cell cellCidade cellHeader'>
+                        Cidade
+                    </div>
+                    <div class='cell cellCEstado cellHeader'>
+                        Estado
                     </div>
                     <div class='cell cellAcoes'>
                         &nbsp;
@@ -77,32 +86,44 @@
                     echo "
                     <div class='row'>
                         <div class='cell cellId'>
-                            ".$linha['id_produto']."
+                            ".$linha['id_usuario']."
                         </div>
                         <div class='cell cellNome'>
                             ".$linha['nome']."
                         </div>
-                        <div class='cell cellDescricao'>
-                            ".$linha['descricao']."
+                        <div class='cell cellTelefone'>
+                            ".$linha['telefone']."
                         </div>
-                        <div class='cell cellPreco'>
-                            ".$linha['preco']."
+                        <div class='cell cellEmail'>
+                            ".$linha['email']."
                         </div>
-                        <div class='cell cellCusto'>
-                            ".$linha['custo']."
+                        <div class='cell cellSenha'>
+                            ".$linha['senha']."
                         </div>
-                        <div class='cell cellMargemLucro'>
-                            ".$linha['margem_lucro']."
+                        <div class='cell cellSexo'>
+                            ".$linha['sexo']."
                         </div>
-                        <div class='cell cellIcms'>
-                            ".$linha['icms']."
+                        <div class='cell cellData_nasc'>
+                            ".$linha['data_nasc']."
                         </div>
-                        <div class='cell cellEstoque'>
-                            ".$linha['estoque']."
+                        <div class='cell cellCPF'>
+                            ".$linha['cpf']." 
+                        </div>
+                        <div class='cell cellCEP'>
+                            ".$linha['cep']."
+                        </div>
+                        <div class='cell cellEndereco'>
+                            ".$linha['endereco']."
+                        </div>
+                        <div class='cell cellCidade'>
+                            ".$linha['cidade']."
+                        </div>
+                        <div class='cell cellEstado'>
+                            ".$linha['estado']."
                         </div>
                         <div class='cell cellAcoes'>
-                            <a href='cad_altera_produtos_front.php?cod_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
-                            <a href='cad_exclui_produtos_front.php?cod_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
+                            <a href='cad_altera_usuario_front.php?cod_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
+                            <a href='cad_exclui_usuario_front.php?cod_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                         </div>
                     </div> "; 
                 } 
