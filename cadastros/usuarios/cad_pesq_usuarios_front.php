@@ -122,8 +122,8 @@
                             ".$linha['estado']."
                         </div>
                         <div class='cell cellAcoes'>
-                            <a href='cad_altera_usuarios_front.php?cod_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
-                            <a href='cad_exclui_usuarios_front.php?cod_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
+                            <a href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
+                            <a href='cad_exclui_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                         </div>
                     </div> "; 
                 } 
