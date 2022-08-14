@@ -1,5 +1,5 @@
 <?php
-    include "../utils/conexao.php"; 
+    include "../../utils/conexao.php"; 
     
     // Recuperação de dados
     $nome=$_POST['nome'];
@@ -13,24 +13,23 @@
     $endereco=$_POST['endereco'];
     $cidade=$_POST['cidade'];
     $estado=$_POST['estado'];
-    $user_adm=$_POST['F']; //true e false maiusculo
+    // $user_adm=$_POST['F']; //true e false maiusculo
 
     // Inserção
     $sql="INSERT INTO caricactoUsuario
-          (nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado, user_adm)
+          (nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
           VALUES (
                 '$nome',
                 '$telefone',
-                $email, 
-                $senha,
-                $sexo,
-                $data_nasc,
-                $cpf, 
-                $cep, 
-                $endereco, 
-                $cidade, 
-                $estado,
-                $user_adm);
+                '$email', 
+                '$senha',
+                '$sexo',
+                '$data_nasc',
+                '$cpf', 
+                '$cep', 
+                '$endereco', 
+                '$cidade', 
+                '$estado');
                 ";
     
     // Execução

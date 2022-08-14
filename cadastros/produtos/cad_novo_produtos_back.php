@@ -1,28 +1,31 @@
 <?php
-    include "../utils/conexao.php"; 
+    include "../../utils/conexao.php"; 
     
     // Recuperação de dados
     $nome=$_POST['nome'];
     $descricao=$_POST['descricao'];
+    $estoque=$_POST['estoque'];
+    $codigovisual=$_POST['codigovisual'];
+    $campo_imagem=$_POST['campo_imagem'];
     $preco=$_POST['preco'];
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
-    $estoque=$_POST['estoque'];
-    $excluido='FALSE';
+    // $excluido='FALSE';
 
     // Inserção
     $sql="INSERT INTO caricactoProduto
-          (nome, descricao, preco, custo, margem_lucro, icms, estoque, excluido)
+          (nome, descricao, estoque, codigovisual, campo_imagem, preco, custo, margem_lucro, icms)
           VALUES (
                 '$nome',
                 '$descricao',
+                $estoque,
+                $codigovisual,
+                '$campo_imagem',
                 $preco, 
                 $custo,
                 $margem_lucro,
-                $icms,
-                $estoque, 
-            '$excluido');";
+                $icms);";
     
     // Execução
     $resultado=pg_query($conecta,$sql);

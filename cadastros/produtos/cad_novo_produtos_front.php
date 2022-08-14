@@ -24,6 +24,21 @@
             <br />
         </label>
         <label>
+            <strong>Estoque:</strong><br />
+            <input type="number" name="estoque" /><br />
+            <br />
+        </label>
+        <label>
+            <strong>Codigo Visual:</strong><br />
+            <input type="number" name="codigovisual" /><br />
+            <br />
+        </label>
+        <label>
+            <strong>Imagem:</strong><br />
+            <input type="text" name="campo_imagem" /><br />
+            <br />
+        </label>
+        <label>
             <strong>Preço:</strong><br />
             <input type="number" name="preco" /><br />
             <br />
@@ -41,11 +56,6 @@
         <label>
             <strong>ICMS:</strong><br />
             <input type="number" name="icms" /><br />
-            <br />
-        </label>
-        <label>
-            <strong>Estoque:</strong><br />
-            <input type="number" name="estoque" /><br />
             <br />
         </label>
         <input type="submit" name="button" id="button" value="Enviar" />

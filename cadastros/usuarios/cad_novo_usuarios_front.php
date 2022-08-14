@@ -12,7 +12,7 @@
 
     <h1>Cadastro de Usuarios</h1>
 
-    <form action="cad_novo_usuario_back.php" method="post">
+    <form action="cad_novo_usuarios_back.php" method="post">
         <label>
             <strong>Nome:</strong><br />    
             <input type="text" name="nome" /><br />
@@ -25,12 +25,12 @@
         </label>
         <label>
             <strong>Email:</strong><br />
-            <input type="text" name="email" /><br />
+            <input type="email" name="email" /><br />
             <br />
         </label>
         <label>
             <strong>Senha:</strong><br />
-            <input type="text" name="senha"  /><br />
+            <input type="password" name="senha"  /><br />
             <br />
         </label>
         <label>
@@ -40,7 +40,7 @@
         </label>
         <label>
             <strong>Data de nascimento:</strong><br />
-            <input type="text" name="data_nasc" /><br />
+            <input type="date" name="data_nasc" /><br />
             <br />
         </label>
         <label>
