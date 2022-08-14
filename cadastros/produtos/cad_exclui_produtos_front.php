@@ -4,8 +4,8 @@
 </iframe>
 
 <?php
-       $cod_produto = $_GET["cod_produto"];
-       include "cad_getinfo_produto_back.php"; 
+       $id_produto = $_GET["id_produto"];
+       include "cad_getinfo_produtos_back.php"; 
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
@@ -39,6 +39,6 @@
 
      <br><br>
     <input type="submit" value="Confirma exclusão">
-    <input type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?cod_produto=<?php echo $id_produto ?>';">
+    <input type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?id_produto=<?php echo $id_produto ?>';">
     <input type="button" value="Voltar" onclick="location.href='cad_pesq_produtos_front.php';">
 </form>
