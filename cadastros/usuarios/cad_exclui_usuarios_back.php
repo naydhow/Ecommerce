@@ -10,9 +10,9 @@
     //$data=date('d/m/Y');
 
     //inserida a data de exclusao do produto para histórico
-    $sql="update caricactoProduto
+    $sql="update caricactoUsuario
             set excluido = 's', data_exclusao = '$data' 
-        WHERE id_produto = $id_produto";
+        WHERE id_usuario = $id_usuario";
 
     //echo $sql;
 
@@ -24,5 +24,5 @@
     else
         echo "<script type='text/javascript'>alert('Erro na exclusão !!!')</script>";
 
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_produtos_front.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_usuario_front.php'>";
 ?>
