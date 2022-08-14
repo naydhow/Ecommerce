@@ -24,9 +24,9 @@
             .cellAcoes {width:100px;}
         </style>
 
-        <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
+        <!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
             width="100%" scrolling="no" allowfullscreen>
-        </iframe>
+        </iframe> -->
 
         <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
 
