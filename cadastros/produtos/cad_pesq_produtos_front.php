@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <title>Pesquisa de Produtos</title>
-        <link rel="stylesheet" href="../css/cabecalho.css">
+        <link rel="stylesheet" href="../../css/cabecalho.css">
     </head>
     <body>
         <style>
-            .table {width:700px; display:grid;}
+            .table {width: 900px; display:grid;}
             .row { display:block;}
             .cell {
                 display:inline-block;
@@ -24,9 +24,9 @@
             .cellAcoes {width:100px;}
         </style>
 
-        <!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
+        <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
             width="100%" scrolling="no" allowfullscreen>
-        </iframe> -->
+        </iframe>
 
         <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
 

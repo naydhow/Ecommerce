@@ -5,10 +5,10 @@
     <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 </head>
 <body>
-    <link rel="stylesheet" href="../css/cabecalho.css">
-    <!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
+    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
             width="100%" scrolling="no" allowfullscreen>
-    </iframe> -->
+    </iframe>
 
     <h1>Cadastro de Produtos</h1>
 
