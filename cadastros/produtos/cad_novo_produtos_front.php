@@ -29,8 +29,8 @@
             <br />
         </label>
         <label>
-            <strong>Codigo Visual:</strong><br />
-            <input type="number" name="codigovisual" /><br />
+            <strong>Código Visual:</strong><br />
+            <input type="text" name="codigovisual" /><br />
             <br />
         </label>
         <label>

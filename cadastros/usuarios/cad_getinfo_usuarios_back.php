@@ -11,7 +11,7 @@
     if ( $qtde == 0 )
     {
         echo '<script language="javascript">';
-        echo "alert('Usuario não encontrado!')";
+        echo "alert('Usuário não encontrado!')";
         echo '</script>';	
         echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_usuarios_front.php'>";
         exit;

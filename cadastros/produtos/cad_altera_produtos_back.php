@@ -4,6 +4,7 @@
     //É só um teste
 
     //dados enviados do script altera_prod_lista.php
+    $id_produto = $_POST['id_produto'];
     $nome=$_POST['nome'];
     $descricao=$_POST['descricao'];
     $estoque=$_POST['estoque'];
@@ -18,7 +19,7 @@
              SET nome = '$nome',
                  descricao = '$descricao',
                  estoque = $estoque,
-                 codigovisual = $codigovisual,
+                 codigovisual = '$codigovisual',
                  campo_imagem = '$campo_imagem',
                  preco = $preco, 
                  custo = $custo,

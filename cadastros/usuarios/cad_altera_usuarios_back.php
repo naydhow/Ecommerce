@@ -2,6 +2,7 @@
     include "../../utils/conexao.php"; 
 
     //dados enviados do script altera_prod_lista.php
+    $id_usuario=$_POST['id_usuario']
     $nome=$_POST['nome'];
     $telefone=$_POST['telefone'];
     $email=$_POST['email'];

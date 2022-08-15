@@ -26,7 +26,7 @@
     <input type="number" name="estoque" 
            value="<?php echo $linha['estoque']; ?>" >
     <br><br>Codigo Visual
-    <input type="number" name="codigovisual" 
+    <input type="text" name="codigovisual" 
            value="<?php echo $linha['codigovisual']; ?>" >
     <br><br>Imagem
     <input type="text" name="campo_imagem" 

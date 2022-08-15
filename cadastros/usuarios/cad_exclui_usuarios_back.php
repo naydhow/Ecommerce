@@ -10,8 +10,9 @@
     //$data=date('d/m/Y');
 
     //inserida a data de exclusao do produto para histórico
-    $sql="update caricactoUsuario
-            set excluido = 's', data_exclusao = '$data' 
+    $sql="UPDATE caricactoUsuario
+            SET excluido = 'true',
+                data_exclusao = '$data'
         WHERE id_usuario = $id_usuario";
 
     //echo $sql;

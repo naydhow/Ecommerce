@@ -11,21 +11,23 @@
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
+    $excluido='false';
     // $excluido='FALSE';
 
     // Inserção
     $sql="INSERT INTO caricactoProduto
-          (nome, descricao, estoque, codigovisual, campo_imagem, preco, custo, margem_lucro, icms)
+          (nome, descricao, estoque, codigovisual, campo_imagem, preco, custo, margem_lucro, icms, excluido)
           VALUES (
                 '$nome',
                 '$descricao',
                 $estoque,
-                $codigovisual,
+                '$codigovisual',
                 '$campo_imagem',
                 $preco, 
                 $custo,
                 $margem_lucro,
-                $icms);";
+                $icms,
+                '$excluido');";
     
     // Execução
     $resultado=pg_query($conecta,$sql);
@@ -44,6 +46,8 @@
         echo '<script language="javascript">';
         echo "alert('Erro na gravação do produto!')";
         echo '</script>';	
+
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_produtos_front.php'>";
     }
 
     // Fecha a conexão com o PostgreSQL

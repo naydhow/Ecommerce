@@ -4,7 +4,7 @@
 </iframe>
 
 <?php
-       $id_produto = $_GET["id_produto"];
+       $id_produto = $_GET['id_produto'];
        include "cad_getinfo_produtos_back.php"; 
 ?>
 
@@ -25,7 +25,7 @@
     <input type="number" name="estoque" 
            value="<?php echo $linha['estoque']; ?>" >
     <br><br>Código Visual
-    <input type="number" name="codigovisual" 
+    <input type="text" name="codigovisual" 
            value="<?php echo $linha['codigovisual']; ?>" >
     <br><br>Imagem
     <input type="text" name="campo_imagem" 
