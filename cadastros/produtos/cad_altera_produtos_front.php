@@ -5,7 +5,7 @@
 
 <!-- Recuperando as informações do produto -->
 <?php
-       $id_produto = $_GET["id_produto"];
+       $id_produto = $_GET['id_produto'];
        include "cad_getinfo_produtos_back.php"; 
 ?>
 
@@ -22,6 +22,15 @@
     <br><br>Descrição
     <input type="text" name="descricao" 
            value="<?php echo $linha['descricao']; ?>" >
+    <br><br>Estoque
+    <input type="text" name="estoque" 
+           value="<?php echo $linha['estoque']; ?>" >
+    <br><br>Codigo Visual
+    <input type="text" name="codigovisual" 
+           value="<?php echo $linha['codigovisual']; ?>" >
+    <br><br>Imagem
+    <input type="text" name="campo_imagem" 
+           value="<?php echo $linha['campo_imagem']; ?>" >
     <br><br>Preço
     <input type="text" name="preco" 
            value="<?php echo $linha['preco']; ?>" >
@@ -34,9 +43,6 @@
     <br><br>ICMS
     <input type="text" name="icms" 
            value="<?php echo $linha['icms']; ?>" >
-    <br><br>Estoque
-    <input type="text" name="estoque" 
-           value="<?php echo $linha['estoque']; ?>" >
 
      <br><br>
     <input type="submit" value="Gravar">

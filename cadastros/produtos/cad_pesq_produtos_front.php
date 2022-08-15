@@ -72,7 +72,7 @@
                 </div>";
 
                 // Criar linhas com os dados dos produtos
-                foreach ($resultadolista as $linha)
+                foreach ($resultado_lista as $linha)
                 {
                     echo "
                     <div class='row'>

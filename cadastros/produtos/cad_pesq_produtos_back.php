@@ -15,6 +15,8 @@
 
     if ($qtde > 0)
     {
+
+        echo "<script type='text/javascript'>alert('EU ACHO q eu vi um funcionamento!!!')</script>";
         // coloca os dados em uma variável
         $resultado_lista=pg_fetch_all($resultado);
     }

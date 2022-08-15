@@ -2,31 +2,31 @@
     include "../../utils/conexao.php"; 
 
     //dados enviados do script altera_prod_lista.php
-    $nome=$_POST["nome"];
-    $telefone=$_POST["telefone"];
-    $email=$_POST["email"];
-    $senha=$_POST["senha"];
-    $sexo=$_POST["sexo"];
-    $data_nasc=$_POST["data_nasc"];
-    $cpf=$_POST["cpf"];
-    $cep=$_POST["cep"];
-    $endereco=$_POST["endereco"];
-    $cidade=$_POST["cidade"];
-    $estado=$_POST["estado"];
+    $nome=$_POST['nome'];
+    $telefone=$_POST['telefone'];
+    $email=$_POST['email'];
+    $senha=$_POST['senha'];
+    $sexo=$_POST['sexo'];
+    $data_nasc=$_POST['data_nasc'];
+    $cpf=$_POST['cpf'];
+    $cep=$_POST['cep'];
+    $endereco=$_POST['endereco'];
+    $cidade=$_POST['cidade'];
+    $estado=$_POST['estado'];
     // $user_adm=$_POST["user_adm"];
 
     $sql="UPDATE caricactoUsuario
              SET nome = '$nome',
                  telefone = '$telefone',
-                 email = $email, 
-                 senha = $senha,
-                 sexo = $sexo,
-                 data_nasc = $data_nasc,
-                 cpf = $cpf, 
-                 cep = $cep, 
-                 endereco = $endereco, 
-                 cidade = $cidade, 
-                 estado = $estado, 
+                 email = '$email', 
+                 senha = '$senha',
+                 sexo = '$sexo',
+                 data_nasc = '$data_nasc',
+                 cpf = '$cpf', 
+                 cep = '$cep', 
+                 endereco = '$endereco', 
+                 cidade = '$cidade', 
+                 estado = '$estado'
            WHERE id_usuario = $id_usuario;";
     
     $resultado=pg_query($conecta,$sql);

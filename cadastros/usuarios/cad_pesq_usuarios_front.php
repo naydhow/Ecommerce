@@ -7,7 +7,7 @@
     </head>
     <body>
         <style>
-            .table {width:700px; display:grid;}
+            .table {width:900px; display:grid;}
             .row { display:block;}
             .cell {
                 display:inline-block;
@@ -81,7 +81,7 @@
                 </div>";
 
                 // Criar linhas com os dados dos produtos
-                foreach ($resultadolista as $linha)
+                foreach ($resultado_lista as $linha)
                 {
                     echo "
                     <div class='row'>

@@ -4,22 +4,26 @@
     //É só um teste
 
     //dados enviados do script altera_prod_lista.php
-    $nome=$_POST["nome"];
-    $descricao=$_POST["descricao"];
-    $preco=$_POST["preco"];
-    $custo=$_POST["custo"];
-    $margem_lucro=$_POST["margem_lucro"];
-    $icms=$_POST["icms"];
-    $estoque=$_POST["estoque"];
+    $nome=$_POST['nome'];
+    $descricao=$_POST['descricao'];
+    $estoque=$_POST['estoque'];
+    $codigovisual=$_POST['codigovisual'];
+    $campo_imagem=$_POST['campo_imagem'];
+    $preco=$_POST['preco'];
+    $custo=$_POST['custo'];
+    $margem_lucro=$_POST['margem_lucro'];
+    $icms=$_POST['icms'];
 
     $sql="UPDATE caricactoProduto 
              SET nome = '$nome',
                  descricao = '$descricao',
+                 estoque = $estoque,
+                 codigovisual = $codigovisual,
+                 campo_imagem = $campo_imagem,
                  preco = $preco, 
                  custo = $custo,
                  margem_lucro = $margem_lucro,
-                 icms = $icms,
-                 estoque = $estoque 
+                 icms = $icms
            WHERE id_produto = $id_produto;";
     
     $resultado=pg_query($conecta,$sql);
