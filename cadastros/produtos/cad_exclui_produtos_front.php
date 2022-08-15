@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/cabecalho.css">
+<link rel="stylesheet" href="../../css/cabecalho.css">
 <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
         width="100%" scrolling="no" allowfullscreen>
 </iframe>
@@ -21,21 +21,27 @@
     <br><br>Descrição
     <input type="text" name="descricao" 
            value="<?php echo $linha['descricao']; ?>" >
+    <br><br>Estoque
+    <input type="number" name="estoque" 
+           value="<?php echo $linha['estoque']; ?>" >
+    <br><br>Código Visual
+    <input type="number" name="codigovisual" 
+           value="<?php echo $linha['codigovisual']; ?>" >
+    <br><br>Imagem
+    <input type="text" name="campo_imagem" 
+           value="<?php echo $linha['campo_imagem']; ?>" >
     <br><br>Preço
-    <input type="text" name="preco" 
+    <input type="number" name="preco" 
            value="<?php echo $linha['preco']; ?>" >
     <br><br>Custo
-    <input type="text" name="custo" 
-           value="<?php echo $linha['Custo']; ?>" >
+    <input type="number" name="custo" 
+           value="<?php echo $linha['custo']; ?>" >
     <br><br>Margem de Lucro
-    <input type="text" name="margem_lucro" 
+    <input type="number" name="margem_lucro" 
            value="<?php echo $linha['margem_lucro']; ?>" >
     <br><br>ICMS
-    <input type="text" name="icms" 
+    <input type="number" name="icms" 
            value="<?php echo $linha['icms']; ?>" >
-    <br><br>Estoque
-    <input type="text" name="estoque" 
-           value="<?php echo $linha['estoque']; ?>" >
 
      <br><br>
     <input type="submit" value="Confirma exclusão">

@@ -7,7 +7,7 @@
     </head>
     <body>
         <style>
-            .table {width: 900px; display:grid;}
+            .table {width: 1200px; display:grid;}
             .row { display:block;}
             .cell {
                 display:inline-block;
@@ -51,6 +51,15 @@
                     <div class='cell cellDescricao cellHeader'>
                         Descrição
                     </div>
+                    <div class='cell cellEstoque cellHeader'>
+                        Estoque
+                    </div>
+                    <div class='cell cellEstoque cellHeader'>
+                        Codigo Visual
+                    </div>
+                    <div class='cell cellEstoque cellHeader'>
+                        Imagem
+                    </div>
                     <div class='cell cellPreco cellHeader'>
                         Preço
                     </div>
@@ -62,9 +71,6 @@
                     </div>
                     <div class='cell cellIcms cellHeader'>
                         ICMS
-                    </div>
-                    <div class='cell cellEstoque cellHeader'>
-                        Estoque
                     </div>
                     <div class='cell cellAcoes'>
                         &nbsp;

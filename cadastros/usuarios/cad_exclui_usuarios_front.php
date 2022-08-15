@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/cabecalho.css">
+<link rel="stylesheet" href="../../css/cabecalho.css">
 <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
         width="100%" scrolling="no" allowfullscreen>
 </iframe>

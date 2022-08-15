@@ -19,7 +19,7 @@
                  descricao = '$descricao',
                  estoque = $estoque,
                  codigovisual = $codigovisual,
-                 campo_imagem = $campo_imagem,
+                 campo_imagem = '$campo_imagem',
                  preco = $preco, 
                  custo = $custo,
                  margem_lucro = $margem_lucro,

@@ -7,7 +7,7 @@
     </head>
     <body>
         <style>
-            .table {width:900px; display:grid;}
+            .table {width:1200px; display:grid;}
             .row { display:block;}
             .cell {
                 display:inline-block;
