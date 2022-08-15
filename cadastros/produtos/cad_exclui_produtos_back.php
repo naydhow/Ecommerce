@@ -1,6 +1,6 @@
 
 <?php
-    include "../utils/conexao.php"; 
+    include "../../utils/conexao.php"; 
 
     //dados enviados do script exclui_prod_chamada_confirma_exclusao_logica.php
     $id_produto = $_POST['id_produto'];
@@ -11,7 +11,7 @@
 
     //inserida a data de exclusao do produto para histórico
     $sql="update caricactoProduto
-            set excluido = 's', data_exclusao = '$data' 
+            set excluido = 'true', data_exclusao = '$data' 
         WHERE id_produto = $id_produto";
 
     //echo $sql;

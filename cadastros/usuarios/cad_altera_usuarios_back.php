@@ -1,5 +1,5 @@
 <?php
-    include "../utils/conexao.php"; 
+    include "../../utils/conexao.php"; 
 
     //dados enviados do script altera_prod_lista.php
     $nome=$_POST["nome"];

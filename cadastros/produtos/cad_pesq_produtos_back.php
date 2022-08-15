@@ -1,9 +1,9 @@
 <?php
     // Faz a conexão bonitona 🐶
-    include "../utils/conexao.php"; 
+    include "../../utils/conexao.php"; 
 
     // Cria o script bonitão 🧀
-    $sql="SELECT * FROM caricactoProduto WHERE excluido='n' ORDER BY id_produto;";
+    $sql="SELECT * FROM caricactoProduto WHERE excluido='false' ORDER BY id_produto;";
     
     // Executa o script bonitão no banco bonitão
     $resultado= pg_query($conecta, $sql);

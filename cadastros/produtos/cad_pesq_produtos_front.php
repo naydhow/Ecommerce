@@ -85,6 +85,15 @@
                         <div class='cell cellDescricao'>
                             ".$linha['descricao']."
                         </div>
+                        <div class='cell cellEstoque'>
+                            ".$linha['estoque']."
+                        </div>
+                        <div class='cell cellCodigoVisual'>
+                            ".$linha['codigovisual']."
+                        </div>
+                        <div class='cell cellImagem'>
+                            ".$linha['campo_imagem']."
+                        </div>
                         <div class='cell cellPreco'>
                             ".$linha['preco']."
                         </div>
@@ -96,9 +105,6 @@
                         </div>
                         <div class='cell cellIcms'>
                             ".$linha['icms']."
-                        </div>
-                        <div class='cell cellEstoque'>
-                            ".$linha['estoque']."
                         </div>
                         <div class='cell cellAcoes'>
                             <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
