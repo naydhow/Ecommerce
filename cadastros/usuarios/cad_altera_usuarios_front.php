@@ -1,4 +1,7 @@
-<link rel="stylesheet" href="../css/cabecalho.css">
+<link rel="stylesheet" href="../../css/cabecalho.css">
+
+<script src="../../js/main.js" defer></script>
+
 <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
         width="100%" scrolling="no" allowfullscreen>
 </iframe>
@@ -38,16 +41,16 @@
     <input type="text" name="cpf" 
            value="<?php echo $linha['cpf']; ?>" >
     <br><br>CEP
-    <input type="text" name="cep" 
+    <input type="text" name="cep" id="cep"
            value="<?php echo $linha['cep']; ?>" >
     <br><br>Endereco
-    <input type="text" name="endereco" 
+    <input type="text" name="endereco" id="endereco"
            value="<?php echo $linha['endereco']; ?>" >
     <br><br>Cidade
-    <input type="text" name="cidade" 
+    <input type="text" name="cidade" id="cidade"
            value="<?php echo $linha['cidade']; ?>" >
     <br><br>Estado
-    <input type="text" name="estado" 
+    <input type="text" name="estado" id="estado"
            value="<?php echo $linha['estado']; ?>" >
     <!-- <br><br>Usuário
     <input type="text" name="user_adm" 
