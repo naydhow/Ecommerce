@@ -2,10 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
+
+    <script src="../../js/main.js" defer></script>
+
     <title>Formulário de Cadastro de Usuarios - Tabela Usuario CRUD</title>
 </head>
 <body>
-    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../../css/cabecalho.css">
     <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
             width="100%" scrolling="no" allowfullscreen>
     </iframe>
@@ -50,22 +53,22 @@
         </label>
         <label>
             <strong>CEP:</strong><br />
-            <input type="text" name="cep" /><br />
+            <input type="text" name="cep" id="cep"/><br />
             <br />
         </label>
         <label>
             <strong>Endereço:</strong><br />
-            <input type="text" name="endereco" /><br />
+            <input type="text" name="endereco" id="endereco"/><br />
             <br />
         </label>
         <label>
             <strong>Cidade:</strong><br />
-            <input type="text" name="cidade" /><br />
+            <input type="text" name="cidade" id="cidade"/><br />
             <br />
         </label>
         <label>
             <strong>Estado:</strong><br />
-            <input type="text" name="estado" /><br />
+            <input type="text" name="estado" id="estado"/><br />
             <br />
         </label>
         <input type="submit" name="button" id="button" value="Enviar" />
