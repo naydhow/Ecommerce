@@ -2,9 +2,9 @@
 
     $stringdeconexao = "host=pgsql.projetoscti.com.br
                         port=5432
-                        dbname=projetoscti
-                        user=projetoscti
-                        password=gaspar";
+                        dbname=projetoscti16
+                        user=projetoscti16
+                        password=caricantocti";
 
     $conecta = pg_connect($stringdeconexao);
     
