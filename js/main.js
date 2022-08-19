@@ -1,5 +1,23 @@
 'use strict';
 
+function mascara_cep() {
+	if(cep.value.length == 5) {
+		cep.value += "-"
+  }
+}
+
+function onlynumber(evt) {
+  var theEvent = evt || window.event;
+  var key = theEvent.keyCode || theEvent.which;
+  key = String.fromCharCode( key );
+  //var regex = /^[0-9.,]+$/;
+  var regex = /^[0-9.]+$/;
+  if( !regex.test(key) ) {
+     theEvent.returnValue = false;
+     if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+
 const limparFormulario = (endereco) => {
   document.getElementById('endereco').value = '';
   // document.getElementById('bairro').value = '';
@@ -13,10 +31,6 @@ const preencherFormulario = (endereco) => {
   document.getElementById('cidade').value = endereco.localidade;
   document.getElementById('estado').value = endereco.uf;
 }
-
-const eNumero = (numero) => /^[0-9]+$/.test(numero);
-
-const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
 const pesquisarCep = async() => {
   limparFormulario();

@@ -53,7 +53,7 @@
         </label>
         <label>
             <strong>CEP:</strong><br />
-            <input type="text" name="cep" id="cep"/><br />
+            <input type="text" name="cep" id="cep" placeholder="00000-000" maxlength="9" onkeypress="mascara_cep(); return onlynumber();"/><br />
             <br />
         </label>
         <label>

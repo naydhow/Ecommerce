@@ -41,7 +41,7 @@
     <input type="text" name="cpf" 
            value="<?php echo $linha['cpf']; ?>" >
     <br><br>CEP
-    <input type="text" name="cep" id="cep"
+    <input type="text" name="cep" id="cep" placeholder="00000-000" maxlength="9" onkeypress="mascara_cep(); return onlynumber();"
            value="<?php echo $linha['cep']; ?>" >
     <br><br>Endereco
     <input type="text" name="endereco" id="endereco"
