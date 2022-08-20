@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Pesquisa de Usuarios</title>
         <link rel="stylesheet" href="../../css/cabecalho.css">
+        <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
         <style>
@@ -26,7 +27,20 @@
 
         <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
             width="100%" scrolling="no" allowfullscreen>
-        </iframe>
+        </iframe><br><br>
+
+        <div class="pesquisa">
+        <form action="" method="post">
+          <div class="divisoes">
+            <div class="pesquisaBotao">
+              <img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt="">
+            </div>
+            <div class="pesquisaTexto">
+              <input type="text" name="textPesquisa" placeholder="Pesquise um produto especifico" maxlength="116">
+            </div>
+          </div>
+        </form>
+      </div><br><br>
 
         <a href='cad_novo_usuarios_front.php'>+ Novo Usuario</a><br><br>
 

@@ -1,0 +1,39 @@
+.pesquisa {
+  border: 5px solid black;
+  padding: 1rem;
+  border-radius: 5rem;
+
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pesquisa input {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.divisoes {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.pesquisaTexto {
+  margin-left: 30px;
+}
+
+.pesquisaTexto input {
+  background-color: pink;
+
+  width: 500%;
+}
+
+img {
+  width: 2rem;
+}
