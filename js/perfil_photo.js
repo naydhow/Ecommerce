@@ -1,7 +1,6 @@
 'use strict';
 
 let photo = document.getElementById('imgPhoto');
-let photobackup = document.getElementById('imgPhoto');
 let file = document.getElementById('ftperfil');
 
 photo.addEventListener('click', () => {

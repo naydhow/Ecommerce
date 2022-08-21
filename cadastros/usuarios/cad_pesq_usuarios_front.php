@@ -33,7 +33,7 @@
         <form action="" method="post">
           <div class="divisoes">
             <div class="pesquisaBotao">
-              <img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt="Lupa de Pesquisa">
+              <img src="../../img/search.svg" alt="Lupa de Pesquisa">
             </div>
             <div class="pesquisaTexto">
               <input type="text" name="textPesquisa" placeholder="Pesquise um produto especifico" maxlength="116">

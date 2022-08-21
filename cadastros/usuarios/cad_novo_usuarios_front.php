@@ -5,13 +5,13 @@
 
     <script src="../../js/main.js" defer></script>
     <script src="../../js/masks.js"></script>
-    <script src="../../js/perfil_photo.js"></script>
+    <script src="../../js/perfil_photo.js" defer></script>
 
     <title>Formulário de Cadastro de Usuarios - Tabela Usuario CRUD</title>
 </head>
 <body>
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <!-- <link rel="stylesheet" href="../../css/cabecalho.css"> -->
     <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
             width="100%" scrolling="no" allowfullscreen>
     </iframe>
@@ -19,16 +19,16 @@
     <h1>Cadastro de Usuarios</h1>
 
     <form action="cad_novo_usuarios_back.php" method="post">
-            <!-- <div>
+            <div>
                 <div class="max-width">
                     <div class="imageContainer">
-                    <img src="https://cdn-icons.flaticon.com/png/512/3288/premium/3288788.png?token=exp=1661088806~hmac=c9183133e1336335afe0ac2d6fe06ee3" alt="Selecione uma foto para o perfil" id="imgPhoto">
+                    <img src="../../img/user.png" alt="Selecione uma foto para o perfil" id="imgPhoto">
                     </div>
                 </div>
                 <div class="answer">
                     <input name="ftperfil" id="ftperfil" type="file" accept="image/*">
                 </div>
-            </div> -->
+            </div>
         <label>
             <strong>Nome:</strong><br />    
             <input type="text" name="nome" maxlength="100"/><br />

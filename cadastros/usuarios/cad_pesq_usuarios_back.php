@@ -3,7 +3,13 @@
     include "../../utils/conexao.php"; 
 
     // Cria o script bonitão 🧀
-    $sql="SELECT * FROM caricactoUsuario WHERE excluido='false' ORDER BY id_usuario;";
+    $valPesquisa=$_POST['textPesquisa'];
+
+    if($valPesquisa == null) {
+        $sql="SELECT * FROM caricactoUsuario WHERE excluido='false' ORDER BY id_usuario;";
+    } else {
+        $sql="SELECT * FROM caricactoUsuario WHERE nome='$valPesquisa' ORDER BY id_usuario;";
+    }
     
     // Executa o script bonitão no banco bonitão
     $resultado= pg_query($conecta, $sql);
