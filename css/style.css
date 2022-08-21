@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .pesquisa {
   border: 5px solid black;
   padding: 1rem;
@@ -36,4 +42,29 @@
 
 img {
   width: 2rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.max-width {
+  max-width: 500px;
+  width: 100%;
+}
+
+#imgPhoto {
+  margin-top: 10%;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background-color: azure;
+  border: 5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#imgPhoto:hover {
+  background-color: crimson;
 }

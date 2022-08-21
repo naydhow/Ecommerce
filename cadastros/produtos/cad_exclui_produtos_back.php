@@ -6,13 +6,13 @@
     $id_produto = $_POST['id_produto'];
     
     // Padrão para data no servidor do kinghost está americano (se atentar!!)
-    $data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos
+    //$data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos
     //$data=date('d/m/Y');
 
     //inserida a data de exclusao do produto para histórico
     $sql="UPDATE caricactoProduto
             SET excluido = 'true', 
-                data_exclusao = '$data' 
+                data_exclusao = current_timestamp 
         WHERE id_produto = $id_produto";
 
     //echo $sql;

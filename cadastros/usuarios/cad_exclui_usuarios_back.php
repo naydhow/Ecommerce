@@ -8,11 +8,12 @@
     // Padrão para data no servidor do kinghost está americano (se atentar!!)
     $data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos
     //$data=date('d/m/Y');
+    
 
     //inserida a data de exclusao do produto para histórico
     $sql="UPDATE caricactoUsuario
             SET excluido = 'true',
-                data_exclusao = '$data'
+                data_exclusao = current_timestamp
         WHERE id_usuario = $id_usuario";
 
     //echo $sql;
