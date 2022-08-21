@@ -1,11 +1,5 @@
 'use strict';
 
-function mascara_cep() {
-	if(cep.value.length == 5) {
-		cep.value += "-"
-  }
-}
-
 function onlynumber(evt) {
   var theEvent = evt || window.event;
   var key = theEvent.keyCode || theEvent.which;
@@ -37,7 +31,7 @@ const pesquisarCep = async() => {
 
   const cep = document.getElementById('cep').value;
   const url = `http://viacep.com.br/ws/${cep}/json/`;
-  if (cepValido(cep)) {
+  if (cep) {
       const dados = await fetch(url);
       const endereco = await dados.json();
       if (endereco.hasOwnProperty('error')) {

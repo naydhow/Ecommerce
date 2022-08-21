@@ -23,7 +23,7 @@
     <input type="text" name="nome" 
            value="<?php echo $linha['nome']; ?>" >
     <br><br>Telefone
-    <input type="text" name="telefone" 
+    <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"
            value="<?php echo $linha['telefone']; ?>" >
     <br><br>Email
     <input type="text" name="email" 
@@ -38,10 +38,10 @@
     <input type="text" name="data_nasc" 
            value="<?php echo $linha['data_nasc']; ?>" >
     <br><br>CPF
-    <input type="text" name="cpf" 
+    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"
            value="<?php echo $linha['cpf']; ?>" >
     <br><br>CEP
-    <input type="text" name="cep" id="cep" placeholder="00000-000" maxlength="9" onkeypress="mascara_cep(); return onlynumber();"
+    <input type="text" name="cep" id="cep" placeholder="00000-000"
            value="<?php echo $linha['cep']; ?>" >
     <br><br>Endereco
     <input type="text" name="endereco" id="endereco"

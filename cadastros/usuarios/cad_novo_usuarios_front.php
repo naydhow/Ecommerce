@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
 
     <script src="../../js/main.js" defer></script>
+    <script src="../../js/masks.js"></script>
 
     <title>Formulário de Cadastro de Usuarios - Tabela Usuario CRUD</title>
 </head>
@@ -23,7 +24,7 @@
         </label>
         <label>
             <strong>Telefone:</strong><br />    
-            <input type="text" name="telefone" /><br />
+            <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"/><br />
             <br />
         </label>
         <label>
@@ -48,12 +49,12 @@
         </label>
         <label>
             <strong>CPF:</strong><br />
-            <input type="text" name="cpf" /><br />
+            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"/><br />
             <br />
         </label>
         <label>
             <strong>CEP:</strong><br />
-            <input type="text" name="cep" id="cep" placeholder="00000-000" maxlength="9" onkeypress="mascara_cep(); return onlynumber();"/><br />
+            <input type="text" name="cep" id="cep" placeholder="00000-000"/><br />
             <br />
         </label>
         <label>
