@@ -19,7 +19,7 @@
     <form action="cad_novo_usuarios_back.php" method="post">
         <label>
             <strong>Nome:</strong><br />    
-            <input type="text" name="nome" /><br />
+            <input type="text" name="nome" maxlength="100"/><br />
             <br />
         </label>
         <label>
@@ -29,12 +29,12 @@
         </label>
         <label>
             <strong>Email:</strong><br />
-            <input type="email" name="email" /><br />
+            <input type="email" name="email" maxlength="80"/><br />
             <br />
         </label>
         <label>
             <strong>Senha:</strong><br />
-            <input type="password" name="senha"  /><br />
+            <input type="password" name="senha" maxlength="32"/><br />
             <br />
         </label>
         <label>
@@ -59,17 +59,17 @@
         </label>
         <label>
             <strong>Endereço:</strong><br />
-            <input type="text" name="endereco" id="endereco"/><br />
+            <input type="text" name="endereco" id="endereco" maxlength="150"/><br />
             <br />
         </label>
         <label>
             <strong>Cidade:</strong><br />
-            <input type="text" name="cidade" id="cidade"/><br />
+            <input type="text" name="cidade" id="cidade" maxlength="30"/><br />
             <br />
         </label>
         <label>
             <strong>Estado:</strong><br />
-            <input type="text" name="estado" id="estado"/><br />
+            <input type="text" name="estado" id="estado" maxlength="2"/><br />
             <br />
         </label>
         <input type="submit" name="button" id="button" value="Enviar" />

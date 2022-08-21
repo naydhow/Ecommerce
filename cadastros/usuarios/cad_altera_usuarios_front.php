@@ -20,16 +20,16 @@
            value="<?php echo $linha['id_usuario']; ?>" 
            readonly>
     <br><br>Nome
-    <input type="text" name="nome" 
+    <input type="text" name="nome" maxlength="100"
            value="<?php echo $linha['nome']; ?>" >
     <br><br>Telefone
     <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"
            value="<?php echo $linha['telefone']; ?>" >
     <br><br>Email
-    <input type="text" name="email" 
+    <input type="text" name="email" maxlength="80"
            value="<?php echo $linha['email']; ?>" >
     <br><br>Senha
-    <input type="text" name="senha" 
+    <input type="text" name="senha" maxlength="32"
            value="<?php echo $linha['senha']; ?>" >
     <br><br>Sexo
     <input type="text" name="sexo" 
@@ -44,13 +44,13 @@
     <input type="text" name="cep" id="cep" placeholder="00000-000"
            value="<?php echo $linha['cep']; ?>" >
     <br><br>Endereco
-    <input type="text" name="endereco" id="endereco"
+    <input type="text" name="endereco" id="endereco" maxlength="150"
            value="<?php echo $linha['endereco']; ?>" >
     <br><br>Cidade
-    <input type="text" name="cidade" id="cidade"
+    <input type="text" name="cidade" id="cidade" maxlength="30"
            value="<?php echo $linha['cidade']; ?>" >
     <br><br>Estado
-    <input type="text" name="estado" id="estado"
+    <input type="text" name="estado" id="estado" maxlength="2"
            value="<?php echo $linha['estado']; ?>" >
     <!-- <br><br>Usuário
     <input type="text" name="user_adm" 
