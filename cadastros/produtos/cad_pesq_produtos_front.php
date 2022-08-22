@@ -28,6 +28,19 @@
             width="100%" scrolling="no" allowfullscreen>
         </iframe>
 
+        <div class="pesquisa">
+            <form action="" method="post">
+            <div class="divisoes">
+                <div class="pesquisaBotao">
+                <img src="../../img/search.svg" alt="Lupa de Pesquisa">
+                </div>
+                <div class="pesquisaTexto">
+                <input type="text" name="textPesquisa" placeholder="Pesquise um produto especifico" maxlength="116">
+                </div>
+            </div>
+            </form>
+        </div><br><br>
+
         <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
 
         <?php
