@@ -58,6 +58,9 @@
                     <div class='cell cellId cellHeader'>
                         id. Usuario
                     </div>
+                    <div class='cell cellImg cellHeader'>
+                        IMG
+                    </div>
                     <div class='cell cellNome cellHeader'>
                         Nome
                     </div>
@@ -100,6 +103,9 @@
                     <div class='row'>
                         <div class='cell cellId'>
                             ".$linha['id_usuario']."
+                        </div>
+                        <div class='cell cellImg'>
+                            ".'<a href="mostrar_img.php?id='.$linha['id_usuario'].'">Imagem '.$linha['id_usuario'].'</a>'."
                         </div>
                         <div class='cell cellNome'>
                             ".$linha['nome']."

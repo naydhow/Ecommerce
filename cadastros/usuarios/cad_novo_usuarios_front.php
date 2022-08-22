@@ -18,7 +18,7 @@
 
     <h1>Cadastro de Usuarios</h1>
 
-    <form action="cad_novo_usuarios_back.php" method="post">
+    <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
             <div>
                 <div class="max-width">
                     <div class="imageContainer">

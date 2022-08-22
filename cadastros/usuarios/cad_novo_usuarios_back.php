@@ -2,6 +2,10 @@
     include "../../utils/conexao.php"; 
     
     // Recuperação de dados
+    $img=$_FILES['ftperfil']['tmp_name'];
+    $imgtamanho=$_FILES['ftperfil']['size'];
+    $imgtipo=$_FILES['ftperfil']['type'];
+    $imgnome=$_FILES['ftperfil']['name'];
     $nome=$_POST['nome'];
     $telefone=$_POST['telefone'];
     $email=$_POST['email'];
@@ -15,10 +19,19 @@
     $estado=$_POST['estado'];
     // $user_adm=$_POST['F']; //true e false maiusculo
 
+    $fp = fopen($img, 'rb');
+    $conteudo = fread($fp, $imgtamanho);
+    $conteudo = addcslashes($conteudo);
+    fclose($fp);
+
     // Inserção
-    $sql="INSERT INTO caricactoUsuario
-          (nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
+    $sql="INSERT INTO caricactoUsuario2
+          (img, imgtamanho, imgtipo, imgnome, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
           VALUES (
+                '$img',
+                '$imgtamanho',
+                '$imgtipo',
+                '$imgnome',
                 '$nome',
                 '$telefone',
                 '$email', 
