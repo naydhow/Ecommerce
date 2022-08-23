@@ -7,14 +7,14 @@
 
 
 .pesquisa {
-  margin-top: 15%;
-  margin-left: 25%;
-  margin-right: 25%;
-  border: 5px solid black;
+  margin-top: 12%;
+  margin-left: 35%;
+  margin-right: 35%;
+  border: 3px solid black;
   padding: 1rem;
   border-radius: 5rem;
-  width: 50%;
-  height: 10%;
+  width: 30%;
+  height: 5%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -34,9 +34,8 @@
 
 .divisoes {  
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  /*justify-content: center;*/
+  /*align-items: center;*/
   width: 100%;
 }
 
@@ -45,9 +44,8 @@
 }
 
 .pesquisaTexto input {
-  background-color: azure;
-
-  width: 25%;
+  background-color: #6ba884;
+  width: 150%;
 }
 
 img {
@@ -61,6 +59,11 @@ input[type="file"] {
 .max-width {
   max-width: 500px;
   width: 100%;
+}
+
+.imageContainer{
+  margin-left: 113%;
+  /*margin-right: 40%;*/
 }
 
 #imgPhoto {
@@ -143,14 +146,11 @@ html{
   padding-top: 5px;
   padding-bottom: 3px;
   margin: 0 auto;
-  background: #458345; /*#a9c9b6; /*#6ba884; /*#b2ba97;*/
+  background: #458345;
   text-align: center;
-  /*padding: 30px 0;*/
 }
 
 img{
-  /*margin-left: 3%;*/
-  /*padding-left: 2%;*/
   margin-top: 0%;
   margin-bottom: 1.5%;
   width: 35%;
@@ -167,7 +167,7 @@ img{
 
 /*cadastrar produtos*/ 
 .cadastro_produtos{
-  background-color: #a9c9b6;
+  background-color: #8dc78d;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -176,25 +176,6 @@ img{
   padding:2px;
   margin-top: 10%;
   
-}
-
-.cadastro_usuarios{
-  background-color: #a9c9b6;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-align:left; 
-  width: 100%;
-  padding:2px;
-  margin-top: 10%;
-  
-}
-
-.form_cad_prod{
-  background-color: #d9e7c3;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
 }
 
 #cad_titulo{
@@ -207,14 +188,12 @@ img{
 }
 
 .form_cad_prod{
-  background-color: #a9c9b6;
+  background-color:#8dc78d;
   max-width: 100%;
   width: 80%;
   padding: 20px;
-  /*position:absolute;*/
   left: 10%;
   right: 10%;
-  /*transform: translate(-50%, -50%);*/
   width: 100%;
   height: 100%; 
 }
@@ -285,7 +264,7 @@ img{
   width: 10%;
   height: 30px;
   cursor: pointer;
-  background-color: #50c068c7;
+  background-color:#458345;
   border: 0px;
   border-radius: 10px;
   transition: 1s;
@@ -305,26 +284,6 @@ img{
   color:rgb(112, 167, 91);
 }
 
-#voltar:hover{
-  background-color: rgb(13, 53, 5);;
-  color:rgb(112, 167, 91);
-}
-
-#voltar{
-  width: 10%;
-  height: 30px;
-  cursor: pointer;
-  color: black;
-  font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
-  background-color:#50c068c7;
-  border: 0px;
-  border-radius: 10px;
-  transition: 1s;
-  /*padding: 10px;*/
-  text-decoration: none;
-  box-shadow: 1px 1px 6px #0000001c;
-}
 
 #altera_gravar, #altera_voltar, 
   #conf_exclusao, #editar, #exclui_voltar
@@ -332,7 +291,7 @@ img{
   width: 100%;
   height: 40px;
   cursor: pointer;
-  background-color: #50c068c7;
+  background-color:#458345;
   border: 0px;
   border-radius: 10px;
   transition: 1s;

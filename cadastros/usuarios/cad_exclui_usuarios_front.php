@@ -128,7 +128,7 @@
                             </div>
                             &nbsp;&nbsp;&nbsp;
                             <div>
-                                   <input id="excluir_voltar" type="button" value="Voltar" onclick="location.href='cad_pesq_usuarios_front.php';">
+                                   <input id="exclui_voltar" type="button" value="Voltar" onclick="location.href='cad_pesq_usuarios_front.php';">
                             </div>
                      </div>
               </form>

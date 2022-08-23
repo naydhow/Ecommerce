@@ -77,7 +77,7 @@
                         Custo
                     </div>
                     <div class='cell cellMedia cellHeader'>
-                        Margem de Lucro
+                        Média Lucro
                     </div>
                     <div class='cell cellPeq cellHeader'>
                         ICMS
@@ -92,37 +92,37 @@
                 {
                     echo "
                     <div class='row'>
-                        <div class='cell cellId'>
+                        <div class='cell cellPeq'>
                             ".$linha['id_produto']."
                         </div>
-                        <div class='cell cellNome'>
+                        <div class='cell cellGrande'>
                             ".$linha['nome']."
                         </div>
-                        <div class='cell cellDescricao'>
+                        <div class='cell cellGrande'>
                             ".$linha['descricao']."
                         </div>
-                        <div class='cell cellEstoque'>
+                        <div class='cell cellMenor'>
                             ".$linha['estoque']."
                         </div>
-                        <div class='cell cellCodigoVisual'>
+                        <div class='cell cellMedia'>
                             ".$linha['codigovisual']."
                         </div>
-                        <div class='cell cellImagem'>
+                        <div class='cell cellGrande'>
                             ".$linha['campo_imagem']."
                         </div>
-                        <div class='cell cellPreco'>
+                        <div class='cell cellMenor'>
                             ".$linha['preco']."
                         </div>
-                        <div class='cell cellCusto'>
+                        <div class='cell cellMenor'>
                             ".$linha['custo']."
                         </div>
-                        <div class='cell cellMargemLucro'>
+                        <div class='cell cellMedia'>
                             ".$linha['margem_lucro']."
                         </div>
-                        <div class='cell cellIcms'>
+                        <div class='cell cellPeq'>
                             ".$linha['icms']."
                         </div>
-                        <div class='cell cellAcoes'>
+                        <div class='cell cellMedia'>
                             <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
                             <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                         </div>

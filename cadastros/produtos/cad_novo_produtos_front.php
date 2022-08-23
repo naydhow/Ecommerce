@@ -100,7 +100,7 @@
 
                 <div class="buttons">
                     <input type="submit" name="button" id="button" value="Enviar" />
-                    <a id="voltar" href='cad_pesq_produtos_front.php'>Voltar</a><br><br>
+                    <a id="button" href='cad_pesq_produtos_front.php'>Voltar</a><br><br>
                 </div>
             </form>
         </div>
