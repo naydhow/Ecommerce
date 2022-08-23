@@ -34,37 +34,37 @@
             echo "
             <div class='tabela'>
                 <div class='fileira'>
-                    <div class='cell cellId cellHeader'>
-                        id. Produto
+                    <div class='cell cellPeq cellHeader'>
+                        Id Produto
                     </div>
-                    <div class='cell cellNome cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Nome
                     </div>
-                    <div class='cell cellDescricao cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Descrição
                     </div>
-                    <div class='cell cellEstoque cellHeader'>
+                    <div class='cell cellMenor cellHeader'>
                         Estoque
                     </div>
-                    <div class='cell cellEstoque cellHeader'>
+                    <div class='cell cellMedia cellHeader'>
                         Codigo Visual
                     </div>
-                    <div class='cell cellEstoque cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Imagem
                     </div>
-                    <div class='cell cellPreco cellHeader'>
+                    <div class='cell cellMenor cellHeader'>
                         Preço
                     </div>
-                    <div class='cell cellCusto cellHeader'>
+                    <div class='cell cellMenor cellHeader'>
                         Custo
                     </div>
-                    <div class='cell cellMargemLucro cellHeader'>
+                    <div class='cell cellMedia cellHeader'>
                         Margem de Lucro
                     </div>
-                    <div class='cell cellIcms cellHeader'>
+                    <div class='cell cellPeq cellHeader'>
                         ICMS
                     </div>
-                    <div class='cell cellAcoes'>
+                    <div class='cell cellMedia cellHeader'>
                         &nbsp;
                     </div>
                 </div>";

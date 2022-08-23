@@ -32,7 +32,7 @@
 
             // Começar tabela e criar o cabeçalho
             echo "
-            < class='tabela'>
+            <div class='tabela'>
                 <div class='fileira'>
                     <div class='cell cellGrande cellHeader'>
                         id
