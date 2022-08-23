@@ -2,31 +2,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Pesquisa de Usuarios</title>
+        <title>Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
-        <style>
-            .table {width:1200px; display:grid;}
-            .row { display:block;}
-            .cell {
-                display:inline-block;
-                padding: 5px 5px;
-                margin-bottom: .5%;
-                background-color: rgb(248, 242, 234);
-                font-size: 10pt;
-            }
-            .cellHeader {text-align: center !important;}
-            .cellCodigo {width:100px; }
-            .cellDescricao {width:300px;}
-            .cellPrecoHeader {width:100px;}
-            .cellPreco {width:60px; text-align:right;}
-            .cellAcoes {width:100px;}
-        </style>
-
-        <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-            width="100%" scrolling="no" allowfullscreen>
-        </iframe><br><br>
 
         <div class="pesquisa">
         <form action="" method="post">
@@ -41,7 +20,7 @@
         </form>
       </div><br><br>
 
-        <a href='cad_novo_usuarios_front.php'>+ Novo Usuario</a><br><br>
+        <a class="links" href='cad_novo_usuarios_front.php'>+ Adicionar Usuário</a><br><br>
 
         <?php
             include "cad_pesq_usuarios_back.php";
@@ -53,94 +32,95 @@
 
             // Começar tabela e criar o cabeçalho
             echo "
-            <div class='table'>
-                <div class='row'>
-                    <div class='cell cellId cellHeader'>
-                        id. Usuario
+            < class='tabela'>
+                <div class='fileira'>
+                    <div class='cell cellGrande cellHeader'>
+                        id
                     </div>
-                    <div class='cell cellImg cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         IMG
                     </div>
-                    <div class='cell cellNome cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Nome
                     </div>
-                    <div class='cell cellTelefone cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Telefone
                     </div>
-                    <div class='cell cellEmail cellHeader'>
+                    <div class='cell cellEnorme cellHeader'>
                         Email
                     </div>
-                    <div class='cell cellSenha cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Senha
                     </div>
-                    <div class='cell cellData_nasc cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Data de Nascimento
                     </div>
-                    <div class='cell cellCPF cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         CPF
                     </div>
-                    <div class='cell cellCEP cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         CEP
                     </div>
-                    <div class='cell cellEndereco cellHeader'>
+                    <div class='cell cellEnorme cellHeader'>
                         Endereco
                     </div>
-                    <div class='cell cellCidade cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Cidade
                     </div>
-                    <div class='cell cellCEstado cellHeader'>
+                    <div class='cell cellGrande cellHeader'>
                         Estado
                     </div>
-                    <div class='cell cellAcoes'>
+                    <div class='cell cellGrande'>
                         &nbsp;
                     </div>
-                </div>";
+                </div>
+                ";
 
                 // Criar linhas com os dados dos produtos
                 foreach ($resultado_lista as $linha)
                 {
                     echo "
                     <div class='row'>
-                        <div class='cell cellId'>
+                        <div class='cell cellGrande'>
                             ".$linha['id_usuario']."
                         </div>
-                        <div class='cell cellImg'>
+                        <div class='cell cellGrande'>
                             ".'<a href="mostrar_img.php?id='.$linha['id_usuario'].'">Imagem '.$linha['id_usuario'].'</a>'."
                         </div>
-                        <div class='cell cellNome'>
+                        <div class='cell cellGrande'>
                             ".$linha['nome']."
                         </div>
-                        <div class='cell cellTelefone'>
+                        <div class='cell cellGrande'>
                             ".$linha['telefone']."
                         </div>
-                        <div class='cell cellEmail'>
+                        <div class='cell cellEnorme'>
                             ".$linha['email']."
                         </div>
-                        <div class='cell cellSenha'>
+                        <div class='cell cellGrande'>
                             ".$linha['senha']."
                         </div>
-                        <div class='cell cellSexo'>
+                        <div class='cell cellGrande'>
                             ".$linha['sexo']."
                         </div>
-                        <div class='cell cellData_nasc'>
+                        <div class='cell cellGrande'>
                             ".$linha['data_nasc']."
                         </div>
-                        <div class='cell cellCPF'>
+                        <div class='cell cellGrande'>
                             ".$linha['cpf']." 
                         </div>
-                        <div class='cell cellCEP'>
+                        <div class='cell cellGrande'>
                             ".$linha['cep']."
                         </div>
-                        <div class='cell cellEndereco'>
+                        <div class='cell cellEnorme'>
                             ".$linha['endereco']."
                         </div>
-                        <div class='cell cellCidade'>
+                        <div class='cell cellGrande'>
                             ".$linha['cidade']."
                         </div>
-                        <div class='cell cellEstado'>
+                        <div class='cell cellGrande'>
                             ".$linha['estado']."
                         </div>
-                        <div class='cell cellAcoes'>
+                        <div class='cell cellGrande'>
                             <a href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
                             <a href='cad_exclui_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                         </div>

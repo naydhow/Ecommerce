@@ -2,31 +2,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Pesquisa de Produtos</title>
+        <title>Produtos</title>
         <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
-        <style>
-            .table {width: 1200px; display:grid;}
-            .row { display:block;}
-            .cell {
-                display:inline-block;
-                padding: 5px 5px;
-                margin-bottom: .5%;
-                background-color: rgb(248, 242, 234);
-                font-size: 10pt;
-            }
-            .cellHeader {text-align: center !important;}
-            .cellCodigo {width:100px; }
-            .cellDescricao {width:300px;}
-            .cellPrecoHeader {width:100px;}
-            .cellPreco {width:60px; text-align:right;}
-            .cellAcoes {width:100px;}
-        </style>
-
-        <iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-            width="100%" scrolling="no" allowfullscreen>
-        </iframe>
 
         <div class="pesquisa">
             <form action="" method="post">
@@ -41,7 +20,7 @@
             </form>
         </div><br><br>
 
-        <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
+        <a class="links" href='cad_novo_produtos_front.php'>+ Adicionar Produto</a><br><br>
 
         <?php
             include "cad_pesq_produtos_back.php";
@@ -53,8 +32,8 @@
 
             // Começar tabela e criar o cabeçalho
             echo "
-            <div class='table'>
-                <div class='row'>
+            <div class='tabela'>
+                <div class='fileira'>
                     <div class='cell cellId cellHeader'>
                         id. Produto
                     </div>

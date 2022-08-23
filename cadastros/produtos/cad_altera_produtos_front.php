@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="../../css/cabecalho.css">
-<iframe src="../../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
-        width="100%" scrolling="no" allowfullscreen>
-</iframe>
+<link rel="stylesheet" href="../../css/style.css">
+
 
 <!-- Recuperando as informações do produto -->
 <?php
