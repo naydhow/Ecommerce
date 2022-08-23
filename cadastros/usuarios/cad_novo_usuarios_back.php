@@ -2,10 +2,7 @@
     include "../../utils/conexao.php"; 
     
     // Recuperação de dados
-    $img=$_FILES['ftperfil']['tmp_name'];
-    $imgtamanho=$_FILES['ftperfil']['size'];
-    $imgtipo=$_FILES['ftperfil']['type'];
-    $imgnome=$_FILES['ftperfil']['name'];
+    $img=$_FILES['ftperfil'];
     $nome=$_POST['nome'];
     $telefone=$_POST['telefone'];
     $email=$_POST['email'];
@@ -19,19 +16,14 @@
     $estado=$_POST['estado'];
     // $user_adm=$_POST['F']; //true e false maiusculo
 
-    $fp = fopen($img, 'rb');
-    $conteudo = fread($fp, $imgtamanho);
-    $conteudo = addcslashes($conteudo);
-    fclose($fp);
-
+    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/EcommerceCRUD2/OutroTeste/img_upload/'.$img['name']);
+    $imglink = 'http://projetoscti.com.br/projetoscti24/EcommerceCRUD2/OutroTeste/img_upload/'.$img['name'];
+    
     // Inserção
     $sql="INSERT INTO caricactoUsuario2
-          (img, imgtamanho, imgtipo, imgnome, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
+          (img, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
           VALUES (
-                '$img',
-                '$imgtamanho',
-                '$imgtipo',
-                '$imgnome',
+                '$imglink',
                 '$nome',
                 '$telefone',
                 '$email', 

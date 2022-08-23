@@ -6,9 +6,9 @@
     $valPesquisa=$_POST['textPesquisa'];
 
     if($valPesquisa == null) {
-        $sql="SELECT * FROM caricactoUsuario WHERE excluido='false' ORDER BY id_usuario;";
+        $sql="SELECT * FROM caricactoUsuario2 WHERE excluido='false' ORDER BY id_usuario;";
     } else {
-        $sql="SELECT * FROM caricactoUsuario WHERE nome='$valPesquisa' ORDER BY id_usuario;";
+        $sql="SELECT * FROM caricactoUsuario2 WHERE nome='$valPesquisa' ORDER BY id_usuario;";
     }
     
     // Executa o script bonitão no banco bonitão
