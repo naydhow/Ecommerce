@@ -18,7 +18,7 @@
 
     move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name']);
     $imglink = 'http://projetoscti.com.br/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name'];
-    
+
     // Inserção
     $sql="INSERT INTO caricactoUsuario
           (img, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)

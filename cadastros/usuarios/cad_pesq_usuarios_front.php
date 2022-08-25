@@ -55,42 +55,25 @@
             echo "
             <div class='tabela'>
                 <div class='fileira'>
-                    <div class='cell cellGrande cellHeader'>
+                    <div class='cell cellMedia cellHeader'>
                         id
                     </div>
                     <div class='cell cellGrande cellHeader'>
                         IMG
                     </div>
-                    <div class='cell cellGrande cellHeader'>
+                    <div class='cell cellEnorme cellHeader'>
                         Nome
                     </div>
-                    <div class='cell cellGrande cellHeader'>
+                    <div class='cell cellEnorme cellHeader'>
                         Telefone
                     </div>
                     <div class='cell cellEnorme cellHeader'>
-                        Email
-                    </div>
-                    <div class='cell cellGrande cellHeader'>
-                        Senha
-                    </div>
-                    <div class='cell cellGrande cellHeader'>
-                        Data de Nascimento
+                        E-mail
                     </div>
                     <div class='cell cellGrande cellHeader'>
                         CPF
                     </div>
-                    <div class='cell cellGrande cellHeader'>
-                        CEP
-                    </div>
-                    <div class='cell cellEnorme cellHeader'>
-                        Endereco
-                    </div>
-                    <div class='cell cellGrande cellHeader'>
-                        Cidade
-                    </div>
-                    <div class='cell cellGrande cellHeader'>
-                        Estado
-                    </div>
+                    
                     <div class='cell cellGrande'>
                         &nbsp;
                     </div>
@@ -102,44 +85,23 @@
                 {
                     echo "
                     <div class='row'>
-                        <div class='cell cellGrande'>
+                        <div class='cell cellMedia'>
                             ".$linha['id_usuario']."
                         </div>
                         <div class='cell cellGrande'>
                             ".'<img src="'.$linha['img'].'">'."
                         </div>
-                        <div class='cell cellGrande'>
+                        <div class='cell cellEnorme'>
                             ".$linha['nome']."
                         </div>
-                        <div class='cell cellGrande'>
+                        <div class='cell cellEnorme'>
                             ".$linha['telefone']."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['email']."
                         </div>
                         <div class='cell cellGrande'>
-                            ".$linha['senha']."
-                        </div>
-                        <div class='cell cellGrande'>
-                            ".$linha['sexo']."
-                        </div>
-                        <div class='cell cellGrande'>
-                            ".$linha['data_nasc']."
-                        </div>
-                        <div class='cell cellGrande'>
                             ".$linha['cpf']." 
-                        </div>
-                        <div class='cell cellGrande'>
-                            ".$linha['cep']."
-                        </div>
-                        <div class='cell cellEnorme'>
-                            ".$linha['endereco']."
-                        </div>
-                        <div class='cell cellGrande'>
-                            ".$linha['cidade']."
-                        </div>
-                        <div class='cell cellGrande'>
-                            ".$linha['estado']."
                         </div>
                         <div class='cell cellGrande'>
                             <a href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
