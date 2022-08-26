@@ -19,7 +19,8 @@
                             <div class='top-bar-content-link'>
                                 <a id='link' href='./index.php' target='_parent'>Página Inicial&nbsp;&nbsp;</a>
                                 <a id='link' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos&nbsp;&nbsp;</a>
-                                <a id='link' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a>
+                                <a id='link' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários&nbsp;&nbsp;</a>
+                                <a id='link' href='./venda/selecao_produtos_front.php' target='_parent'>Seleção</a>
                             </div>
                         </div>
                     </div>  

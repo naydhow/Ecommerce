@@ -25,10 +25,21 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="cadastro_produtos">
-       <p id="cad_titulo">Exclusão de Usuário</p>
+       <p id="cad_titulo">Alteração de Usuário</p>
 
        <div class="form_cad_prod">
-              <form action="cad_exclui_usuarios_back.php" method="post">
+              <form action="cad_altera_usuarios_back.php" enctype="multipart/form-data" method="post">
+              <div class="input-group">
+                    <div>
+                        <div class="max-width">
+                            <div class="imageContainer">
+                            <img src="../../img/user.png" alt="Selecione uma foto para o perfil" id="imgPhoto">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <input name="ftperfil" id="ftperfil" type="file" accept="image/*">
+                        </div>
+                    </div>
                      <div class="input-group">
                             <div class="input-box">
                                    <label>

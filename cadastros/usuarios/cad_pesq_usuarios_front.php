@@ -89,7 +89,7 @@
                             ".$linha['id_usuario']."
                         </div>
                         <div class='cell cellGrande'>
-                            ".'<a href="mostrar_img.php?id='.$linha['id_usuario'].'">Imagem '.$linha['id_usuario'].'</a>'."
+                            ".'<img src="'.$linha['img'].'">'."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['nome']."

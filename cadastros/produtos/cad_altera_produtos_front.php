@@ -28,7 +28,7 @@
        <p id="cad_titulo">Alteração de Produtos</p>
 
        <div class="cad_form_prod">
-              <form action="cad_exclui_produtos_back.php" method="post">
+              <form action="cad_altera_produtos_back.php" method="post">
                      <div class="input-group">
                             <div class="input-box">
                                    <label>

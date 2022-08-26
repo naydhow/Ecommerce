@@ -44,7 +44,11 @@
 }
 
 .pesquisaTexto input {
+<<<<<<< HEAD
   background-color: #6ba884;
+=======
+  background-color:  #8dc78d;
+>>>>>>> 7cdf7236fcfeb517d9c6e4092fadfa6a0a179602
   width: 150%;
 }
 
@@ -95,7 +99,7 @@ html{
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px; 
   padding-top: 2px;
-  background-color:#6ba884; 
+  background-color: #8dc78d; 
   text-align: center;
 }
 
