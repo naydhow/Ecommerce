@@ -6,7 +6,7 @@
     $descricao=$_POST['descricao'];
     $estoque=$_POST['estoque'];
     $codigovisual=$_POST['codigovisual'];
-    $img=$_FILES['ftperfil'];
+    $img=$_FILES['ftproduto'];
     $preco=$_POST['preco'];
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];

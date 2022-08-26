@@ -55,9 +55,9 @@
   width: 150%;
 }
 
-img {
+/* img {
   width: 2rem;
-}
+} */
 
 input[type="file"] {
   display: none;
@@ -87,6 +87,23 @@ input[type="file"] {
 }
 
 #imgPhoto:hover {
+  background-color: crimson;
+}
+
+#imgProduto {
+  justify-content: center;
+  margin-top: 10%;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background-color: azure;
+  border: 5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#imgProduto:hover {
   background-color: crimson;
 }
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../img/logopeq_caricacto.png">
 
-    <script src="../../js/perfil_photo.js" defer></script>
+    <script src="../../js/produto_photo.js" defer></script>
     
     <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 </head>
@@ -63,14 +63,14 @@
                             <br />
                         </label>
                     </div>
-                    <div class="input-box">
+                    <div>
                         <div class="max-width">
                             <div class="imageContainer">
-                                <img src="../../img/user.png" alt="Selecione uma imagem para o produto" id="imgPhoto">
+                                <img src="../../img/user.png" alt="Selecione uma imagem para o produto" id="imgProduto">
                             </div>
                         </div>
                         <div class="answer">
-                            <input name="ftperfil" id="ftperfil" type="file" accept="image/*">
+                            <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
                         </div>
                     </div>
                     <div class="input-box">
