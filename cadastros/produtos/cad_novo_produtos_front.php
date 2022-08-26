@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../img/logopeq_caricacto.png">
+
+    <script src="../../js/perfil_photo.js" defer></script>
     
     <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 </head>
@@ -30,7 +33,7 @@
         <p id="cad_titulo">Cadastro de Produtos</p>
 
         <div class="form_cad_prod">             
-            <form action="cad_novo_produtos_back.php" method="post">
+            <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
                 <div class="input-group">
                     <div class="input-box">
                         <label>
@@ -56,16 +59,19 @@
                     <div class="input-box">
                         <label>
                             <strong>Código Visual:</strong><br />
-                            <input type="text" name="codigovisual" /><br />
+                            <input type="text" name="codigovisual" maxlength="13" /><br />
                             <br />
                         </label>
                     </div>
                     <div class="input-box">
-                        <label>
-                            <strong>Imagem:</strong><br />
-                            <input type="text" name="campo_imagem" /><br />
-                            <br />
-                        </label>
+                        <div class="max-width">
+                            <div class="imageContainer">
+                                <img src="../../img/user.png" alt="Selecione uma imagem para o produto" id="imgPhoto">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <input name="ftperfil" id="ftperfil" type="file" accept="image/*">
+                        </div>
                     </div>
                     <div class="input-box">
                         <label>

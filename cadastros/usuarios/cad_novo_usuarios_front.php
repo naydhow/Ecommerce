@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../img/logopeq_caricacto.png">
+
     <script src="../../js/main.js" defer></script>
     <script src="../../js/masks.js"></script>
     <script src="../../js/perfil_photo.js" defer></script>

@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
+        <link rel="icon" href="../../img/logopeq_caricacto.png">
     </head>
     <body>
 
