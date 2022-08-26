@@ -4,17 +4,24 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+:root {
+  
+  --background-color: #8dc78d;
+  --background-color-light: #f5f3f5;
+}
 
 .pesquisa {
   margin-top: 12%;
   margin-left: 35%;
   margin-right: 35%;
+
   border: 3px solid black;
-  padding: 1rem;
   border-radius: 5rem;
+
+  padding: 1rem;
   width: 30%;
   height: 5%;
+
   display: flex;
   justify-content: center;
   text-align: center;
@@ -44,7 +51,7 @@
 }
 
 .pesquisaTexto input {
-  background-color:  #8dc78d;
+  background-color:  var(--background-color);
   width: 150%;
 }
 
@@ -95,7 +102,7 @@ html{
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px; 
   padding-top: 2px;
-  background-color: #8dc78d; 
+  background-color: var(--background-color); 
   text-align: center;
 }
 
@@ -108,28 +115,28 @@ html{
 .container {
   max-width: 100%;
   margin: 0 auto;
-  background-color: #f5f3f5;
+  background-color: var(--background-color-light);
 }
 
 .top-bar-container {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #f5f3f5;
+  background-color: var(--background-color-light);
 }
 
 .top-bar-fixed {
   position: fixed;
   right: 0;
   left: 0;
-  background-color: #f5f3f5;
+  background-color: var(--background-color-light);
   /*margin: 0 30px;*/
 }
 
 .top-bar-content {
   max-width: 100%;
   margin: 0 auto;
-  background: #f5f3f5;
+  background: var(--background-color-light);
   text-align: center;
   /*padding: 30px 0;*/
 }
@@ -167,7 +174,7 @@ img{
 
 /*cadastrar produtos*/ 
 .cadastro_produtos{
-  background-color: #8dc78d;
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -188,7 +195,7 @@ img{
 }
 
 .form_cad_prod{
-  background-color:#8dc78d;
+  background-color: var(--background-color);
   max-width: 100%;
   width: 80%;
   padding: 20px;
