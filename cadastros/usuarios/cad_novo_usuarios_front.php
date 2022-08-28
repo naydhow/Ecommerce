@@ -37,9 +37,9 @@
         <div class="form_cad_prod">
             <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
                 <div class="input-group">
-                    <div>
+                    <div class="input-box">
                         <div class="max-width">
-                            <div class="imageContainer">
+                            <div class="imageContainer"> 
                             <img src="../../img/user.png" alt="Selecione uma foto para o perfil" id="imgPhoto">
                             </div>
                         </div>

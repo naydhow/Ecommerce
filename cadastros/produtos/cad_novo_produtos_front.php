@@ -63,15 +63,18 @@
                             <br />
                         </label>
                     </div>
-                    <div>
-                        <div class="max-width">
-                            <div class="imageContainer">
-                                <img src="../../img/user.png" alt="Selecione uma imagem para o produto" id="imgProduto">
+                    <div class="input-box">
+                        <label>
+                        <strong>Imagem</strong><br>
+                            <div class="max-width">
+                                <div class="imageContainer">
+                                    <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                </div>
                             </div>
-                        </div>
-                        <div class="answer">
-                            <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
-                        </div>
+                            <div class="answer">
+                                <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
+                            </div>
+                        </label>
                     </div>
                     <div class="input-box">
                         <label>

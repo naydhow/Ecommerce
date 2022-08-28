@@ -109,7 +109,7 @@
                             ".$linha['codigovisual']."
                         </div>
                         <div class='cell cellGrande'>
-                            ".$linha['campo_imagem']."
+                            ".'<img src="'.$linha['campo_imagem'].'">'."
                         </div>
                         <div class='cell cellMenor'>
                             ".$linha['preco']."
