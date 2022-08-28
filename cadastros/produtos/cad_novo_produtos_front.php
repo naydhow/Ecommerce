@@ -64,7 +64,7 @@
                         </label>
                     </div>
                     <div class="input-box">
-                        <label>
+                        <div>
                         <strong>Imagem</strong><br>
                             <div class="max-width">
                                 <div class="imageContainer">
@@ -74,7 +74,7 @@
                             <div class="answer">
                                 <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
                             </div>
-                        </label>
+                        </div>
                     </div>
                     <div class="input-box">
                         <label>
