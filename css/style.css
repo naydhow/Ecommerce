@@ -35,6 +35,15 @@
   justify-items: left;
 }
 
+.pesquisaBotao button{
+  border: none;
+
+  background-color: var(--background-color);
+  color: var(--background-color);
+
+  cursor: pointer;
+}
+
 .pesquisa input {
   box-shadow: 0 0 0 0;
   border: 0 none;

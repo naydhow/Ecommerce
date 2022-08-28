@@ -8,7 +8,7 @@
 
 <div style="border: 1px solid black">
 
-    <h1><?php echo $linha['descricao']; ?></h1>
+    <h1><?php echo $linha['nome']; ?></h1>
 
     <img src='../img/prd.jpg' style='width:300px; height:250px' />
     <br><br>

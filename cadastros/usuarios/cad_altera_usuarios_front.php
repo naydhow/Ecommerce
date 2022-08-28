@@ -10,7 +10,7 @@
           <div class='top-bar-container'>
           <div class='top-bar-fixed'>
               <div class='top-bar-content'>
-              <img  src='../../img/logo_caricacto.png' width: '10px'>
+              <a href='../../index.php'><img  src='../../img/logo_caricacto.png' width: '10px'></a>
                   <div class='top-bar-content-link'>
                       <a id='link' href='../../index.php' target='_parent'>Página Inicial&nbsp;&nbsp;</a>
                       <a id='link' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos&nbsp;&nbsp;</a>
@@ -31,10 +31,10 @@
        <div class="form_cad_prod">
               <form action="cad_altera_usuarios_back.php" enctype="multipart/form-data" method="post">
               <div class="input-group">
-                    <div>
+                    <div class="input-box">
                         <div class="max-width">
                             <div class="imageContainer">
-                            <img src="../../img/user.png" alt="Selecione uma foto para o perfil" id="imgPhoto">
+                                   <img src="<?php echo $linha['img']; ?>" alt="Selecione uma foto para o perfil" id="imgPhoto">
                             </div>
                         </div>
                         <div class="answer">
