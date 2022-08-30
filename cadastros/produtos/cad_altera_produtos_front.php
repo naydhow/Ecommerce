@@ -76,28 +76,28 @@
                             <div class="input-box">
                                    <label>
                                           <strong>Preço</strong><br>
-                                          <input type="number" name="preco" 
+                                          <input type="text" name="preco" 
                                           value="<?php echo $linha['preco']; ?>" >
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Custo</strong><br>
-                                          <input type="number" name="custo" 
+                                          <input type="text" name="custo" 
                                           value="<?php echo $linha['custo']; ?>" >
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Margem de Lucro</strong><br>
-                                          <input type="number" name="margem_lucro" 
+                                          <input type="text" name="margem_lucro" 
                                           value="<?php echo $linha['margem_lucro']; ?>" >
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>ICMS</strong><br>
-                                          <input type="number" name="icms" 
+                                          <input type="text" name="icms" 
                                           value="<?php echo $linha['icms']; ?>" >
                                    </label>
                             </div>

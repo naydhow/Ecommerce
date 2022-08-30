@@ -79,28 +79,28 @@
                     <div class="input-box">
                         <label>
                             <strong>Preço:</strong><br />
-                            <input type="number" name="preco" /><br />
+                            <input type="text" name="preco" /><br />
                             <br />
                         </label>
                     </div>
                     <div class="input-box">
                         <label>
                             <strong>Custo:</strong><br />
-                            <input type="number" name="custo"  /><br />
+                            <input type="text" name="custo"  /><br />
                             <br />
                         </label>
                     </div>
                     <div class="input-box">
                         <label>
                             <strong>Margem de Lucro:</strong><br />
-                            <input type="number" name="margem_lucro" /><br />
+                            <input type="text" name="margem_lucro" /><br />
                             <br />
                         </label>
                     </div>
                     <div class="input-box">
                         <label>
                             <strong>ICMS:</strong><br />
-                            <input type="number" name="icms" /><br />
+                            <input type="text" name="icms" /><br />
                             <br />
                         </label>
                     </div>
