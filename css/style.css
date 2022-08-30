@@ -1,20 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+:root {
+  
+  --background-color: #8dc78d;
+  --background-color-light: #f5f3f5;
+}
 
 .pesquisa {
   margin-top: 12%;
   margin-left: 35%;
   margin-right: 35%;
+
   border: 3px solid black;
-  padding: 1rem;
   border-radius: 5rem;
+
+  padding: 1rem;
   width: 30%;
   height: 5%;
+
   display: flex;
   justify-content: center;
   text-align: center;
@@ -24,6 +33,15 @@
 .pesquisaBotao{
   width: 10%;
   justify-items: left;
+}
+
+.pesquisaBotao button{
+  border: none;
+
+  background-color: var(--background-color);
+  color: var(--background-color);
+
+  cursor: pointer;
 }
 
 .pesquisa input {
@@ -44,17 +62,21 @@
 }
 
 .pesquisaTexto input {
-<<<<<<< HEAD
-  background-color: #6ba884;
-=======
-  background-color:  #8dc78d;
->>>>>>> 7cdf7236fcfeb517d9c6e4092fadfa6a0a179602
-  width: 150%;
+  /*<<<<<<< HEAD
+  <<<<<<< HEAD*/
+    background-color: #6ba884;
+  /*=======*/
+    background-color:  #8dc78d;
+  /*>>>>>>> 7cdf7236fcfeb517d9c6e4092fadfa6a0a179602*/
+  /*=======*/
+    background-color:  var(--background-color);
+  /*>>>>>>> 376e6ffe1187f89210d52f2d827870568be8b3e5*/
+    width: 150%;
 }
 
-img {
+/* img {
   width: 2rem;
-}
+} */
 
 input[type="file"] {
   display: none;
@@ -66,25 +88,50 @@ input[type="file"] {
 }
 
 .imageContainer{
-  margin-left: 113%;
-  /*margin-right: 40%;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-left: 113%;
+  margin-right: 40%; */
 }
 
 #imgPhoto {
   justify-content: center;
   margin-top: 10%;
-  width: 150px;
-  height: 150px;
-  padding: 10px;
+
+  width: 9.75rem;
+  height: 9.75rem;
+  padding: 0.2rem;
+
   background-color: azure;
-  border: 5px solid black;
+
+  border: 0.25rem solid black;
   border-radius: 50%;
+
   cursor: pointer;
   transition: .3s;
 }
 
-#imgPhoto:hover {
-  background-color: crimson;
+#imgProduto {
+  justify-content: center;
+  margin-top: 10%;
+
+  width: 5rem;
+  height: 5rem;
+  padding: 0.05rem;
+
+  background-color: azure;
+
+  border: 0.2rem solid black;
+  border-radius: 0.55rem;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+#imgPhoto:hover, #imgProduto:hover {
+  background-color: lightslategray;
 }
 
 iframe{
@@ -96,44 +143,42 @@ html{
   max-width: 100%;
   height:100%;
   margin: 0 auto;
+
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px; 
-  padding-top: 2px;
-  background-color: #8dc78d; 
-  text-align: center;
-}
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding:0;
+  padding-top: 2px;
+
+  background-color: var(--background-color);
+
+  text-align: center;
 }
 
 .container {
   max-width: 100%;
   margin: 0 auto;
-  background-color: #f5f3f5;
+  background-color: var(--background-color-light);
 }
 
 .top-bar-container {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #f5f3f5;
+  background-color: var(--background-color-light);
 }
 
 .top-bar-fixed {
   position: fixed;
   right: 0;
   left: 0;
-  background-color: #f5f3f5;
+  background-color: var(--background-color-light);
   /*margin: 0 30px;*/
 }
 
 .top-bar-content {
   max-width: 100%;
   margin: 0 auto;
-  background: #f5f3f5;
+  background: var(--background-color-light);
   text-align: center;
   /*padding: 30px 0;*/
 }
@@ -171,7 +216,7 @@ img{
 
 /*cadastrar produtos*/ 
 .cadastro_produtos{
-  background-color: #8dc78d;
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -192,7 +237,7 @@ img{
 }
 
 .form_cad_prod{
-  background-color:#8dc78d;
+  background-color: var(--background-color);
   max-width: 100%;
   width: 80%;
   padding: 20px;
@@ -218,10 +263,15 @@ img{
 }
 
 .input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   flex-direction: row;
   margin: 10px 5px;
   padding: 10px;
-   margin-left: 33%;
+
+  /* margin-left: 33%; */ /* Não acredito que seja a melhor opção para centralizar, porém vcs que decidam :) */
 }
 
 .input-box input {

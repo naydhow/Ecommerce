@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../img/logopeq_caricacto.png">
+
+    <script src="../../js/produto_photo.js" defer></script>
     
     <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
 </head>
@@ -15,7 +18,7 @@
                 <div class='top-bar-container'>
                     <div class='top-bar-fixed'>
                         <div class='top-bar-content'>
-                        <img  src='../../img/logo_caricacto.png' width: '10px'>
+                        <a href='../../index.php'><img  src='../../img/logo_caricacto.png' width: '10px'></a>
                             <div class='top-bar-content-link'>
                                 <a id='link' href='../../index.php' target='_parent'>Página Inicial&nbsp;&nbsp;</a>
                                 <a id='link' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos&nbsp;&nbsp;</a>
@@ -30,7 +33,7 @@
         <p id="cad_titulo">Cadastro de Produtos</p>
 
         <div class="form_cad_prod">             
-            <form action="cad_novo_produtos_back.php" method="post">
+            <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
                 <div class="input-group">
                     <div class="input-box">
                         <label>
@@ -56,16 +59,22 @@
                     <div class="input-box">
                         <label>
                             <strong>Código Visual:</strong><br />
-                            <input type="text" name="codigovisual" /><br />
+                            <input type="text" name="codigovisual" maxlength="13" /><br />
                             <br />
                         </label>
                     </div>
                     <div class="input-box">
-                        <label>
-                            <strong>Imagem:</strong><br />
-                            <input type="text" name="campo_imagem" /><br />
-                            <br />
-                        </label>
+                        <div>
+                        <strong>Imagem</strong><br>
+                            <div class="max-width">
+                                <div class="imageContainer">
+                                    <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
+                            </div>
+                        </div>
                     </div>
                     <div class="input-box">
                         <label>

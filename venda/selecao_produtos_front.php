@@ -38,7 +38,7 @@
                 </div>
 
                 <div>
-                    <div><p>".$linha['descricao']."</p></div>
+                    <div><p>".$linha['nome']."</p></div>
                     <div>R$ ".$preco."</div>";
 
                     if ($linha['estoque']<=0)

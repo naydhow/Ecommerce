@@ -8,7 +8,7 @@
     if($valPesquisa == null) {
         $sql="SELECT * FROM caricactoProduto WHERE excluido='false' ORDER BY id_produto;";
     } else {
-        $sql="SELECT * FROM caricactoProduto WHERE nome='$valPesquisa' ORDER BY id_produto;";
+        $sql="SELECT * FROM caricactoProduto WHERE nome ILIKE '$valPesquisa%' ORDER BY id_produto;";
     }
     
     // Executa o script bonitão no banco bonitão
