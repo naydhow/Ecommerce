@@ -33,7 +33,7 @@
                 <div>
                     <br>
                     <a href='selecao_detalhes_front.php?id_produto=".$linha['id_produto']."'> 
-                       <img src='../img/prd.jpg' style='width:150px; height:100px' />
+                       <img src=".$linha['campo_imagem']." style='width:150px; height:100px' />
                     </a>
                 </div>
 
