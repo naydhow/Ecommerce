@@ -9,18 +9,21 @@
     $descricao=$_POST['descricao'];
     $estoque=$_POST['estoque'];
     $codigovisual=$_POST['codigovisual'];
-    $campo_imagem=$_POST['campo_imagem'];
+    $img=$_FILES['ftproduto'];
     $preco=$_POST['preco'];
     $custo=$_POST['custo'];
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
+
+    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name']);
+    $imglink = 'http://projetoscti.com.br/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name'];
 
     $sql="UPDATE caricactoProduto 
              SET nome = '$nome',
                  descricao = '$descricao',
                  estoque = $estoque,
                  codigovisual = '$codigovisual',
-                 campo_imagem = '$campo_imagem',
+                 img = '$imglink',
                  preco = $preco, 
                  custo = $custo,
                  margem_lucro = $margem_lucro,

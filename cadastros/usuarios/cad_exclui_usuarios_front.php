@@ -33,6 +33,13 @@
               <form action="cad_exclui_usuarios_back.php" method="post">
                      <div class="input-group">
                             <div class="input-box">
+                                   <div class="max-width">
+                                          <div class="imageContainer">
+                                                 <img src="<?php echo $linha['img']; ?>" alt="Selecione uma foto para o perfil" id="imgPhoto">
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="input-box">
                                    <label>
                                           <strong>Id do usuário:</strong><br>
                                           <input type="text" name="id_usuario" 
@@ -44,77 +51,88 @@
                                    <label>
                                           <strong>Nome</strong><br>
                                           <input type="text" name="nome" maxlength="100"
-                                                 value="<?php echo $linha['nome']; ?>" >
+                                                 value="<?php echo $linha['nome']; ?>"
+                                                 readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Telefone</strong><br>
                                           <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"
-                                          value="<?php echo $linha['telefone']; ?>" >
+                                          value="<?php echo $linha['telefone']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Email</strong><br>
                                           <input type="text" name="email" maxlength="80"
-                                          value="<?php echo $linha['email']; ?>" >
+                                          value="<?php echo $linha['email']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Senha</strong><br>
                                           <input type="text" name="senha" maxlength="32"
-                                          value="<?php echo $linha['senha']; ?>" >
+                                          value="<?php echo $linha['senha']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Sexo</strong><br>
                                           <input type="text" name="sexo" 
-                                          value="<?php echo $linha['sexo']; ?>" >
+                                          value="<?php echo $linha['sexo']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Data de Nascimento</strong><br>
                                           <input type="text" name="data_nasc" 
-                                          value="<?php echo $linha['data_nasc']; ?>" >
+                                          value="<?php echo $linha['data_nasc']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>CPF</strong><br>
                                           <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"
-                                          value="<?php echo $linha['cpf']; ?>" >
+                                          value="<?php echo $linha['cpf']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>CEP</strong><br>
                                           <input type="text" name="cep" id="cep" placeholder="00000-000"
-                                          value="<?php echo $linha['cep']; ?>" >
+                                          value="<?php echo $linha['cep']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Endereço</strong><br>
                                           <input type="text" name="endereco" id="endereco" maxlength="150"
-                                          value="<?php echo $linha['endereco']; ?>" >
+                                          value="<?php echo $linha['endereco']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Cidade</strong><br>
                                           <input type="text" name="cidade" id="cidade" maxlength="30"
-                                          value="<?php echo $linha['cidade']; ?>" >
+                                          value="<?php echo $linha['cidade']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Estado</strong><br>
                                           <input type="text" name="estado" id="estado" maxlength="2"
-                                          value="<?php echo $linha['estado']; ?>" >
+                                          value="<?php echo $linha['estado']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                      </div>

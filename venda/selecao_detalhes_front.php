@@ -3,7 +3,7 @@
 <!-- Recuperando as informações do produto -->
 <?php
        $id_produto = $_GET["id_produto"];
-       include "../cadastros/produtos/cad_getinfo_produtos_back.php"; 
+       include "selecao_getinfo_produtos_back.php"; 
 
        echo"
        <div class='container'>

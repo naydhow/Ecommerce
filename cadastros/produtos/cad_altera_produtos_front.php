@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.png">
 
+<script src="../../js/produto_photo.js" defer></script>
+
 <!-- Recuperando as informações do produto -->
 <?php 
   echo"
@@ -67,11 +69,17 @@
                                    </label>
                             </div>
                             <div class="input-box">
-                                   <label>
+                                   <div>
                                           <strong>Imagem</strong><br>
-                                          <input type="text" name="campo_imagem" 
-                                          value="<?php echo $linha['campo_imagem']; ?>" >
-                                   </label>
+                                          <div class="max-width">
+                                                 <div class="imageContainer">
+                                                        <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                                 </div>
+                                          </div>
+                                          <div class="answer">
+                                                 <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
+                                          </div>
+                                   </div>
                             </div>
                             <div class="input-box">
                                    <label>

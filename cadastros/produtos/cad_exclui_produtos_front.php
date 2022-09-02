@@ -42,63 +42,74 @@
                                    <label>
                                           <strong>Nome</strong><br>
                                           <input type="text" name="nome" 
-                                          value="<?php echo $linha['nome']; ?>" >
+                                          value="<?php echo $linha['nome']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Descrição</strong><br>
                                           <input type="text" name="descricao" 
-                                          value="<?php echo $linha['descricao']; ?>" >
+                                          value="<?php echo $linha['descricao']; ?>"
+                                          readonly>
                                    </label>
                             </div>       
                             <div class="input-box">
                                    <label>
                                           <strong>Estoque</strong><br>
                                           <input type="number" name="estoque" 
-                                          value="<?php echo $linha['estoque']; ?>" >
+                                          value="<?php echo $linha['estoque']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Código Visual</strong><br>
                                           <input type="text" name="codigovisual" 
-                                          value="<?php echo $linha['codigovisual']; ?>" >
+                                          value="<?php echo $linha['codigovisual']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
-                                   <label>
+                                   <div>
                                           <strong>Imagem</strong><br>
-                                          <input type="text" name="campo_imagem" 
-                                          value="<?php echo $linha['campo_imagem']; ?>" >
-                                   </label>
+                                          <div class="max-width">
+                                                 <div class="imageContainer">
+                                                        <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                                 </div>
+                                          </div>
+                                   </div>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Preço</strong><br>
                                           <input type="text" name="preco" 
-                                          value="<?php echo $linha['preco']; ?>" >
+                                          value="<?php echo $linha['preco']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Custo</strong><br>
                                           <input type="text" name="custo" 
-                                          value="<?php echo $linha['custo']; ?>" >
+                                          value="<?php echo $linha['custo']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>Margem de Lucro</strong><br>
                                           <input type="text" name="margem_lucro" 
-                                          value="<?php echo $linha['margem_lucro']; ?>" >
+                                          value="<?php echo $linha['margem_lucro']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                             <div class="input-box">
                                    <label>
                                           <strong>ICMS</strong><br>
                                           <input type="text" name="icms" 
-                                          value="<?php echo $linha['icms']; ?>" >
+                                          value="<?php echo $linha['icms']; ?>"
+                                          readonly>
                                    </label>
                             </div>
                      </div>
