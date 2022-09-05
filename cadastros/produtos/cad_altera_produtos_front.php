@@ -30,7 +30,7 @@
        <p id="cad_titulo">Alteração de Produtos</p>
 
        <div class="cad_form_prod">
-              <form action="cad_altera_produtos_back.php" method="post">
+              <form action="cad_altera_produtos_back.php" enctype="multipart/form-data" method="post">
                      <div class="input-group">
                             <div class="input-box">
                                    <label>
@@ -73,7 +73,7 @@
                                           <strong>Imagem</strong><br>
                                           <div class="max-width">
                                                  <div class="imageContainer">
-                                                        <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                                        <img src="<?php echo $linha['campo_imagem']; ?>" alt="Selecione uma imagem para o produto" id="imgProduto">
                                                  </div>
                                           </div>
                                           <div class="answer">

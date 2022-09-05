@@ -23,7 +23,7 @@
                  descricao = '$descricao',
                  estoque = $estoque,
                  codigovisual = '$codigovisual',
-                 img = '$imglink',
+                 campo_imagem = '$imglink',
                  preco = $preco, 
                  custo = $custo,
                  margem_lucro = $margem_lucro,
