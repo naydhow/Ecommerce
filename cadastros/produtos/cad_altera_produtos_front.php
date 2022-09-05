@@ -76,7 +76,14 @@
                                           <strong>Imagem</strong><br>
                                           <div class="max-width">
                                                  <div class="imageContainer">
-                                                        <img src="<?php echo $linha['campo_imagem']; ?>" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                                        <?php
+                                                               if($linha['campo_imagem'] != 'null')
+                                                               {
+                                                                      echo "<img src='".$linha['campo_imagem']."' alt='Selecione uma imagem para o produto' id='imgProduto'>";
+                                                               } else {
+                                                                      echo "<img src='../../img/camera.svg' alt='Selecione uma imagem para o produto' id='imgProduto'>";
+                                                               }
+                                                        ?>
                                                  </div>
                                           </div>
                                           <div class="answer">
