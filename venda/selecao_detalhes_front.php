@@ -2,24 +2,29 @@
 
 <!-- Recuperando as informações do produto -->
 <?php
+
+    echo"
+    <header id= 'header' >
+        <nav class='container'>
+            <a  class='logo' href='../index.php'><img src='../img/logo_caricacto.png'></a>
+            <div class='menu'>
+                <ul class='grid'>
+                    <li><a class='title' href='../index.php' target='_parent'>Home</a></li>
+                    <li><a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
+                    <li><a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></li>
+                    <li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Seleção</a></li>
+                </ul> 
+            </div>
+
+
+            <div class='toggle icon-menu'></div>
+            <div class='toggle icon-close'></div>
+        </nav>
+    </header>"; 
        $id_produto = $_GET["id_produto"];
        include "selecao_getinfo_produtos_back.php"; 
 
-       echo"
-       <div class='container'>
-           <div class='top-bar-container'>
-           <div class='top-bar-fixed'>
-               <div class='top-bar-content'>
-               <img  src='../img/logo_caricacto.png' width: '10px'>
-                   <div class='top-bar-content-link'>
-                       <a id='link' href='../index.php' target='_parent'>Página Inicial&nbsp;&nbsp;</a>
-                       <a id='link' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos&nbsp;&nbsp;</a>
-                       <a id='link' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a>
-                   </div>
-               </div>
-           </div>  
-           </div>
-       </div>";
+       
 ?>
 
 <div style="border: 1px solid black">
