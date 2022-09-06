@@ -309,7 +309,7 @@ nav ul li a::after {
   width: 270px;
   height:270px;
   border-radius: 3px;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 4px black;
 }
 
 /*---------------------------------------------------...-------------------------------------------------------------*/
@@ -527,13 +527,11 @@ img{
   
 }
 
-#cad_titulo{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
+.cadastros_titulos{
+  font: 16px var(--body-font);
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  background-color: #d9e7c3;
 }
 
 .form_cad_prod{

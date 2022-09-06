@@ -31,8 +31,9 @@
             </nav>
         </header>"; 
     ?>
-    <div class="cadastro_produtos">
-        <p id="cad_titulo">Cadastro de Produtos</p>
+
+    <div class="container_paginas">
+        <p class="cadastro_titulos">Cadastro de Produtos</p>
 
         <div class="form_cad_prod">             
             <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
