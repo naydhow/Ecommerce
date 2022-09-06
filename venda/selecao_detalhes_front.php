@@ -27,11 +27,13 @@
        
 ?>
 
-<div style="border: 1px solid black">
 
-    <h1><?php echo $linha['nome']; ?></h1>
+<div class="container_paginas">
+    <div class="box_produto_detalhes">
 
-    <img src="<?php if($linha['campo_imagem'] == null) echo '../img/prd.jpg'; else echo $linha['campo_imagem']; ?>" style='width:300px; height:250px' />
+    <div class="nome_produto"><?php echo $linha['nome']; ?></div>
+
+    <img src="<?php if($linha['campo_imagem'] == null) echo '../img/prd.jpg'; else echo $linha['campo_imagem']; ?>" class="img_selecao_detalhes" />
     <br><br>
     Código do produto:<?php echo $linha['id_produto']; ?>
     <br><br>
@@ -43,7 +45,12 @@
     <br><br>
     <!-- Código do fornecedor: <?php #echo $linha['id_fornecedor']; ?>
     <br><br> -->
-    <a href='carrinho_front.php?acao=add&id_produto=<?php echo $id_produto; ?>'>Comprar</a>
-    &nbsp;<a href="selecao_produtos_front.php">Voltar</a>
+
+    <a href='carrinho_front.php?acao=add&id_produto=<?php echo $id_produto; ?>' class="selecao_detalhes_button">Comprar</a>
+    &nbsp;<a href="selecao_produtos_front.php" class="selecao_detalhes_button">Voltar</a>
+
+
+    </div>
+
 </div>
 

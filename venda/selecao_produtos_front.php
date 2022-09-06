@@ -37,7 +37,7 @@
             return;
         }
 
-        echo '<div class= "container_selecao">';
+        echo '<div class= "container_paginas">';
 
             echo '<div class= "selecaoProdutos">';
 
@@ -57,7 +57,7 @@
                         </div>
 
                         <div>
-                            <div><p>".$linha['nome']."</p></div>
+                            <div><p><b>".$linha['nome']."</b></p></div>
                             <br>
                             <div>R$ ".$preco."</div>
                             <br>";

@@ -30,8 +30,12 @@ ul {
   --text-color: rgb(54, 54, 54);
   --text-color-light: hsl(0 0% 98%);
   --topo-color: rgb(255, 255, 255);
-  --body-color: rgb(255, 255, 255);
+  --body-color: #e5eae5;
   --color-grid-selecao: rgba(255, 255, 255, 0.915);
+  --color-button-claro: #C5D8A4;
+  --color-button-escuto: #588068; 
+  --color-texto-claro-button: #ffffff;
+  --color-texto-escuro-button: #555555;
 
 
   /*para fontes*/
@@ -142,22 +146,209 @@ nav ul li a::after {
 }
 
 
-/*Produtosss*/
+                        /* <<<<<<<<<< DIV PRINCIPAL - PRODUTOS, USUÁRIOS E SELEÇÃO >>>>>>>>>*/
+
+.container_paginas{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  height:max-content 100%;
+  background-color: var(--body-color);
+  align-items: center;
+  text-align: center;
+}
+
+
+                        /* <<<<<<<<<< SELEÇÃO_PRODUTOS_FRONT >>>>>>>>>*/
+
+
+.selecaoProdutos{
+  display:grid; 
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3,27%); 
+  grid-template-rows: repeat(3, 450px);
+  grid-column-gap: 5%;
+	grid-row-gap: 10%;
+  width:100%;
+  /*height: 100%;*/
+  background-color: var(--body-color);
+}
+
+
+.box_produto{
+  background-color: var(--color-grid-selecao);
+  border-radius: 5px;
+  box-shadow: 0px 0 4px rgba(0, 0, 0, 0.64);
+  text-align: center;
+  align-items: center;
+  font-family:var(--body-font);
+  font-size: 14px;
+}
+
+
+
+.img_selecao{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width:200px;
+  height:200px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px black;
+}
+
+
+.img_selecao:hover{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width:210px;
+  height:210px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px black;
+  transition: 0.2s;
+}
+
+.selecao_comprar{
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  padding: 14px 32px 15px;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 43px;
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
+  box-shadow:  0 0 2px black;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 2%;
+  margin-left: 34%;
+}
+
+.selecao_comprar:hover{
+  background: var(--color-button-escuto);
+  color: var(--color-texto-claro-button);
+  width: 125px;
+  height: 50px;
+  box-shadow:  0 0 4px black;
+  transition: 0.2s;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#selecao_esgotado{
+  font-family:var(--body-font);
+  font-size: 14px;
+  color: red;
+}
+
+
+                            /*<<<<<<<<< CLASS DA SELEÇÃO DETALHES >>>>>>>>>>>>>>>*/
+
+.box_produto_detalhes{
+  background-color: var(--color-grid-selecao);
+  border-radius: 5px;
+  box-shadow: 0px 0 4px rgba(0, 0, 0, 0.64);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family:var(--body-font);
+  font-size: 15px;
+  width: 50%;
+  height: 97%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+
+.selecao_detalhes_button{
+  box-sizing: border-box;
+  /* Auto layout */
+  display: inline-block;
+  padding: 14px 32px 15px;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 43px;
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
+  box-shadow:  0 0 2px black;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.selecao_detalhes_button:hover{
+    background: var(--color-button-escuto);
+    color: var(--color-texto-claro-button);
+    width: 125px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0 0 4px black;
+    transition: 0.2s;
+}
+
+.nome_produto{
+  text-align: center;
+  align-items: center;
+  font-family:var(--body-font);
+  font-size: 20px;
+  color: bolder var(--text-color);
+  padding-top: 5%;
+}
+
+.img_selecao_detalhes{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width: 270px;
+  height:270px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px black;
+}
+
+/*---------------------------------------------------...-------------------------------------------------------------*/
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<lINKS - adicionar produtos//usuarios>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.links{
+  text-decoration: none;
+  font: 16px var(--body-font);
+  color: var(--text-color);
+  margin-top:3%;
+  padding: 14px 32px 15px;
+  box-shadow:  0 0 2px black;
+  border-radius: 6px;
+  width: 20%;
+  height: 4%;
+  text-decoration: none;
+  background-color: var(--color-button-claro);
+}
+
+
+                              /*<<<<<<<<<<<<PESQUISA DE PRODUTOS E USUÁRIOS>>>>>>>>>>>>>>>>>*/
 .pesq{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    color: black;
-    padding-top: 7%;
+  text-align: center;
+  font: 1.5rem var(--body-font);
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 5%;
 }
 
 .pesquisa {
-  margin-top: 2%;
   margin-left: 35%;
   margin-right: 35%;
 
-  border: 3px solid black;
-  border-radius: 5rem;
+  border: 1px solid rgb(57, 56, 56);
+  box-shadow:  0 0 2px black;
+  border-radius: 6px;
 
   padding: 1rem;
   width: 30%;
@@ -167,19 +358,22 @@ nav ul li a::after {
   justify-content: center;
   text-align: center;
   align-items: center;
+  background: #aab9aa;
+
 }
 
 .pesquisaBotao{
   width: 10%;
+  margin-left: 12%;
   justify-items: left;
+  justify-content: center;
+  text-align: center;
+  background-color: #aab9aa;
 }
 
 .pesquisaBotao button{
   border: none;
-
-  background-color: var(--background-color);
-  color: var(--background-color);
-
+  background-color: #aab9aa;
   cursor: pointer;
 }
 
@@ -187,31 +381,34 @@ nav ul li a::after {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
+  justify-content: center;
+  margin-left:12%;
 }
 
 .divisoes {  
   display: flex;
-  /*justify-content: center;*/
-  /*align-items: center;*/
+  align-items: center;
   width: 100%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 .pesquisaTexto {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
+  font: 1rem var(--body-font);
+  background-color: #aab9aa;
+  justify-content: center;
+  align-items: center;
+  text-align: align;
 }
 
 .pesquisaTexto input {
-  /*<<<<<<< HEAD
-  <<<<<<< HEAD*/
-    background-color: #6ba884;
-  /*=======*/
-    background-color:  #8dc78d;
-  /*>>>>>>> 7cdf7236fcfeb517d9c6e4092fadfa6a0a179602*/
-  /*=======*/
-    background-color:  var(--background-color);
-  /*>>>>>>> 376e6ffe1187f89210d52f2d827870568be8b3e5*/
-    width: 150%;
+    background-color:  #aab9aa;
+    width: 115%;
 }
+
+
+/* ---------------------------------------------------..-------------------------------------------------*/
 
 input[type="file"] {
   display: none;
@@ -350,15 +547,6 @@ img{
   height: 100%; 
 }
 
-.links{
-  text-decoration: none;
-  color:black;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px; 
-  font-weight:bolder;
-  margin-top: 50%;
- 
-}
 
 
 .input-group {
@@ -467,17 +655,24 @@ img{
 }
 
 .tabela {  
-  margin-left: 100px;
-  margin-top: 10px;
-  width: 1200px; 
+  /*margin-left: 10px;*/
+  margin-top: 4%;
+  width: 95%; 
   display:block;
-  height: 1000px;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 
 .fileira{
   display:block;
   margin-bottom: 5px; 
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /*margin-left: 10px;*/
 }
 
 .cell{
@@ -485,8 +680,10 @@ img{
   padding: 5px 5px;
   margin-bottom: .5%;
   background-color: white;
-  font-size: 10pt;
-  border-radius: 5px;
+  border-radius: 6px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .cellHeader{
@@ -494,107 +691,50 @@ img{
 }
 
 .cellPeq{ /* cellId */
+
   width: 75px;
-  font-family:sans-serif;
+  height: 60px;
+  font: 12px var(--body-font);
+  color: var(--text-color);
 }
 
 .cellGrande{ /* cellNome */
+  align-items: center;
   width:145px;
-  font-family:sans-serif;
+  height: 60px;
+  font: 12px var(--body-font);
+  color: var(--text-color);
 }
 
 .cellMedia{ /*cellMargemLucro */
+  align-items: center;
   width: 105px;
-  font-family:sans-serif;
+  height: 60px;
+  font: 12px var(--body-font);
+  color: var(--text-color);
 }
 
 .cellMenor{
+  align-items: center;
   width: 60px;
-  font-family:sans-serif;
+  height: 60px;
+  font: 12px var(--body-font);
+  color: var(--text-color);
 }
 
 .cellEnorme{
+  align-items: center;
   width:200px;
-  font-family:sans-serif;
+  height: 60px;
+  font: 12px var(--body-font);
+  color: var(--text-color);
 }  
 
 .row{
   margin-top:15px;
+  margin-top: 10px;
 }
 
-
-
-
-/*Seleção dos produtos*/
-.container_selecao{
-  padding-top: 10%;
-  padding-bottom: 10%;
-  width: 100%;
-  height:max-content 100%;
-  background-color: #e5eae5;
-}
-
-.selecaoProdutos{
-  display:grid; 
-  justify-content: center;
-  text-align: center;
-  grid-template-columns: repeat(3,27%); 
-  grid-template-rows: repeat(3, 450px);
-  grid-column-gap: 5%;
-	grid-row-gap: 10%;
-  width:100%;
-  height: 100%;
-  background-color: #e5eae5;
-}
-
-.box_produto{
-  background-color: var(--color-grid-selecao);
-  border-radius: 5px;
-  box-shadow: 0px 0 4px rgba(0, 0, 0, 0.64);
-  text-align: center;
-  align-items: center;
-  font-family:var(--body-font);
-  font-size: 14px;
-}
-
-.img_selecao{
-  margin-top: 5%;
-  margin-bottom: 2%;
-  width:200px;
-  height:200px;
-  border-radius: 3px;
-  box-shadow: 0 0 2px black;
-}
-
-.selecao_comprar{
-  box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  padding: 14px 32px 15px;
-  align-items: center;
-  justify-content: center;
-  width: 119px;
-  height: 43px;
-  background: #C5D8A4;
-  color: #555555;
-  box-shadow:  0 0 2px black;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-bottom: 2%;
-  margin-left: 34%;
-}
-
-.selecao_comprar:hover{
-  background: #588068;
-  color:#ffffff;
-}
-
-
-#selecao_esgotado{
-  font-family:var(--body-font);
-  font-size: 14px;
-  color: red;
-}
 
 
 

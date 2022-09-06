@@ -26,9 +26,8 @@
            </nav>
        </header>"
     ?>
-        
+    <div class="container_paginas">
     <div class="pesq">
-        <p> Usuários </p>
         <div class="pesquisa">
             <form action="" method="post">
             <div class="divisoes">
@@ -42,7 +41,7 @@
                 </div>
             </div>
             </form>
-      </div><br><br>
+      </div>
     </div>
 
       <a class="links" href='cad_novo_usuarios_front.php'>+ Adicionar Usuário</a><br><br>
@@ -92,8 +91,8 @@
                         <div class='cell cellMedia'>
                             ".$linha['id_usuario']."
                         </div>
-                        <div class='cell cellGrande'>
-                            ".'<img src="'.$linha['img'].'">'."
+                        <div class='cell cellEnorme'>
+                            ".'<img src="'.$linha['img'].'" " widht="100px" height="60px">'."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['nome']."
@@ -107,9 +106,11 @@
                         <div class='cell cellGrande'>
                             ".$linha['cpf']." 
                         </div>
-                        <div class='cell cellGrande'>
-                            <a href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
-                            <a href='cad_exclui_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
+                        <div class='cell cellPequena'>
+                             <a class='cellPequena' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
+                        </div>
+                        <div class='cell cellPequena'>
+                            <a  class='cellPequena' href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                         </div>
                     </div> 
                     "; 
@@ -117,5 +118,7 @@
             // Fechando a tag da tabela
             echo "</div>";
         ?>    
+    </div>
+    
     </body>
 </html>
