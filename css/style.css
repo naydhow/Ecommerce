@@ -30,7 +30,7 @@ ul {
   --text-color: rgb(54, 54, 54);
   --text-color-light: hsl(0 0% 98%);
   --topo-color: rgb(255, 255, 255);
-  --body-color: #e5eae5;
+  --body-color: #ffffff;
   --color-grid-selecao: rgba(255, 255, 255, 0.915);
   --color-button-claro: #C5D8A4;
   --color-button-escuto: #588068; 
@@ -68,6 +68,7 @@ html{
   z-index: 100;
   background-color: var(--topo-color);
   width: 100%;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 #header.scroll {
@@ -163,6 +164,7 @@ nav ul li a::after {
 
 
 .selecaoProdutos{
+  margin-top: 25px;
   display:grid; 
   justify-content: center;
   text-align: center;
@@ -733,6 +735,8 @@ img{
   margin-top: 10px;
 }
 
-
-
+.section {
+  margin-top: 25px;
+  display: flex;
+}
 
