@@ -22,12 +22,29 @@
                                 <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Seleção</a></li>
                             </ul> 
                         </div>
-            
-
                         <div class='toggle icon-menu'></div>
                         <div class='toggle icon-close'></div>
                     </nav>
-                </header>";
+                </header>
+                <main>
+                    <div class='section' id='home'>
+                        <div class='text'>
+                            <h1>
+                                Cactos e suculentas para seu jardim
+                            </h1>
+                            <p>
+                                Plantas selecionadas especialmente para você de nossas estufas.
+                            </p>
+                            <a href='#'>Ver produtos</a>
+                        </div>
+                            <img src='./img/img_topo.png' alt='imagem'>
+                        <div class='img'>
+            
+                        </div>
+                    </div>
+                </main>
+                ";
+
         ?>
     </body>
 </html>
