@@ -163,6 +163,7 @@ nav ul li a::after {
 
 
 .selecaoProdutos{
+  margin-top: 25px;
   display:grid; 
   justify-content: center;
   text-align: center;
