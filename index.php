@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"type="text/css" href="./css/style.css">
+        <link rel="icon" href="../../img/logopeq_caricacto.png">
     </head>
     <body>
         <?php
@@ -13,7 +14,7 @@
             echo"
                 <header id= 'header' >
                     <nav class='container'>
-                        <a  class='logo' href='./index.php'><img src='./img/logo_caricacto.png'></a>
+                        <a  class='logo' href='./index.php'><img src='./img/logo.png'></a>
                         <div class='menu'>
                             <ul class='grid'>
                                 <li><a class='title' href='./index.php' target='_parent'>Home</a></li>

@@ -11,7 +11,7 @@
             echo"
             <header id= 'header' >
                 <nav class='container'>
-                    <a  class='logo' href='../../index.php'><img src='../../img/logo_caricacto.png'></a>
+                    <a  class='logo' href='../../index.php'><img src='../../img/logo.png'></a>
                     <div class='menu'>
                         <ul class='grid'>
                             <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
@@ -62,41 +62,26 @@
                 echo "
                 <div class='tabela'>
                     <div class='fileira'>
-                        <div class='cell cellPeq cellHeader'>
-                            Id Produto
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            Nome
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            Descrição
-                        </div>
-                        <div class='cell cellMenor cellHeader'>
-                            Estoque
-                        </div>
                         <div class='cell cellMedia cellHeader'>
-                            Codigo Visual
+                            <b>Id Produto</b>
+                        </div>
+                        <div class='cell cellGrande cellHeader'>
+                            <b>Nome</b>
+                        </div>
+                        <div class='cell cellGrande cellHeader'>
+                            <b>Estoque</b>
                         </div>
                         <div class='cell cellEnorme cellHeader'>
-                            Imagem
+                            <b>Imagem</b>
                         </div>
-                        <div class='cell cellMenor cellHeader'>
-                            Preço
+                        <div class='cell cellGrande cellHeader'>
+                            <b>Preço</b>
                         </div>
-                        <div class='cell cellMenor cellHeader'>
-                            Custo
+                        <div class='cell cellGrande cellHeader'>
+                            <b>Alterar</b>
                         </div>
-                        <div class='cell cellMedia cellHeader'>
-                            Média Lucro
-                        </div>
-                        <div class='cell cellPeq cellHeader'>
-                            ICMS
-                        </div>
-                        <div class='cell cellPeq cellHeader'>
-                            Alterar;
-                        </div>
-                        <div class='cell cellPeq cellHeader'>
-                            Excluir;
+                        <div class='cell cellGrande cellHeader'>
+                            <b>Excluir</b>
                         </div>
                     </div>";
 
@@ -105,41 +90,26 @@
                     {
                         echo "
                         <div class='row'>
-                            <div class='cell cellPeq'>
+                            <div class='cell cellMedia'>
                                 ".$linha['id_produto']."
                             </div>
                             <div class='cell cellGrande'>
                                 ".$linha['nome']."
                             </div>
                             <div class='cell cellGrande'>
-                                ".$linha['descricao']."
-                            </div>
-                            <div class='cell cellMenor'>
                                 ".$linha['estoque']."
                             </div>
-                            <div class='cell cellMedia'>
-                                ".$linha['codigovisual']."
-                            </div>
                             <div class='cell cellEnorme'>
-                                ".'<img src="'.$linha['campo_imagem'].'" widht="100px" height="60px">'."
+                                ".'<img src="'.$linha['campo_imagem'].'" widht="13px" height="13px">'."
                             </div>
-                            <div class='cell cellMenor'>
+                            <div class='cell cellGrande'>
                                 ".$linha['preco']."
                             </div>
-                            <div class='cell cellMenor'>
-                                ".$linha['custo']."
+                            <div class='cell cellGrande'>
+                                <a  class='cellGrande' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
                             </div>
-                            <div class='cell cellMedia'>
-                                ".$linha['margem_lucro']."
-                            </div>
-                            <div class='cell cellPeq'>
-                                ".$linha['icms']."
-                            </div>
-                            <div class='cell cellPequena'>
-                                <a  class='cellPequena' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
-                            </div>
-                            <div class='cell cellPequena'>
-                                <a  class='cellPequena' href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
+                            <div class='cell cellGrande'>
+                                <a  class='cellGrande' href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                             </div>
                         </div> "; 
                     } 

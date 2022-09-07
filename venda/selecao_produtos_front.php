@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Carrinho de compras</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../../img/logopeq_caricacto.png">
     </head>
 <body>
 
@@ -12,7 +13,7 @@
     echo"
     <header id= 'header' >
         <nav class='container'>
-            <a  class='logo' href='../index.php'><img src='../img/logo_caricacto.png'></a>
+            <a  class='logo' href='../index.php'><img src='../img/logo.png'></a>
             <div class='menu'>
                 <ul class='grid'>
                     <li><a class='title' href='../index.php' target='_parent'>Home</a></li>

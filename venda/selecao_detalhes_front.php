@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style.css">   
+<link rel="icon" href="../../img/logopeq_caricacto.png">
 
 <!-- Recuperando as informações do produto -->
 <?php
@@ -6,7 +7,7 @@
     echo"
     <header id= 'header' >
         <nav class='container'>
-            <a  class='logo' href='../index.php'><img src='../img/logo_caricacto.png'></a>
+            <a  class='logo' href='../index.php'><img src='../img/logo.png'></a>
             <div class='menu'>
                 <ul class='grid'>
                     <li><a class='title' href='../index.php' target='_parent'>Home</a></li>

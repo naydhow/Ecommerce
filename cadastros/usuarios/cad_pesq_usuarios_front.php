@@ -12,7 +12,7 @@
        echo"
        <header id= 'header' >
            <nav class='container'>
-               <a  class='logo' href='../../index.php'><img src='../../img/logo_caricacto.png'></a>
+               <a  class='logo' href='../../index.php'><img src='../../img/logo.png'></a>
                <div class='menu'>
                    <ul class='grid'>
                        <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
@@ -58,27 +58,26 @@
             echo "
             <div class='tabela'>
                 <div class='fileira'>
-                    <div class='cell cellMedia cellHeader'>
-                        id
+                    <div class='cell cellPeq cellHeader'>
+                        <b>Id</b>
+                    </div>
+                    <div class='cell cellEnorme cellHeader'>
+                        <b>Imagem</b>
+                    </div>
+                    <div class='cell cellEnorme cellHeader'>
+                        <b>Nome</b>
                     </div>
                     <div class='cell cellGrande cellHeader'>
-                        IMG
+                        <b>Telefone</b>
                     </div>
                     <div class='cell cellEnorme cellHeader'>
-                        Nome
+                        <b>E-mail</b>
+                    </div>                    
+                    <div class='cell cellMenor cellHeader'>
+                        <b>Alterar</b>
                     </div>
-                    <div class='cell cellEnorme cellHeader'>
-                        Telefone
-                    </div>
-                    <div class='cell cellEnorme cellHeader'>
-                        E-mail
-                    </div>
-                    <div class='cell cellGrande cellHeader'>
-                        CPF
-                    </div>
-                    
-                    <div class='cell cellGrande'>
-                        &nbsp;
+                    <div class='cell cellMenor cellHeader'>
+                        <b>Excluir</b>
                     </div>
                 </div>
                 ";
@@ -88,29 +87,26 @@
                 {
                     echo "
                     <div class='row'>
-                        <div class='cell cellMedia'>
+                        <div class='cell cellPeq'>
                             ".$linha['id_usuario']."
                         </div>
-                        <div class='cell cellEnorme'>
-                            ".'<img src="'.$linha['img'].'" " widht="100px" height="60px">'."
+                        <div class='cell cellEnormeImg'>
+                            ".'<img src="'.$linha['img'].'" " widht="13px" height="13px ">'."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['nome']."
                         </div>
-                        <div class='cell cellEnorme'>
+                        <div class='cell cellGrande'>
                             ".$linha['telefone']."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['email']."
                         </div>
-                        <div class='cell cellGrande'>
-                            ".$linha['cpf']." 
+                        <div class='cell cellMenor'>
+                             <a class='cellMenor' href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
                         </div>
-                        <div class='cell cellPequena'>
-                             <a class='cellPequena' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
-                        </div>
-                        <div class='cell cellPequena'>
-                            <a  class='cellPequena' href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
+                        <div class='cell cellMenor'>
+                            <a  class='cellMenor' href='cad_exclui_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                         </div>
                     </div> 
                     "; 
