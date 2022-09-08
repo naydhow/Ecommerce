@@ -13,6 +13,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   
   --background-color: #ffffff;
@@ -802,6 +806,46 @@ img{
 
 .section {
   margin-top: 25px;
+  
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.text {
+  width: 40%;
+  text-align: left;
+  font-family: var(--body-font);
+}
+
+.text a:link, .text a:visited {
+  
+  background-color: #458345;
+  margin-top: 100px;
+
+  border: 10px;
+  border-radius: .25rem;
+
+  padding: 10px;
+  color: #f5f3f5;
+}
+
+.img{
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.img img{
+  margin-top: 250px;
+  width: 632.2px;
+  height: 405px;
+}
+
 
