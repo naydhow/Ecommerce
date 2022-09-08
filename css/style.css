@@ -103,8 +103,7 @@ html{
 .logo{
   width: 55%;
   justify-content: center;
-  margin-bottom: 2px;
-  margin-top: 3px;
+  margin-top: 14px;
 }
 
 
@@ -699,6 +698,9 @@ img{
   color:rgb(112, 167, 91);
 }
 
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<TABELA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 .tabela {  
   /*margin-left: 10px;*/
   margin-top: 4%;
@@ -721,7 +723,8 @@ img{
 
 .cell{
   display:inline-block;
-  padding: 5px 5px;
+  padding-top: 1.5%;
+  padding-bottom:1.5%;
   margin-bottom: .5%;
   border-radius: 6px;
   text-align: center;
@@ -737,7 +740,7 @@ img{
 .cellPeq{ /* cellId */
 
   width: 75px;
-  height: 60px;
+  height: 90px;
   font: 16px var(--body-font);
   color: var(--text-color);
   margin-left: 70px;
@@ -747,7 +750,7 @@ img{
 .cellGrande{ /* cellNome */
   align-items: center;
   width:145px;
-  height: 60px;
+  height: 90px;
   font: 16px var(--body-font);
   color: var(--text-color);
   text-align: center;
@@ -757,7 +760,7 @@ img{
 .cellMedia{ /*cellMargemLucro */
   align-items: center;
   width: 105px;
-  height: 60px;
+  height: 90px;
   font: 16px var(--body-font);
   color: var(--text-color);
   text-align: center;
@@ -767,7 +770,7 @@ img{
 .cellMenor{
   align-items: center;
   width: 100px;
-  height: 60px;
+  height: 90px;
   font: 16px var(--body-font);
   color: var(--text-color);
   text-align: center;
@@ -777,7 +780,7 @@ img{
 .cellEnorme{
   align-items: center;
   width:250px;
-  height: 60px;
+  height: 90px;
   font: 16px var(--body-font);
   color: var(--text-color);
   text-align: center;
@@ -786,7 +789,7 @@ img{
 .cellEnormeImg{
   align-items: center;
   width:250px;
-  height: 60px;
+  height: 90px;
   font: 16px var(--body-font);
   color: var(--text-color);
   text-align: center;
