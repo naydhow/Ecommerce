@@ -28,21 +28,24 @@
                     </nav>
                 </header>
                 <main>
-                    <div class='section' id='home'>
-                        <div class='text'>
-                            <h1>
-                                Cactos e suculentas para seu jardim
-                            </h1>
-                            <p>
-                                Plantas selecionadas especialmente para você de nossas estufas.
-                            </p>
-                            <a href='#'>Ver produtos</a>
+                    <nav class='container_paginas'>
+                        <div class='section' id='home'>
+                            <div class='text'>
+                                <h1>
+                                    Cactos e suculentas para seu jardim
+                                </h1>
+                                <p>
+                                    Plantas selecionadas especialmente para você de nossas estufas.
+                                </p>
+                                <br><br>
+                                <a href='#'>Ver produtos</a>
+                            </div>
+                            <div class='img'>
+                                <br><br><br><br><br><br>
+                                <img src='./img/img_topo.png' alt='imagem'>
+                            </div>
                         </div>
-                            <img src='./img/img_topo.png' alt='imagem'>
-                        <div class='img'>
-            
-                        </div>
-                    </div>
+                    </nav>
                 </main>
                 ";
 
