@@ -801,7 +801,7 @@ img{
 }
 
 .section {
-  margin-top: 25px;
+  margin-top: 15%;
   
   display: flex;
   justify-content: space-between;
@@ -819,6 +819,8 @@ img{
   width: 40%;
   text-align: left;
   font-family: var(--body-font);
+  margin-top: 20%;
+  height: 10%;
 }
 
 .text a:link, .text a:visited {
@@ -835,7 +837,7 @@ img{
 
 .img{
   justify-content: center;
-  margin-top: 25px;
+  /* margin-top: 15%; */
 }
 
 .img img{
