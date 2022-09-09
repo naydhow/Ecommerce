@@ -720,6 +720,7 @@ img{
 .fileira{
   display:block;
   margin-bottom: 5px; 
+  font: 16px var(--body-font);
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -727,8 +728,8 @@ img{
 
 .cell{
   display:inline-block;
-  padding-top: 1.5%;
-  padding-bottom:1.5%;
+  padding-top: 1.9%;
+  padding-bottom:1.9%;
   margin-bottom: .5%;
   border-radius: 6px;
   text-align: center;
@@ -744,8 +745,7 @@ img{
 .cellPeq{ /* cellId */
 
   width: 75px;
-  height: 90px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   margin-left: 70px;
   text-align: center;
@@ -754,8 +754,7 @@ img{
 .cellGrande{ /* cellNome */
   align-items: center;
   width:145px;
-  height: 90px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
   text-decoration: none;
@@ -764,8 +763,7 @@ img{
 .cellMedia{ /*cellMargemLucro */
   align-items: center;
   width: 105px;
-  height: 90px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
   margin-left: 100px;
@@ -774,8 +772,7 @@ img{
 .cellMenor{
   align-items: center;
   width: 100px;
-  height: 90px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
   text-decoration: none;
@@ -784,8 +781,7 @@ img{
 .cellEnorme{
   align-items: center;
   width:250px;
-  height: 90px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
 }  
@@ -793,8 +789,7 @@ img{
 .cellEnormeImg{
   align-items: center;
   width:250px;
-  height: 90px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
 }  
@@ -802,6 +797,7 @@ img{
 .row{
   margin-top:15px;
   margin-top: 10px;
+  font: 14px var(--body-font);
 }
 
 .section {
