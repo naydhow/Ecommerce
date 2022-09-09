@@ -583,6 +583,8 @@ img{
 
 
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CADASTRO DE PRODUTOS E USUÁRIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 .form_cad_prod{
   background-color: var(--background-color);
   max-width: 100%;
@@ -596,7 +598,7 @@ img{
 
 
 
-.input-group {
+/*.input-group {
   justify-content: space-between;
 }
 
@@ -609,7 +611,7 @@ img{
   margin: 10px 5px;
   padding: 10px;
 
-  /* margin-left: 33%; */ /* Não acredito que seja a melhor opção para centralizar, porém vcs que decidam :) */
+  margin-left: 33%; */ /* Não acredito que seja a melhor opção para centralizar, porém vcs que decidam :)
 }
 
 .input-box input {
@@ -641,7 +643,7 @@ img{
 
 .input-box input::placeholder {
   color: black;
-}
+}*/
 
 
 

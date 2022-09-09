@@ -40,7 +40,7 @@
             </div>
             
     
-            <div class="form_cad_prod">             
+            <div class="form_cadastro">             
                 <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
                     <div class="input-group">
                         <div class="input-box">
