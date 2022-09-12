@@ -1082,7 +1082,7 @@ input:hover{
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HOME>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .section {
-  margin-top: 20%;
+  margin-top: 25%;
   
   display: flex;
   justify-content: space-between;
@@ -1100,29 +1100,27 @@ input:hover{
   width: 40%;
   text-align: left;
   font-family: var(--body-font);
-  margin-top: 15%;
+  margin-top: 10%;
   height: 5%;
-  margin-left: 15%;
+  margin-left: 10%;
+}
+
+.ai{
+  margin-bottom: 40px;
 }
 
 .text h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .text a:link, .text a:visited {
-  
   background-color: #458345;
-  margin-top: 50px;
 
   border: 10px;
   border-radius: .25rem;
 
   padding: 10px;
-  color: #f5f3f5;
-}
-
-.btn{
-  margin-top: 40px;
+  color: #FAD9E6;
 }
 
 .img{
@@ -1133,7 +1131,7 @@ input:hover{
 
 .img img{
   margin-top: 250px;
-  width: 632.2px;
-  height: 405px;  
-  box-shadow: 3rem -3rem 0 #ffcceb;
+  width: 732.2px;
+  height: 505px;  
+  box-shadow: 4rem -4rem 0 #ffcceb;
 }

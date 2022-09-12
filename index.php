@@ -34,14 +34,12 @@
                                 <h1>
                                     Cactos e suculentas para seu jardim
                                 </h1>
-                                <p>
+                                <p class='ai'>
                                     Plantas selecionadas especialmente para você de nossas estufas.
                                 </p>
-                                <br><br>
-                                <a href='#'>Ver produtos</a>
+                                <a href='#' class='btn'>Ver produtos</a>
                             </div>
                             <div class='img'>
-                                <br><br><br><br><br><br>
                                 <img src='./img/img_topo.png' alt='imagem'>
                             </div>
                         </div>
