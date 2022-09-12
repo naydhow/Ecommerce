@@ -40,86 +40,93 @@
             </div>
             
     
-            <div class="form_cadastro">             
+            <div class="form_cad_prod">             
                 <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
-                    <div class="input-group">
-                        <div class="input-box">
-                            <label>
-                                <strong>Nome:</strong><br />    
-                                <input type="text" name="nome" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Descrição:</strong><br />    
-                                <input type="text" name="descricao" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Estoque:</strong><br />
-                                <input type="number" name="estoque" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Código Visual:</strong><br />
-                                <input type="text" name="codigovisual" maxlength="13" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <div>
-                            <strong>Imagem</strong><br>
-                                <div class="max-width">
-                                    <div class="imageContainer">
-                                        <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
-                                    </div>
-                                </div>
-                                <div class="answer">
-                                    <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Preço:</strong><br />
-                                <input type="text" name="preco" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Custo:</strong><br />
-                                <input type="text" name="custo"  /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Margem de Lucro:</strong><br />
-                                <input type="text" name="margem_lucro" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>ICMS:</strong><br />
-                                <input type="text" name="icms" /><br />
-                                <br />
-                            </label>
-                        </div>
-                    </div>
-                        
+                    <!-- <div class="campos"> -->
 
+                        <div class="input-box">
+                            <label>
+                                <div class="campo_label">Nome:</div>  
+                                <input class="input_form_grande" type="text" name="nome"  placeholder="Nome" max/>
+                            </label>
+                        </div>
+
+                        <div class="input-box">
+                            <label>
+                                <div class="campo_label">Descrição:</div>
+                                <input class="input_form_grande" type="text" name="descricao"  placeholder="Descrição"/>
+                            </label>
+                        </div>
+
+
+                        <div class="input-box-imagem">
+                                <p class="campo_label_pequeno">Imagem:</p>
+                                    <div class="max-width">
+                                        <div class="imageContainer">
+                                            <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
+                                    </div>
+                        </div>
+
+
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">Cod. Visual:</p>
+                                <input  class="input_form_pequeno" type="text" name="codigovisual" maxlength="13" 
+                                placeholder="Código Visual"/>
+                            </label>
+                        </div>
+                    
+
+                        <div class="input-box">
+                            <label>
+                                <div class="campo_label_pequeno">Estoque:</div>
+                                <input class="input_form_pequeno" type="number" name="estoque" placeholder="Estoque" />
+                            </label>
+                        </div>
+
+                       
+
+                     
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">Preço:</p>
+                                <input class="input_form_pequeno" type="text" name="preco"  placeholder="Preço"/>
+                            </label>
+                        </div>
+
+
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">Custo:</p>
+                                <input class="input_form_pequeno" type="text" name="custo"  placeholder="Custo"/>
+                            </label>
+                        </div>
+
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">M. Lucro:</p>
+                                <input class="input_form_pequeno" type="text" name="margem_lucro" placeholder="Margem lucro" />
+                            </label>
+                        </div>
+
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">ICMS:</p>
+                                <input class="input_form_pequeno" type="text" name="icms" placeholder="ICMS" />
+                            </label>
+                        </div>
+                   
                     <div class="buttons">
-                        <input type="submit" name="button" class="selecao_detalhes_button" value="Enviar" />
-                        <a class="selecao_detalhes_button" href='cad_pesq_produtos_front.php'>Voltar</a><br><br>
+                        <input type="submit" name="button" class="button_crud" value="Enviar"/>
+                        <a class="button_crud" href='cad_pesq_produtos_front.php'>Voltar</a>
                     </div>
+
                 </form>
+            
             </div>
         </div>
     </div>

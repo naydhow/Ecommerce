@@ -38,11 +38,12 @@
         <div class="container_paginas">
             <p id="cadastro_titulos" >Cadastro de Usuários</p>
 
-            <div class="form_cad_prod">
+            <div class="form_cad_user">
                 <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
-                    <div class="input-group">
-                        <div class="input-box">
-                            <div class="max-width">
+                    
+               
+                        <div class="input-box-imagem">
+                            <div class="max-width-User">
                                 <div class="imageContainer"> 
                                 <img src="../../img/user.png" alt="Selecione uma foto para o perfil" id="imgPhoto">
                                 </div>
@@ -51,88 +52,113 @@
                                 <input name="ftperfil" id="ftperfil" type="file" accept="image/*">
                             </div>
                         </div>
+
+                    <div class="inputs_user">
                         <div class="input-box">
-                            <label>
-                                <strong>Nome:</strong><br />    
-                                <input type="text" name="nome" maxlength="100"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Telefone:</strong><br />    
-                                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Email:</strong><br />
-                                <input type="email" name="email" maxlength="80"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Senha:</strong><br />
-                                <input type="password" name="senha" maxlength="32"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Sexo:</strong><br />
-                                <input type="check" name="sexo" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Data de nascimento:</strong><br />
-                                <input type="date" name="data_nasc" /><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>CPF:</strong><br />
-                                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>CEP:</strong><br />
-                                <input type="text" name="cep" id="cep" placeholder="00000-000"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Endereço:</strong><br />
-                                <input type="text" name="endereco" id="endereco" maxlength="150"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Cidade:</strong><br />
-                                <input type="text" name="cidade" id="cidade" maxlength="30"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="input-box">
-                            <label>
-                                <strong>Estado:</strong><br />
-                                <input type="text" name="estado" id="estado" maxlength="2"/><br />
-                                <br />
-                            </label>
-                        </div>
-                        <div class="buttons">
-                            <input type="submit" name="button" id="button" value="Enviar" />
-                            <a id="button" href='cad_pesq_usuarios_front.php'>Voltar</a><br><br>
-                        </div>
+                                <label>
+                                    <p class="campo_label">Nome:</p>    
+                                    <input class="input_user_grande" type="text" name="nome" maxlength="100" placeholder="Digite seu nome completo"/>
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label">Email:</p>
+                                    <input class="input_user_grande" type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com"/>
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label">Senha:</p>
+                                    <input class="input_user_grande" type="password" name="senha" maxlength="32" placeholder="***********"/><br />
+                                    <br />
+                                </label>
+                            </div>
+
                     </div>
+                            
+                        <div class="inputs_users">
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label_peq2">Sexo:</p>
+                                    <div class="input_radio">
+                                        <input type="radio" name="sexo" value="Feminino" checked>&nbsp;Feminino</input>
+                                    </div>
+
+                                    <div class="input_radio">
+                                    <input type="radio" name="sexo" value="Masculino">&nbsp;Masculino</input>
+                                    </div>
+
+                                    <div class="input_radio">
+                                        <input class="input_radio" type="radio" name="sexo" value="Outro">&nbsp;Outro</input>
+                                    </div>
+
+                                    </label>
+                            </div>
+                        </div>
+
+                        <div class="inputs_users">
+        
+                            <div class="input-box">
+                                    <label>
+                                        <p class="campo_label_pequeno">CPF:</p>
+                                        <input class="input_user_pequeno" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"/>
+                                    </label>
+                                </div>
+
+                                <div class="input-box">
+                                    <label>
+                                        <p class="campo_label_pequeno">Telefone:</p>    
+                                        <input class="input_user_pequeno" type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"/>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label_pequeno">Data Nasc.:</p>
+                                    <input class="input_user_pequeno" type="date" name="data_nasc" />
+                                </label>
+                            </div>
+
+                            
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label_pequeno">CEP:</p>
+                                    <input class="input_user_pequeno" type="text" name="cep" id="cep" placeholder="00000-000"/>
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label">Endereço:</p>
+                                    <input class="input_user_grande" type="text" name="endereco" id="endereco" maxlength="150"/>
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label_pequeno">Cidade:</p>
+                                    <input class="input_user_medio" type="text" name="cidade" id="cidade" maxlength="30"/>
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label_pequeno">Estado:</p>
+                                    <input class="input_user_peq2" type="text" name="estado" id="estado" maxlength="2"/>
+                                </label>
+                            </div>
+
+                            <div class="buttons">
+                                <input type="submit" name="button" class="button_crud" value="Enviar" />
+                                <a class="button_crud" href='cad_pesq_usuarios_front.php'>Voltar</a>
+                            </div>
+
+                    </div>
+                        
+        
                 </form>
             </div>
         </div>
