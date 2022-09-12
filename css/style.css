@@ -507,44 +507,6 @@ input[type="file"] {
   background:rgb(55, 77, 52);
 }
 
-.top-bar-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--background-color-light);
-}
-
-.top-bar-fixed {
-  position: fixed;
-  right: 0;
-  left: 0;
-  background-color: var(--background-color-light);
-  /*margin: 0 30px;*/
-}
-
-.top-bar-content {
-  max-width: 100%;
-  margin: 0 auto;
-  background: var(--background-color-light);
-  text-align: center;
-  /*padding: 30px 0;*/
-}
-
-
-.top-bar-content-link{
-  text-decoration: none;
-  color:black;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px; 
-  font-weight:bolder;
-  margin-top: 5%;
-  max-width: 100%;
-  padding-top: 5px;
-  padding-bottom: 3px;
-  margin: 0 auto;
-  background: #458345;
-  text-align: center;
-}
 
 img{
   margin-top: 0%;
@@ -552,24 +514,6 @@ img{
   width: 35%;
 }
 
-#link{
-  text-decoration: none;
-  color: black;
-  padding-left: 20px;
-} 
-
-/*cadastrar produtos*/ 
-.cadastro_produtos{
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-align:left; 
-  width: 100%;
-  padding:2px;
-  margin-top: 1rem;
-  
-}
 
 
 
@@ -755,12 +699,12 @@ input:hover{
 .form_cad_user{
   display: flex;
   width: 600px;
-  height: 990px;
+  height: 980px;
   padding-top: 3%;
   padding-bottom: 3%;
   align-items: center; 
 
-  margin-left: 30%;
+  margin-left: 28%;
   background: #C5D8A4;
   box-shadow: 0px 0px 4px rgb(55, 77, 52);
   border-radius: 8px;
@@ -769,9 +713,16 @@ input:hover{
 .max-width-User{
   display: block;
   align-items: center;
-  margin-top:25%;
+  margin-top:5%;
   max-width: 300px;
   width: 100%;
+}
+
+.buttons_user{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .input_user_grande{
@@ -796,9 +747,12 @@ input:hover{
   border-radius: 6px;
 }
 
+.input_block{
+  display: block;
+}
 
 .input_user_pequeno{
-  display: inline-block;
+  display: inline;
   box-sizing: border-box;
 
   width: 194px;
@@ -847,7 +801,7 @@ input:hover{
 }
 
 .input_user_peq2{
-  display: inline-block;
+  display: inline;
   box-sizing: border-box;
 
   width: 60px;
@@ -862,7 +816,6 @@ input:hover{
   text-align: center;
   align-items: center;
 
-  
   background-color: #ebf0e9;
 
   border: 1px transparent;
@@ -895,28 +848,20 @@ input:hover{
 }
 
 
-
-.input_radio{
-  display: inline-block;
-  margin-left: 3%;
-  font: 14px var(--body-font);
-}
-
 .campo_label_peq2{
-  display: block;
-
-
-  width: 30px;
+  margin-top: 0;
+  padding-top: 0;
+  display: inline-block;
+  width: 420px;
   height: 10px;
-  
   font: 14px var(--body-font);
-  font-weight: 500;
-
   color: #000000;
 }
 
-
-
+.campo_label_peq2 input{
+  margin-left: 10px;
+  margin-right: 0px;
+}
 
 #imgPhoto {
   justify-content: center;
