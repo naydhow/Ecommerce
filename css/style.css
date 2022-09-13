@@ -1082,6 +1082,7 @@ input:hover{
   display: grid;
   place-items: center;
   grid-template-columns: 732.2px auto;
+  gap: 0;
 }
 
 .img_sobre{
@@ -1097,5 +1098,7 @@ input:hover{
 
 .text_sobre{
   font-family: var(--body-font);
-  text-align: left;
+  text-align: start;
+  width: 600px;
+  margin-right: 150px;
 }
