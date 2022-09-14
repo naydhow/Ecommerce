@@ -158,7 +158,7 @@ nav ul li a::after {
   padding-top: 10%;
   padding-bottom: 10%;
   width: 100%;
-  height:max-content 100%;
+  /* height:max-content 100%; */
   background-color: var(--body-color);
   align-items: center;
   text-align: center;
@@ -1104,11 +1104,11 @@ input:hover{
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HOME>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .section {
-  margin-top: 25%;
-  
+  margin-top: 2.5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #home{
@@ -1122,9 +1122,8 @@ input:hover{
   width: 40%;
   text-align: left;
   font-family: var(--body-font);
-  margin-top: 10%;
-  height: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 7%;
 }
 
 .ai{
@@ -1146,14 +1145,37 @@ input:hover{
 }
 
 .img{
-  margin-left: 200px;
   /* margin-top: 15%; */
-  margin-right: 10%;
+  margin-right: 9%;
 }
 
 .img img{
-  margin-top: 250px;
   width: 732.2px;
   height: 505px;  
   box-shadow: 4rem -4rem 0 #ffcceb;
+}
+
+#sobre{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 732.2px auto;
+  gap: 0;
+}
+
+.img_sobre{
+  padding-left: 4%;
+}
+
+.img_sobre img{
+  margin-top: 250px;
+  width: 527px;
+  height: 344px;  
+  box-shadow: 4rem -4rem 0 #ffcceb;
+}
+
+.text_sobre{
+  font-family: var(--body-font);
+  text-align: start;
+  width: 600px;
+  margin-right: 150px;
 }
