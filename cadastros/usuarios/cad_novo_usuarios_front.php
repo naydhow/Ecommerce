@@ -40,9 +40,9 @@
         <div class="container_paginas">
             <p id="cadastro_titulos">Cadastro de Usuários</p>
 
-            <div class="form_cad_user">
-                <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
-
+          <div class="form_cad_user">
+            <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
+                
 
                     <div class="input-box-imagem">
                         <div class="max-width-User">
@@ -57,87 +57,87 @@
 
                     <div class="input-box">
                         <label>
-                            <p class="campo_label">Nome:</p>
+                            <p class="campo_label">Nome</p>
                             <input class="input_user_grande" type="text" name="nome" maxlength="100" placeholder="Digite seu nome completo" />
                         </label>
                     </div>
 
                     <div class="input-box">
                         <label>
-                            <p class="campo_label">Email:</p>
+                            <p class="campo_label">Email</p>
                             <input class="input_user_grande" type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com" />
                         </label>
                     </div>
 
                     <div class="input-box">
                         <label>
-                            <p class="campo_label">Senha:</p>
+                            <p class="campo_label">Senha</p>
                             <input class="input_user_grande" type="password" name="senha" maxlength="32" placeholder="***********" />
                             </label>
                     </div>
                 
-                <div class="input_block">
-                    <div class="input-box">
-                        <div class="campo_label_peq2">
-                            <b>Sexo:</b>
-                            <label><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>
-                            <label><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>
-                            <input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>
+                    <div class="input_block">
+                        <div class="input-box">
+                            <div class="campo_label_peq2">
+                                <b>Sexo</b>
+                                <label><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>
+                                <label><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>
+                                <label><input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="input_block">
-                    <div class="input-box">
-                        <label>
-                            <p class="campo_label_pequeno">CPF:</p>
-                            <input class="input_user_pequeno" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" />
-                        </label>
-                    </div>
+                    <div class="input_block">
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">CPF</p>
+                                <input class="input_user_pequeno" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" />
+                            </label>
+                        </div>
+
+                            <div class="input-box">
+                                <label>
+                                    <p class="campo_label_pequeno">Telefone</p>
+                                    <input class="input_user_pequeno" type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" />
+                                </label>
+                            </div>
+                        </div>
 
                         <div class="input-box">
                             <label>
-                                <p class="campo_label_pequeno">Telefone:</p>
-                                <input class="input_user_pequeno" type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" />
+                                <p class="campo_label_pequeno">Data Nasc.</p>
+                                <input class="input_user_pequeno" type="date" name="data_nasc" />
                             </label>
                         </div>
-                    </div>
-
-                    <div class="input-box">
-                        <label>
-                            <p class="campo_label_pequeno">Data Nasc.:</p>
-                            <input class="input_user_pequeno" type="date" name="data_nasc" />
-                        </label>
-                    </div>
 
 
-                    <div class="input-box">
-                        <label>
-                            <p class="campo_label_pequeno">CEP:</p>
-                            <input class="input_user_pequeno" type="text" name="cep" id="cep" placeholder="00000-000" />
-                        </label>
-                    </div>
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">CEP</p>
+                                <input class="input_user_pequeno" type="text" name="cep" id="cep" placeholder="00000-000" />
+                            </label>
+                        </div>
 
-                    <div class="input-box">
-                        <label>
-                            <p class="campo_label">Endereço:</p>
-                            <input class="input_user_grande" type="text" name="endereco" id="endereco" maxlength="150" />
-                        </label>
-                    </div>
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label">Endereço</p>
+                                <input class="input_user_grande" type="text" name="endereco" id="endereco" maxlength="150" placeholder="Endereço"/>
+                            </label>
+                        </div>
 
-                    <div class="input-box">
-                        <label>
-                            <p class="campo_label_pequeno">Cidade:</p>
-                            <input class="input_user_medio" type="text" name="cidade" id="cidade" maxlength="30" />
-                        </label>
-                    </div>
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">Cidade:</p>
+                                <input class="input_user_medio" type="text" name="cidade" id="cidade" maxlength="30" placeholder="Cidade" />
+                            </label>
+                        </div>
 
-                    <div class="input-box">
-                        <label>
-                            <p class="campo_label_pequeno">Estado:</p>
-                            <input class="input_user_peq2" type="text" name="estado" id="estado" maxlength="2" />
-                        </label>
-                    </div>
+                        <div class="input-box">
+                            <label>
+                                <p class="campo_label_pequeno">Estado</p>
+                                <input class="input_user_peq2" type="text" name="estado" id="estado" maxlength="2" placeholder="XX"/>
+                            </label>
+                        </div>
 
                     </div>
                     
@@ -145,8 +145,9 @@
                         <input type="submit" name="button" class="button_crud" value="Enviar" />
                         <a class="button_crud" href='cad_pesq_usuarios_front.php'>Voltar</a>
                     </div>
+               </div>     
              </form>
-            </div>
+            
         </div>
     </div>
 </body>
