@@ -51,16 +51,26 @@
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
                                 <img src='./img/img_cacto1.jpg' alt='imagem'>
-                                <p class='text'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto .</p>
+                                <p class='text_produtos1'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto .</p>
                             </div>
                             <div class='img_produto'>
                                 <img src='./img/img_cacto2.png' alt='imagem'>
+                                <p class='text_produtos2'>Como diferencial, são acompanhados com vasinhos de bambu confeccionados por nós de forma sustentável e ecológica.</p>
                             </div>
                             <div class='img_produto'>
                                 <img src='./img/img_cacto3.png' alt='imagem'>
+                                <p class='text_produtos3'>Nossos produtos são selecionados especialmente para você de nossas estufas sendo cuidados diariamente com muita dedicação.</p>
                             </div>
-                                        
-                                        
+                        <div class='section' id='video'>
+                            <div class='textinho'>
+                                <p>Ao lado, deixamos um vídeo de cuidados com essas plantinhas para que elas cresçam de forma saudável e deixem seu jardim ou ambiente lindo.</p>
+                            </div>
+
+                            <div class='vid'>
+                                <iframe width='560' height='315' src='https://www.youtube.com/embed/QUI7XkK3Z1g' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class='section' id='final'>
                         </div>
                     </div>
                 </main>

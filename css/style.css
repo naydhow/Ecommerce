@@ -1172,9 +1172,9 @@ input:hover{
 }
 
 .img img{
-  width: 732.2px;
-  height: 505px;  
-  box-shadow: 4rem -4rem 0 #ffcceb;
+  width: 682.2px;
+  height: 455px;  
+  box-shadow: 3rem -3rem 0 #ffcceb;
 }
 /*
 #sobre{
@@ -1212,12 +1212,51 @@ input:hover{
   margin-top: 10%;
   margin-bottom: 5%;
   border-radius: 3px;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 4px black;
   width: 400px;
-  height: 450px;
-  margin-left: 4%;
+  height: 500px;
+  margin-left: 3.8rem;
   margin-right: 4%;
 }
+
+.text_produtos1{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 12%;
+  margin-left: 4rem;
+}
+
+.text_produtos2{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 6%;
+  margin-left: 4.2rem;
+}
+
+.text_produtos3{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 1.2rem;
+  margin-left: 4.7rem;
+}
+
+.textinho{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 1.2rem;
+  margin-left: 4.7rem;
+}
+
+.video vid{
+  width: 760px;
+  height: 415px;
+}
+
+
 
 
 
