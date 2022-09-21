@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../css/style.css">   
-<link rel="icon" href="../../img/logopeq_caricacto.png">
+<link rel="icon" href="../img/logopeq_caricacto.png">
 
 <!-- Recuperando as informações do produto -->
 <?php

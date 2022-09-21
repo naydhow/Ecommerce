@@ -80,7 +80,7 @@
                                    <div class="input-box">
                                           <label>
                                                  <strong>Senha</strong><br>
-                                                 <input type="text" name="senha" maxlength="32"
+                                                 <input type="password" name="senha" maxlength="32"
                                                  value="<?php echo $linha['senha']; ?>" >
                                           </label>
                                    </div>
