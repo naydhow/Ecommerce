@@ -4,14 +4,14 @@
         <meta charset="utf-8" />
         <title>Produtos</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="icon" href="../../img/logopeq_caricacto.png">
+        <link rel="icon" href="../../img/logopeq_caricacto.svg">
     </head>
     <body>
         <?php
             echo"
             <header id= 'header' >
                 <nav class='container'>
-                    <a  class='logo' href='../../index.php'><img src='../../img/logo.png'></a>
+                    <a  class='logo' href='../../index.php'><img src='../../img/logo.svg'></a>
                     <div class='menu'>
                         <ul class='grid'>
                             <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>

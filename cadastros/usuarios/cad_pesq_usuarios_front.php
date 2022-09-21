@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Usuários</title>
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="icon" href="../../img/logopeq_caricacto.png">
+        <link rel="icon" href="../../img/logopeq_caricacto.svg">
     </head>
     <body>
 
@@ -12,7 +12,7 @@
        echo"
        <header id= 'header' >
            <nav class='container'>
-               <a  class='logo' href='../../index.php'><img src='../../img/logo.png'></a>
+               <a  class='logo' href='../../index.php'><img src='../../img/logo.svg'></a>
                <div class='menu'>
                    <ul class='grid'>
                        <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
@@ -91,7 +91,7 @@
                             ".$linha['id_usuario']."
                         </div>
                         <div class='cell cellEnormeImg'>
-                            ".'<img src="'.$linha['img'].'" " widht="13px" height="13px ">'."
+                            ".'<img src="'.$linha['img'].'" widht="13px" height="13px">'."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['nome']."

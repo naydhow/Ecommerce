@@ -13,6 +13,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   
   --background-color: #ffffff;
@@ -33,9 +37,9 @@ ul {
   --body-color: #ffffff;
   --color-grid-selecao: rgba(255, 255, 255, 0.915);
   --color-button-claro: #C5D8A4;
-  --color-button-escuto: #588068; 
+  --color-button-escuto: rgb(55, 77, 52); 
   --color-texto-claro-button: #ffffff;
-  --color-texto-escuro-button: #555555;
+  --color-texto-escuro-button: #212121;
 
 
   /*para fontes*/
@@ -103,8 +107,7 @@ html{
 .logo{
   width: 55%;
   justify-content: center;
-  margin-bottom: 2px;
-  margin-top: 3px;
+  margin-top: 14px;
 }
 
 
@@ -155,7 +158,7 @@ nav ul li a::after {
   padding-top: 10%;
   padding-bottom: 10%;
   width: 100%;
-  height:max-content 100%;
+  /* height:max-content 100%; */
   background-color: var(--body-color);
   align-items: center;
   text-align: center;
@@ -466,92 +469,44 @@ input[type="file"] {
 }
 
 .max-width {
-  max-width: 500px;
+  display: block;
+  align-items: center;
+  margin-top:3%;
+  max-width: 300px;
   width: 100%;
 }
 
 .imageContainer{
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  margin-left: 75%;
 }
 
-#imgPhoto {
-  justify-content: center;
-  margin-top: 10%;
 
-  width: 9.75rem;
-  height: 9.75rem;
-  padding: 0.2rem;
-
-  background-color: azure;
-
-  border: 0.25rem solid black;
-  border-radius: 50%;
-
-  cursor: pointer;
-  transition: .3s;
-}
 
 #imgProduto {
   justify-content: center;
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 
-  width: 5rem;
-  height: 5rem;
-  padding: 0.05rem;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.2rem;
 
-  background-color: azure;
+  background-color:#ebf0e9;
 
-  border: 0.2rem solid black;
-  border-radius: 0.55rem;
+  border: 1px #717171;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
 
   cursor: pointer;
   transition: .3s;
 }
 
 #imgPhoto:hover, #imgProduto:hover {
-  background-color: lightslategray;
+  background:rgb(55, 77, 52);
 }
 
-.top-bar-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--background-color-light);
-}
-
-.top-bar-fixed {
-  position: fixed;
-  right: 0;
-  left: 0;
-  background-color: var(--background-color-light);
-  /*margin: 0 30px;*/
-}
-
-.top-bar-content {
-  max-width: 100%;
-  margin: 0 auto;
-  background: var(--background-color-light);
-  text-align: center;
-  /*padding: 30px 0;*/
-}
-
-
-.top-bar-content-link{
-  text-decoration: none;
-  color:black;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px; 
-  font-weight:bolder;
-  margin-top: 5%;
-  max-width: 100%;
-  padding-top: 5px;
-  padding-bottom: 3px;
-  margin: 0 auto;
-  background: #458345;
-  text-align: center;
-}
 
 img{
   margin-top: 0%;
@@ -559,145 +514,495 @@ img{
   width: 35%;
 }
 
-#link{
-  text-decoration: none;
-  color: black;
-  padding-left: 20px;
-} 
-
-/*cadastrar produtos*/ 
-.cadastro_produtos{
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-align:left; 
-  width: 100%;
-  padding:2px;
-  margin-top: 1rem;
-  
-}
 
 
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CADASTRO DE PRODUTOS E USUÁRIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .form_cad_prod{
-  background-color: var(--background-color);
-  max-width: 100%;
-  width: 80%;
-  padding: 20px;
-  left: 10%;
-  right: 10%;
-  width: 100%;
-  height: 100%; 
+    display: flex;
+    width: 550px;
+    height: 660px;
+    padding-top: 2.5%;
+   
+   
+    margin-left: 30%;
+    background: #C5D8A4;
+    box-shadow: 0px 0px 4px rgb(55, 77, 52);
+    border-radius: 8px;
+  }
+
+.campo_label{
+  display: inline-block;
+
+
+  width: 100px;
+  height: 10px;
+  
+  font: 14px var(--body-font);
+  font-weight: 500;
+
+  color: #000000;
+}
+
+.campo_label_pequeno{
+  display: inline-block;
+
+
+  width: 80px;
+  height: 10px;
+  
+  font: 14px var(--body-font);
+  font-weight: 500;
+
+  color: #000000;
+}
+
+.input_form_grande{
+  display: block;
+  box-sizing: border-box;
+
+
+  width: 413px;
+  height: 40px;
+
+  margin-top: 2%;
+  /*margin-left: 1%;*/
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+
+  background-color:#ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
 }
 
 
+.input_form_pequeno{
+  display: inline-block;
+  box-sizing: border-box;
 
-.input-group {
-  justify-content: space-between;
-}
+  width: 160px;
+  height: 40px;
 
-.input-box {
-  display: flex;
-  justify-content: center;
+  margin-right: 1%;
+  margin-top: 2%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
   align-items: center;
 
-  flex-direction: row;
-  margin: 10px 5px;
-  padding: 10px;
+  
+  background-color: #ebf0e9;
 
-  /* margin-left: 33%; */ /* Não acredito que seja a melhor opção para centralizar, porém vcs que decidam :) */
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
 }
 
-.input-box input {
-  margin: 10px 0px;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px #0000001c;
+
+.input-box{
+  margin-left: 0px;
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+.input-box-imagem{
+  align-items: center;
+  display: block;
+  margin-bottom: 4%;
+
+}
+
+.input-box-2{
+  display:inline;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
+input:hover{
+  background-color: #fff5f5;
+  transition: 0.3s;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FORM ALTERA E EXCLUI PRODUTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.alt_form_prod{
+  display: flex;
+  width: 550px;
+  height: 720px;
+  padding-top: 2.5%;
+ 
+ 
+  margin-left: 30%;
+  background: #C5D8A4;
+  box-shadow: 0px 0px 4px rgb(55, 77, 52);
+  border-radius: 8px;
+}
+
+
+.input_grande_alt{
+  display: block;
+  box-sizing: border-box;
+
+
+  width: 413px;
+  height: 40px;
+
+  margin-top: 4%;
+  /*margin-left: 1%;*/
+
+  font: 14px var(--body-font);
+  font-weight: 500;
   text-align: center;
-  font-size:14px;
-  background-color: #C5D8A4;
-  font-family: 'Courier New', Courier, monospace;
-  width: 400px;
-}
 
-.input-box input:hover {
-  background-color: #a1cfa5;
-}
+  background-color:#ebf0e9;
 
-.input-box input:focus-visible {
-  outline: 1px solid #3d573a;
-}
-
-.input-box label{
-  font-size: 14px;
-  font-weight: 600;
-  color: black;
-}
-
-.input-box input::placeholder {
-  color: black;
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
 }
 
 
+.input_pequeno_alt{
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 160px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 4%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<USUÁRIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.form_cad_user{
+  display: flex;
+  width: 600px;
+  height: 980px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center; 
+
+  margin-left: 28%;
+  background: #C5D8A4;
+  box-shadow: 0px 0px 4px rgb(55, 77, 52);
+  border-radius: 8px;
+}
+
+
+.max-width-User{
+  display: block;
+  align-items: center;
+  margin-top:5%;
+  max-width: 300px;
+  width: 100%;
+}
+
+.buttons_user{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.input_user_grande{
+  display: block;
+  box-sizing: border-box;
+
+
+  width: 480px;
+  height: 40px;
+
+  margin-top: 2%;
+  /*margin-left: 1%;*/
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+
+  background-color:#ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.input_block{
+  display: block;
+}
+
+
+.input_user_medio{
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 330px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 2%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+.input_user_peq2{
+  display: inline;
+  box-sizing: border-box;
+
+  width: 60px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 2%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+.input_user_pequeno{
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 190px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 2%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+
+#imgPhoto {
+  justify-content: center;
+
+  width: 9.75rem;
+  height: 9.75rem;
+  padding: 0.2rem;
+
+  background-color:#ebf0e9;
+
+  border: 0.25rem solid black;
+  border-radius: 25px;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ALTERAÇÃO E EXCLUSÃO DE USUÁRIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.form_cad_user_alt{
+  display: flex;
+  width: 600px;
+  height: 1000px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center; 
+
+  margin-left: 28%;
+  background: #C5D8A4;
+  box-shadow: 0px 0px 4px rgb(55, 77, 52);
+  border-radius: 8px;
+}
+
+.input-box-imagem-2{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+  margin-top: 20%;
+}
+
+.input_user_grande_alt{
+  display: block;
+  box-sizing: border-box;
+
+
+  width: 480px;
+  height: 40px;
+
+  margin-top: 3%;
+  /*margin-left: 1%;*/
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+
+  background-color:#ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+
+.input_user_medio_alt{
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 330px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 3%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+.input_user_peq2_alt{
+  display: inline;
+  box-sizing: border-box;
+
+  width: 60px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 8%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+.input_user_pequeno_alt{
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 190px;
+  height: 40px;
+
+  margin-right: 1%;
+  margin-top: 4%;
+
+
+  font: 14px var(--body-font);
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+  
+  background-color: #ebf0e9;
+
+  border: 1px transparent;
+  box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
+  border-radius: 6px;
+}
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<BUTTONS DE CADASTRO, ALTERAÇÃO E EXCLUSÃO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .buttons{
   display: flex;
-  /*align-items: center;*/
+  margin-top: 5%;
   justify-content: center;
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 5%;
 }
 
-#button{
-  width: 10%;
-  height: 30px;
-  cursor: pointer;
-  background-color:#458345;
-  border: 0px;
-  border-radius: 10px;
-  transition: 1s;
-  padding-top: 10px;
-  padding-bottom:10px;
-  margin-right: 40px;
-  box-shadow: 1px 1px 6px #0000001c;
-  color:black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
-  text-decoration: none;
-}
+.button_crud{
+    box-sizing: border-box;
+    display: inline-block;
+    font: 14px var(--body-font);
+    padding: 14px 32px 15px;
+    align-items: center;
+    text-align: center;
+    width: 119px;
+    height: 43px;
+    background: var(--color-button-claro);
+    color: var(--color-texto-escuro-button);
+    box-shadow:  0 0 3px black;
+    border-color: transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 3%;
+  }
+  
+.button_crud:hover{
+      background: var(--color-button-escuto);
+      font: 14px var(--body-font);
+      color: var(--color-texto-claro-button);
+      width: 125px;
+      height: 50px;
+      align-items: center;
+      box-shadow:  0 0 3px black;
+      transition: 0.2s;
+  }
 
 
-#button:hover{
-  background-color:rgb(13, 53, 5);
-  color:rgb(112, 167, 91);
-}
-
-
-#altera_gravar, #altera_voltar, 
-  #conf_exclusao, #editar, #exclui_voltar
-{
-  width: 100%;
-  height: 40px;
-  cursor: pointer;
-  background-color:#458345;
-  border: 0px;
-  border-radius: 10px;
-  transition: 1s;
-  margin-right: 40px;
-  box-shadow: 1px 1px 6px #0000001c;
-  color:black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
-}
-
-#altera_voltar:hover,#altera_gravar:hover, 
-  #conf_exclusao:hover, #editar:hover, #exclui_voltar:hover 
-{
-  background-color:rgb(13, 53, 5);
-  color:rgb(112, 167, 91);
-}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<TABELA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .tabela {  
   /*margin-left: 10px;*/
@@ -714,6 +1019,7 @@ img{
 .fileira{
   display:block;
   margin-bottom: 5px; 
+  font: 16px var(--body-font);
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -721,7 +1027,8 @@ img{
 
 .cell{
   display:inline-block;
-  padding: 5px 5px;
+  padding-top: 1.9%;
+  padding-bottom:1.9%;
   margin-bottom: .5%;
   border-radius: 6px;
   text-align: center;
@@ -737,8 +1044,7 @@ img{
 .cellPeq{ /* cellId */
 
   width: 75px;
-  height: 60px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   margin-left: 70px;
   text-align: center;
@@ -747,8 +1053,7 @@ img{
 .cellGrande{ /* cellNome */
   align-items: center;
   width:145px;
-  height: 60px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
   text-decoration: none;
@@ -757,8 +1062,7 @@ img{
 .cellMedia{ /*cellMargemLucro */
   align-items: center;
   width: 105px;
-  height: 60px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
   margin-left: 100px;
@@ -767,8 +1071,7 @@ img{
 .cellMenor{
   align-items: center;
   width: 100px;
-  height: 60px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
   text-decoration: none;
@@ -777,8 +1080,7 @@ img{
 .cellEnorme{
   align-items: center;
   width:250px;
-  height: 60px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
 }  
@@ -786,8 +1088,7 @@ img{
 .cellEnormeImg{
   align-items: center;
   width:250px;
-  height: 60px;
-  font: 16px var(--body-font);
+  height: 70px;
   color: var(--text-color);
   text-align: center;
 }  
@@ -795,10 +1096,86 @@ img{
 .row{
   margin-top:15px;
   margin-top: 10px;
+  font: 14px var(--body-font);
 }
 
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HOME>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .section {
-  margin-top: 25px;
+  margin-top: 2.5rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.text {
+  width: 40%;
+  text-align: left;
+  font-family: var(--body-font);
+  margin-left: 5%;
+  margin-right: 7%;
+}
+
+.ai{
+  margin-bottom: 40px;
+}
+
+.text h1 {
+  font-size: 3rem;
+}
+
+.text a:link, .text a:visited {
+  background-color: #458345;
+
+  border: 10px;
+  border-radius: .25rem;
+
+  padding: 10px;
+  color: #FAD9E6;
+}
+
+.img{
+  /* margin-top: 15%; */
+  margin-right: 9%;
+}
+
+.img img{
+  width: 732.2px;
+  height: 505px;  
+  box-shadow: 4rem -4rem 0 #ffcceb;
+}
+/*
+#sobre{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 732.2px auto;
+  gap: 0;
+}
+
+.img_sobre{
+  padding-left: 4%;
+}
+
+.img_sobre img{
+  margin-top: 250px;
+  width: 527px;
+  height: 344px;  
+  box-shadow: 4rem -4rem 0 #ffcceb;
+}
+
+.text_sobre{
+  font-family: var(--body-font);
+  text-align: start;
+  width: 600px;
+  margin-right: 150px;
+}*/
