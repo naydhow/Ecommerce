@@ -105,6 +105,11 @@ html{
   width: 23px;
 }
 
+.icone_topo:hover{
+  width: 27px;
+  transition: 0.2s;
+}
+
 /*logo*/
 .logo{
   margin-top: 14px;
