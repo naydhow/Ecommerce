@@ -9,7 +9,6 @@
 }
 
 ul {
-  margin-left: 80px;
   list-style: none;
 }
 
@@ -89,25 +88,27 @@ html{
   margin-right: 3rem;
 }
 
+
 .grid{
   display: flex;
-  gap: 1rem;
-  margin-right: 30px;
 }
 
 .title {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-family: var(--title-font);
   color: var(--title-color);
-  margin-left: 30px;
+  margin-left: 40px;
   -webkit-font-smoothing: auto;
+}
+
+.icone_topo{
+  width: 23px;
 }
 
 /*logo*/
 .logo{
-  width: 55%;
-  justify-content: center;
   margin-top: 14px;
+  width: 45%;
 }
 
 
@@ -116,7 +117,7 @@ nav {
   height: var(--header-height);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   width: 100%;
 }
 

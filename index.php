@@ -10,19 +10,23 @@
     </head>
     <body>
         <?php
-        
+            // na linha 24 e 25 as páginas ainda não estão feitas, mas coloquei o link das páginas de cadastro de user e produto, 
+            // só pra facilitar na hora de programar        
             echo"
                 <header id= 'header' >
                     <nav class='container'>
-                        <a  class='logo' href='./index.php'><img src='./img/logo.svg'></a>
+                        <a href='./index.php'><img src='./img/logo.svg' class='logo'></a>
                         <div class='menu'>
                             <ul class='grid'>
                                 <li><a class='title' href='./index.php' target='_parent'>Home</a></li>
-                                <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                                <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></li>
-                                <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Seleção</a></li>
-                            </ul> 
+                                <li><a class='title'>Sobre</a></li>
+                                <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+                                <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
+                                <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
+                            </ul>
                         </div>
+                        <a class='title' href='./venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='./img/img_carrinhovazio.svg' ></a></li>
+                        <a class='title'href='./login/login.html' target='_parent'><img class='icone_topo' src='./img/img_perfil.svg'></a></li>
                         <div class='toggle icon-menu'></div>
                         <div class='toggle icon-close'></div>
                     </nav>
