@@ -43,20 +43,23 @@
                                 <img src='./img/img_topo.png' alt='imagem'>
                             </div>
                         </div>
-                        <div class='section' id='sobre'>
-                            <div class='img_sobre'>
-                                <img src='./img/img_sobre.png' alt='imagem'>
-                            </div>
-                            <div class='text_sobre'>
-                                <h2>Sobre nós</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores distinctio facere laudantium ab possimus! Mollitia labore quia dicta voluptates culpa dolorem iure necessitatibus amet, illo hic sed veritatis ipsam.</p>
-                                <p>Repellat, id? Natus a, adipisci autem at rerum mollitia officiis dolores quo harum sit quibusdam quam reiciendis fugiat, ab illum. Reprehenderit, libero dolores enim voluptate id perferendis nisi labore veritatis?</p>
-                                <p>Quae quod ea quasi facere eveniet accusantium quos doloremque aspernatur esse impedit, adipisci quas distinctio? Adipisci perspiciatis in quisquam animi rem, unde voluptates laboriosam! Ratione illo quo necessitatibus fugit consequatur
-                            </div>
-                        </div>
                     </div>
                 </main>
                 ";
         ?>!</p>
+
+        <!--
+            <div class='section' id='sobre'>
+                <div class='img_sobre'>
+                    <img src='./img/img_sobre.png' alt='imagem'>
+                </div>
+                <div class='text_sobre'>
+                    <h2>Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores distinctio facere laudantium ab possimus! Mollitia labore quia dicta voluptates culpa dolorem iure necessitatibus amet, illo hic sed veritatis ipsam.</p>
+                    <p>Repellat, id? Natus a, adipisci autem at rerum mollitia officiis dolores quo harum sit quibusdam quam reiciendis fugiat, ab illum. Reprehenderit, libero dolores enim voluptate id perferendis nisi labore veritatis?</p>
+                    <p>Quae quod ea quasi facere eveniet accusantium quos doloremque aspernatur esse impedit, adipisci quas distinctio? Adipisci perspiciatis in quisquam animi rem, unde voluptates laboriosam! Ratione illo quo necessitatibus fugit consequatur
+                </div>
+            </div>*/
+        -->
     </body>
 </html>
