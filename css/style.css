@@ -1133,8 +1133,8 @@ input:hover{
 .text h1 {
   font-size: 3rem;
 }
-
-.text a:link, .text a:visited {
+/*
+.text{
   background-color: #458345;
 
   border: 10px;
@@ -1142,6 +1142,23 @@ input:hover{
 
   padding: 10px;
   color: #FAD9E6;
+}*/
+
+.btn{
+  box-sizing: border-box;
+  display: flex;
+  padding: 14px 32px 15px;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 50px;
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
+  box-shadow: 0 0 2px black;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 2%;
+  margin-left: 34%;
 }
 
 .img{
