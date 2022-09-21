@@ -1199,6 +1199,7 @@ input:hover{
 .img_produto img{
   width: 300px;
   height: 300px;
+  margin-top: 5%;
 }
 
 .img_produto{
@@ -1207,7 +1208,9 @@ input:hover{
   border-radius: 3px;
   box-shadow: 0 0 2px black;
   width: 400px;
-  height: 350px;
+  height: 450px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 

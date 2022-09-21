@@ -47,6 +47,7 @@
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
                                 <img src='./img/img_cacto1.jpg' alt='imagem'>
+                                <p class='text'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto .</p>
                             </div>
                             <div class='img_produto'>
                                 <img src='./img/img_cacto2.png' alt='imagem'>
