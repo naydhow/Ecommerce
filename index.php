@@ -43,6 +43,20 @@
                                 <img src='./img/img_topo.png' alt='imagem'>
                             </div>
                         </div>
+
+                        <div class='section' id='produtos'>
+                            <div class='img_produto'>
+                                <img src='./img/img_cacto1.jpg' alt='imagem'>
+                            </div>
+                            <div class='img_produto'>
+                                <img src='./img/img_cacto2.png' alt='imagem'>
+                            </div>
+                            <div class='img_produto'>
+                                <img src='./img/img_cacto3.png' alt='imagem'>
+                            </div>
+                                        
+                                        
+                        </div>
                     </div>
                 </main>
                 ";

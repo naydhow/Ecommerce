@@ -1158,7 +1158,6 @@ input:hover{
   border-radius: 4px;
   text-decoration: none;
   margin-bottom: 2%;
-  margin-left: 34%;
 }
 
 .img{
@@ -1196,3 +1195,20 @@ input:hover{
   width: 600px;
   margin-right: 150px;
 }*/
+
+.img_produto img{
+  width: 300px;
+  height: 300px;
+}
+
+.img_produto{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 3px;
+  box-shadow: 0 0 2px black;
+  width: 400px;
+  height: 350px;
+}
+
+
+
