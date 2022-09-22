@@ -1184,6 +1184,7 @@ input:hover{
 
 .ai{
   margin-bottom: 40px;
+  color: #716356;
 }
 
 .text h1 {
@@ -1278,14 +1279,17 @@ input:hover{
 
 .text_produtos1{
   margin-top: 10%;
+  color: #716356;
 }
 
 .text_produtos2{
   margin-top: 6%;
+  color: #716356;
 }
 
 .text_produtos3{
   margin-top: 1.2rem;
+  color: #716356;
 }
 
 .textinho{
@@ -1295,6 +1299,7 @@ input:hover{
   margin-top: 5%;
   margin-left: 140px;
   font-size: 20px;
+  color: #716356;
 }
 
 .vid{

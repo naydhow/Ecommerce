@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Carrinho de compras</title>
+        <title>Produtos</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../img/logopeq_caricacto.svg">
     </head>
