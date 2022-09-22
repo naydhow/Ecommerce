@@ -1294,7 +1294,7 @@ input:hover{
   font-family: var(--body-font);
   width: 300px;
   margin-top: 5%;
-  margin-left: 4.7rem;
+  margin-left: 140px;
   font-size: 20px;
 }
 
@@ -1307,7 +1307,7 @@ input:hover{
 #footer{
   background-color: #C5D8A4;
   height: 10%;
-  margin-top: 5%;
+  margin-top: 10%;
 
 }
 
