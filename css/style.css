@@ -1261,50 +1261,47 @@ input:hover{
 
 .img_produto{
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   border-radius: 3px;
   box-shadow: 0 0 4px black;
   width: 400px;
-  height: 500px;
+  height: 480px;
   margin-left: 3.8rem;
   margin-right: 4%;
 }
 
-.text_produtos1{
-  text-align: center;
+.alinhamento{
+  align-items: center;
+  justify-content: center;
   font-family: var(--body-font);
-  width: 200px;
-  margin-top: 12%;
-  margin-left: 4rem;
+  font-size: 17px;
+}
+
+.text_produtos1{
+  margin-top: 10%;
 }
 
 .text_produtos2{
-  text-align: center;
-  font-family: var(--body-font);
-  width: 200px;
   margin-top: 6%;
-  margin-left: 4.2rem;
 }
 
 .text_produtos3{
-  text-align: center;
-  font-family: var(--body-font);
-  width: 200px;
   margin-top: 1.2rem;
-  margin-left: 4.7rem;
 }
 
 .textinho{
   text-align: center;
   font-family: var(--body-font);
-  width: 200px;
-  margin-top: 1.2rem;
+  width: 300px;
+  margin-top: 5%;
   margin-left: 4.7rem;
+  font-size: 20px;
 }
 
-.video vid{
-  width: 760px;
-  height: 415px;
+.vid{
+  align-items: baseline;
+  margin-right: 90px;
+  margin-top: 4%;
 }
 
 
