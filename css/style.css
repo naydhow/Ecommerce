@@ -10,7 +10,6 @@
 }
 
 ul {
-  margin-left: 80px;
   list-style: none;
 }
 
@@ -99,25 +98,32 @@ html{
   margin-right: 3rem;
 }
 
+
 .grid{
   display: flex;
-  gap: 1rem;
-  margin-right: 30px;
 }
 
 .title {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-family: var(--title-font);
   color: var(--title-color);
-  margin-left: 30px;
+  margin-left: 40px;
   -webkit-font-smoothing: auto;
+}
+
+.icone_topo{
+  width: 23px;
+}
+
+.icone_topo:hover{
+  width: 27px;
+  transition: 0.2s;
 }
 
 /*logo*/
 .logo{
-  width: 55%;
-  justify-content: center;
   margin-top: 14px;
+  width: 45%;
 }
 
 
@@ -126,7 +132,7 @@ nav {
   height: var(--header-height);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   width: 100%;
 }
 
@@ -1165,8 +1171,8 @@ input:hover{
 .text h1 {
   font-size: 3rem;
 }
-
-.text a:link, .text a:visited {
+/*
+.text{
   background-color: #458345;
 
   border: 10px;
@@ -1174,6 +1180,22 @@ input:hover{
 
   padding: 10px;
   color: #FAD9E6;
+}*/
+
+.btn{
+  box-sizing: border-box;
+  display: flex;
+  padding: 14px 32px 15px;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 50px;
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
+  box-shadow: 0 0 2px black;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 2%;
 }
 
 .img{
@@ -1182,9 +1204,9 @@ input:hover{
 }
 
 .img img{
-  width: 732.2px;
-  height: 505px;  
-  box-shadow: 4rem -4rem 0 #ffcceb;
+  width: 682.2px;
+  height: 455px;  
+  box-shadow: 3rem -3rem 0 #ffcceb;
 }
 /*
 #sobre{
@@ -1211,3 +1233,62 @@ input:hover{
   width: 600px;
   margin-right: 150px;
 }*/
+
+.img_produto img{
+  width: 300px;
+  height: 300px;
+  margin-top: 5%;
+}
+
+.img_produto{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 3px;
+  box-shadow: 0 0 4px black;
+  width: 400px;
+  height: 500px;
+  margin-left: 3.8rem;
+  margin-right: 4%;
+}
+
+.text_produtos1{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 12%;
+  margin-left: 4rem;
+}
+
+.text_produtos2{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 6%;
+  margin-left: 4.2rem;
+}
+
+.text_produtos3{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 1.2rem;
+  margin-left: 4.7rem;
+}
+
+.textinho{
+  text-align: center;
+  font-family: var(--body-font);
+  width: 200px;
+  margin-top: 1.2rem;
+  margin-left: 4.7rem;
+}
+
+.video vid{
+  width: 760px;
+  height: 415px;
+}
+
+
+
+
+

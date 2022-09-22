@@ -6,29 +6,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"type="text/css" href="./css/style.css">
-        <link rel="icon" href="./img/logopeq_caricacto.svg">
+        <link rel="icon" href="img/logopeq_caricacto.svg">
     </head>
     <body>
         <?php
-        
+            // na linha 24 e 25 as páginas ainda não estão feitas, mas coloquei o link das páginas de cadastro de user e produto, 
+            // só pra facilitar na hora de programar        
             echo"
                 <header id= 'header' >
                     <nav class='container'>
-                        <a  class='logo' href='./index.php'><img src='./img/logo.svg'></a>
+                        <a href='./index.php'><img src='./img/logo.svg' class='logo'></a>
                         <div class='menu'>
                             <ul class='grid'>
                                 <li><a class='title' href='./index.php' target='_parent'>Home</a></li>
-                                <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                                <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></li>
-                                <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Seleção</a></li>
-                            </ul> 
-                        </div>
-                        <div class'parte_menu'>
-                            <ul class='grid'>
-                                <li><a class='title' href='./venda/carrinho_front.php' target='_parent'><img src='./img/img_carrinhovazio.svg'></a></li>
-                                <li><a class='title' href='./arrumaoerroduda.haha' target='_parent'><img src='./img/img_perfil.svg'></a></li>
+                                <li><a class='title'>Sobre</a></li>
+                                <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+                                <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
+                                <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
                             </ul>
                         </div>
+                        <a class='title' href='./venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='./img/img_carrinhovazio.svg' ></a></li>
+                        <a class='title'href='./login/login.html' target='_parent'><img class='icone_topo' src='./img/img_perfil.svg'></a></li>
                         <div class='toggle icon-menu'></div>
                         <div class='toggle icon-close'></div>
                     </nav>
@@ -43,11 +41,36 @@
                                 <p class='ai'>
                                     O Caricacto cuida de sua planta desde da sementinha, até a entrega em sua residência, com muito amor e carinho. Com produtos de excelente qualidade, já conquistou clientes de todo o país.
                                 </p>
-                                <a href='#' class='btn'>Ver produtos</a>
+                                <a href='./venda/selecao_produtos_front.php' target='_parent' class='btn'>Ver produtos</a>
                             </div>
                             <div class='img'>
                                 <img src='./img/img_topo.png' alt='imagem'>
                             </div>
+                        </div>
+
+                        <div class='section' id='produtos'>
+                            <div class='img_produto'>
+                                <img src='./img/img_cacto1.jpg' alt='imagem'>
+                                <p class='text_produtos1'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto .</p>
+                            </div>
+                            <div class='img_produto'>
+                                <img src='./img/img_cacto2.png' alt='imagem'>
+                                <p class='text_produtos2'>Como diferencial, são acompanhados com vasinhos de bambu confeccionados por nós de forma sustentável e ecológica.</p>
+                            </div>
+                            <div class='img_produto'>
+                                <img src='./img/img_cacto3.png' alt='imagem'>
+                                <p class='text_produtos3'>Nossos produtos são selecionados especialmente para você de nossas estufas sendo cuidados diariamente com muita dedicação.</p>
+                            </div>
+                        <div class='section' id='video'>
+                            <div class='textinho'>
+                                <p>Ao lado, deixamos um vídeo de cuidados com essas plantinhas para que elas cresçam de forma saudável e deixem seu jardim ou ambiente lindo.</p>
+                            </div>
+
+                            <div class='vid'>
+                                <iframe width='560' height='315' src='https://www.youtube.com/embed/QUI7XkK3Z1g' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class='section' id='final'>
                         </div>
                     </div>
                 </main>
