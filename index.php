@@ -78,14 +78,24 @@
                                 <iframe width='660' height='415' src='https://www.youtube.com/embed/QUI7XkK3Z1g' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
                             </div>
                         </div>
+
+                        <div class='section' id='footer'>
+                            <div class='navegacao'>
+                                <p class='title'>Navegação</p>
+                                <a class='title' href='./index.php' target='_parent'>Home</a>
+                                <a class='title'>Sobre</a>
+                                <a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
+                                <a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
+                                <a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a>
+                            </div>
+                        </div>
                     </div>
                 </main>
                 ";
         ?>!</p>
 
         <!--
-            <div class='section' id='final'>
-            </div>
+
 
             <div class='section' id='sobre'>
                 <div class='img_sobre'>
