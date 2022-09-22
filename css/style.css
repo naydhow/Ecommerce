@@ -1172,7 +1172,6 @@ input:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
 }
 
 .text {
@@ -1304,7 +1303,7 @@ input:hover{
   margin-top: 4%;
 }
 
-#footer{
+footer{
   background-color: #C5D8A4;
   height: 10%;
   margin-top: 10%;
