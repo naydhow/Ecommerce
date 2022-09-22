@@ -10,6 +10,7 @@
 }
 
 ul {
+  margin-left: 80px;
   list-style: none;
 }
 
@@ -1022,10 +1023,19 @@ input:hover{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<TABELA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .tabela {  
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto ;
+
+  gap: 1rem 0.5rem;
+
+  padding: 0 2rem;
+  margin: 1rem 0;
+
+  font: 14px var(--body-font);
   /*margin-left: 10px;*/
-  margin-top: 4%;
+  /* margin-top: 4%;
   width: 95%; 
-  height: 100%;
+  height: 100%; */
 
   /* display:block; */
 
@@ -1059,25 +1069,34 @@ input:hover{
 }
 
 .cell{
-  display:inline-block;
+  background-color: #C5D8A4;
+
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* display:inline-block;
 
   padding-top: 1.5%;
   padding-bottom:1.5%;
   margin-bottom: .5%;
-  border-radius: 6px;
+  border-radius: 6px; */
 
   /* text-align: center;
   align-items: center;
   justify-content: center; */
 
+  /* background-color: var(--color-button-claro); */
+}
+
+/* .cellHeader{
   background-color: var(--color-button-claro);
 }
 
-.cellHeader{
-  background-color: var(--color-button-claro);
-}
-
-.cellPeq{ /* cellId */
+.cellPeq{  cellId 
 
   width: 75px;
   height: 100px;
@@ -1086,7 +1105,7 @@ input:hover{
   text-align: center;
 }
 
-.cellGrande{ /* cellNome */
+.cellGrande{  cellNome 
   align-items: center;
   width:145px;
   height: 100px;
@@ -1095,7 +1114,7 @@ input:hover{
   text-decoration: none;
 }
 
-.cellMedia{ /*cellMargemLucro */
+.cellMedia{ cellMargemLucro 
   align-items: center;
   width: 105px;
   height: 100px;
@@ -1126,11 +1145,11 @@ input:hover{
   width:250px;
   height: 100px;
   color: var(--text-color);
-}
+} */
 
-.cellEnormeImg img{
-  width: 10px;
-  height: 10px;
+.cell img{
+  width: 50px;
+  height: 50px;
 }  
 
 .cellEnormeImg img:hover{

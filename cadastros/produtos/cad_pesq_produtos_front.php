@@ -61,35 +61,33 @@
                 // Começar tabela e criar o cabeçalho
                 echo "
                 <div class='tabela'>
-                    <div class='fileira'>
-                        <div class='cell cellMedia cellHeader'>
-                            <b>Id Produto</b>
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            <b>Nome</b>
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            <b>Estoque</b>
-                        </div>
-                        <div class='cell cellEnorme cellHeader'>
-                            <b>Imagem</b>
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            <b>Preço</b>
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            <b>Alterar</b>
-                        </div>
-                        <div class='cell cellGrande cellHeader'>
-                            <b>Excluir</b>
-                        </div>
-                    </div>";
+                    <div class='cell cellMedia cellHeader'>
+                        <b>Id Produto</b>
+                    </div>
+                    <div class='cell cellGrande cellHeader'>
+                        <b>Nome</b>
+                    </div>
+                    <div class='cell cellGrande cellHeader'>
+                        <b>Estoque</b>
+                    </div>
+                    <div class='cell cellEnorme cellHeader'>
+                        <b>Imagem</b>
+                    </div>
+                    <div class='cell cellGrande cellHeader'>
+                        <b>Preço</b>
+                    </div>
+                    <div class='cell cellGrande cellHeader'>
+                        <b>Alterar</b>
+                    </div>
+                    <div class='cell cellGrande cellHeader'>
+                        <b>Excluir</b>
+                    </div>
+                    ";
 
                     // Criar linhas com os dados dos produtos
                     foreach ($resultado_lista as $linha)
                     {
                         echo "
-                        <div class='row'>
                             <div class='cell cellMedia'>
                                 ".$linha['id_produto']."
                             </div>
@@ -100,7 +98,7 @@
                                 ".$linha['estoque']."
                             </div>
                             <div class='cell cellEnorme'>
-                                ".'<img src="'.$linha['campo_imagem'].'" widht="13px" height="13px">'."
+                                ".'<img src="'.$linha['campo_imagem'].'">'."
                             </div>
                             <div class='cell cellGrande'>
                                 ".$linha['preco']."
@@ -111,7 +109,7 @@
                             <div class='cell cellGrande'>
                                 <a  class='cellGrande' href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                             </div>
-                        </div> "; 
+                        "; 
                     } 
                 // Fechando a tag da tabela
                 echo "</div>";

@@ -57,7 +57,6 @@
             // Começar tabela e criar o cabeçalho
             echo "
             <div class='tabela'>
-                <div class='fileira'>
                     <div class='cell cellPeq cellHeader'>
                         <b>Id</b>
                     </div>
@@ -79,19 +78,17 @@
                     <div class='cell cellMenor cellHeader'>
                         <b>Excluir</b>
                     </div>
-                </div>
                 ";
 
                 // Criar linhas com os dados dos produtos
                 foreach ($resultado_lista as $linha)
                 {
                     echo "
-                    <div class='row'>
                         <div class='cell cellPeq'>
                             ".$linha['id_usuario']."
                         </div>
                         <div class='cell cellEnormeImg'>
-                            ".'<img src="'.$linha['img'].'">'."
+                            ".'<img src="'.$linha['img'].'" width="10px" height="10px">'."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['nome']."
@@ -108,7 +105,6 @@
                         <div class='cell cellMenor'>
                             <a  class='cellMenor' href='cad_exclui_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Excluir</a>&nbsp;
                         </div>
-                    </div> 
                     "; 
                 } 
             // Fechando a tag da tabela

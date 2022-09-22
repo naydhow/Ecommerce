@@ -47,7 +47,6 @@
                                 <img src='./img/img_topo.png' alt='imagem'>
                             </div>
                         </div>
-
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
                                 <img src='./img/img_cacto1.jpg' alt='imagem'>
@@ -60,7 +59,7 @@
                             <div class='img_produto'>
                                 <img src='./img/img_cacto3.png' alt='imagem'>
                                 <p class='text_produtos3'>Nossos produtos são selecionados especialmente para você de nossas estufas sendo cuidados diariamente com muita dedicação.</p>
-                            </div>
+                            </div>                    
                         <div class='section' id='video'>
                             <div class='textinho'>
                                 <p>Ao lado, deixamos um vídeo de cuidados com essas plantinhas para que elas cresçam de forma saudável e deixem seu jardim ou ambiente lindo.</p>
