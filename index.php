@@ -40,7 +40,8 @@
                                     Cactos e suculentas para seu jardim
                                 </h1>
                                 <p class='ai'>
-                                    O Caricacto cuida de sua planta desde da sementinha, até a entrega em sua residência, com muito amor e carinho. Com produtos de excelente qualidade, já conquistou clientes de todo o país.
+                                    O Caricacto cuida de sua planta desde a sementinha, até a entrega em sua residência, 
+                                    com muito amor e carinho. Com produtos de excelente qualidade que irão conquistar seu coração.
                                 </p>
                                 <a href='./venda/selecao_produtos_front.php' target='_parent' class='btn'>Ver produtos</a>
                             </div>
@@ -53,19 +54,29 @@
                             <div class='img_produto'>
                                 <div class='alinhamento'>    
                                     <img src='./img/img_cacto1.jpg' alt='imagem'>
-                                    <p class='text_produtos1'> Com mini cactos e suculentas<br> de diversas espécies, para<br> todos os tipos de gosto .</p>
+                                    <p class='text_produtos'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. Confira nosssos produtos!</p>
+                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <p class='text_produtos_preco'>R$ 5.00</p>
+                                    <a href='./venda/selecao_produtos_front.php' class='home_comprar'>Comprar</a>
                                 </div>
                             </div>
+
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
                                     <img src='./img/img_cacto2.png' alt='imagem'>
-                                    <p class='text_produtos2'>Como diferencial, são<br> acompanhados com vasinhos<br> de bambu confeccionados por<br> nós de forma sustentável e<br> ecológica.</p>
+                                    <p class='text_produtos'>Produtos acompanhados com vasinhos de bambu confeccionados por nós de forma sustentável e ecológica.</p>
+                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <p class='text_produtos_preco'>R$ 5.00</p>
+                                    <a href='./venda/selecao_produtos_front.php' class='home_comprar'>Comprar</a>
                                 </div>
                             </div>
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
                                     <img src='./img/img_cacto3.png' alt='imagem'>
-                                    <p class='text_produtos3'>Nossos produtos são<br> selecionados especialmente<br> para você de nossas estufas<br> sendo cuidados diariamente<br> com muita dedicação.</p>
+                                    <p class='text_produtos'>Produtos selecionados especialmente para você, sendo cuidados diariamente com muita dedicação.</p>
+                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <p class='text_produtos_preco'>R$ 5.00</p>    
+                                    <a href='./venda/selecao_produtos_front.php' class='home_comprar'>Comprar</a>                            
                                 </div>  
                             </div>
                         </div>

@@ -1254,9 +1254,10 @@ input:hover{
 }*/
 
 .img_produto img{
-  width: 300px;
-  height: 300px;
-  margin-top: 5%;
+  width: 335px;
+  height: 335px;
+  /* margin-top: 5%; */
+  margin-bottom: 3%;
 }
 
 .img_produto{
@@ -1264,29 +1265,55 @@ input:hover{
   margin-bottom: 3%;
   border-radius: 3px;
   box-shadow: 0 0 4px black;
-  width: 400px;
-  height: 480px;
-  margin-left: 3.8rem;
-  margin-right: 4%;
+  width: 450px;
+  height: 550;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2% 2%;
 }
 
 .alinhamento{
   align-items: center;
   justify-content: center;
   font-family: var(--body-font);
+  font-size: 15px;
+}
+
+.text_produtos{
+  margin-left: 1%;
+  margin-bottom: 2%;
+
+}
+
+.text_produtos_preco{
+  margin-top: 1%;
   font-size: 17px;
+  font-weight: 300;
 }
 
-.text_produtos1{
-  margin-top: 10%;
+.home_comprar{
+  box-sizing: border-box;
+  display: flex;
+  padding: 14px 32px 15px;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 30px;
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
+  font-size:13px;
+  box-shadow:  0 0 2px black;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 37%;
+  margin-top: 4%;
 }
 
-.text_produtos2{
-  margin-top: 6%;
-}
-
-.text_produtos3{
-  margin-top: 1.2rem;
+.home_comprar:hover{
+  background: var(--color-button-escuto);
+  color: var(--color-texto-claro-button);
+  width: 95px;
+  height: 35px;
 }
 
 .textinho{
