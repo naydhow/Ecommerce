@@ -3,6 +3,7 @@
 
 <script src="../../js/main.js" defer></script>
 <script src="../../js/perfil_photo.js" defer></script>
+<script src="../../js/masks.js"></script>
 
 <!-- Recuperando as informações do produto -->
 <?php   
@@ -32,7 +33,7 @@
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="color_cadastros">
        <div class="container_paginas">
-              <p class="cadastro_titulos">Alteração de Usuário</p>
+              <span class="cadastro_titulos">Alteração de Usuário</span>
 
               <div class="form_cad_user_alt">
                      <form action="cad_altera_usuarios_back.php" enctype="multipart/form-data" method="post">
@@ -51,7 +52,7 @@
                                    
                             <div class="input-box">
                                    <label>
-                                          <p class="campo_label">Id do usuário:</p>
+                                          <span class="campo_label">Id do usuário:</span>
                                           <input class="input_user_grande_alt" type="text" name="id_usuario" 
                                           value="<?php echo $linha['id_usuario']; ?>" 
                                           readonly>
@@ -61,7 +62,7 @@
                             
                             <div class="input-box">         
                                    <label>
-                                          <p class="campo_label">Nome</p>
+                                          <span class="campo_label">Nome</span>
                                           <input class="input_user_grande_alt" type="text" name="nome" maxlength="100"
                                           value="<?php echo $linha['nome']; ?>" >
                                    </label>
@@ -69,7 +70,7 @@
 
                             <div class="input-box">
                                    <label>
-                                          <p class="campo_label">Email</p>
+                                          <span class="campo_label">Email</span>
                                           <input class="input_user_grande_alt" type="text" name="email" maxlength="80"
                                           value="<?php echo $linha['email']; ?>" >
                                    </label>
@@ -77,8 +78,8 @@
 
                             <div class="input-box">
                                    <label>
-                                          <p class="campo_label">Senha</p>
-                                          <input class="input_user_grande_alt" type="text" name="senha" maxlength="32"
+                                          <span class="campo_label">Senha</span>
+                                          <input class="input_user_grande_alt" type="password" name="senha" maxlength="32"
                                           value="<?php echo $linha['senha']; ?>" >
                                    </label>
                             </div>
@@ -88,7 +89,7 @@
                                           
                                    <div class="input-box">
                                           <div class="campo_label_peq2">
-                                                 <b>Sexo</b>
+                                                 <span class="campo_label">Sexo</span>
                                                  <input type="text" name="sexo" 
                                                  value="<?php echo $linha['sexo']; ?>" >
                                           </label>
@@ -99,7 +100,7 @@
                             <div class="input_block">
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label_pequeno">CPF</p>
+                                                 <span class="campo_label_pequeno">CPF</span>
                                                  <input class="Input_user_pequeno_alt" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"
                                                  value="<?php echo $linha['cpf']; ?>" >
                                           </label>
@@ -107,7 +108,7 @@
                                    
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label_pequeno">Telefone</p>
+                                                 <span class="campo_label_pequeno">Telefone</span>
                                                  <input class="input_user_pequeno_alt" type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"
                                                  value="<?php echo $linha['telefone']; ?>" >
                                           </label>
@@ -115,7 +116,7 @@
 
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label_pequeno">Data Nasc.</p>
+                                                 <span class="campo_label_pequeno">Data Nasc.</span>
                                                  <input  class="input_user_pequeno_alt" type="text" name="data_nasc" 
                                                  value="<?php echo $linha['data_nasc']; ?>" >
                                           </label>
@@ -123,7 +124,7 @@
 
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label_pequeno">CEP</p>
+                                                 <span class="campo_label_pequeno">CEP</span>
                                                  <input class="input_user_pequeno_alt" type="text" name="cep" id="cep" placeholder="00000-000"
                                                  value="<?php echo $linha['cep']; ?>" >
                                           </label>
@@ -131,7 +132,7 @@
 
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label">Endereço</p>
+                                                 <span class="campo_label">Endereço</span>
                                                  <input class="input_user_grande_alt" type="text" name="endereco" id="endereco" maxlength="150"
                                                  value="<?php echo $linha['endereco']; ?>" >                                          
                                           </label>
@@ -139,7 +140,7 @@
 
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label_pequeno">Cidade</p>
+                                                 <span class="campo_label_pequeno">Cidade</span>
                                                  <input class="input_user_medio_alt" type="text" name="cidade" id="cidade" maxlength="30" 
                                                  value="<?php echo $linha['cidade']; ?>" >
                                           </label>
@@ -147,7 +148,7 @@
 
                                    <div class="input-box">
                                           <label>
-                                                 <p class="campo_label_pequeno">Estado</p>
+                                                 <span class="campo_label_pequeno">Estado</span>
                                                  <input class="input_user_peq2_alt" type="text" name="estado" id="estado" maxlength="2"
                                                  value="<?php echo $linha['estado']; ?>" >
                                           </label>

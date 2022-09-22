@@ -13,9 +13,9 @@
   {
       echo '<script language="javascript">';
       echo "alert('Usuário não encontrado!')";
-      echo '</script>';	
-      // echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=login.html'>";
-      // exit;
+      echo '</script>';
+      echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=login.html'>";
+      exit;
   }
 
   $linha = pg_fetch_array($resultado);

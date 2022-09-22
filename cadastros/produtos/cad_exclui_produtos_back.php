@@ -4,10 +4,6 @@
 
     //dados enviados do script exclui_prod_chamada_confirma_exclusao_logica.php
     $id_produto = $_POST['id_produto'];
-    
-    // Padrão para data no servidor do kinghost está americano (se atentar!!)
-    //$data=date('m/d/Y'); //'Y' (maiúsculo) para ano com 4 dígitos
-    //$data=date('d/m/Y');
 
     //inserida a data de exclusao do produto para histórico
     $sql="UPDATE caricactoProduto

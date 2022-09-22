@@ -76,7 +76,7 @@
                             <div class="input-box">
                                    <label>
                                           <p class="campo_label">Senha</p>
-                                          <input class="input_user_grande_alt" type="text" name="senha" maxlength="32"
+                                          <input class="input_user_grande_alt" type="password" name="senha" maxlength="32"
                                           value="<?php echo $linha['senha']; ?>"
                                           readonly>
                                    </label>
@@ -99,7 +99,7 @@
                                    <div class="input-box">
                                           <label>
                                                  <p class="campo_label_pequeno">CPF</p>
-                                                 <input class="Input_user_pequeno_alt" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"
+                                                 <input class="Input_user_pequeno_alt" type="text" name="cpf" id="cpf"
                                                  value="<?php echo $linha['cpf']; ?>"
                                                  readonly>
                                           </label>
@@ -108,7 +108,7 @@
                                    <div class="input-box">
                                           <label>
                                                  <p class="campo_label_pequeno">Telefone</p>
-                                                 <input  class="input_user_pequeno_alt" type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000"
+                                                 <input  class="input_user_pequeno_alt" type="text" name="telefone" id="telefone"
                                                  value="<?php echo $linha['telefone']; ?>"
                                                  readonly>
                                           </label>
@@ -126,7 +126,7 @@
                                    <div class="input-box">
                                           <label>
                                           <p class="campo_label_pequeno">CEP</p>
-                                                 <input class="input_user_pequeno_alt" type="text" name="cep" id="cep" placeholder="00000-000"
+                                                 <input class="input_user_pequeno_alt" type="text" name="cep" id="cep"
                                                  value="<?php echo $linha['cep']; ?>"
                                                  readonly>
                                           </label>

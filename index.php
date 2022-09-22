@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"type="text/css" href="./css/style.css">
-        <link rel="icon" href="img/logopeq_caricacto.svg">
+        <link rel="icon" href="./img/logopeq_caricacto.svg">
     </head>
     <body>
         <?php
@@ -22,6 +22,12 @@
                                 <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></li>
                                 <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Seleção</a></li>
                             </ul> 
+                        </div>
+                        <div class'parte_menu'>
+                            <ul class='grid'>
+                                <li><a class='title' href='./venda/carrinho_front.php' target='_parent'><img src='./img/img_carrinhovazio.svg'></a></li>
+                                <li><a class='title' href='./arrumaoerroduda.haha' target='_parent'><img src='./img/img_perfil.svg'></a></li>
+                            </ul>
                         </div>
                         <div class='toggle icon-menu'></div>
                         <div class='toggle icon-close'></div>
