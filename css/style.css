@@ -1048,7 +1048,7 @@ input:hover{
 
 .row{
   /* margin-top:15px; */
-  display: inline-flex;
+  /* display: inline-flex; */
   /* justify-content: center;
   align-items: center; */
   
@@ -1129,8 +1129,8 @@ input:hover{
 }
 
 .cellEnormeImg img{
-  width: 50px;
-  height: 50px;
+  width: 10px;
+  height: 10px;
 }  
 
 .cellEnormeImg img:hover{
