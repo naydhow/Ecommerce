@@ -40,7 +40,7 @@
                                     Cactos e suculentas para seu jardim
                                 </h1>
                                 <p class='ai'>
-                                    O Caricacto cuida de sua planta desde da sementinha, até a entrega em sua residência, com muito amor e carinho. Com produtos de excelente qualidade, já conquistou clientes de todo o país.
+                                    O Caricacto cuida de sua planta desde a sementinha, até a entrega em sua residência, com muito amor e carinho. Com produtos de excelente qualidade, já conquistou clientes de todo o país.
                                 </p>
                                 <a href='./venda/selecao_produtos_front.php' target='_parent' class='btn'>Ver produtos</a>
                             </div>
