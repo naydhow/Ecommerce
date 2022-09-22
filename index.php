@@ -45,7 +45,7 @@
                                 <a href='./venda/selecao_produtos_front.php' target='_parent' class='btn'>Ver produtos</a>
                             </div>
                             <div class='img'>
-                                <img src='./img/img_topo.png' alt='imagem'>
+                                <img src='./img/img_topo.jpg' alt='imagem'>
                             </div>
                         </div>
 
@@ -58,13 +58,13 @@
                             </div>
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
-                                    <img src='./img/img_cacto2.png' alt='imagem'>
+                                    <img src='./img/img_cacto2.jpg' alt='imagem'>
                                     <p class='text_produtos2'>Como diferencial, são<br> acompanhados com vasinhos<br> de bambu confeccionados por<br> nós de forma sustentável e<br> ecológica.</p>
                                 </div>
                             </div>
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
-                                    <img src='./img/img_cacto3.png' alt='imagem'>
+                                    <img src='./img/img_cacto3.jpg' alt='imagem'>
                                     <p class='text_produtos3'>Nossos produtos são<br> selecionados especialmente<br> para você de nossas estufas<br> sendo cuidados diariamente<br> com muita dedicação.</p>
                                 </div>  
                             </div>
