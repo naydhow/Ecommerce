@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Página Inicial</title>
+        <title>Caricacto</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"type="text/css" href="./css/style.css">
@@ -13,6 +13,7 @@
             // na linha 24 e 25 as páginas ainda não estão feitas, mas coloquei o link das páginas de cadastro de user e produto, 
             // só pra facilitar na hora de programar        
             echo"
+                
                 <header id= 'header' >
                     <nav class='container'>
                         <a href='./index.php'><img src='./img/logo.svg' class='logo'></a>
@@ -25,10 +26,8 @@
                                 <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
                             </ul>
                         </div>
-                        <a class='title' href='./venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='./img/img_carrinhovazio.svg' ></a></li>
-                        <a class='title'href='./login/login.html' target='_parent'><img class='icone_topo' src='./img/img_perfil.svg'></a></li>
-                        <div class='toggle icon-menu'></div>
-                        <div class='toggle icon-close'></div>
+                        <a class='title' href='./venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='./img/img_carrinhovazio.svg' ></a>
+                        <a class='title'href='./login/login.html' target='_parent'><img class='icone_topo' src='./img/img_perfil.svg'></a>
                     </nav>
                 </header>
                 <main>
@@ -51,24 +50,39 @@
 
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
-                                <div class='alinhamento'>    
-                                    <img src='./img/img_cacto1.jpg' alt='imagem'>
-                                    <p class='text_produtos1'> Com mini cactos e suculentas<br> de diversas espécies, para<br> todos os tipos de gosto .</p>
+                                <div class='alinhamento'>   
+                                    <img src='./img/img_cacto1.jpg' alt='imagem'>  
+                                    <p class='text_produtos'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. Confira nosssos produtos!</p>
+                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <p class='text_produtos_preco'>R$ 5.00</p>
+                                    <a class='home_comprar' href='./venda/selecao_produtos_front.php'>Comprar</a>
                                 </div>
                             </div>
+
+
+                    
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
-                                    <img src='./img/img_cacto2.jpg' alt='imagem'>
-                                    <p class='text_produtos2'>Como diferencial, são<br> acompanhados com vasinhos<br> de bambu confeccionados por<br> nós de forma sustentável e<br> ecológica.</p>
+                                    <img src='./img/img_cacto2.jpg' alt='imagem'> 
+                                    <p class='text_produtos'>Como diferencial, são acompanhados com vasinhos 
+                                        de bambu confeccionados por nós de forma sustentável e ecológica.</p>
+                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <p class='text_produtos_preco'>R$ 5.00</p>    
+                                    <a class='home_comprar' href='./venda/selecao_produtos_front.php'>Comprar</a>     
                                 </div>
                             </div>
+
                             <div class='img_produto'>
-                                <div class='alinhamento'> 
-                                    <img src='./img/img_cacto3.jpg' alt='imagem'>
-                                    <p class='text_produtos3'>Nossos produtos são<br> selecionados especialmente<br> para você de nossas estufas<br> sendo cuidados diariamente<br> com muita dedicação.</p>
-                                </div>  
+                                <div class='alinhamento'>
+                                    <img src='./img/img_cacto3.jpg' alt='imagem'> 
+                                    <p class='text_produtos'>Produtos selecionados especialmente para você, sendo cuidados diariamente com muita dedicação.</p>
+                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <p class='text_produtos_preco'>R$ 5.00</p>    
+                                    <a  class='home_comprar' href='./venda/selecao_produtos_front.php'>Comprar</a> 
+                                </div> 
                             </div>
                         </div>
+                  
 
                         <div class='section' id='video'>
                             <div class='textinho'>
@@ -78,39 +92,47 @@
                                 <iframe width='660' height='415' src='https://www.youtube.com/embed/QUI7XkK3Z1g' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
                             </div>
                         </div>
-
-                        
-                    </div>
-                </main>
-                <footer>
-                    <div class='navegacao'>
-                        <p class='title' id='h'>Navegação:</p>
-                        <a class='title' href='./index.php' target='_parent'>Home</a>
-                        <a class='title'>Sobre</a>
-                        <a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
-                        <a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
-                        <a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a>
                     </div>
 
-                    <div class='devs'>
-                        <p class='title' id='h'>Desenvolvedores:</p>
+                    
+                </div>
+            </main>
 
-                        <div class='devs1'>
-                        <p>
-                        04 - Beatriz Kaori Sakai <br>
-                        05 - Beatriz Osajima Suwa <br>
-                        13  - Eduarda Garbullio Silva <br>
-                        </p>
-                        </div>
-                        <div class='devs2'>
-                        <p>
-                        24 - Lorena Fioruci Caricati dos Santos <br>
-                        32 - Naydhow Roberto Mascareli Bertaglia <br>
-                        </p>
-                        </div>
+            <footer>
+            
+                <div class='voltar_topo'>
+                    <a href='./index.php' target='_parent'><img id='voltar_topo' src='./img/voltar_topo.svg'></a>
+                </div>
+
+                <div class='navegacao'>
+                    <p class='title' id='h'>Navegação:</p>
+                    <a class='title' href='./index.php' target='_parent'>Home</a>
+                    <a class='title'>Sobre</a>
+                    <a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
+                    <a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
+                    <a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a>
+                </div>
+
+                
+                <div class='devs'>
+                    <p class='title' id='h'>Desenvolvedores:</p>
+
+                    <div class='devs1'>
+                    <p>
+                    04 - Beatriz Kaori Sakai <br>
+                    05 - Beatriz Osajima Suwa <br>
+                    13  - Eduarda Garbullio Silva <br>
+                    </p>
                     </div>
-                </footer>
-                ";
+                    <div class='devs2'>
+                    <p>
+                    24 - Lorena Fioruci Caricati dos Santos <br>
+                    32 - Naydhow Roberto Mascareli Bertaglia <br>
+                    </p>
+                    </div>
+                </div>
+            </footer>
+            ";
         ?>
 
         <!--
