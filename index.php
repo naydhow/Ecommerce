@@ -39,7 +39,7 @@
                                     Cactos e suculentas para seu jardim
                                 </h1>
                                 <p class='ai'>
-                                    O Caricacto cuida de sua planta desde a sementinha, até a entrega em sua residência, com muito amor e carinho. Com produtos de excelente qualidade, já conquistou clientes de todo o país.
+                                    O Caricacto cuida de sua planta desde a sementinha, até a entrega em sua residência, com muito amor e carinho. Com produtos de excelente qualidade, iremos conquistar seu coração!
                                 </p>
                                 <a href='./venda/selecao_produtos_front.php' target='_parent' class='btn'>Ver produtos</a>
                             </div>
@@ -51,11 +51,11 @@
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
                                 <div class='alinhamento'>   
-                                    <img src='./img/img_cacto1.jpg' alt='imagem'>  
-                                    <p class='text_produtos'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. Confira nosssos produtos!</p>
+                                    <img src='./img/img_cacto1.jpg' alt='imagem'> 
                                     <p class='text_produtos_preco'>Suculenta</p>
-                                    <p class='text_produtos_preco'>R$ 5.00</p>
-                                    <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=2'>Comprar</a>
+                                    <p class='text_produtos_preco'>R$ 5.00</p> 
+                                    <p class='text_produtos'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. Confira nosssos produtos!</p>
+                                    <a class='home_comprar' href='./venda/selecao_produtos_front.php'>Comprar</a>
                                 </div>
                             </div>
 
@@ -64,23 +64,24 @@
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
                                     <img src='./img/img_cacto2.jpg' alt='imagem'> 
-                                    <p class='text_produtos'>Como diferencial, são acompanhados com vasinhos 
-                                        de bambu confeccionados por nós de forma sustentável e ecológica.</p>
                                     <p class='text_produtos_preco'>Suculenta</p>
-                                    <p class='text_produtos_preco'>R$ 5.00</p>    
-                                    <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=2'>Comprar</a>     
+                                    <p class='text_produtos_preco'>R$ 5.00</p>
+                                    <p class='text_produtos'>Como diferencial, são acompanhados com vasinhos 
+                                        de bambu confeccionados por nós de forma sustentável e ecológica.</p>    
+                                    <a class='home_comprar' href='./venda/selecao_produtos_front.php'>Comprar</a>     
                                 </div>
                             </div>
 
                             <div class='img_produto'>
                                 <div class='alinhamento'>
-                                    <img src='./img/img_cacto3.jpg' alt='imagem'> 
-                                    <p class='text_produtos'>Produtos selecionados especialmente para você, sendo cuidados diariamente com muita dedicação.</p>
+                                    <img src='./img/img_cacto3.jpg' alt='imagem'>                                     
                                     <p class='text_produtos_preco'>Suculenta</p>
-                                    <p class='text_produtos_preco'>R$ 5.00</p>    
-                                    <a  class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=2'>Comprar</a> 
+                                    <p class='text_produtos_preco'>R$ 5.00</p>   
+                                    <p class='text_produtos'>Produtos selecionados especialmente para você, sendo cuidados diariamente com muita dedicação.</p> 
+                                    <a  class='home_comprar' href='./venda/selecao_produtos_front.php'>Comprar</a> 
                                 </div> 
                             </div>
+
                         </div>
                         <div class='divider-2'></div>
 
@@ -100,7 +101,7 @@
 
             <footer>
                 <div class='navegacao'>
-                    <p class='title' id='h'>Navegação:</p>
+                    <p id='h'>Navegação:</p>
                     <a class='title' href='./index.php' target='_parent'>Home</a>
                     <a class='title'>Sobre</a>
                     <a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
@@ -147,7 +148,7 @@
                 </div>
             </div>*/
         -->
-        
+
         <script src="./js/main.js"></script>
     </body>
 </html>
