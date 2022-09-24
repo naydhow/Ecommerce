@@ -13,7 +13,7 @@
         echo"
         <header id= 'header' >
         <nav class='container'>
-            <a href='./index.php'><img src='../../img/logo.svg' class='logo'></a>
+            <a href='../../index.php'><img src='../../img/logo.svg' class='logo'></a>
             <div class='menu'>
                 <ul class='grid'>
                     <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>

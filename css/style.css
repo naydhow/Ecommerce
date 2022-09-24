@@ -191,7 +191,6 @@ nav ul li a::after {
 
 .container_paginas{
   padding-top: var(--header-height);
-  padding-bottom: 10%;
   width: 100%;
   /* height:max-content 100%; */
   background-color: var(--body-color);
