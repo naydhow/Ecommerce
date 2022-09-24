@@ -16,8 +16,8 @@
     $estado=$_POST['estado'];
     // $user_adm=$_POST['F']; //true e false maiusculo
 
-    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name']);
-    $imglink = 'http://projetoscti.com.br/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name'];
+    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
+    $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
 
     // Inserção
     $sql="INSERT INTO caricactoUsuario

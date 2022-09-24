@@ -17,7 +17,7 @@
     $qtde=pg_affected_rows($resultado);
 
     if ($qtde > 0 )
-        echo "<script type='text/javascript'>alert('Exclusão OK !!!')</script>";
+        // echo "<script type='text/javascript'>alert('Exclusão OK !!!')</script>";
     else
         echo "<script type='text/javascript'>alert('Erro na exclusão !!!')</script>";
 

@@ -1,10 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
 
-<script src="../../js/main.js" defer></script>
-<script src="../../js/perfil_photo.js" defer></script>
-<script src="../../js/masks.js"></script>
-
 <!-- Recuperando as informações do produto -->
 <?php   
 
@@ -167,3 +163,7 @@ echo"
               </div>
        </div>
 </div>
+
+<script src="../../js/cep.js" defer></script>
+<script src="../../js/perfil_photo.js" defer></script>
+<script src="../../js/masks.js"></script>

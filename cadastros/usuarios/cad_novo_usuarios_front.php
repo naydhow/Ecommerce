@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../img/logopeq_caricacto.svg">
 
-    <script src="../../js/main.js" defer></script>
-    <script src="../../js/masks.js"></script>
-    <script src="../../js/perfil_photo.js" defer></script>
-
     <title>Formulário de Cadastro de Usuarios - Tabela Usuario CRUD</title>
 </head>
 
@@ -151,6 +147,9 @@
             
         </div>
     </div>
-</body>
 
+    <script src="../../js/cep.js" defer></script>
+    <script src="../../js/masks.js"></script>
+    <script src="../../js/perfil_photo.js" defer></script>
+</body>
 </html>

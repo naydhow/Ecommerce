@@ -15,8 +15,8 @@
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
 
-    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name']);
-    $imglink = 'http://projetoscti.com.br/projetoscti24/EcommerceCRUD2/Ecommerce/img_upload/'.$img['name'];
+    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
+    $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
 
     $sql="UPDATE caricactoProduto 
              SET nome = '$nome',

@@ -61,6 +61,24 @@ img{
 
 }
 
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
+  );
+}
+
 body {
   font: 10rem 1rem var(--body-font);
   color: var(--text-color);
@@ -172,7 +190,7 @@ nav ul li a::after {
                         /* <<<<<<<<<< DIV PRINCIPAL - PRODUTOS, USUÁRIOS E SELEÇÃO >>>>>>>>>*/
 
 .container_paginas{
-  padding-top: 10%;
+  padding-top: var(--header-height);
   padding-bottom: 10%;
   width: 100%;
   /* height:max-content 100%; */
@@ -1161,7 +1179,9 @@ input:hover{
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HOME>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .section {
-  margin-top: 2.5rem;
+  padding: calc(2rem + var(--header-height)) 0;
+
+  /* margin-top: 2.5rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1264,7 +1284,7 @@ input:hover{
 }
 
 .img_produto{
-  margin-top: 8%;
+  /* margin-top: 8%; */
   border-radius: 3px;
   box-shadow: 0 0 4px black;
   width: 400px;
@@ -1331,11 +1351,11 @@ input:hover{
 .vid{
   align-items: baseline;
   margin-right: 90px;
-  margin-top: 8%;
+  /* margin-top: 8%; */
 }
 
 footer{
-  background-color: #C5D8A4;
+  background-color: var(--color-button-claro);
   height: 10%;
   padding-bottom: 40px;
   padding-top: 40px;
@@ -1355,23 +1375,6 @@ footer{
   flex-direction : row;
 }
 
-.voltar_topo{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-
-#voltar_topo{
-  width: 30px;
-}
-
-#voltar_topo:hover{
-  width: 40px;
-  transition: 0.2s;
-}
-
-
 .devs{
   font-family: var(--body-font);
   margin-left: 21%;
@@ -1389,4 +1392,34 @@ footer{
   text-align: left;
 }
 
+/* BACK TO TOP */
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  background: var(--color-button-claro);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1.5rem;
+
+  /* padding: 0.5rem; */
+  clip-path: circle();
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top img{
+  width: 75%;
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

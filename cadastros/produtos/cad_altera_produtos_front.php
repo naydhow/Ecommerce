@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
 
-<script src="../../js/produto_photo.js" defer></script>
-
 <!-- Recuperando as informações do produto -->
 <?php 
        echo"
@@ -142,3 +140,5 @@
               </div>
        </div>
 </div>
+
+<script src="../../js/produto_photo.js" defer></script>
