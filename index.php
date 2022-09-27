@@ -100,7 +100,10 @@
             </main>
 
             <footer>
-                <div class='navegacao'>
+                <img src='./img/logo.svg'>
+                <div class='fusao'>
+                    <div class='navegacao'>
+                    
                     <p id='h'>Navegação:</p>
                     <a class='title' href='./index.php' target='_parent'>Home</a>
                     <a class='title'>Sobre</a>
@@ -127,6 +130,7 @@
                         </p>
                     </div>
                 </div>
+                </div>
             </footer>
 
             <a href='#topo' class='back-to-top'><img src='./img/voltar_topo.svg'></a>
@@ -134,8 +138,6 @@
         ?>
 
         <!--
-
-
             <div class='section' id='sobre'>
                 <div class='img_sobre'>
                     <img src='./img/img_sobre.png' alt='imagem'>
