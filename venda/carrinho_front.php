@@ -45,23 +45,23 @@ echo"
 ?>
 
 <div class='table'>
-	<div class='row'>
-		<div class='cell cellDescricao cellHeader'>
+	<!-- <div class='row'>
+		<div class='cell_carrinho'>
 			Descrição
 		</div>
-		<div class='cell cellPreco cellHeader'>
+		<div class='cell_carrinho'>
 			Preço
 		</div>
-		<div class='cell cellPreco cellHeader'>
+		<div class='cell_carrinho'>
 			Qtde.
 		</div>
-		<div class='cell cellPreco cellHeader'>
+		<div class='cell_carrinho'>
 			Subtotal
 		</div>
-		<div class='cell cellAcoes'>
+		<div class='cell_carrinho'>
 			&nbsp;
 		</div>
-	</div>
+	</div> -->
 
 	<form action="?acao=up" method="post">
 	
@@ -84,21 +84,40 @@ echo"
 					$idprod = $linha['id_produto'];
 					$total += floatval($linha['subtotal']);
 	?>
-            <div class='row'>
-				<div class='cell cellDescricao'>
+
+			<div class='row_carrinho'>
+				<div class='cell_carrinho'>
+					Descrição
+				</div>
+				<div class='cell_carrinho'>
+					Preço
+				</div>
+				<div class='cell_carrinho'>
+					Qtde.
+				</div>
+				<div class='cell_carrinho'>
+					Subtotal
+				</div>
+				<div class='cell_carrinho'>
+					Excluir
+				</div>
+			</div>
+
+            <div class='row_carrinho'>
+				<div class='cell_carrinho'>
 					<?php echo $linha['descricao']; ?>
 				</div>
-				<div class='cell cellPreco'>
+				<div class='cell_carrinho'>
 					<?php echo $linha['preco']; ?>
 				</div>
-				<div class='cell cellPreco'>
+				<div class='cell_carrinho'>
 					<input type="text" size="3" name="prod[<?php echo $idprod; ?>]"
 						value="<?php echo $linha['qtde']; ?>" />
 				</div>
-				<div class='cell cellPreco'>
+				<div class='cell_carrinho'>
 					<?php echo $linha['subtotal']; ?>
 				</div>
-				<div class='cell cellAcoes'>
+				<div class='cell_carrinho'>
 					<a href='?acao=del&id_produto=<?php echo $idprod; ?>'>Excluir</a>
 				</div>
             </div>

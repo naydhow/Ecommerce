@@ -379,7 +379,7 @@ nav ul li a::after {
   text-align: center;
   font: 1.5rem var(--body-font);
   color: var(--text-color);
-  margin-top: 0;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -549,6 +549,8 @@ input[type="file"] {
     width: 550px;
     height: 660px;
     padding-top: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
    
    
     margin-left: 30%;
@@ -663,7 +665,8 @@ input:hover{
   width: 550px;
   height: 720px;
   padding-top: 2.5%;
- 
+  margin-top: 5%;
+  margin-bottom: 10%;
  
   margin-left: 30%;
   background: #C5D8A4;
@@ -727,6 +730,8 @@ input:hover{
   height: 980px;
   padding-top: 3%;
   padding-bottom: 3%;
+  margin-top: 5%;
+  margin-bottom: 10%;
   align-items: center; 
 
   margin-left: 28%;
@@ -874,6 +879,8 @@ input:hover{
   padding-top: 3%;
   padding-bottom: 3%;
   align-items: center; 
+  margin-top: 5%;
+  margin-bottom: 5%;
 
   margin-left: 28%;
   background: #C5D8A4;
@@ -1172,8 +1179,27 @@ input:hover{
 .cellEnormeImg img:hover{
   transform: scale(5,5);
   transition: 0.2s;
-}  
+}
 
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CARRINHO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>**/
+ 
+.cell_carrinho{
+  display: inline;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+.row_carrinho{
+  display: block;
+  margin-left: 10%;
+}
+
+.table{
+  margin-top: 15%;
+  
+  font: 14px var(--body-font);
+}
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HOME>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

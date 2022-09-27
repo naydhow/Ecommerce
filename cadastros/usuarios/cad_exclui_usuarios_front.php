@@ -28,12 +28,11 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
  <div class="container_paginas">
-       <div class="container_paginas">
-              <p class="cadastro_titulos">Exclusão de Usuário</p>
+       <p class="cadastro_titulos">Exclusão de Usuário</p>
 
               
-              <div class="form_cad_user_alt">    
-                     <form action="cad_exclui_usuarios_back.php" method="post">
+       <div class="form_cad_user_alt">    
+              <form action="cad_exclui_usuarios_back.php" method="post">
                         
                             <div class="input-box-imagem-2">
                                    <div class="max-width-User">
@@ -167,8 +166,8 @@
                             <input  class="button_crud" type="button" value="Voltar" onclick="location.href='cad_pesq_usuarios_front.php';">
                      </div>
 
-              </div>
-       </form>
-              
+             
+              </form>
        </div>
+              
 </div>

@@ -141,10 +141,8 @@
                     <div class="buttons_user">
                         <input type="submit" name="button" class="button_crud" value="Enviar" />
                         <a class="button_crud" href='cad_pesq_usuarios_front.php'>Voltar</a>
-                    </div>
-               </div>     
+                    </div>  
              </form>
-            
         </div>
     </div>
 
