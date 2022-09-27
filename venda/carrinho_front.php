@@ -10,6 +10,25 @@ vídeo aula de:https://www.youtube.com/watch?v=CBzfcl-Qk1c
 Adaptado por Profa. Ariane Scarelli para banco de dados PostgreSQL (ago/2016)
 Adaptado por Prof. Victor rodrigues (ago/2022)
 */
+echo"                
+		<header id='header'>
+			<nav class='container'>
+					<a href='../index.php'><img src='../img/logo.svg' class='logo'></a>
+					<div class='menu'>
+							<ul class='grid'>
+									<li><a class='title' href='../index.php'>Home</a></li>
+									<li><a class='title'>Sobre</a></li>
+									<li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+									<li><a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
+									<li><a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
+							</ul>
+					</div>
+					<a class='title' href='../venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='../img/img_carrinhovazio.svg' ></a>
+					<a class='title'href='../login/login.html' target='_parent'><img class='icone_topo' src='../img/img_perfil.svg'></a>
+			</nav>
+		</header>
+		";
+
     //session_start();
     $acao = $_GET['acao'] ?? '';
     $id_produto = $_GET['id_produto'] ?? 0;

@@ -12,7 +12,9 @@
         {
             // $sql = "SELECT qtde FROM carrinho";
             // $res = pg_query($conecta,$sql);
-            // if ///
+            // if($resultado_lista > $res && ){
+            //     echo "Ih, acabou o estoque meu filho";
+            // }
             //   return false;
         }
 
@@ -23,8 +25,8 @@
     {
         // ESSE CODIGO ESTÁ INCOMPLETO!!!
 
-        //$sql = "UPDATE carrinho SET qtde = $qtdeVendida WHERE id_produto = $idproduto";
-        //$res = pg_query($conecta,$sql);
+        $sql = "UPDATE carrinho SET qtde = $qtdeVendida WHERE id_produto = $idproduto";
+        $res = pg_query($conecta,$sql);
     }
 
     session_start();
@@ -33,7 +35,7 @@
     // (ainda precisa programar)
     validarProdutos($resultado_lista);
 
-    $sql = "INSERT INTO venda (id_venda, id_usuario, datavenda, excluido) VALUES (DEFAULT, $idusuario, NOW(),'f');";
+    $sql = "INSERT INTO venda (id_venda, id_usuario, datahoraVenda, observacoes, excluido) VALUES (DEFAULT, $idusuario, SELECT current_timestamp, 'Venda realizada' ,'FALSE');";
     $res = pg_query($conecta, $sql);
     $qtdLinhas = pg_affected_rows($res);
 
@@ -46,7 +48,7 @@
         $qtde = $linha['qtde'];
         $idproduto = $linha['id_produto'];
 
-        $sql = "INSERT INTO itemvenda (id_venda, id_produto, qtde, preco) VALUES (CURRVAL('venda_codvenda_seq'),".$idproduto.",".$qtde.",".$preco.");";
+        $sql = "INSERT INTO itemVenda (id_venda, id_produto, qtde, valorUnitario, valorTotal) VALUES (CURRVAL('venda_idvenda_seq'),".$idproduto.",".$qtde.",".$preco.",10);";
         $res = pg_query($conecta, $sql);
 
         // Atualizar qtde estoque 

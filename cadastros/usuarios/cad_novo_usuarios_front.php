@@ -148,8 +148,8 @@
         </div>
     </div>
 
-    <script src="../../js/cep.js" defer></script>
+    <script src="../../js/cep.js"></script>
+    <script src="../../js/perfil_photo.js"></script>
     <script src="../../js/masks.js"></script>
-    <script src="../../js/perfil_photo.js" defer></script>
 </body>
 </html>

@@ -86,9 +86,28 @@ echo"
                                           
                                    <div class="input-box">
                                           <div class="campo_label_peq2">
-                                                 <span class="campo_label">Sexo</span>
-                                                 <input type="text" name="sexo" 
-                                                 value="<?php echo $linha['sexo']; ?>" >
+                                                 <b>Sexo</b>&nbsp;
+                                                 <?php
+                                                        if('Feminino' == $linha['sexo']){              
+                                                               echo " 
+                                                                      <label><input type='radio' name='sexo' value='Feminino' checked>&nbsp;Feminino</label>
+                                                                      <label><input type='radio' name='sexo' value='Masculino'>&nbsp;Masculino </label>
+                                                                      <label><input type='radio' name='sexo' value='Prefiro não dizer'>&nbsp;Prefiro não dizer</label>
+                                                                      ";
+                                                        } else if('Masculino' == $linha['sexo']) {
+                                                               echo " 
+                                                                      <label><input type='radio' name='sexo' value='Feminino'>&nbsp;Feminino</label>
+                                                                      <label><input type='radio' name='sexo' value='Masculino' checked>&nbsp;Masculino </label>
+                                                                      <label><input type='radio' name='sexo' value='Prefiro não dizer'>&nbsp;Prefiro não dizer</label>
+                                                                      ";
+                                                        } else {
+                                                               echo " 
+                                                                      <label><input type='radio' name='sexo' value='Feminino'>&nbsp;Feminino</label>
+                                                                      <label><input type='radio' name='sexo' value='Masculino'>&nbsp;Masculino </label>
+                                                                      <label><input type='radio' name='sexo' value='Prefiro não dizer' checked>&nbsp;Prefiro não dizer</label>
+                                                                      ";
+                                                        }
+                                                 ?>
                                           </label>
                                    </div>
 
@@ -164,6 +183,6 @@ echo"
        </div>
 </div>
 
-<script src="../../js/cep.js" defer></script>
-<script src="../../js/perfil_photo.js" defer></script>
+<script src="../../js/cep.js"></script>
+<script src="../../js/perfil_photo.js"></script>
 <script src="../../js/masks.js"></script>

@@ -130,6 +130,6 @@
         </div>
     </div>
     
-    <script src="../../js/produto_photo.js" defer></script>
+    <script src="../../js/produto_photo.js"></script>
 </body>
 </html>
