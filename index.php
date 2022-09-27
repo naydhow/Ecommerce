@@ -55,7 +55,7 @@
                                     <p class='text_produtos_preco'>Suculenta</p>
                                     <p class='text_produtos_preco'>R$ 5.00</p> 
                                     <p class='text_produtos'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. Confira nosssos produtos!</p>
-                                    <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=2'>Comprar</a>
+                                    <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=1'>Comprar</a>
                                 </div>
                             </div>
 
@@ -78,7 +78,7 @@
                                     <p class='text_produtos_preco'>Suculenta</p>
                                     <p class='text_produtos_preco'>R$ 5.00</p>   
                                     <p class='text_produtos'>Produtos selecionados especialmente para você, sendo cuidados diariamente com muita dedicação.</p> 
-                                    <a  class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=2'>Comprar</a> 
+                                    <a  class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=3'>Comprar</a> 
                                 </div> 
                             </div>
 

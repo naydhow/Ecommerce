@@ -105,7 +105,7 @@ echo"
 
             <div class='row_carrinho'>
 				<div class='cell_carrinho'>
-					<?php echo $linha['descricao']; ?>
+					<?php echo $linha['descricao']; ?>  
 				</div>
 				<div class='cell_carrinho'>
 					<?php echo $linha['preco']; ?>

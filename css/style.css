@@ -143,7 +143,7 @@ html{
 /*logo*/
 .logo{
   margin-top: 14px;
-  width: 30%;
+  width: 40%;
 }
 
 
@@ -203,7 +203,7 @@ nav ul li a::after {
 
 
 .selecaoProdutos{
-  margin-top: 25px;
+  margin-top: 4.5%  ;
   display:grid; 
   justify-content: center;
   text-align: center;
@@ -299,6 +299,8 @@ nav ul li a::after {
   font-size: 15px;
   width: 50%;
   height: 97%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   margin-right: 25%;
   margin-left: 25%;
 }

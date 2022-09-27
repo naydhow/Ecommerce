@@ -36,13 +36,13 @@
 
     <img src="<?php if($linha['campo_imagem'] == null) echo '../img/prd.jpg'; else echo $linha['campo_imagem']; ?>" class="img_selecao_detalhes" />
     <br><br>
-    Código do produto:<?php echo $linha['id_produto']; ?>
+    <b>Código do produto: </b><?php echo $linha['id_produto']; ?>
     <br><br>
-    Descrição: <?php echo $linha['descricao']; ?>
+    <b>Descrição: </b><?php echo $linha['descricao']; ?>
     <br><br>
-    Quantidade : <?php echo $linha['estoque']; ?>
+    <b>Estoque: </b><?php echo $linha['estoque']; ?>
     <br><br>
-    Preço: R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?>
+    <b>Preço:</b> R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?>
     <br><br>
     <!-- Código do fornecedor: <?php #echo $linha['id_fornecedor']; ?>
     <br><br> -->
