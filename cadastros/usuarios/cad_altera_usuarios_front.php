@@ -29,9 +29,14 @@ echo"
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="color_cadastros">
-       <div class="container_paginas">
-              <span class="cadastro_titulos">Alteração de Usuário</span>
 
+       <div class="container_paginas">
+
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Alteração de Usuários</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
               <div class="form_cad_user_alt">
                      <form action="cad_altera_usuarios_back.php" enctype="multipart/form-data" method="post">
                      

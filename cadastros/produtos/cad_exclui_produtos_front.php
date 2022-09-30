@@ -29,7 +29,12 @@
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="color_cadastros">
        <div class="container_paginas">
-              <p class="cadastro_titulos">Confirmação: Exclusão de Produtos</p>
+       
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Exclusão de Produtos</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
 
               <div class="alt_form_prod">
                      <form action="cad_exclui_produtos_back.php" method="post">

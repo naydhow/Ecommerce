@@ -32,10 +32,11 @@
     ?>
     <div class="color_cadastros">
         <div class="container_paginas">
-            <div class="titulo">
-                <!--<img class ="img_titulo" src="../../img/cacto.png">-->
-                <p class="cadastro_titulos">Cadastre-se na loja</p>
-                <!--<img class ="img_titulo" src="../../img/cacto.png">-->
+            
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Cadastro de Produtos</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
             </div>
             
     

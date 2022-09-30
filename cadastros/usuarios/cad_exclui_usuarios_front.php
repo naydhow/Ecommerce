@@ -28,7 +28,12 @@ include "cad_getinfo_usuarios_back.php";
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="container_paginas">
-       <p class="cadastro_titulos">Exclusão de Usuário</p>
+
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Exclusão de Usuários</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
 
 
        <div class="form_cad_user_alt">

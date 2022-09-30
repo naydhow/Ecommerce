@@ -35,7 +35,12 @@
 
     <div class="color_cadastros">
         <div class="container_paginas">
-            <p id="cadastro_titulos">Cadastro de Usuários</p>
+       
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Cadastro de Usuários</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
 
           <div class="form_cad_user">
             <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">

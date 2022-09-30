@@ -548,7 +548,7 @@ input[type="file"] {
     width: 550px;
     height: 660px;
     padding-top: 2.5%;
-    margin-top: 5%;
+    margin-top: 0.5%;
     margin-bottom: 10%;
    
    
@@ -1474,17 +1474,17 @@ footer img{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<< titulos fofinhos do cadastro >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #titulo_fofo_usu{
-  width: 328px;
-  height: 48px;
-  left: 519px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 48px;
-  /* identical to box height */
-  color: #243D25;
-  }
+width: 328px;
+height: 48px;
+left: 519px;
+top: 25px;
+font-weight: 700;
+font-size: 26px;
+line-height: 48px;
+font-family: verdana, monospace;
+font-style: normal;
+color: #243D25;
+}
   
   .img_fofinhas{
     width: 50px;
