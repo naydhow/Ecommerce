@@ -86,7 +86,7 @@ echo"
                                           
                                    <div class="input-box">
                                           <div class="campo_label_peq2">
-                                                 <b>Sexo</b>&nbsp;
+                                                 <b id="campo_sexo">Sexo</b>
                                                  <?php
                                                         if('Feminino' == $linha['sexo']){              
                                                                echo " 
@@ -108,7 +108,7 @@ echo"
                                                                       ";
                                                         }
                                                  ?>
-                                          </label>
+                                          </div>
                                    </div>
 
                             </div>

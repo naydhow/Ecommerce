@@ -584,6 +584,15 @@ input[type="file"] {
   color: #000000;
 }
 
+.campo_label_peq2{
+  font: 14px var(--body-font);
+}
+
+#campo_sexo{
+  font-weight: 500;
+  color:#000000;
+}
+
 .input_form_grande{
   display: block;
   box-sizing: border-box;
@@ -730,7 +739,7 @@ input:hover{
   padding-top: 3%;
   padding-bottom: 3%;
   margin-top: 5%;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
   align-items: center; 
 
   margin-left: 28%;

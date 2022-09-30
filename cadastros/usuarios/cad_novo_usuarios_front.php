@@ -76,7 +76,7 @@
                     <div class="input_block">
                         <div class="input-box">
                             <div class="campo_label_peq2">
-                                <b>Sexo</b>
+                                <b id="campo_sexo">Sexo</b>
                                 <label><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>
                                 <label><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>
                                 <label><input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>
