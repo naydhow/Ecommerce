@@ -18,8 +18,6 @@ a {
 }
 
 img{
-  margin-top: 0%;
-  margin-bottom: 1.5%;
   width: 35%;
 }
 
@@ -45,7 +43,7 @@ img{
   --body-color: #ffffff;
   --color-grid-selecao: rgba(255, 255, 255, 0.915);
   --color-button-claro: #C5D8A4;
-  --color-button-escuto: rgb(55, 77, 52); 
+  --color-button-escuto: #243D25; 
   --color-texto-claro-button: #ffffff;
   --color-texto-escuro-button: #212121;
   --imagem-media: height:335 widht:335;
@@ -141,7 +139,7 @@ html{
 
 /*logo*/
 .logo{
-  margin-top: 14px;
+  margin-top: 5px;
   width: 40%;
 }
 
@@ -203,16 +201,14 @@ nav ul li a::after {
 
 
 .selecaoProdutos{
-  margin-top: 4.5%  ;
+  margin-top: 4.5%;
   display:grid; 
   justify-content: center;
   text-align: center;
   grid-template-columns: repeat(3,27%); 
   grid-template-rows: repeat(3, 450px);
   grid-column-gap: 5%;
-	grid-row-gap: 10%;
-  width:100%;
-  /*height: 100%;*/
+	grid-row-gap: 5%;
   background-color: var(--body-color);
 }
 
@@ -225,13 +221,13 @@ nav ul li a::after {
   align-items: center;
   font-family:var(--body-font);
   font-size: 14px;
+  padding: 2% 2%;
+  height:430px;
 }
 
 
 
 .img_selecao{
-  margin-top: 5%;
-  margin-bottom: 2%;
   width:200px;
   height:200px;
   border-radius: 3px;
@@ -240,8 +236,6 @@ nav ul li a::after {
 
 
 .img_selecao:hover{
-  margin-top: 5%;
-  margin-bottom: 2%;
   width:210px;
   height:210px;
   border-radius: 3px;
@@ -257,21 +251,19 @@ nav ul li a::after {
   align-items: center;
   justify-content: center;
   width: 119px;
-  height: 43px;
   background: var(--color-button-claro);
   color: var(--color-texto-escuro-button);
   box-shadow:  0 0 2px black;
   border-radius: 4px;
   text-decoration: none;
-  margin-bottom: 2%;
-  margin-left: 34%;
+  margin-left: 33%;
 }
 
 .selecao_comprar:hover{
   background: var(--color-button-escuto);
   color: var(--color-texto-claro-button);
-  width: 125px;
-  height: 50px;
+  /* width: 125px; */
+  /* height: 50px; */
   box-shadow:  0 0 4px black;
   transition: 0.2s;
   justify-content: center;
@@ -308,13 +300,11 @@ nav ul li a::after {
 
 .selecao_detalhes_button{
   box-sizing: border-box;
-  /* Auto layout */
   display: inline-block;
   padding: 14px 32px 15px;
   align-items: center;
   justify-content: center;
-  width: 119px;
-  height: 43px;
+  width: 125px;
   background: var(--color-button-claro);
   color: var(--color-texto-escuro-button);
   box-shadow:  0 0 2px black;
@@ -330,7 +320,6 @@ nav ul li a::after {
     background: var(--color-button-escuto);
     color: var(--color-texto-claro-button);
     width: 125px;
-    height: 50px;
     justify-content: center;
     align-items: center;
     box-shadow:  0 0 4px black;
@@ -366,23 +355,26 @@ nav ul li a::after {
   font: 16px var(--body-font);
   color: var(--text-color);
   margin-top:3%;
+  margin-top: 3%;
   padding: 14px 32px 15px;
   box-shadow:  0 0 2px black;
   border-radius: 6px;
-  width: 20%;
-  height: 4%;
   text-decoration: none;
   background-color: var(--color-button-claro);
 }
 
+.links:hover{
+  color: var(--color-texto-claro-button);
+  background-color: var(--color-button-escuto);
+}
 
                               /*<<<<<<<<<<<<PESQUISA DE PRODUTOS E USUÁRIOS>>>>>>>>>>>>>>>>>*/
 .pesq{
   text-align: center;
   font: 1.5rem var(--body-font);
   color: var(--text-color);
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .pesquisa {
@@ -516,7 +508,7 @@ input[type="file"] {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-left: 75%;
+  margin-left: 74%;
 }
 
 
@@ -736,15 +728,13 @@ input:hover{
 
 .form_cad_user{
   display: flex;
-  width: 600px;
+  justify-content: center;
   height: 980px;
   padding-top: 3%;
   padding-bottom: 3%;
-  /* margin-top: 5%; */
-  /* margin-bottom: 10%; */
+  margin-left: 27%;
+  margin-right: 27%;
   align-items: center; 
-
-  margin-left: 28%;
   background: #C5D8A4;
   box-shadow: 0px 0px 4px rgb(55, 77, 52);
   border-radius: 8px;
@@ -1021,9 +1011,6 @@ input:hover{
     align-items: center;
     text-align: center;
 
-    width: 119px;
-    height: 43px;
-
     background: var(--color-button-claro);
     color: var(--color-texto-escuro-button);
 
@@ -1042,13 +1029,7 @@ input:hover{
   
 .button_crud:hover{
       background: var(--color-button-escuto);
-      font: 14px var(--body-font);
       color: var(--color-texto-claro-button);
-
-      width: 125px;
-      height: 50px;
-
-      align-items: center;
       box-shadow:  0 0 3px black;
       transition: 0.2s;
   }
@@ -1066,16 +1047,6 @@ input:hover{
   margin: 1rem 0;
 
   font: 14px var(--body-font);
-  /*margin-left: 10px;*/
-  /* margin-top: 4%;
-  width: 95%; 
-  height: 100%; */
-
-  /* display:block; */
-
-  /* align-items: center;
-  text-align: center;
-  justify-content: center; */
 }
 
 
@@ -1085,18 +1056,9 @@ input:hover{
 
   font: 16px var(--body-font);
 
-  /* align-items: center;
-  text-align: center;
-  justify-content: center; */
 }
 
 .row{
-  /* margin-top:15px; */
-  /* display: inline-flex; */
-  /* justify-content: center;
-  align-items: center; */
-  
-  /* margin-bottom: 5px;  */
   margin-top: 10px;
 
   font: 14px var(--body-font);
@@ -1112,74 +1074,14 @@ input:hover{
   justify-content: center;
   align-items: center;
 
-  /* display:inline-block;
-
-  padding-top: 1.5%;
-  padding-bottom:1.5%;
-  margin-bottom: .5%;
-  border-radius: 6px; */
-
-  /* text-align: center;
-  align-items: center;
-  justify-content: center; */
-
-  /* background-color: var(--color-button-claro); */
-}
-
-/* .cellHeader{
-  background-color: var(--color-button-claro);
-}
-
-.cellPeq{  cellId 
-
-  width: 75px;
-  height: 100px;
-  color: var(--text-color);
-  margin-left: 70px;
-  text-align: center;
-}
-
-.cellGrande{  cellNome 
-  align-items: center;
-  width:145px;
-  height: 100px;
-  color: var(--text-color);
-  text-align: center;
   text-decoration: none;
+
 }
 
-.cellMedia{ cellMargemLucro 
-  align-items: center;
-  width: 105px;
-  height: 100px;
-  color: var(--text-color);
-  text-align: center;
-  margin-left: 100px;
-}
-
-.cellMenor{
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  color: var(--text-color);
-  text-align: center;
+.cell a:visited, a:link{
   text-decoration: none;
+  color: var(--text-color)
 }
-
-.cellEnorme{
-  align-items: center;
-  width:250px;
-  height: 100px;
-  color: var(--text-color);
-  text-align: center;
-}  
-
-.cellEnormeImg{
-  align-items: center;
-  width:250px;
-  height: 100px;
-  color: var(--text-color);
-} */
 
 .cell img{
   width: 50px;
@@ -1214,9 +1116,7 @@ input:hover{
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HOME>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .section {
-  padding: calc(2rem + var(--header-height)) 0;
-
-  /* margin-top: 2.5rem; */
+  padding: calc(0.5rem + var(--header-height)) 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1247,16 +1147,7 @@ input:hover{
 .text h1 {
   font-size: 3rem;
 }
-/*
-.text{
-  background-color: #458345;
 
-  border: 10px;
-  border-radius: .25rem;
-
-  padding: 10px;
-  color: #FAD9E6;
-}*/
 
 .btn{
   box-sizing: border-box;
@@ -1289,31 +1180,7 @@ input:hover{
   height: 455px;  
   box-shadow: 3rem -3rem 0 #ffcceb;
 }
-/*
-#sobre{
-  display: grid;
-  place-items: center;
-  grid-template-columns: 732.2px auto;
-  gap: 0;
-}
 
-.img_sobre{
-  padding-left: 4%;
-}
-
-.img_sobre img{
-  margin-top: 250px;
-  width: 527px;
-  height: 344px;  
-  box-shadow: 4rem -4rem 0 #ffcceb;
-}
-
-.text_sobre{
-  font-family: var(--body-font);
-  text-align: start;
-  width: 600px;
-  margin-right: 150px;
-}*/
 
 .img_produto img{
   width: 310px;
@@ -1476,6 +1343,86 @@ footer img{
   transform: translateY(0);
 }
 
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SOBRE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.img_sobre{
+  margin-right: 8%;
+}
+
+.img_sobre img{
+  width: 682.2px;
+  height: 455px;  
+  box-shadow: 3rem -3rem 0 #C5D8A4;
+}
+
+
+.sobre_titulo{
+    margin-left:4%;
+    width: 30%;
+    font-family: var(--body-font);
+    font-size: 1.4rem; 
+}
+
+.sobre_textao{
+  text-align: justify;
+  margin-top: -2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: var(--body-font);
+  font-size: 17px;
+  text-indent: 3rem;
+  line-height: 24px;
+  margin-bottom: 4%;
+}
+
+.section_sobre{
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sobre_Devs{
+  align-items: center;
+  justify-content: center;
+  font-family: var(--body-font);
+  font-size: 1.4rem; 
+}
+
+.integrantes{
+  display: block;  
+  margin-top: 4%;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #243D25;
+  border: solid 1px;
+  border-color: #C5D8A4;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 3% 3%;
+}
+
+.info_sobre{
+  display: flex;
+  align-items: center;
+}
+
+.img_integrantes img{
+  height: 150px;
+  width: 150px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px black;
+}
+
+
+.sobre_integrantes{
+    margin-left: 8%;
+    font-family: var(--body-font);
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<< titulos fofinhos do cadastro >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #titulo_fofo_usu{
@@ -1498,12 +1445,15 @@ color: bolder #243D25;
 
   .alinha_tituloimg{
     margin-top: 3%;
-    margin-left: 35%;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
     display:flex;
   }
 
   .alinha_tituloimg1{ /* fiz essa pq o topo do exclui_usuario ficou mt grande*/
     margin-top: 3%;
+    margin-bottom: 2%;
     margin-left: 35%;
     display:flex;
   }

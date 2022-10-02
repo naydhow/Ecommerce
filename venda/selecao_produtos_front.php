@@ -15,7 +15,7 @@
                     <div class='menu'>
                             <ul class='grid'>
                                     <li><a class='title' href='../index.php'>Home</a></li>
-                                    <li><a class='title'>Sobre</a></li>
+                                    <li><a class='title' href='../sobre.php' target='_parent'>Sobre</a></li>
                                     <li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
                                     <li><a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
                                     <li><a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
@@ -75,7 +75,7 @@
                             
                             echo "<a class='selecao_comprar' href='carrinho_front.php?acao=add&id_produto=".$linha['id_produto']."'>Comprar</a>";
 
-                        echo "</div><br>";
+                        echo "</div>";
                     echo "</div>";
                 }
 

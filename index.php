@@ -20,7 +20,7 @@
                         <div class='menu'>
                             <ul class='grid'>
                                 <li><a class='title' href='#topo'>Home</a></li>
-                                <li><a class='title'>Sobre</a></li>
+                                <li><a class='title' href='./sobre.php'>Sobre</a></li>
                                 <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
                                 <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
                                 <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
@@ -47,6 +47,8 @@
                                 <img src='./img/img_topo.jpg' alt='imagem'>
                             </div>
                         </div>
+
+
                         <div class='divider-1'></div>
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
@@ -83,6 +85,8 @@
                             </div>
 
                         </div>
+
+
                         <div class='divider-2'></div>
 
                         <div class='section' id='video'>
