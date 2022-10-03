@@ -442,6 +442,14 @@ nav ul li a::after {
     width: 115%;
 }
 
+.info_pesquisa{
+  font: 17px var(--body-font);
+  line-height: 22px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+
 
 /* ---------------------------------------------------..-------------------------------------------------*/
 
