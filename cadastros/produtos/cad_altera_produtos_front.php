@@ -68,7 +68,7 @@
                                    <div class="input-box-imagem">
                                           <div>
                                                  <p class="campo_label_pequeno">Imagem</p>
-                                                 <div class="max-width">
+                                                 <div class="max-width-prod">
                                                         <div class="imageContainer">
                                                                <?php
                                                                       if($linha['campo_imagem'] != 'null')

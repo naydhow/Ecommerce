@@ -46,13 +46,18 @@
                 </div>
 
                 <div class='sobre_textao'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi adipisci doloremque ratione dolores porro sapiente aspernatur magni 
-                    veniam dolore numquam obcaecati harum deserunt minima nemo, sit, labore suscipit. Perspiciatis, error.
+                    
+                    <p>O Caricacto foi desenvolvido a partir de um projeto e-commerce, correspondente ao curso de Informática, do Colégio Técnico Industrial (CTI), da Unesp de Bauru. Através desse projeto, nossas
+                    vendas serão realizadas pelo site, sendo retiradas, presencialmente, na Semana do Colégio. 
                     </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore dolorum cum quas quam, illo temporibus quae ad ducimus sequi mollitia
-                     quo at blanditiis laudantium, excepturi eius distinctio modi doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore dolorum cum quas quam, illo temporibus quae ad ducimus sequi mollitia
-                     quo at blanditiis laudantium, excepturi eius distinctio modi doloremque
+
+                    <p>O projeto, o qual também é uma startup, está voltado para o comércio de mini cactos e suculentas, a fim de proporcionar lembranças para que você, nosso consumidor, decore sua casa ou
+                    presenteie quem ama. Nossos produtos chegam através de nosso fornecedor e posteriormente são cuidados e preparados, com vasinhos sustentáveis de bambu e lindas embalagens. Esperamos trazer
+                    uma grande satisfação aos nossos consumidores e disseminar, através de nossas sementes de brinde, um mundo mais sustentável como mais árvores e amor florescendo.
                     </p>
+
+                    <p>Contribua para um futuro mais sustentável. Seja um consumidor Caricacto!</p>
+
                </div>
 
 
@@ -66,7 +71,7 @@
                             <div class='info_sobre'>
 
                                 <div class='img_integrantes'>
-                                    <img src='./img/bia_osajima.jpg'>
+                                    <img src='./img/kaori.jpg'>
                                 </div>
 
                                 <div class='sobre_integrantes'>
@@ -109,7 +114,7 @@
                         <div class='integrantes'>
                             <div class='info_sobre'>
                                 <div class='img_integrantes'>
-                                    <img src='./img/eduarda.jpg'>
+                                    <img src='./img/lorenaa.jpg'>
                                 </div>
 
                                 <div class='sobre_integrantes'>

@@ -54,7 +54,9 @@
             include "cad_pesq_usuarios_back.php";
 
             if ($qtde == 0) {
-                echo "Não foi encontrado nenhum usuario !!!<br><br>";
+                echo " <div class='info_pesquisa'>
+                            Não foi encontrado nenhum usuário correspondente à pesquisa!
+                        </div>";
                 return;
             }
 
