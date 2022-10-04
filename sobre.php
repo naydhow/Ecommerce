@@ -71,7 +71,7 @@
                             <div class='info_sobre'>
 
                                 <div class='img_integrantes'>
-                                    <img src='./img/bia_osajima.jpg'>
+                                    <img src='./img/kaori.jpg'>
                                 </div>
 
                                 <div class='sobre_integrantes'>
@@ -114,7 +114,7 @@
                         <div class='integrantes'>
                             <div class='info_sobre'>
                                 <div class='img_integrantes'>
-                                    <img src='./img/eduarda.jpg'>
+                                    <img src='./img/lorenaa.jpg'>
                                 </div>
 
                                 <div class='sobre_integrantes'>

@@ -46,22 +46,22 @@
 
                         <div class="input-box">
                             <label>
-                                <div class="campo_label">Nome:</div>  
+                                <div class="campo_label">Nome</div>  
                                 <input class="input_form_grande" type="text" name="nome"  placeholder="Nome" max/>
                             </label>
                         </div>
 
                         <div class="input-box">
                             <label>
-                                <div class="campo_label">Descrição:</div>
+                                <div class="campo_label">Descrição</div>
                                 <input class="input_form_grande" type="text" name="descricao"  placeholder="Descrição"/>
                             </label>
                         </div>
 
 
-                        <div class="input-box-imagem">
-                                <p class="campo_label_pequeno">Imagem:</p>
-                                    <div class="max-width">
+                        <div class="input-box-imagem-prod">
+                                <div class="campo_label_pequeno">Imagem</div>
+                                    <div class="max-width-prod">
                                         <div class="imageContainer">
                                             <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
                                         </div>
