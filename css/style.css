@@ -1500,14 +1500,38 @@ color: bolder #243D25;
 }
 
 .resposta{
+  border: none;
+  font: var(--body-font) 14px;
+  color:#000000;
   margin-left: 10px;
   width: 250px;
-  height: 0px;
   left: 631.29px;
   top: 493px;
-  border: 1px solid #000000;
-  transform: rotate(180deg);
+  text-align: center;
+  border-bottom: 1px solid;
 }
+
+.resposta input:hover{
+  background-color: #fcc4da;
+  border:none;
+  border-bottom: 1px solid;
+}
+
+
+.resposta input:focus{
+  background-color: #fcc4da;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+  border:none;
+  border-bottom: 1px solid;
+}
+
+/* .resposta input:focus{
+  box-shadow: 0 0 0 0; 
+  outline: 0;
+  border: none;
+  height: 30px;
+} */
 
 .btn_enviar{
   margin-left: 130px;
