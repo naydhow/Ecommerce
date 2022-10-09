@@ -1444,30 +1444,21 @@ align-items: center;
   margin-left: 450px;
   width: 375px;
   height: 460px;
-  left: 703px;
-  top: 254px;
-  background: #FAD9E6;
+  background: #ffcceb;
   box-shadow: 0px 4px 20px #243D25;
   border-radius: 12px;
 }
 
 .img_login{
-  margin-top: 40px;
+  margin-top: 50px;
   margin-left: 37.5px;
   width: 300px;
   height: 356.39px;
-  left: 740px;
-  top: 279px;
-  /*background: url(003843-Cacto-Flor-Rosa.jpg);*/
   border-radius: 10px;
 }
 
 .digita{
   margin-left: 130px;
-  /*width: 188px;
-  height: 23px;
-  left: 373px;
-  top: 296px;*/
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -1484,12 +1475,19 @@ align-items: center;
   color: #000000;
 }
 
+.digita1 a{
+  color:  #ff90accd;
+}
+
+.digita1 a:hover{
+  transition: 0.2s;
+  color:#6f8549;
+}
+
 .email_senha{
   margin-left: 40px;
   width: 49px;
   height: 24px;
-  left: 290px;
-  top: 389px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -1499,20 +1497,20 @@ align-items: center;
   color: #000000;
 }
 
+
 .resposta{
   border: none;
-  font: var(--body-font) 14px;
+  font-family: var(--body-font);
+  font-size: 14px;
   color:#000000;
   margin-left: 10px;
   width: 250px;
-  left: 631.29px;
-  top: 493px;
   text-align: center;
   border-bottom: 1px solid;
 }
 
 .resposta input:hover{
-  background-color: #fcc4da;
+  background-color: #ff9cc4;
   border:none;
   border-bottom: 1px solid;
 }
@@ -1526,40 +1524,32 @@ align-items: center;
   border-bottom: 1px solid;
 }
 
-/* .resposta input:focus{
-  box-shadow: 0 0 0 0; 
-  outline: 0;
-  border: none;
-  height: 30px;
-} */
-
 .btn_enviar{
   margin-left: 130px;
   margin-top: 50px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   width: 176px;
   height: 43px;
-  left: 373px;
-  top: 625.52px;
-  background: #000000;
-  border: 1px solid #000000;
+  background: #1d291f;
+  border: none;
   border-radius: 4px;
 
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
   color: #e7ccd7;
 }
 
+.btn_enviar:hover{
+  background-color:#ffcceb;
+  color: var(--color-button-escuto);
+}
+
 .voltarr{
-  margin-left: 190px;
+  margin-left: 191px;
   margin-top: 10px;
   width: 55px;
   height: 21px;
@@ -1569,8 +1559,16 @@ align-items: center;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
-  
-  color: #000000;
+  color: #ff90accd;
+}
+
+.voltarr a{
+  color: #ff90accd;
+}
+
+.voltarr a:hover{
+  transition: 0.2s;
+  color: #6f8549;
 }
 
 .centro_titulo{
