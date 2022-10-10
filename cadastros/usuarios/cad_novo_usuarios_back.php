@@ -18,6 +18,8 @@
 
     move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
     $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
+    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+        $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/user.png';
 
     // Inserção
     $sql="INSERT INTO caricactoUsuario

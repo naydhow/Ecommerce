@@ -33,7 +33,7 @@
     <div class="container_paginas">
     <div class="pesq">
         <div class="pesquisa">
-            <form action="" method="post">
+            <form action="#" method="post">
             <div class="divisoes">
                 <div class="pesquisaBotao">
                     <button>
@@ -89,12 +89,14 @@
                 // Criar linhas com os dados dos produtos
                 foreach ($resultado_lista as $linha)
                 {
+                    $img;
+                    if($linha['img'] == "http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/") $img='../../img/user.png'; else  $img=$linha['img'];
                     echo "
                         <div class='cell cellPeq'>
                             ".$linha['id_usuario']."
                         </div>
                         <div class='cell cellEnormeImg'>
-                            ".'<img src="'.$linha['img'].'" width="10px" height="10px">'."
+                            ".'<img src="'.$img.'" width="10px" height="10px">'."
                         </div>
                         <div class='cell cellEnorme'>
                             ".$linha['nome']."

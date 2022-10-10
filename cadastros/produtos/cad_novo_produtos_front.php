@@ -47,7 +47,7 @@
                         <div class="input-box">
                             <label>
                                 <div class="campo_label">Nome</div>  
-                                <input class="input_form_grande" type="text" name="nome"  placeholder="Nome" max/>
+                                <input class="input_form_grande" type="text" name="nome"  placeholder="Nome" max required/>
                             </label>
                         </div>
 
@@ -76,7 +76,7 @@
                             <label>
                                 <p class="campo_label_pequeno">Cod. Visual:</p>
                                 <input  class="input_form_pequeno" type="text" name="codigovisual" maxlength="13" 
-                                placeholder="Código Visual"/>
+                                placeholder="Código Visual" required/>
                             </label>
                         </div>
                     
@@ -84,7 +84,7 @@
                         <div class="input-box">
                             <label>
                                 <div class="campo_label_pequeno">Estoque:</div>
-                                <input class="input_form_pequeno" type="number" name="estoque" placeholder="Estoque" />
+                                <input class="input_form_pequeno" type="number" name="estoque" placeholder="Estoque" required/>
                             </label>
                         </div>
 
@@ -94,7 +94,7 @@
                         <div class="input-box">
                             <label>
                                 <p class="campo_label_pequeno">Preço:</p>
-                                <input class="input_form_pequeno" type="text" name="preco"  placeholder="Preço"/>
+                                <input class="input_form_pequeno" type="text" name="preco"  placeholder="Preço" required/>
                             </label>
                         </div>
 
@@ -102,21 +102,21 @@
                         <div class="input-box">
                             <label>
                                 <p class="campo_label_pequeno">Custo:</p>
-                                <input class="input_form_pequeno" type="text" name="custo"  placeholder="Custo"/>
+                                <input class="input_form_pequeno" type="text" name="custo"  placeholder="Custo" required/>
                             </label>
                         </div>
 
                         <div class="input-box">
                             <label>
                                 <p class="campo_label_pequeno">M. Lucro:</p>
-                                <input class="input_form_pequeno" type="text" name="margem_lucro" placeholder="Margem lucro" />
+                                <input class="input_form_pequeno" type="text" name="margem_lucro" placeholder="Margem lucro" required/>
                             </label>
                         </div>
 
                         <div class="input-box">
                             <label>
                                 <p class="campo_label_pequeno">ICMS:</p>
-                                <input class="input_form_pequeno" type="text" name="icms" placeholder="ICMS" />
+                                <input class="input_form_pequeno" type="text" name="icms" placeholder="ICMS" required/>
                             </label>
                         </div>
                    
@@ -126,7 +126,6 @@
                     </div>
 
                 </form>
-            
             </div>
         </div>
     </div>

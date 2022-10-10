@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="../css/style.css">
+
 <?php
 	echo"                
 		<header id='header'>
@@ -21,59 +25,88 @@
     $idusuario = 1; // Depois precisamos alterar para pegar da $_SESSION
     include "confirmacao_compra_back.php";
 ?>
+<main>
+	<div class="container_paginas">
+		<div class="section">
+			<div class='table'>
+				<form>
+				
+				<?php
+					if($resultado_lista != null)
+					{
+						$total = 0.0;
+						$numprodutos = 0;
 
-<hr>
-<h2>Resumo da compra</h2>
-<hr>
+							foreach ($resultado_lista as $linha)
+							{ 
+								$numprodutos++;
+								$idprod = $linha['id_produto'];
+								$total += floatval($linha['subtotal']);
+								$img;
+								if($linha['campo_imagem'] == "http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/") $img='../img/prd.jpg'; else  $img=$linha['campo_imagem'];
+				?>
+							<div class='row_carrinho'>
+								<div class='cell_carrinho'>
+									<img src="<?php echo $img; ?>" id='item-img-cart'>  
+									<div class="itens">
+										<div class='itens_princ'>
+											<span><?php echo $linha['nome']; ?></span>
+											
+											<div class='input_number'>
+												<span><?php echo $linha['qtde']; ?></span>
+											</div>
+										</div>
 
-<div class='table'>
-	<div class='row'>
-		<div class='cell cellDescricao cellHeader'>
-			Descrição
-		</div>
-		<div class='cell cellPreco cellHeader'>
-			Preço
-		</div>
-		<div class='cell cellPreco cellHeader'>
-			Qtde.
-		</div>
-		<div class='cell cellPreco cellHeader'>
-			Subtotal
+										<div class="itens_secund">
+											<span><b>R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?></b></span>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+				<?php 
+					}  
+					}
+					if($resultado_lista == null)
+					{
+						echo "Não há produtos aqui! :(";
+					}
+				?>
+				</form>
+				<div class="segura">
+					<div class="resumo_comp">
+						<span id="titulo_resumo">Resumo do Pedido</span>
+						<div class="itens_resumo">
+							<?php if($numprodutos == 0 || $numprodutos >1) echo "<label>".$numprodutos." produtos</label>"; else echo "<label>".$numprodutos." produto</label>";?>
+							<?php echo "<span>R$ ".number_format($total, 2, ',', '.');".</span>"; ?>
+						</div>
+						<div class="lista_resumo">
+							<?php
+								foreach ($resultado_lista as $linha)
+								{
+									echo "<div class='lista_separa'>";
+									echo "<span>".$linha['nome']."</span>";
+									echo "<span>R$ ".number_format($linha['subtotal'], 2, ',', '.');".</span>";
+									echo "</div>";
+								}
+							?>
+						</div>
+						<div class="total_compra">
+								<label>Total da compra:</label>
+								<?php echo "<span>R$ ".number_format($total, 2, ',', '.');".</span>"; ?>
+							</div>
+						<div class="buttons_resumo">
+							<a href="finalizacao_compra_front.php">Finalizar</a>
+							<a href="carrinho_front.php" id="cance_compra">Cancelar</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+</main>
+<?php
+	include_once "../utils/footer.php";
+?>
 
-	<?php
-		$total = 0.0;
-
-		// Criar linhas com os dados dos produtos
-        foreach ($resultado_lista as $linha)
-        { 
-			$idprod = $linha['id_produto'];
-			$total += floatval($linha['subtotal']);
-	?>
-            <div class='row'>
-				<div class='cell cellDescricao'>
-					<?php echo $linha['descricao']; ?>
-				</div>
-				<div class='cell cellPreco'>
-					<?php echo $linha['preco']; ?>
-				</div>
-				<div class='cell cellPreco'>
-					<?php echo $linha['qtde']; ?>
-				</div>
-				<div class='cell cellPreco'>
-					<?php echo $linha['subtotal']; ?>
-				</div>
-            </div>
-	<?php 
-		}  
-		echo "<h3>Total: R$ ".number_format($total, 2, ',', '.');".</h3>";
-	?>
-
-    <br><br>
-    <hr>
-
-    <h3>Deseja confirmar?</h3>
-	<a href="finalizacao_compra_front.php">Finalizar</a>
-    <a href="carrinho_front.php">Cancelar</a>&nbsp;&nbsp;
-</div>
+<script src="../js/main.js"></script>

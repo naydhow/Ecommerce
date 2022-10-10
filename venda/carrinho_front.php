@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <link rel="stylesheet" href="../css/style.css">
 <link rel="icon" href="../img/logopeq_caricacto.svg">
 
@@ -10,24 +12,7 @@ vídeo aula de:https://www.youtube.com/watch?v=CBzfcl-Qk1c
 Adaptado por Profa. Ariane Scarelli para banco de dados PostgreSQL (ago/2016)
 Adaptado por Prof. Victor rodrigues (ago/2022)
 */
-echo"                
-		<header id='header'>
-			<nav class='container'>
-					<a href='../index.php'><img src='../img/logo.svg' class='logo'></a>
-					<div class='menu'>
-							<ul class='grid'>
-									<li><a class='title' href='../index.php'>Home</a></li>
-									<li><a class='title' href='../sobre.php' target='_parent'>Sobre</a></li>
-									<li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-									<li><a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
-									<li><a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
-							</ul>
-					</div>
-					<a class='title' href='../venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='../img/img_carrinhovazio.svg' ></a>
-					<a class='title'href='../login/login.html' target='_parent'><img class='icone_topo' src='../img/img_perfil.svg'></a>
-			</nav>
-		</header>
-		";
+	include_once "../utils/header.php";
 
     //session_start();
     $acao = $_GET['acao'] ?? '';
@@ -43,94 +28,93 @@ echo"
 
     include "carrinho_back.php";
 ?>
+<main>
+	<div class="container_paginas">
+		<div class="section">
+			<div class='table'>
+				<form action="?acao=up" id="IdForm" method="post">
+				
+				<?php
+					if($resultado_lista != null)
+					{
+						$total = 0.0;
+						$numprodutos = 0;
 
-<div class='table'>
-	<!-- <div class='row'>
-		<div class='cell_carrinho'>
-			Descrição
-		</div>
-		<div class='cell_carrinho'>
-			Preço
-		</div>
-		<div class='cell_carrinho'>
-			Qtde.
-		</div>
-		<div class='cell_carrinho'>
-			Subtotal
-		</div>
-		<div class='cell_carrinho'>
-			&nbsp;
-		</div>
-	</div> -->
+							foreach ($resultado_lista as $linha)
+							{ 
+								$numprodutos++;
+								$idprod = $linha['id_produto'];
+								$total += floatval($linha['subtotal']);
+								$img;
+								if($linha['campo_imagem'] == "http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/") $img='../img/prd.jpg'; else  $img=$linha['campo_imagem'];
+				?>
+							<div class='row_carrinho'>
+								<div class='cell_carrinho'>
+									<img src="<?php echo $img; ?>" id='item-img-cart'>  
+									<div class="itens">
+										<div class='itens_princ'>
+											<span><?php echo $linha['nome']; ?></span>
+											
+											<div class='input_number'>
+												<a href="#" id="IdLink" onclick="menos(<?php echo $idprod?>);"><img src="../img/menos.svg"></a>
+												<input type="text" size="3" id="<?php echo $idprod?>" name="prod[<?php echo $idprod; ?>]"
+													value="<?php echo $linha['qtde']; ?>" onkeypress="onlynumber();"/>
+												<a href="#" id="IdLink" onclick="mais(<?php echo $idprod?>);"><img src="../img/mais.svg"></a>
+											</div>
 
-	<form action="?acao=up" method="post">
-	
-	<?php
-		$total = 0.0;
+											<a href='?acao=del&id_produto=<?php echo $idprod; ?>'>Excluir</a>
+										</div>
 
-		// Criar linhas com os dados dos produtos
-				if($resultado_lista == null)
-				{
-					echo "Não há produtos aqui! :(";
-
-					echo "<br><br>
-								<a href='selecao_produtos_front.php'>Continuar Comprando</a>&nbsp;&nbsp;
-								<a href='finalizacompra.php'>Finalizar Compra</a>";
-					exit;
-				}
-
-        foreach ($resultado_lista as $linha)
-        { 
-					$idprod = $linha['id_produto'];
-					$total += floatval($linha['subtotal']);
-	?>
-
-			<div class='row_carrinho'>
-				<div class='cell_carrinho'>
-					Descrição
-				</div>
-				<div class='cell_carrinho'>
-					Preço
-				</div>
-				<div class='cell_carrinho'>
-					Qtde.
-				</div>
-				<div class='cell_carrinho'>
-					Subtotal
-				</div>
-				<div class='cell_carrinho'>
-					Excluir
+										<div class="itens_secund">
+											<span><b>R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?></b></span>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+				<?php 
+					}  
+					}
+					if($resultado_lista == null)
+					{
+						echo "Não há produtos aqui! :(";
+					}
+				?>
+				</form>
+				<div class="segura">
+					<div class="resumo_comp">
+						<span id="titulo_resumo">Resumo do Pedido</span>
+						<div class="itens_resumo">
+							<?php if($numprodutos == 0 || $numprodutos >1) echo "<label>".$numprodutos." produtos</label>"; else echo "<label>".$numprodutos." produto</label>";?>
+							<?php echo "<span>R$ ".number_format($total, 2, ',', '.');".</span>"; ?>
+						</div>
+						<div class="lista_resumo">
+							<?php
+								foreach ($resultado_lista as $linha)
+								{
+									echo "<div class='lista_separa'>";
+									echo "<span>".$linha['nome']."</span>";
+									echo "<span>R$ ".number_format($linha['subtotal'], 2, ',', '.');".</span>";
+									echo "</div>";
+								}
+							?>
+						</div>
+						<div class="total_compra">
+								<label>Total da compra:</label>
+								<?php echo "<span>R$ ".number_format($total, 2, ',', '.');".</span>"; ?>
+							</div>
+						<div class="buttons_resumo">
+							<a href="confirmacao_compra_front.php">Finalizar Compra</a>
+							<a href="selecao_produtos_front.php" id="cont_compra">Continuar Comprando</a>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</main>
+<?php
+	include_once "../utils/footer.php";
+?>
 
-            <div class='row_carrinho'>
-				<div class='cell_carrinho'>
-					<?php echo $linha['descricao']; ?>  
-				</div>
-				<div class='cell_carrinho'>
-					<?php echo $linha['preco']; ?>
-				</div>
-				<div class='cell_carrinho'>
-					<input type="text" size="3" name="prod[<?php echo $idprod; ?>]"
-						value="<?php echo $linha['qtde']; ?>" />
-				</div>
-				<div class='cell_carrinho'>
-					<?php echo $linha['subtotal']; ?>
-				</div>
-				<div class='cell_carrinho'>
-					<a href='?acao=del&id_produto=<?php echo $idprod; ?>'>Excluir</a>
-				</div>
-            </div>
-	<?php 
-		}  
-		echo "<h3>Total da compra: R$ ".number_format($total, 2, ',', '.');".</h3>";
-	?>
-
-    <br><br>
-	<input type="submit" value="Atualizar Carrinho" />&nbsp;&nbsp;
-	<a href="selecao_produtos_front.php">Continuar Comprando</a>&nbsp;&nbsp;
-	<a href="finalizacompra.php">Finalizar Compra</a>
-	
-	</form>
-
-</div>
+<script src="../js/main.js"></script>

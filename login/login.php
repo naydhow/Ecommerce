@@ -31,7 +31,7 @@
   else
   {
     echo '<script language="javascript">';
-    echo "alert('Usuário ou senha estão errados!')";
+    echo "alert('Usuário ou senha estão incorretos!')";
     echo '</script>';
     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=login.html'>";
     exit;	
