@@ -12,11 +12,11 @@
        echo"
        <header id= 'header' >
        <nav class='container'>
-           <a href='../../index.php'><img src='../../img/logo.svg' class='logo'></a>
+           <a href='../../index.php'><img src='../../img/logo_final.svg' class='logo'></a>
            <div class='menu'>
                <ul class='grid'>
                    <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
-                   <li><a class='title'>Sobre</a></li>
+                   <li><a class='title' href='../../sobre.php' target='_parent'>Sobre</a></li>
                    <li><a class='title' href='../../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
                    <li><a class='title' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
                    <li><a class='title' href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
@@ -54,7 +54,9 @@
             include "cad_pesq_usuarios_back.php";
 
             if ($qtde == 0) {
-                echo "Não foi encontrado nenhum usuario !!!<br><br>";
+                echo " <div class='info_pesquisa'>
+                            Não foi encontrado nenhum usuário correspondente à pesquisa!
+                        </div>";
                 return;
             }
 

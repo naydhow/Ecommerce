@@ -32,6 +32,8 @@
                                 <img src='./img/img_topo.jpg' alt='imagem'>
                             </div>
                         </div>
+
+
                         <div class='divider-1'></div>
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
@@ -68,6 +70,8 @@
                             </div>
 
                         </div>
+
+
                         <div class='divider-2'></div>
 
                         <div class='section' id='video'>

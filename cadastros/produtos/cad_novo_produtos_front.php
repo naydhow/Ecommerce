@@ -10,15 +10,33 @@
 </head>
 <body>
     <?php
-        // echo"
-        // <header id='header'></header>"; 
+        echo"
+        <header id= 'header' >
+        <nav class='container'>
+            <a href='../../index.php'><img src='../../img/logo_final.svg' class='logo'></a>
+            <div class='menu'>
+                <ul class='grid'>
+                    <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
+                    <li><a class='title' href='../../sobre.php' target='_parent'>Sobre</a></li>
+                    <li><a class='title' href='../../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+                    <li><a class='title' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
+                    <li><a class='title' href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
+                </ul>
+            </div>
+            <a class='title' href='../../venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='../../img/img_carrinhovazio.svg' ></a></li>
+            <a class='title'href='../../login/login.html' target='_parent'><img class='icone_topo' src='../../img/img_perfil.svg'></a></li>
+            <div class='toggle icon-menu'></div>
+            <div class='toggle icon-close'></div>
+        </nav>
+        </header>"; 
     ?>
     <div class="color_cadastros">
-        <div class="container_paginas_princ">
-            <div class="titulo">
-                <!--<img class ="img_titulo" src="../../img/cacto.png">-->
-                <p class="cadastro_titulos">Cadastre-se na loja</p>
-                <!--<img class ="img_titulo" src="../../img/cacto.png">-->
+        <div class="container_paginas">
+            
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Cadastro de Produtos</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
             </div>
             
     
@@ -28,22 +46,22 @@
 
                         <div class="input-box">
                             <label>
-                                <div class="campo_label">Nome:</div>  
+                                <div class="campo_label">Nome</div>  
                                 <input class="input_form_grande" type="text" name="nome"  placeholder="Nome" max required/>
                             </label>
                         </div>
 
                         <div class="input-box">
                             <label>
-                                <div class="campo_label">Descrição:</div>
-                                <input class="input_form_grande" type="text" name="descricao"  placeholder="Descrição" required/>
+                                <div class="campo_label">Descrição</div>
+                                <input class="input_form_grande" type="text" name="descricao"  placeholder="Descrição"/>
                             </label>
                         </div>
 
 
-                        <div class="input-box-imagem">
-                                <p class="campo_label_pequeno">Imagem:</p>
-                                    <div class="max-width">
+                        <div class="input-box-imagem-prod">
+                                <div class="campo_label_pequeno">Imagem</div>
+                                    <div class="max-width-prod">
                                         <div class="imageContainer">
                                             <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
                                         </div>

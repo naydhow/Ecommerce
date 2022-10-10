@@ -15,11 +15,11 @@
    echo"
    <header id= 'header' >
    <nav class='container'>
-       <a href='../../index.php'><img src='../../img/logo.svg' class='logo'></a>
+       <a href='../../index.php'><img src='../../img/logo_final.svg' class='logo'></a>
        <div class='menu'>
            <ul class='grid'>
                <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
-               <li><a class='title'>Sobre</a></li>
+               <li><a class='title'href='../../sobre.php' target='_parent'>Sobre</a></li>
                <li><a class='title' href='../../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
                <li><a class='title' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
                <li><a class='title' href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
@@ -34,8 +34,13 @@
     ?>
 
     <div class="color_cadastros">
-        <div class="container_paginas_princ">
-            <!-- <p id="cadastro_titulos">Cadastro de Usuários</p> -->
+        <div class="container_paginas">
+       
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Cadastro de Usuários</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
 
           <div class="form_cad_user">
             <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
@@ -75,7 +80,7 @@
                     <div class="input_block">
                         <div class="input-box">
                             <div class="campo_label_peq2">
-                                <b>Sexo</b>
+                                <b id="campo_sexo">Sexo</b>
                                 <label><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>
                                 <label><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>
                                 <label><input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>

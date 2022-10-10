@@ -38,7 +38,9 @@
                 include "cad_pesq_produtos_back.php";
 
                 if ($qtde == 0) {
-                    echo "Não foi encontrado nenhum produto !!!<br><br>";
+                    echo "<div class='info_pesquisa'>
+                                Não foi encontrado nenhum produto correspondente à pesquisa!
+                            </div>";
                     return;
                 }
 

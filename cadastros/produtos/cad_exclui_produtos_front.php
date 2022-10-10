@@ -11,8 +11,13 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="color_cadastros">
-       <div class="container_paginas_princ">
-              <p class="cadastro_titulos">Confirmação: Exclusão de Produtos</p>
+       <div class="container_paginas">
+       
+            <div class="alinha_tituloimg">
+                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">Exclusão de Produtos</p>
+                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
 
               <div class="alt_form_prod">
                      <form action="cad_exclui_produtos_back.php" method="post">
@@ -48,7 +53,7 @@
                                    <div class="input-box-imagem">
                                           <div>
                                                  <p class="campo_label_pequeno">Imagem</p>
-                                                 <div class="max-width">
+                                                 <div class="max-width-prod">
                                                         <div class="imageContainer">
                                                                <?php
                                                                       if($linha['campo_imagem'] != 'null')
