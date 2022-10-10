@@ -3,11 +3,11 @@
   echo "
     <header id='header'>
       <nav class='container'>
-        <a href='#'><img src='./img/logo.svg' class='logo'></a>
+        <a href='#'><img src='./img/logo_final.svg' class='logo'></a>
         <div class='menu'>
             <ul class='grid'>
                 <li><a class='title' href='#topo'>Home</a></li>
-                <li><a class='title'>Sobre</a></li>
+                <li><a class='title' href='./sobre.php'>Sobre</a></li>
                 <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
                 <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
                 <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
