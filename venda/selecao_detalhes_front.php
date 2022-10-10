@@ -34,7 +34,7 @@
 
     <div class="nome_produto"><?php echo $linha['nome']; ?></div>
 
-    <img src="<?php if($linha['campo_imagem'] == null) echo '../img/prd.jpg'; else echo $linha['campo_imagem']; ?>" class="img_selecao_detalhes" />
+    <img src="<?php if($linha['campo_imagem'] == "http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/") echo '../img/prd.jpg'; else echo $linha['campo_imagem']; ?>" class="img_selecao_detalhes" />
     <br><br>
     <b>Código do produto: </b><?php echo $linha['id_produto']; ?>
     <br><br>

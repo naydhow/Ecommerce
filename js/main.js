@@ -1,14 +1,112 @@
-// Botão voltar ao topo
-const backToTopButton = document.querySelector('.back-to-top')
+// header e footer das páginas
 
-function backToTop() {
-  if (window.scrollY >= 560) {
-    backToTopButton.classList.add('show')
-  } else {
-    backToTopButton.classList.remove('show')
+// carregaDocumento("./utils/header.php", "#header");
+// // carregaDocumento("./utils/footer.php", "#footerzao");
+
+// function carregaDocumento(arquivo, target)
+// {
+//     var el = document.querySelector(target);
+
+//     //Se o elemento não existir então não requisita
+//     if (!el) return;
+
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("GET", arquivo, true);
+//     xhr.onreadystatechange = function(){
+//           if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 300){
+//               el.innerHTML = xhr.responseText;
+//           }
+//     };
+
+//     xhr.send();
+// }
+
+// verificador de number
+function onlynumber(evt) {
+  var theEvent = evt || window.event;
+  var key = theEvent.keyCode || theEvent.which;
+  key = String.fromCharCode( key );
+  //var regex = /^[0-9.,]+$/;
+  var regex = /^[0-9.]+$/;
+  if( !regex.test(key) ) {
+     theEvent.returnValue = false;
+     if(theEvent.preventDefault) theEvent.preventDefault();
   }
 }
 
-window.addEventListener('scroll', function(){
-  backToTop()
+/* abre e fecha o menu com o clicar no icone: hamburguer e x */
+const nav = document.querySelector('#header nav')
+const toggle = document.querySelectorAll('nav .toggle')
+
+for (const element of toggle) {
+  element.addEventListener('click', function () {
+    nav.classList.toggle('show')
+  })
+}
+
+// Botão voltar ao topo
+const backToTopButton = document.querySelector('.back-to-top')
+
+if(backToTopButton)
+{
+  function backToTop() {
+    if (window.scrollY >= 560) {
+      backToTopButton.classList.add('show')
+    } else {
+      backToTopButton.classList.remove('show')
+    }
+  }
+  
+  window.addEventListener('scroll', function(){
+    backToTop()
+  })
+}
+
+// Atualizar a quantidade de produtos
+function mais(num){
+  var atual = document.getElementById(num).value;
+  var novo = atual - (-1); //Evitando Concatenacoes
+  document.getElementById(num).value = novo;
+  atualizaDados();
+}
+
+function menos(num){
+  var atual = document.getElementById(num).value;
+  if(atual > 0) { //evita números negativos
+    var novo = atual - 1;
+    document.getElementById(num).value = novo;
+    atualizaDados();
+  }
+}
+
+function atualizaDados() {  
+    var form = document.getElementById("IdForm");
+    setTimeout(function() {
+      window.location.reload(1);
+    }, 180000);
+    form.submit();
+  //   document.getElementById("IdLink").addEventListener("click", function () {
+  //   form.submit();
+  // });
+}
+
+document.addEventListener('input', function(){
+  atualizaDados();
 })
+
+// iframe
+
+// var div = document.getElementById("iframers");
+
+// if(div)
+// {
+//   div.onload = function() {
+//     div.style.height =
+//       div.contentWindow.document.body.scrollHeight + 'px';
+// }
+// }
+
+//atualizar página por tempo
+// setTimeout(function() {
+//   window.location.reload(1);
+// }, 180000);

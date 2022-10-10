@@ -29,7 +29,7 @@ echo"
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div class="color_cadastros">
-       <div class="container_paginas">
+       <div class="container_paginas_princ">
               <span class="cadastro_titulos">Alteração de Usuário</span>
 
               <div class="form_cad_user_alt">
@@ -38,7 +38,14 @@ echo"
                             <div class="input-box-imagem-2">
                                    <div class="max-width-User">
                                           <div class="imageContainer">
-                                                 <img src="<?php echo $linha['img']; ?>" alt="Selecione uma foto para o perfil" id="imgPhoto">
+                                                 <?php
+                                                        if($linha['img'] != 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+                                                        {
+                                                               echo "<img src='".$linha['img']."' alt='Selecione uma foto para o perfil' id='imgPhoto'>";
+                                                        } else {
+                                                               echo "<img src='../../img/user.png' alt='Selecione uma foto para o perfil' id='imgPhoto'>";
+                                                        }
+                                                 ?>
                                           </div>
                                    </div>
 

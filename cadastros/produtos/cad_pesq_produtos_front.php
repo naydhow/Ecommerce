@@ -9,31 +9,14 @@
     <body>
         <?php
             echo"
-            <header id= 'header' >
-            <nav class='container'>
-                <a href='../../index.php'><img src='../../img/logo.svg' class='logo'></a>
-                <div class='menu'>
-                    <ul class='grid'>
-                        <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
-                        <li><a class='title'>Sobre</a></li>
-                        <li><a class='title' href='../../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-                        <li><a class='title' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
-                        <li><a class='title' href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
-                    </ul>
-                </div>
-                <a class='title' href='../../venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='../../img/img_carrinhovazio.svg' ></a></li>
-                <a class='title'href='../../login/login.html' target='_parent'><img class='icone_topo' src='../../img/img_perfil.svg'></a></li>
-                <div class='toggle icon-menu'></div>
-                <div class='toggle icon-close'></div>
-            </nav>
-            </header>"; 
+            <header id='header'></header>"; 
         ?>
 
         <div class="container_paginas">
 
             <div class="pesq">
                 <div class="pesquisa">
-                    <form action="" method="post">
+                    <form action="#" method="post">
                     <div class="divisoes">
                         <div class="pesquisaBotao">
                             <button>
@@ -85,9 +68,12 @@
                     </div>
                     ";
 
+
                     // Criar linhas com os dados dos produtos
                     foreach ($resultado_lista as $linha)
                     {
+                        $img;
+                        if($linha['campo_imagem'] == "http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/") $img='../../img/prd.jpg'; else  $img=$linha['campo_imagem'];
                         echo "
                             <div class='cell cellMedia'>
                                 ".$linha['id_produto']."
@@ -99,10 +85,10 @@
                                 ".$linha['estoque']."
                             </div>
                             <div class='cell cellEnorme'>
-                                ".'<img src="'.$linha['campo_imagem'].'">'."
+                                ".'<img src="'.$img.'">'."
                             </div>
                             <div class='cell cellGrande'>
-                                ".$linha['preco']."
+                                R$ ".$linha['preco']."
                             </div>
                             <div class='cell cellGrande'>
                                 <a  class='cellGrande' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;

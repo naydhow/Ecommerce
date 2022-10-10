@@ -3,25 +3,9 @@
 
 <!-- Recuperando as informações do produto -->
 <?php 
-       echo"
-       <header id= 'header' >
-       <nav class='container'>
-           <a href='../../index.php'><img src='../../img/logo.svg' class='logo'></a>
-           <div class='menu'>
-               <ul class='grid'>
-                   <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
-                   <li><a class='title'>Sobre</a></li>
-                   <li><a class='title' href='../../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-                   <li><a class='title' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
-                   <li><a class='title' href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
-               </ul>
-           </div>
-           <a class='title' href='../../venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='../../img/img_carrinhovazio.svg' ></a></li>
-           <a class='title'href='../../login/login.html' target='_parent'><img class='icone_topo' src='../../img/img_perfil.svg'></a></li>
-           <div class='toggle icon-menu'></div>
-           <div class='toggle icon-close'></div>
-       </nav>
-       </header>"; 
+       include_once "../../utils/header.php";
+       // echo"
+       // <header id='header'></header>"; 
       
        $id_produto =$_GET['id_produto'];
        include "cad_getinfo_produtos_back.php"; 
@@ -29,7 +13,7 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div color="color_cadastros">
-       <div class="container_paginas">
+       <div class="container_paginas_princ">
               <p  class="cadastro_titulos">Alteração de Produtos</p>
 
               <div class="alt_form_prod">
@@ -66,11 +50,11 @@
                                                  <div class="max-width">
                                                         <div class="imageContainer">
                                                                <?php
-                                                                      if($linha['campo_imagem'] != 'null')
+                                                                      if($linha['campo_imagem'] != 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
                                                                       {
                                                                              echo "<img src='".$linha['campo_imagem']."' alt='Selecione uma imagem para o produto' id='imgProduto'>";
                                                                       } else {
-                                                                             echo "<img src='../../img/camera.svg' alt='Selecione uma imagem para o produto' id='imgProduto'>";
+                                                                             echo "<img src='../../img/prd.jpg' alt='Selecione uma imagem para o produto' id='imgProduto'>";
                                                                       }
                                                                ?>
                                                         </div>

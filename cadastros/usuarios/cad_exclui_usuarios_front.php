@@ -27,7 +27,7 @@
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
- <div class="container_paginas">
+ <div class="container_paginas_princ">
        <p class="cadastro_titulos">Exclusão de Usuário</p>
 
               

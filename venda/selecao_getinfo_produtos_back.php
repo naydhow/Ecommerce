@@ -13,7 +13,7 @@
     {
         echo '<script language="javascript">';
         echo "alert('Produto não encontrado!')";
-        echo '</script>';	
+        echo '</script>';
         echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_produtos_front.php'>";
         exit;
     }

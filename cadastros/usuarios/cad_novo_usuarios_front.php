@@ -34,13 +34,12 @@
     ?>
 
     <div class="color_cadastros">
-        <div class="container_paginas">
-            <p id="cadastro_titulos">Cadastro de Usuários</p>
+        <div class="container_paginas_princ">
+            <!-- <p id="cadastro_titulos">Cadastro de Usuários</p> -->
 
           <div class="form_cad_user">
             <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
                 
-
                     <div class="input-box-imagem">
                         <div class="max-width-User">
                             <div class="imageContainer">
@@ -55,21 +54,21 @@
                     <div class="input-box">
                         <label>
                             <p class="campo_label">Nome</p>
-                            <input class="input_user_grande" type="text" name="nome" maxlength="100" placeholder="Digite seu nome completo" />
+                            <input class="input_user_grande" type="text" name="nome" maxlength="100" placeholder="Digite seu nome completo" required/>
                         </label>
                     </div>
 
                     <div class="input-box">
                         <label>
                             <p class="campo_label">Email</p>
-                            <input class="input_user_grande" type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com" />
+                            <input class="input_user_grande" type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com" required/>
                         </label>
                     </div>
 
                     <div class="input-box">
                         <label>
                             <p class="campo_label">Senha</p>
-                            <input class="input_user_grande" type="password" name="senha" maxlength="32" placeholder="***********" />
+                            <input class="input_user_grande" type="password" name="senha" maxlength="32" placeholder="***********" required/>
                             </label>
                     </div>
                 
@@ -136,13 +135,12 @@
                             </label>
                         </div>
 
-                    </div>
-                    
-                    <div class="buttons_user">
-                        <input type="submit" name="button" class="button_crud" value="Enviar" />
-                        <a class="button_crud" href='cad_pesq_usuarios_front.php'>Voltar</a>
-                    </div>  
-             </form>
+                        <div class="buttons_user">
+                            <input type="submit" name="button" class="button_crud" value="Enviar" />
+                            <a class="button_crud" href='cad_pesq_usuarios_front.php'>Voltar</a>
+                        </div>  
+                </form>
+            </div>
         </div>
     </div>
 
