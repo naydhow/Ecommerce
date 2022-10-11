@@ -1892,7 +1892,7 @@ align-items: center;
   }
 
   .alinha_tituloimg{
-    margin-top: 3%;
+    margin-top: 130px;
     margin-bottom: 2%;
     align-items: center;
     justify-content: center;
@@ -2194,6 +2194,13 @@ align-items: center;
  }
  
  #margem_img{
-   margin-left: 60px;
+   margin-left: 135px;
  }
  
+ .img_form{
+  margin-left: 37px;
+  margin-top: 50px;
+  width: 300px;
+  height: 356.39px;
+  border-radius: 10px;
+}
