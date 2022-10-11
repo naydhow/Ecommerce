@@ -67,12 +67,15 @@
 						</div>
 						<div class="lista_resumo">
 							<?php
-								foreach ($resultado_lista as $linha)
+								if($resultado_lista != null)
 								{
-									echo "<div class='lista_separa'>";
-									echo "<span>".$linha['nome']."</span>";
-									echo "<span>R$ ".number_format($linha['subtotal'], 2, ',', '.');".</span>";
-									echo "</div>";
+									foreach ($resultado_lista as $linha)
+									{
+										echo "<div class='lista_separa'>";
+										echo "<span>".$linha['nome']."</span>";
+										echo "<span>R$ ".number_format($linha['subtotal'], 2, ',', '.');".</span>";
+										echo "</div>";
+									}
 								}
 							?>
 						</div>
