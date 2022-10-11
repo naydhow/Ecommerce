@@ -34,9 +34,9 @@
 
                 pg_query($conecta, $sqlCarrinho);
 
-                echo "<h1>Deseja continuar?</h1>";
-                echo "<a href='finalizacao_compra_front.php'>Finalizar</a>&nbsp;&nbsp;";
-                echo "<a href='carrinho_front.php'>Cancelar</a>";
+                // header("location:carrinho_front.php");
+
+                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=carrinho_front.php'>";
                 
                 exit;
             }
