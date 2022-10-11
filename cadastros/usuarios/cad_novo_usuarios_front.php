@@ -15,7 +15,7 @@
     include_once "../../utils/header_2.php";
     ?>
 
-    <div class="container_paginas" id="topo">
+    <div class="">
         <div class="alinha_tituloimg">
             <img class="img_fofinhas" src="../../img/img_suculenta.svg">
             <p id="titulo_fofo_usu">&nbsp;&nbsp; Cadastro de Usuários</p>
@@ -24,7 +24,7 @@
 
         <div class="borda_fora_form">
             <ul>
-                <li>
+                <li id="form1">
                     <div id="lado1_form">
                         <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
                             <br> <br>
@@ -49,12 +49,12 @@
                                 <strong class="textos">E-MAIL: </strong>
                                 <input type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com" class="resposta">
                             </div>
-                            <br> <br>
+                            <br><br>
                             <div>
                                 <strong class="textos">SENHA: </strong>
                                 <input type="password" name="senha" maxlength="32" placeholder="***********" class="resposta">
                             </div>
-                            <br> <br>
+                            <br><br>
                             <div>
                                 <strong class="textos">FONE: </strong>
                                 <input type="text" name="telefone" placeholder="(00) 00000-0000" class="resposta">
@@ -64,7 +64,7 @@
                                     <div class="input_block">
                                         <div class="input-box">
                                             <div class="campo_label_peq2">
-                                                <strong class="textos">SEXO: </strong><br><br>
+                                                <strong class="textos">SEXO: </strong> <br><br> 
                                                 <label class="textos"><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>&nbsp;
                                                 <label id="sexo"><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>&nbsp;
                                                 <label id="sexo"><input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>&nbsp;
@@ -114,6 +114,8 @@
                                     </div>
                         </form>
 
+                    </div>
+
                 </li>
                 <li>
                     <!--  LADO 2 -->
@@ -131,7 +133,7 @@
 
         </div>
     </div>
-    
+
         <?php
 
         include_once "../../utils/footer_2.php";

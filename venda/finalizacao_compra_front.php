@@ -10,9 +10,14 @@
 
 
     echo "
+
+    <div class='container_paginas' id='topo'>
+
         <div class='fim-compra'>
             <h1>Compra Finalizada com Sucesso!!!</h1>
-        </div>";  
+        </div>
+        
+    </div>";  
 
     include_once "../utils/footer_3.php";
 
