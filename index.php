@@ -10,8 +10,6 @@
     </head>
     <body>
         <?php
-            // na linha 24 e 25 as páginas ainda não estão feitas, mas coloquei o link das páginas de cadastro de user e produto, 
-            // só pra facilitar na hora de programar  
             
             include_once "./utils/header.php";
             echo"

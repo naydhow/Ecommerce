@@ -3,9 +3,8 @@
 
 <!-- Recuperando as informações do produto -->
 <?php 
-       include_once "../../utils/header.php";
-       // echo"
-       // <header id='header'></header>"; 
+       include_once "../../utils/header_2.php";
+      
       
        $id_produto =$_GET['id_produto'];
        include "cad_getinfo_produtos_back.php"; 
@@ -13,7 +12,7 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
 <div color="color_cadastros">
-       <div class="container_paginas">
+       <div class="container_paginas" id="topo">
               
             <div class="alinha_tituloimg">
                 <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
@@ -129,5 +128,14 @@
               </div>
        </div>
 </div>
+
+  
+<?php
+
+       include_once "../../utils/footer_2.php";
+
+?>
+
+<script src="../../js/main.js"></script>
 
 <script src="../../js/produto_photo.js"></script>

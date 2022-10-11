@@ -26,7 +26,7 @@ body {
 }
 
 ul {
-  margin-left: 80px;
+  /* margin-left: 80px; */
   list-style: none;
 }
 
@@ -190,6 +190,11 @@ footer img{
   -webkit-font-smoothing: auto;
 }
 
+.icone_topo_car{
+  margin-left: 25px;
+  width: 23px;
+}
+
 .icone_topo{
   width: 23px;
 }
@@ -201,7 +206,6 @@ footer img{
 
 /*logo*/
 .logo{
-  margin-top: 14px;
   width: 30%;
 }
 
@@ -255,6 +259,7 @@ nav .carrinho {
 }
 
 nav #blur {
+  margin-left: 25px;
   visibility: hidden;
   opacity: 0;
   width: 0;
@@ -309,17 +314,23 @@ nav.show .icon-carrinho {
   opacity: 0;
 }
 
-.buttons_cart {
-  /* display: flex; */
-  background-color: white;
-}
-
-.buttons_cart #continuar-comprando{
+.buttons_cart #opcoes{
   /* position: relative; */
-  background-color: black;
+  background-color: var(--color-button-escuto);
   color: white;
 
-  border: black solid 1px;
+  border: var(--color-button-escuto) solid 1px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-right: 10px;
+}
+
+.buttons_cart #opcoes:hover{
+  /* position: relative; */
+  background-color: #ff90accd;
+  color: black;
+
+  border: #ff90accd solid 1px;
   border-radius: 0.25rem;
   padding: 0.5rem;
 }
@@ -353,12 +364,28 @@ nav .divisao-menu {
   align-items: center;
 }
 
+
+.text-conf-compra{
+  text-align: center;
+  font-family: var(--body-font);
+  margin-top: 30%;
+}
+
+.fim-compra{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--body-font);
+  height: 54%;
+}
+
                         /* <<<<<<<<<< DIV PRINCIPAL - PRODUTOS, USUÁRIOS E SELEÇÃO >>>>>>>>>*/
 
 .container_paginas{
   padding-top: var(--header-height);
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background-color: var(--body-color);
 
   text-align: center;
@@ -382,7 +409,8 @@ nav .divisao-menu {
 
 
 .selecaoProdutos{
-  margin-top: 4.5%  ;
+  margin-top: 4.5%;
+  margin-bottom: 25%;
 
   display:grid; 
   justify-content: center;
@@ -472,8 +500,7 @@ nav .divisao-menu {
   justify-content: center;
   font-family:var(--body-font);
   font-size: 15px;
-  width: 50%;
-  height: 97%;
+  padding: 2% 0%;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-right: 25%;
@@ -515,7 +542,6 @@ nav .divisao-menu {
   font-family:var(--body-font);
   font-size: 20px;
   color: bolder var(--text-color);
-  padding-top: 5%;
 }
 
 .img_selecao_detalhes{
@@ -1198,7 +1224,7 @@ input:hover{
   gap: 1rem 0.5rem;
 
   padding: 0 2rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 
   font: 14px var(--body-font);
 }
@@ -1914,16 +1940,31 @@ align-items: center;
   border-radius: 12px;
 }
 
+.img_cadastro{
+  /* margin-top: 50px;
+  width: 300px;
+  height: 356.39px;
+  border-radius: 10px; */
+
+
+  margin-top: 40px;
+  width: 300px;
+  height: 356.39px;
+  left: 740px;
+  top: 279px;
+  /*background: url(003843-Cacto-Flor-Rosa.jpg);*/
+  border-radius: 10px;
+}
+
+
 .img_login{
   margin-top: 50px;
-  margin-left: 37.5px;
   width: 300px;
   height: 356.39px;
   border-radius: 10px;
 }
 
 .digita{
-  margin-left: 130px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -1932,7 +1973,7 @@ align-items: center;
 }
 
 .digita1{
-  margin-left: 160px;
+  text-align: center;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -1950,7 +1991,6 @@ align-items: center;
 }
 
 .email_senha{
-  margin-left: 40px;
   width: 49px;
   height: 24px;
   font-family: 'Poppins';
@@ -2053,7 +2093,109 @@ align-items: center;
 
 .centro_titulo{
   display: flex;
-  margin-top: 10%;
+  margin-top: 3%;
   justify-content: center;
 }
 
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORMS ATUALIZADOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+#lado1_form{
+  width: 50%; 
+  float:left;
+ 
+ }
+ 
+ #lado2_form{
+   width: 50%;
+   float:left;
+ }
+ .borda_fora_form{
+   width: 863px;
+   height: 1104px;
+   left: 251px;
+   top: 132px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 20px #243D25;
+   border-radius: 12px;
+   /*margin-top: 100px;*/
+   margin-left: 260px;
+   margin-bottom: 100px;
+ }
+ 
+ .borda_rosa{
+   margin-top: 30px;
+   margin-left: 10px;
+   margin-right: 300px;
+   width: 375px;
+   height: 1009px;
+   left: 707px;
+   top: 188px;
+   background: #FAD9E6;
+   box-shadow: 0px 4px 20px #243D25;
+   border-radius: 12px;
+ }
+ 
+ .textos{
+   margin-left: 60px;
+   width: 86px;
+   height: 27px;
+   left: 286px;
+   top: 411px; 
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 21px;
+   text-align: left;
+   color: #000000;
+ 
+ }
+ 
+ #sexo{
+   width: 86px;
+   height: 27px;
+   left: 286px;
+   top: 411px; 
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 21px;
+   text-align: left;
+   color: #000000;
+ }
+ 
+ #estado{
+   margin-left: 50px;
+   text-align: center;
+   width: 150px;
+   height: 27px;
+   left: 286px;
+   top: 411px; 
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 21px;
+   color: #000000;
+ }
+ 
+ #datanasc{
+   margin-left: 30px;
+   width: 150px;
+   text-align: center;
+   height: 27px;
+   left: 286px;
+   top: 411px; 
+   font-weight: 700;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-size: 13spx;
+   color: #000000;
+ }
+ 
+ #margem_img{
+   margin-left: 60px;
+ }
+ 

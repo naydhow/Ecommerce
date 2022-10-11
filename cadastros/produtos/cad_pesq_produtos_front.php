@@ -8,11 +8,10 @@
     </head>
     <body>
         <?php
-            echo"
-            <header id='header'></header>"; 
+            include_once "../../utils/header_2.php";
         ?>
 
-        <div class="container_paginas">
+        <div class="container_paginas" id="topo">
 
             <div class="pesq">
                 <div class="pesquisa">
@@ -102,7 +101,13 @@
                     } 
                 // Fechando a tag da tabela
                 echo "</div>";
+
+                
+                include_once "../../utils/footer_2.php";
             ?>    
         </div>
+
+        
+        <script src="../../js/main.js"></script>
     </body>
 </html>

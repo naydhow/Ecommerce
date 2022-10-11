@@ -12,7 +12,7 @@ vídeo aula de:https://www.youtube.com/watch?v=CBzfcl-Qk1c
 Adaptado por Profa. Ariane Scarelli para banco de dados PostgreSQL (ago/2016)
 Adaptado por Prof. Victor rodrigues (ago/2022)
 */
-	include_once "../utils/header.php";
+	include_once "../utils/header_3.php";
 
     //session_start();
     $acao = $_GET['acao'] ?? '';
@@ -77,7 +77,10 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 					}
 					if($resultado_lista == null)
 					{
-						echo "Não há produtos aqui! :(";
+						echo 
+						"<div class='text-conf-compra'>
+							<h2>Não há produtos aqui! :(</h2>
+						</div>";
 					}
 				?>
 				</form>
@@ -114,7 +117,7 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 	</div>
 </main>
 <?php
-	include_once "../utils/footer.php";
+	include_once "../utils/footer_3.php";
 ?>
 
 <script src="../js/main.js"></script>

@@ -5,6 +5,7 @@
 	<?php
 			include "../utils/conexao.php";
 
+
 			// session_start();
 			$acao = $_GET['acao'] ?? '';
 			$id_produto = $_GET['id_produto'] ?? 0;

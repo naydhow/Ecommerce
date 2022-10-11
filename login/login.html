@@ -1,78 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/logopeq_caricacto.svg">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login</title>
-  </head>
-  <header id="header">
-    <nav class="container">
-        <a href="../index.php"><img src="../img/logo_final.svg" class="logo"></a>
-          <div class="menu">
-              <ul class="grid">
-                  <li><a class="title" href="../index.php">Home</a></li>
-                  <li><a class="title" href="../sobre.php">Sobre</a></li>
-                  <li><a class="title" href="../venda/selecao_produtos_front.php" target="_parent">Produtos</a></li>
-                  <li><a class="title" href="../cadastros/produtos/cad_pesq_produtos_front.php" target="_parent">Contato</a></li>
-                  <li><a class="title" href="../cadastros/usuarios/cad_pesq_usuarios_front.php" target="_parent">Estatísticas</a></li>
-              </ul>
-          </div>
-        <a class="title" href="../venda/carrinho_front.php" target="_parent"><img class="icone_topo" src="../img/img_carrinhovazio.svg" ></a>
-        <a class="title"href="../login/login.html" target="_parent"><img class="icone_topo" src="../img/img_perfil.svg"></a>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/logopeq_caricacto.svg">
+  <title>Login</title>
+</head>
+
+<body>
+  <header id='header'>
+    <nav class='container'>
+      <a href='../index.php' target='_parent'><img src='../img/logo_final.svg' class='logo'></a>
+      <div class='menu'>
+        <ul class='grid'>
+          <li><a class='title' href='../index.php' target='_parent'>Home</a></li>
+          <li><a class='title' href='../sobre.php' target='_parent'>Sobre</a></li>
+          <li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+          <li><a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
+          </li>
+          <li><a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php'
+              target='_parent'>Estatísticas</a></li>
+        </ul>
+      </div>
+      <div class='divisao-menu'>
+        <div id='blur'></div>
+        <div class='carrinho'>
+          <iframe src='../venda/carrinho_peq_front.php' id='iframers'></iframe>
+
+          <div class='divider-black'></div>
+          <footer id='footer_cart'>
+            <div class='buttons_cart'>
+              <a href='../venda/selecao_produtos_front.php' id='opcoes'>Continuar Comprando</a>
+              <a href='../venda/confirmacao_compra_front.php' id='opcoes'>Finalizar</a>
+              <a href='../venda/carrinho_front.php' id='opcoes'>Carrinho</a>
+            </div>
+          </footer>
+        </div>
+        <div class='toggle icon-carrinho'><img class='icone_topo_car' src='../img/img_carrinhovazio.svg'></div>
+        <div class='toggle icon-close'><img class='icone_topo' src='../img/img_close.svg'></div>
+        <a class='title' href='../login/login.html' target='_parent'><img class='icone_topo'
+            src='../img/img_perfil.svg'></a>
+      </div>
     </nav>
   </header>
-  <body>
-    <div class="container_paginas">
-      <div class="centro_titulo">
-        <strong id="titulo_fofo_usu">Login Caricacto</strong>
-      </div>
-      <div class="borda_fora">
-        <div id="lado1"> 
-          <div class="digita">
-            <br><br><br>
-            <strong>Digite seu E-mail e Senha</strong>
-            <br><br><br><br>
-          </div>
-          <form action="login.php" method="post">
-            <div>
-              <strong class="email_senha">E-MAIL: </strong>
-              <input type="email" name="email" maxlength="80" class="resposta">
-            </div>
-              <br><br>
-            <div>
-              <strong class="email_senha">SENHA: </strong>
-              <input type="password" name="senha" maxlength="32" class="resposta">
-            </div>
-              <br><br><br>
-            <div class="digita1">
-              <strong>Não tem conta?</strong>
-              <br>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="../cadastros/usuarios/cad_novo_usuarios_front.php">Criar uma</a>
-            </div>
-            <div>
-              <input type="submit" value="Entrar" class="btn_enviar">
-            </div>
-            <div class="voltarr">
-              <a href="../index.php">Voltar</a>
-            </div>
-          </form>
+
+  <div class="container_paginas">
+    <div class="centro_titulo">
+      <strong id="titulo_fofo_usu">Login Caricacto</strong>
+    </div>
+    <div class="borda_fora">
+      <div id="lado1">
+        <div class="digita">
+          <br><br><br>
+          <strong>Digite seu E-mail e Senha</strong>
+          <br><br><br><br>
         </div>
-        <div id="lado2">
-          <div class="borda_dentro">
-            <img class="img_login" src="../img/cacto_login.svg">
+        <form action="login.php" method="post">
+          <div>
+            <strong class="email_senha">E-MAIL: </strong>
+            <input type="email" name="email" maxlength="80" class="resposta">
           </div>
+          <br><br>
+          <div>
+            <strong class="email_senha">SENHA: </strong>
+            <input type="password" name="senha" maxlength="32" class="resposta">
+          </div>
+          <br><br><br>
+          <div class="digita1">
+            <strong>Não tem conta?</strong>
+            <br>
+            <a href="../cadastros/usuarios/cad_novo_usuarios_front.php">Criar uma</a>
+          </div>
+          <div>
+            <input type="submit" value="Entrar" class="btn_enviar">
+          </div>
+          <div class="voltarr">
+            <a href="../index.php">Voltar</a>
+          </div>
+        </form>
+      </div>
+      <div id="lado2">
+        <div class="borda_dentro">
+          <img class="img_login" src="../img/cacto_login.svg">
         </div>
       </div>
     </div>
-  </body>
+  
+
+  <footer id='footerzao'>
+    <img src='../img/logo_final.svg'>
+    <div class='fusao'>
+      <div class='navegacao'>
+
+        <p id='h'>Navegação:</p>
+        <a class='title' href='../index.php' target='_parent'>Home</a>
+        <a class='title' href='../sobre.php' target='_parent'>Sobre</a>
+        <a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
+        <a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
+        <a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a>
+      </div>
+
+
+      <div class='devs'>
+        <p class='title' id='h'>Desenvolvedores:</p>
+
+        <div class='devs1'>
+          <p>
+            04 - Beatriz Kaori Sakai <br>
+            05 - Beatriz Osajima Suwa <br>
+            13 - Eduarda Garbullio Silva <br>
+          </p>
+        </div>
+        <div class='devs2'>
+          <p>
+            24 - Lorena Fioruci Caricati dos Santos <br>
+            32 - Naydhow Roberto Mascareli Bertaglia <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+  <a href='#topo' class='back-to-top'><img src='../img/voltar_topo.svg'></a>
+
+
+  <script src="../js/main.js"></script>
+</body>
+
 </html>
 
-        <!-- <form class="borda_fora" action="login.php" method="post">
+<!-- <form class="borda_fora" action="login.php" method="post">
               <div class="digita" id="lado1">
 
             <br><br><br>

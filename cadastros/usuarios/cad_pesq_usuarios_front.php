@@ -9,44 +9,26 @@
     <body>
 
     <?php
-       echo"
-       <header id= 'header' >
-       <nav class='container'>
-           <a href='../../index.php'><img src='../../img/logo_final.svg' class='logo'></a>
-           <div class='menu'>
-               <ul class='grid'>
-                   <li><a class='title' href='../../index.php' target='_parent'>Home</a></li>
-                   <li><a class='title' href='../../sobre.php' target='_parent'>Sobre</a></li>
-                   <li><a class='title' href='../../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-                   <li><a class='title' href='../../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
-                   <li><a class='title' href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
-               </ul>
-           </div>
-           <a class='title' href='../../venda/carrinho_front.php' target='_parent'><img class='icone_topo' src='../../img/img_carrinhovazio.svg' ></a></li>
-           <a class='title'href='../../login/login.html' target='_parent'><img class='icone_topo' src='../../img/img_perfil.svg'></a></li>
-           <div class='toggle icon-menu'></div>
-           <div class='toggle icon-close'></div>
-       </nav>
-       </header>"; 
-       
+       include_once "../../utils/header_2.php"; 
     ?>
-    <div class="container_paginas">
-    <div class="pesq">
-        <div class="pesquisa">
-            <form action="#" method="post">
-            <div class="divisoes">
-                <div class="pesquisaBotao">
-                    <button>
-                        <img src="../../img/search.svg" alt="Lupa de Pesquisa">
-                    </button>
+
+    <div class="container_paginas" id="topo">
+        <div class="pesq">
+            <div class="pesquisa">
+                <form action="#" method="post">
+                <div class="divisoes">
+                    <div class="pesquisaBotao">
+                        <button>
+                            <img src="../../img/search.svg" alt="Lupa de Pesquisa">
+                        </button>
+                    </div>
+                    <div class="pesquisaTexto">
+                        <input type="text" name="textPesquisa" placeholder="Pesquise um usuário especifico" maxlength="116">
+                    </div>
                 </div>
-                <div class="pesquisaTexto">
-                    <input type="text" name="textPesquisa" placeholder="Pesquise um usuário especifico" maxlength="116">
-                </div>
-            </div>
-            </form>
-      </div>
-    </div>
+                </form>
+        </div>
+        </div>
 
       <a class="links" href='cad_novo_usuarios_front.php'>+ Adicionar Usuário</a><br><br>
 
@@ -117,8 +99,14 @@
                 } 
             // Fechando a tag da tabela
             echo "</div>";
+
+            include_once "../../utils/footer_2.php";
         ?>    
     </div>
+
+    <script src="../../js/main.js"></script>
+
+    <script src="../../js/produto_photo.js"></script>
     
     </body>
 </html>
