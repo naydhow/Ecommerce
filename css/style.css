@@ -725,7 +725,7 @@ input[type="file"] {
 }
 
 #imgPhoto:hover, #imgProduto:hover {
-  background:rgb(55, 77, 52);
+  background:#FAD9E6;
 }
 
 
@@ -2101,8 +2101,16 @@ align-items: center;
 #lado1_form{
   width: 50%; 
   float:left;
- 
  }
+
+
+ #form1 input:focus{
+  background-color: #fcc4da;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+  border:none;
+  border-bottom: 1px solid;
+}
  
  #lado2_form{
    width: 50%;
