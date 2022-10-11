@@ -15,7 +15,7 @@
     include_once "../../utils/header_2.php";
     ?>
 
-    <div class="">
+    <div>
         <div class="alinha_tituloimg">
             <img class="img_fofinhas" src="../../img/img_suculenta.svg">
             <p id="titulo_fofo_usu">&nbsp;&nbsp; Cadastro de Usuários</p>
@@ -28,7 +28,7 @@
                     <div id="lado1_form">
                         <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
                             <br> <br>
-                            <div class="input-box-imagem-prod">
+                        <!--<div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
                                     <div class="imageContainer" id="margem_img">
                                         <img src="../../img/camera.svg" alt="Selecione uma imagem para o produto" id="imgProduto">
@@ -37,7 +37,19 @@
                                 <div class="answer">
                                     <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
                                 </div>
+                            </div>-->
+
+                    <div class="input-box-imagem" id="margem_img">
+                        <div class="max-width-User">
+                            <div class="imageContainer">
+                                <img src="../../img/user.png" alt="Selecione uma foto para o perfil" id="imgPhoto">
                             </div>
+                        </div>
+                        <div class="answer">
+                            <input name="ftperfil" id="ftperfil" type="file" accept="image/*">
+                        </div>
+                    </div>
+
                             <br>
 
                             <div>
@@ -123,9 +135,9 @@
                     <div id="lado2_form">
                         <div class="borda_rosa">
                             <br><br>
-                            <img class="img_cadastro" src="../../img/cacto_login.svg">
-                            <br> <br><br> <br><br><br>
-                            <img class="img_cadastro" src="../../img/vaso_redondo_mini.svg">
+                            <img class="img_form" src="../../img/cacto_login.svg">
+                            <br> <br><br> <br>
+                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
                         </div>
                     </div>
                 </li>
