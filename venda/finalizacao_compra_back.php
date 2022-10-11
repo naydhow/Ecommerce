@@ -12,9 +12,8 @@
             $res = pg_query($conecta,$sql);
 
             $resulta = pg_fetch_array($res);
-            
 
-            if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] <= 0){
+            if($linha['qtde'] > $resulta['estoque']){
                 // echo '<script language="javascript">';
                 // echo "alert('Ih, acabou o estoque meu filho')";
                 // echo '</script>';
