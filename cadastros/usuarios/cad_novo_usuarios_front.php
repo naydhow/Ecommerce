@@ -69,7 +69,7 @@
                             <br><br>
                             <div>
                                 <strong class="textos">FONE: </strong>
-                                <input type="text" name="telefone" placeholder="(00) 00000-0000" class="resposta">
+                                <input type="text" name="telefone" maxlength="15" placeholder="(00) 00000-0000" id="telefone" class="resposta">
                                 <div>
                                     <br> <br>
 
@@ -93,22 +93,22 @@
 
                                     <div>
                                         <strong class="textos">CPF: </strong>
-                                        <input type="text" name="cpf" maxlength="80" class="resposta" placeholder="000.000.000-00">
+                                        <input type="text" name="cpf" maxlength="80" id="cpf" class="resposta" placeholder="000.000.000-00">
                                     </div>
                                     <br> <br>
                                     <div>
                                         <strong class="textos">CEP: </strong>
-                                        <input type="text" name="cep" placeholder="00000-000" class="resposta">
+                                        <input type="text" name="cep" placeholder="00000-000"  id="cep" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
                                         <strong class="textos">ENDEREÇO: </strong>
-                                        <input type="text" name="endereco" maxlength="150" placeholder="Endereço" class="resposta">
+                                        <input type="text" name="endereco" maxlength="150" placeholder="Endereço"  id="endereco" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
                                         <strong class="textos">CIDADE: </strong>
-                                        <input type="text" name="cidade" maxlength="30" placeholder="Cidade" class="resposta">
+                                        <input type="text" name="cidade" maxlength="30" placeholder="Cidade" id="cidade" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div class="input-box">
@@ -144,16 +144,22 @@
             </ul>
 
         </div>
-    </div>
-
-        <?php
+    </div> 
+    
+    <?php
 
         include_once "../../utils/footer_2.php";
 
-        ?>
+    ?>
+
 
         <script src="../../js/main.js"></script>
-        <script src="../../js/produto_photo.js"></script>
+        <script src="../../js/cep.js"></script>
+        <script src="../../js/masks.js"></script>
+        <script src="../../js/perfil_photo.js"></script>
+
+       
+    
 </body>
 
 </html>
