@@ -369,9 +369,11 @@ nav .divisao-menu {
 
 
 .text-conf-compra{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: var(--body-font);
-  margin-top: 30%;
 }
 
 .fim-compra{
@@ -380,7 +382,9 @@ nav .divisao-menu {
   justify-content: center;
   align-items: center;
   font-family: var(--body-font);
-  height: 54%;
+  margin-top: 9%;
+  margin-bottom: 4%;
+
 }
 
                         /* <<<<<<<<<< DIV PRINCIPAL - PRODUTOS, USUÁRIOS E SELEÇÃO >>>>>>>>>*/
@@ -1713,14 +1717,11 @@ input:hover{
   text-align: center;
   font-family: var(--body-font);
   width: 300px;
-  margin-top: 5%;
-  margin-left: 140px;
   font-size: 20px;
 }
 
 .vid{
   align-items: baseline;
-  margin-right: 90px;
 }
 
 .vid iframe {

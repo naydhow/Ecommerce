@@ -11,7 +11,7 @@
 
     echo "
 
-    <div class='container_paginas' id='topo'>
+    <div class='section' id='home'>
 
         <div class='fim-compra'>
             <h1>Compra Finalizada com Sucesso!!!</h1>

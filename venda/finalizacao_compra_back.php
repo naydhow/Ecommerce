@@ -13,7 +13,7 @@
 
             $resulta = pg_fetch_array($res);
 
-            if($linha['qtde'] > $resulta['estoque']){
+            if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] == 0){
                 // echo '<script language="javascript">';
                 // echo "alert('Ih, acabou o estoque meu filho')";
                 // echo '</script>';
