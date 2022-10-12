@@ -2216,3 +2216,32 @@ align-items: center;
   height: 356.39px;
   border-radius: 10px;
 }
+
+.bnt_menores{
+  margin-left: 140px;
+  margin-top: 17px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  width: 150px;
+  height: 30px;
+  
+  left: 373px;
+  top: 625.52px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #e7ccd7;
+}

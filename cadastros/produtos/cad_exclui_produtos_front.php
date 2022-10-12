@@ -8,49 +8,21 @@
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
-<div class="color_cadastros">
-       <div class="container_paginas" id="topo">
-       
-            <div class="alinha_tituloimg">
-                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
-                <p id="titulo_fofo_usu">Exclusão de Produtos</p>
-                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
-            </div>
+<div>
+        <div class="alinha_tituloimg">
+            <img class="img_fofinhas" src="../../img/img_suculenta.svg">
+            <p id="titulo_fofo_usu">&nbsp;&nbsp; Exclusão de Produtos</p>
+            <img class="img_fofinhas" src="../../img/img_cacto.svg">
+        </div>
 
-              <div class="alt_form_prod">
-                     <form action="cad_exclui_produtos_back.php" method="post">
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label">Id do produto</p>
-                                                 <input class="input_grande_alt" type="text" name="id_produto" 
-                                                 value="<?php echo $linha['id_produto']; ?>" 
-                                                 readonly>
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label">Nome</p>
-                                                 <input class="input_grande_alt" type="text" name="nome" 
-                                                 value="<?php echo $linha['nome']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label">Descrição</p>
-                                                 <input class="input_grande_alt" type="text" name="descricao" 
-                                                 value="<?php echo $linha['descricao']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>      
-                                   
-
-                                   <div class="input-box-imagem">
+        <div class="borda_fora_form">
+            <ul>
+                <li>
+                    <div id="lado1_form">
+                        <form action="cad_exclui_produtos_back.php" method="post">
+                            <br> <br>
+                            <div class="input-box-imagem">
                                           <div>
-                                                 <p class="campo_label_pequeno">Imagem</p>
                                                  <div class="max-width-prod">
                                                         <div class="imageContainer">
                                                                <?php
@@ -65,69 +37,82 @@
                                                  </div>
                                           </div>
                                    </div>
+                            <br><br><br>
 
-                                   
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Estoque</p>
-                                                 <input class="input_pequeno_alt" type="number" name="estoque" 
-                                                 value="<?php echo $linha['estoque']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Código Visual</p>
-                                                 <input class="input_pequeno_alt" type="text" name="codigovisual" 
-                                                 value="<?php echo $linha['codigovisual']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-                                 
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Preço</p>
-                                                 <input class="input_pequeno_alt" type="text" name="preco" 
-                                                 value="<?php echo $linha['preco']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Custo</p>
-                                                 <input class="input_pequeno_alt" type="text" name="custo" 
-                                                 value="<?php echo $linha['custo']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">M. Lucro</p>
-                                                 <input  class="input_pequeno_alt" type="text" name="margem_lucro" 
-                                                 value="<?php echo $linha['margem_lucro']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-                                   
-                                   <div class="input-box">
-                                          <label>
-                                          <p class="campo_label_pequeno">ICMS</p>
-                                                 <input  class="input_pequeno_alt" type="text" name="icms" 
-                                                 value="<?php echo $linha['icms']; ?>"
-                                                 readonly>
-                                          </label>
-                                   </div>
-
-                            
-                            <div class="buttons">
-                                   <input class="button_crud" type="submit" value="Excluir">
-                                   <input class="button_crud" type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?id_produto=<?php echo $id_produto ?>';">
-                                   <input class="button_crud" type="button" value="Voltar" onclick="location.href='cad_pesq_produtos_front.php';"> 
+                            <div>
+                                <strong class="textos">ID PRODUTO:</strong>
+                                <input type="text" name="id_produto" value="<?php echo $linha['id_produto']; ?>" readonly class="resposta">
                             </div>
-                     </form>       
-              </div>
-       </div>
-</div>
+                            <br> <br>
+
+                            <div>
+                                <strong class="textos">NOME:  &nbsp; &nbsp; &nbsp;</strong>
+                                <input type="text" name="nome" value="<?php echo $linha['nome']; ?>" class="resposta">
+                            </div>
+                            <br> <br>
+                            <div>
+                                <strong class="textos">DESCRIÇÃO</strong>
+                                <input class="resposta" type="text" name="descricao" value="<?php echo $linha['descricao']; ?>">
+                            </div>
+                            <br> <br>
+                            <div>
+                                <strong class="textos">COD. VISUAL:</strong>
+                                <input type="text" name="codigovisual" value="<?php echo $linha['codigovisual']; ?>" class="resposta">
+                            </div>
+                            <br> <br>
+                            <div>
+                                <strong class="textos">ESTOQUE: </strong>
+                                <input type="number" name="estoque" value="<?php echo $linha['estoque']; ?>" class="resposta">
+                            </div>
+                                <br> <br>
+
+                            <div>
+                                <strong class="textos">PREÇO:  &nbsp; &nbsp;</strong>
+                                <input type="text" name="preco" value="<?php echo $linha['preco']; ?>" class="resposta">
+                            </div>
+                                <br><br>
+
+                            <div>
+                                <strong class="textos">CUSTO: &nbsp; &nbsp;</strong>
+                                <input type="text" name="custo" value="<?php echo $linha['custo']; ?>" class="resposta">
+                            </div>
+                            <br><br>
+
+                            <div>
+                                <strong class="textos">M. LUCRO: </strong>
+                                <input type="text" name="margem_lucro" value="<?php echo $linha['margem_lucro']; ?>" class="resposta">
+                            </div>
+                            <br> <br>
+                            <div>
+                                <strong class="textos">ICMS: &nbsp; &nbsp; &nbsp; &nbsp;</strong>
+                                <input type="text" name="icms" value="<?php echo $linha['icms']; ?>" class="resposta">
+                            </div>
+                            
+                            <br><br>
+                            <div>
+                                <input class="btn_enviar" type="submit" value="Excluir">
+                                <input class="btn_enviar" type="button" value="Editar" onclick="location.href='cad_altera_produtos_front.php?id_produto=<?php echo $id_produto ?>';">
+                                <input class="btn_enviar" type="button" value="Voltar" onclick="location.href='cad_pesq_produtos_front.php';"> 
+                            </div>
+                </form>
+            </li>
+
+            <li>
+                    <!--  LADO 2 -->
+                    <br>
+                    <div id="lado2_form">
+                        <div class="borda_rosa">
+                            <br><br>
+                            <img class="img_form" src="../../img/cacto_login.svg">
+                            <br> <br><br> <br>
+                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
 
   
 <?php

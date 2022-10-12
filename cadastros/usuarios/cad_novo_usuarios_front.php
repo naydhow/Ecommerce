@@ -26,7 +26,7 @@
             <ul>
                 <li id="form1">
                     <div id="lado1_form">
-                        <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
+                        <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
                             <br> <br>
                         <!--<div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
@@ -122,7 +122,7 @@
                                         <input type="submit" name="button" value="Enviar" class="btn_enviar">
                                     </div>
                                     <div class="voltarr">
-                                        <a href="../../login/login.html">Voltar</a>
+                                        <a href="./cad_pesq_usuarios_front.php">Voltar</a>
                                     </div>
                         </form>
 
