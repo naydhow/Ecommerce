@@ -12,7 +12,7 @@
 
     echo  "
 
-    <div class='section' id='home'>
+    <div class='section_2' id='home_2'>
 
         <div class='fim-compra'>
             

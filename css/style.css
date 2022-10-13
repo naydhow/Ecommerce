@@ -1925,7 +1925,7 @@ align-items: center;
   
 }
 .borda_fora{
-  margin-left: 250px;
+  margin-left: 290px;
   margin-top: 30px;
   margin-bottom: 100px;
   width: 863px;
@@ -2257,6 +2257,22 @@ align-items: center;
 .fim-compra{
   background-image: url(../img/img_finalizacao.png);
   background-size: cover;
-  width: 578px;
-  height: 550px;
+  width: 558px;
+  height: 530px;
+  border-radius: 6%;
+  margin-top: 45px;
+}
+
+.section_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#home_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFE8F1;
 }
