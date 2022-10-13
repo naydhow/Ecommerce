@@ -9,12 +9,12 @@
     include "finalizacao_compra_back.php";
 
 
-    echo "
+    echo  "
 
     <div class='section' id='home'>
 
         <div class='fim-compra'>
-            <h1>Compra Finalizada com Sucesso!!!</h1>
+            
         </div>
         
     </div>";  

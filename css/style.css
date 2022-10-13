@@ -2246,3 +2246,11 @@ align-items: center;
   text-align: center;
   color: #e7ccd7;
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FINALIZAÇÃO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.fim-compra{
+  background-image: url(../img/img_finalizacao.png);
+  background-size: cover;
+  width: 578px;
+  height: 550px;
+}
