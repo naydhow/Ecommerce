@@ -2102,6 +2102,8 @@ align-items: center;
 #lado1_form{
   width: 50%; 
   float:left;
+  padding-top: 2%;
+  padding-bottom: 2%;
  }
 
 
@@ -2158,7 +2160,10 @@ align-items: center;
    color: #000000;
  
  }
- 
+ .espaco_button{
+    padding-bottom: 3.5%;
+ }
+
  #sexo{
    width: 86px;
    height: 27px;
@@ -2213,6 +2218,7 @@ align-items: center;
  .img_form{
   margin-left: 37px;
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 300px;
   height: 356.39px;
   border-radius: 10px;

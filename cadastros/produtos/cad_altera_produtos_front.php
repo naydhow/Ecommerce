@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
+<title>Alteração de Produtos</title>
 
 <!-- Recuperando as informações do produto -->
 <?php 
@@ -58,7 +59,7 @@
                             </div>
                             <br> <br><br>
                             <div>
-                                <strong class="textos">DESCRIÇÃO</strong>
+                                <strong class="textos">DESCRIÇÃO:</strong>
                                 <input class="resposta" type="text" name="descricao" value="<?php echo $linha['descricao']; ?>">
                             </div>
                             <br> <br><br>
@@ -96,7 +97,7 @@
                             </div>
                             <br> 
                             
-                            <div>
+                            <div class="espaco_button">
                                 <input type="submit" value="Gravar" class="btn_enviar">
                                 <input type="reset" value="Voltar" onclick="history.back()" class="btn_enviar">
                             </div>
@@ -110,7 +111,7 @@
                         <div class="borda_rosa">
                             <br><br>
                             <img class="img_form" src="../../img/cacto_login.svg">
-                            <br> <br><br> <br>
+                            <br> <br>
                             <img class="img_form" src="../../img/vaso_redondo_mini.svg">
                         </div>
                     </div>

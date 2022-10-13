@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../img/logopeq_caricacto.svg">
     
-    <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
+    <title>Cadastro de Produtos</title>
 </head>
 <body>
 
@@ -46,7 +46,7 @@
                             </div>
                             <br> <br><br>
                             <div>
-                                <strong class="textos">DESCRIÇÃO</strong>
+                                <strong class="textos">DESCRIÇÃO:</strong>
                                 <input class="resposta" type="text" name="descricao"  placeholder="Descrição"/>
                             </div>
                             <br> <br><br>
