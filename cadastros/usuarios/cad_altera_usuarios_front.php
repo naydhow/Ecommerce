@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
+<title>Alteração de Usuário</title>
 
 <!-- Recuperando as informações do produto -->
 <?php   
@@ -56,7 +57,7 @@
                             <br><br>
                             
                             <div>
-                                <strong class="textos">ID USUÁRIO </strong>
+                                <strong class="textos">ID USUÁRIO: </strong>
                                 <input type="text" name="id_usuario" value="<?php echo $linha['id_usuario']; ?>" readonly class="resposta">
                             </div>
                             <br> <br>
@@ -77,7 +78,7 @@
                             <br><br>
                             <div>
                                 <strong class="textos">FONE: </strong>
-                                <input type="text" name="telefone" placeholder="(00) 00000-0000" value="<?php echo $linha['telefone']; ?>" class="resposta">
+                                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" value="<?php echo $linha['telefone']; ?>" class="resposta">
                                 <div>
                                     <br> <br>
 
@@ -119,7 +120,7 @@
 
                                     <div>
                                         <strong class="textos">CPF: </strong>
-                                        <input class="resposta" type="text" name="cpf" placeholder="000.000.000-00" value="<?php echo $linha['cpf']; ?>">
+                                        <input class="resposta" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" value="<?php echo $linha['cpf']; ?>">
                                     </div>
                                     <br> <br>
                                     <div>
@@ -129,18 +130,18 @@
                                     <br> <br>
                                     <div>
                                         <strong class="textos">ENDEREÇO: </strong>
-                                        <input type="text" name="endereco" maxlength="150" value="<?php echo $linha['endereco']; ?>" class="resposta">
+                                        <input type="text" name="endereco" maxlength="150"  id="endereco" value="<?php echo $linha['endereco']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
                                         <strong class="textos">CIDADE: </strong>
-                                        <input type="text" name="cidade" maxlength="30" value="<?php echo $linha['cidade']; ?>" class="resposta">
+                                        <input type="text" name="cidade" maxlength="30" id="cidade" value="<?php echo $linha['cidade']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div class="input-box">
                                         <label>
                                             <strong class="textos">ESTADO</strong>
-                                            <input id="estado" type="text" name="estado" id="estado" maxlength="2" value="<?php echo $linha['estado']; ?>" />
+                                            <input class="resposta" type="text" name="estado" id="estado" maxlength="2" value="<?php echo $linha['estado']; ?>" />
                                         </label>
                                     </div>
                                    <br><br>

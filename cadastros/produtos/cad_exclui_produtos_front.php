@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
+<title>Exclusão de Produtos</title>
 
 <?php
        include_once "../../utils/header_2.php";

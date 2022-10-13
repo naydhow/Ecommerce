@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="../css/style.css">
+<title>Carrinho</title>
 
 <html>
 	<?php

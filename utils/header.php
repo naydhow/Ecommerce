@@ -27,6 +27,7 @@
                     </div>
                 </footer>
             </div>
+            
             <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
             <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
             <a class='title'href='./login/login.html' target='_parent'><img class='icone_topo' src='./img/img_perfil.svg'></a>

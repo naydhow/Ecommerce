@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../css/style.css">   
 <link rel="icon" href="../img/logopeq_caricacto.svg">
+<title>Detalhes do Produto</title>
 
 <!-- Recuperando as informações do produto -->
 <?php

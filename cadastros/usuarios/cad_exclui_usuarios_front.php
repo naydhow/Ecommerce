@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
+<title>Exclusão de Produtos</title>
 
 <?php
        include_once "../../utils/header_2.php"; 
@@ -46,7 +47,7 @@
                             <br><br>
                             
                             <div>
-                                <strong class="textos">ID USUÁRIO </strong>
+                                <strong class="textos">ID USUÁRIO: </strong>
                                 <input type="text" name="id_usuario" value="<?php echo $linha['id_usuario']; ?>" readonly class="resposta">
                             </div>
                             <br> <br>
@@ -114,7 +115,7 @@
                                     <br> <br>
                                     <div>
                                         <strong class="textos">CEP: </strong>
-                                        <input type="text" name="cep" placeholder="00000-000" value="<?php echo $linha['cep']; ?>" class="resposta">
+                                        <input type="text" name="cep" placeholder="00000-000"  id="cep" value="<?php echo $linha['cep']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
@@ -129,12 +130,12 @@
                                     <br> <br>
                                     <div class="input-box">
                                         <label>
-                                            <strong class="textos">ESTADO</strong>
-                                            <input id="estado" type="text" name="estado" id="estado" maxlength="2" value="<?php echo $linha['estado']; ?>" />
+                                            <strong class="textos">ESTADO:</strong>
+                                            <input class="resposta" type="text" name="estado" id="estado" maxlength="2" value="<?php echo $linha['estado']; ?>" />
                                         </label>
                                     </div>
 
-                                    <div>
+                                    <div class="espaco_button">
                                         <input type="submit" value="Excluir" class="bnt_menores">
                                         <input class="bnt_menores" type="button" value="Editar" onclick="location.href='cad_altera_usuarios_front.php?id_usuario=<?php echo $id_usuario ?>';">
                                         <input class="bnt_menores" type="button" value="Voltar" onclick="location.href='cad_pesq_usuarios_front.php';">

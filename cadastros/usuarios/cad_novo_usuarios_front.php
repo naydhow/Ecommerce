@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../img/logopeq_caricacto.svg">
 
-    <title>Formulário de Cadastro de Usuarios - Tabela Usuario CRUD</title>
+    <title>Cadastro de Usuário</title>
 </head>
 
 <body>
@@ -114,7 +114,7 @@
                                     <div class="input-box">
                                         <label>
                                             <strong class="textos">ESTADO</strong>
-                                            <input id="estado" type="text" name="estado" id="estado" maxlength="2" placeholder="XX" />
+                                            <input class="resposta" type="text" name="estado" id="estado" maxlength="2" placeholder="XX" />
                                         </label>
                                     </div>
 

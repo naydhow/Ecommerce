@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../css/style.css">   
 <link rel="icon" href="../img/logopeq_caricacto.svg">
+<title>Finalização de Compra</title>
 
 <?php
     include_once "../utils/header_3.php";
