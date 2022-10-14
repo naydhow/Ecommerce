@@ -1816,6 +1816,7 @@ input:hover{
 }
 
 .sobre_textao{
+  width: 70%;
   text-align: justify;
   margin-top: -2%;
   padding-left: 4%;
@@ -1825,6 +1826,14 @@ input:hover{
   text-indent: 3rem;
   line-height: 24px;
   margin-bottom: 4%;
+}
+
+.alinha_textao_sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 70%; */
 }
 
 .section_sobre{
@@ -2264,6 +2273,7 @@ align-items: center;
 }
 
 .section_2 {
+  padding: calc(var(--header-height) - 2rem) 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
