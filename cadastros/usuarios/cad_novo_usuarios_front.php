@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../img/logopeq_caricacto.svg">
 
-    <title>Formulário de Cadastro de Usuarios - Tabela Usuario CRUD</title>
+    <title>Cadastro de Usuário</title>
 </head>
 
 <body>
@@ -115,7 +115,7 @@
                                     <div class="input-box">
                                         <label>
                                             <strong class="textos">ESTADO</strong>
-                                            <input id="estado" type="text" name="estado" id="estado" maxlength="2" placeholder="XX" />
+                                            <input class="resposta" type="text" name="estado" id="estado" maxlength="2" placeholder="XX" />
                                         </label>
                                     </div>
                                     <?php
@@ -134,7 +134,7 @@
                                         <input type="submit" name="button" value="Enviar" class="btn_enviar">
                                     </div>
                                     <div class="voltarr">
-                                        <a href="../../login/login.html">Voltar</a>
+                                        <a href="./cad_pesq_usuarios_front.php">Voltar</a>
                                     </div>
                         </form>
 

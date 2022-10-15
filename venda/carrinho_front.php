@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="icon" href="../img/logopeq_caricacto.svg">
+<title>Carrinho de compras</title>
 
 <?php
 /*

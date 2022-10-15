@@ -43,6 +43,7 @@
                     </div>
                 </footer>
             </div>
+            
             <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
             <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
             <div class='user'>

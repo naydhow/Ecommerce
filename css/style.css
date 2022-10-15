@@ -472,8 +472,7 @@ nav .divisao-menu {
   justify-content: center;
   align-items: center;
   font-family: var(--body-font);
-  height: 54%;
-  margin-top: 4%;
+  margin-top: 9%;
   margin-bottom: 4%;
 }
 
@@ -1876,6 +1875,7 @@ input:hover{
 }
 
 .sobre_textao{
+  width: 70%;
   text-align: justify;
   margin-top: -2%;
   padding-left: 4%;
@@ -1885,6 +1885,14 @@ input:hover{
   text-indent: 3rem;
   line-height: 24px;
   margin-bottom: 4%;
+}
+
+.alinha_textao_sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 70%; */
 }
 
 .section_sobre{
@@ -1984,7 +1992,7 @@ input:hover{
 }
 
 .borda_fora{
-  margin-left: 250px;
+  margin-left: 290px;
   margin-top: 30px;
   margin-bottom: 100px;
   width: 863px;
@@ -2161,6 +2169,8 @@ input:hover{
 #lado1_form{
   width: 50%; 
   float:left;
+  padding-top: 2%;
+  padding-bottom: 2%;
  }
 
 
@@ -2217,7 +2227,10 @@ input:hover{
   text-align: left;
   color: #000000;
  }
- 
+ .espaco_button{
+    padding-bottom: 3.5%;
+ }
+
  #sexo{
   width: 86px;
   height: 27px;
@@ -2272,7 +2285,62 @@ margin-left: 60px;
  .img_form{
   margin-left: 37px;
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 300px;
   height: 356.39px;
   border-radius: 10px;
+}
+
+.bnt_menores{
+  margin-left: 140px;
+  margin-top: 17px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  width: 150px;
+  height: 30px;
+  
+  left: 373px;
+  top: 625.52px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #e7ccd7;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FINALIZAÇÃO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.fim-compra{
+  background-image: url(../img/img_finalizacao.png);
+  background-size: cover;
+  width: 558px;
+  height: 530px;
+  border-radius: 6%;
+  margin-top: 45px;
+}
+
+.section_2 {
+  padding: calc(var(--header-height) - 2rem) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#home_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFE8F1;
 }

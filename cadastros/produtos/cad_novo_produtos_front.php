@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../img/logopeq_caricacto.svg">
     
-    <title>Formulário de Cadastro de Produtos - Tabela Produtos CRUD</title>
+    <title>Cadastro de Produtos</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
                 <li>
                     <div id="lado1_form">
                         <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
-                            <br> <br>
+                            <br> <br><br>
                         <div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
                                     <div class="imageContainer" id="margem_img_cam">
@@ -36,86 +36,64 @@
                                 <div class="answer">
                                     <input name="ftproduto" id="ftproduto" type="file" accept="image/*">
                                 </div>
-                            </div>
+                        </div>
 
-                            <br>
+                            <br><br>
 
                             <div>
-                                <strong class="textos">NOME: </strong>
-                                <input type="text" name="nome" maxlength="100" placeholder="Digite seu nome completo" class="resposta">
+                                <strong class="textos">NOME:  &nbsp; &nbsp; &nbsp;</strong>
+                                <input type="text" name="nome"  placeholder="Nome" max required class="resposta">
                             </div>
-                            <br> <br>
+                            <br> <br><br>
                             <div>
-                                <strong class="textos">E-MAIL: </strong>
-                                <input type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com" class="resposta">
+                                <strong class="textos">DESCRIÇÃO:</strong>
+                                <input class="resposta" type="text" name="descricao"  placeholder="Descrição"/>
                             </div>
-                            <br> <br>
+                            <br> <br><br>
                             <div>
-                                <strong class="textos">SENHA: </strong>
-                                <input type="password" name="senha" maxlength="32" placeholder="***********" class="resposta">
+                                <strong class="textos">COD. VISUAL:</strong>
+                                <input type="text" name="codigovisual" maxlength="13" placeholder="Código Visual" required class="resposta">
                             </div>
-                            <br> <br>
+                            <br> <br><br>
                             <div>
-                                <strong class="textos">FONE: </strong>
-                                <input type="text" name="telefone" placeholder="(00) 00000-0000" class="resposta">
-                                <div>
-                                    <br> <br>
+                                <strong class="textos">ESTOQUE: </strong>
+                                <input type="number" name="estoque" placeholder="Estoque" required class="resposta">
+                            </div>
+                                <br><br> <br>
 
-                                    <div class="input_block">
-                                        <div class="input-box">
-                                            <div class="campo_label_peq2">
-                                                <strong class="textos">SEXO: </strong><br><br>
-                                                <label class="textos"><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>&nbsp;
-                                                <label id="sexo"><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>&nbsp;
-                                                <label id="sexo"><input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>&nbsp;
-                                            </div>
-                                        </div>
-                                    </div><br>
+                            <div>
+                                <strong class="textos">PREÇO:  &nbsp; &nbsp;</strong>
+                                <input type="text" name="preco"  placeholder="Preço" required class="resposta">
+                            </div>
+                                <br><br><br>
 
-                                    <div class="input-box">
-                                        <label>
-                                            <strong class="textos">DATA&nbsp;NASC.</strong>
-                                            <input id="datanasc" type="date" name="data_nasc" />
-                                        </label>
-                                    </div><br>
+                            <div>
+                                <strong class="textos">CUSTO: &nbsp; &nbsp;</strong>
+                                <input type="text" name="custo"  placeholder="Custo" required class="resposta">
+                            </div>
+                            <br><br><br>
 
-                                    <div>
-                                        <strong class="textos">CPF: </strong>
-                                        <input type="text" name="cpf" maxlength="80" class="resposta" placeholder="000.000.000-00">
-                                    </div>
-                                    <br> <br>
-                                    <div>
-                                        <strong class="textos">CEP: </strong>
-                                        <input type="text" name="cep" placeholder="00000-000" class="resposta">
-                                    </div>
-                                    <br> <br>
-                                    <div>
-                                        <strong class="textos">ENDEREÇO: </strong>
-                                        <input type="text" name="endereco" maxlength="150" placeholder="Endereço" class="resposta">
-                                    </div>
-                                    <br> <br>
-                                    <div>
-                                        <strong class="textos">CIDADE: </strong>
-                                        <input type="text" name="cidade" maxlength="30" placeholder="Cidade" class="resposta">
-                                    </div>
-                                    <br> <br>
-                                    <div class="input-box">
-                                        <label>
-                                            <strong class="textos">ESTADO</strong>
-                                            <input id="estado" type="text" name="estado" id="estado" maxlength="2" placeholder="XX" />
-                                        </label>
-                                    </div>
+                            <div>
+                                <strong class="textos">M. LUCRO: </strong>
+                                <input type="text" name="margem_lucro" placeholder="Margem lucro" required class="resposta">
+                            </div>
+                            <br> <br><br>
+                            <div>
+                                <strong class="textos">ICMS: &nbsp; &nbsp; &nbsp; &nbsp;</strong>
+                                <input type="text" name="icms" placeholder="ICMS" required class="resposta">
+                            </div>
+                            <br> <br><br>
+                            
+                            <div>
+                                <input type="submit" name="button" value="Enviar" class="btn_enviar">
+                            </div>
+                            <div class="voltarr">
+                                <a href="./cad_pesq_produtos_front.php">Voltar</a>
+                            </div>
+                </form>
+            </li>
 
-                                    <div>
-                                        <input type="submit" name="button" value="Enviar" class="btn_enviar">
-                                    </div>
-                                    <div class="voltarr">
-                                        <a href="../../login/login.html">Voltar</a>
-                                    </div>
-                        </form>
-
-                </li>
-                <li>
+            <li>
                     <!--  LADO 2 -->
                     <br>
                     <div id="lado2_form">
@@ -131,7 +109,7 @@
 
         </div>
     </div>    
-
+   
     <?php
 
         include_once "../../utils/footer_2.php";

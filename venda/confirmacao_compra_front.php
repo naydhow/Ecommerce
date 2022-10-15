@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <link rel="stylesheet" href="../css/style.css">
+<tilte>Confirmação de Compra</tilte>
 
 <?php
 	include_once "../utils/header_3.php";

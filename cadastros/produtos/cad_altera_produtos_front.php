@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="icon" href="../../img/logopeq_caricacto.svg">
+<title>Alteração de Produtos</title>
 
 <!-- Recuperando as informações do produto -->
 <?php 
@@ -11,46 +12,22 @@
 ?>
 
 <!-- Formulário (após as informações serem carregadas) -->
-<div color="color_cadastros">
-       <div class="container_paginas" id="topo">
-              
-            <div class="alinha_tituloimg">
-                <img class ="img_fofinhas" src="../../img/img_suculenta.svg">
-                <p id="titulo_fofo_usu">Alteração de Produtos</p>
-                <img class ="img_fofinhas" src="../../img/img_cacto.svg">
-            </div>
 
-              <div class="alt_form_prod">
-                     <form action="cad_altera_produtos_back.php" enctype="multipart/form-data" method="post">
+<div>
+        <div class="alinha_tituloimg">
+            <img class="img_fofinhas" src="../../img/img_suculenta.svg">
+            <p id="titulo_fofo_usu">&nbsp;&nbsp; Alteração de Produtos</p>
+            <img class="img_fofinhas" src="../../img/img_cacto.svg">
+        </div>
 
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label">Id do produto</p><br>
-                                                 <input  class="input_grande_alt" type="text" name="id_produto" 
-                                                 value="<?php echo $linha['id_produto']; ?>" 
-                                                 readonly>
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label">Nome</p>
-                                                 <input class="input_grande_alt" type="text" name="nome" 
-                                                 value="<?php echo $linha['nome']; ?>" >
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label">Descrição</p>
-                                                 <input class="input_grande_alt" type="text" name="descricao" 
-                                                 value="<?php echo $linha['descricao']; ?>" >
-                                          </label>
-                                   </div> 
-
-                                   <div class="input-box-imagem">
+        <div class="borda_fora_form">
+            <ul>
+                <li>
+                    <div id="lado1_form">
+                        <form action="cad_altera_produtos_back.php" enctype="multipart/form-data" method="post">
+                            <br> <br><br>
+                            <div class="input-box-imagem">
                                           <div>
-                                                 <p class="campo_label_pequeno">Imagem</p>
                                                  <div class="max-width-prod">
                                                         <div class="imageContainer">
                                                                <?php
@@ -68,66 +45,81 @@
                                                  </div>
                                           </div>
                                    </div>
+                            <br><br>
 
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Cod. Visual</p>
-                                                 <input class="input_pequeno_alt" type="text" name="codigovisual" 
-                                                 value="<?php echo $linha['codigovisual']; ?>" >
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Estoque</p>
-                                                 <input class="input_pequeno_alt" type="number" name="estoque" 
-                                                 value="<?php echo $linha['estoque']; ?>" >
-                                          </label>
-                                   </div>
-
-                                   
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Preço</p>
-                                          <input class="input_pequeno_alt" type="text" name="preco" 
-                                                 value="<?php echo $linha['preco']; ?>" >
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">Custo</p>
-                                                 <input class="input_pequeno_alt" type="text" name="custo" 
-                                                 value="<?php echo $linha['custo']; ?>" >
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">M. Lucro</p>
-                                                 <input class="input_pequeno_alt" type="text" name="margem_lucro" 
-                                                 value="<?php echo $linha['margem_lucro']; ?>" >
-                                          </label>
-                                   </div>
-
-                                   <div class="input-box">
-                                          <label>
-                                                 <p class="campo_label_pequeno">ICMS</p>
-                                                 <input class="input_pequeno_alt" type="text" name="icms" 
-                                                 value="<?php echo $linha['icms']; ?>" >
-                                          </label>
-                                   </div>
-
-                            
-                            <div class="buttons">
-                                   <input class="button_crud" type="submit" value="Gravar">
-                                   <input class="button_crud" type="reset" value="Voltar" onclick="history.back()">
+                            <div>
+                                <strong class="textos">ID PRODUTO:</strong>
+                                <input type="text" name="id_produto" value="<?php echo $linha['id_produto']; ?>" readonly class="resposta">
                             </div>
-                     </form>       
-              </div>
-       </div>
-</div>
+                            <br> <br><br>
+
+                            <div>
+                                <strong class="textos">NOME:  &nbsp; &nbsp; &nbsp;</strong>
+                                <input type="text" name="nome" value="<?php echo $linha['nome']; ?>" class="resposta">
+                            </div>
+                            <br> <br><br>
+                            <div>
+                                <strong class="textos">DESCRIÇÃO:</strong>
+                                <input class="resposta" type="text" name="descricao" value="<?php echo $linha['descricao']; ?>">
+                            </div>
+                            <br> <br><br>
+                            <div>
+                                <strong class="textos">COD. VISUAL:</strong>
+                                <input type="text" name="codigovisual" value="<?php echo $linha['codigovisual']; ?>" class="resposta">
+                            </div>
+                            <br> <br><br>
+                            <div>
+                                <strong class="textos">ESTOQUE: </strong>
+                                <input type="number" name="estoque" value="<?php echo $linha['estoque']; ?>" class="resposta">
+                            </div>
+                                <br><br> <br>
+
+                            <div>
+                                <strong class="textos">PREÇO:  &nbsp; &nbsp;</strong>
+                                <input type="text" name="preco" value="<?php echo $linha['preco']; ?>" class="resposta">
+                            </div>
+                                <br><br><br>
+
+                            <div>
+                                <strong class="textos">CUSTO: &nbsp; &nbsp;</strong>
+                                <input type="text" name="custo" value="<?php echo $linha['custo']; ?>" class="resposta">
+                            </div>
+                            <br><br><br>
+
+                            <div>
+                                <strong class="textos">M. LUCRO: </strong>
+                                <input type="text" name="margem_lucro" value="<?php echo $linha['margem_lucro']; ?>" class="resposta">
+                            </div>
+                            <br> <br><br>
+                            <div>
+                                <strong class="textos">ICMS: &nbsp; &nbsp; &nbsp; &nbsp;</strong>
+                                <input type="text" name="icms" value="<?php echo $linha['icms']; ?>" class="resposta">
+                            </div>
+                            <br> 
+                            
+                            <div class="espaco_button">
+                                <input type="submit" value="Gravar" class="btn_enviar">
+                                <input type="reset" value="Voltar" onclick="history.back()" class="btn_enviar">
+                            </div>
+                </form>
+            </li>
+
+            <li>
+                    <!--  LADO 2 -->
+                    <br>
+                    <div id="lado2_form">
+                        <div class="borda_rosa">
+                            <br><br>
+                            <img class="img_form" src="../../img/cacto_login.svg">
+                            <br> <br>
+                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
 
   
 <?php
