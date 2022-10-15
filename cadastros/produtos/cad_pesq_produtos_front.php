@@ -89,7 +89,7 @@
                                 ".'<img src="'.$img.'">'."
                             </div>
                             <div class='cell cellGrande'>
-                                R$ ".$linha['preco']."
+                                R$ ".number_format($linha['preco'], 2, ',', '.')."
                             </div>
                             <div class='cell cellGrande'>
                                 <a  class='cellGrande' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;

@@ -1,5 +1,21 @@
 <?php
 
+  session_start();
+
+  // Usuário está logado???
+  if(isset($_SESSION['usuariologado']))
+  {
+    $foto = $_SESSION['usuariologado']['img'];
+    $botao = "<a href='./login/logout.php' target='_parent'>Logout  </a>";
+  }
+  else 
+  {
+    $foto = './img/img_perfil.svg';
+    $botao = "<a href='./login/login.html' target='_parent'>Login</a>";
+  }
+
+  // if (isset($_SESSION['isadm']) && $_SESSION['isadm'] == 't')
+
   echo "
     <header id='header'>
       <nav class='container'>
@@ -29,15 +45,29 @@
             </div>
             <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
             <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
-            <a class='title'href='./login/login.html' target='_parent'><img class='icone_topo' src='./img/img_perfil.svg'></a>
+            <div class='user'>
+              <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
+
+              <div class='dados'>
+                <div class='dados_user'>
+                  <img class='' src='".$foto."'>
+                  <label>".$_SESSION['usuariologado']['nome']."</label>
+                  <label>".$_SESSION['usuariologado']['email']."</label>
+                  <label>".$_SESSION['usuariologado']['cpf']."</label>
+                  <label>".date('d/m/Y', strtotime($_SESSION['usuariologado']['data_nasc']))."</label>
+                  <label>".$_SESSION['usuariologado']['']."</label>
+                  <label>".$_SESSION['usuariologado']['']."</label>
+                  <label>".$_SESSION['usuariologado']['']."</label>
+                </div>
+                <div class='button_user'>
+                  ".$botao."
+                </div>
+              </div>
+            </div>
+            <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
         </div>
       </nav>
     </header>
   ";
 
 ?>
-
-<!-- <div class='preco-total'>
-  <span><b>Total:</b></span>
-  <span><b>R$ ".number_format($total, 2, ',', '.')."</b></span>
-</div> -->

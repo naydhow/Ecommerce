@@ -1,5 +1,7 @@
 <?php
-    include "../../utils/conexao.php"; 
+    include "../../utils/conexao.php";
+
+    session_start();
     
     // Recuperação de dados
     $img=$_FILES['ftperfil'];
@@ -14,14 +16,35 @@
     $endereco=$_POST['endereco'];
     $cidade=$_POST['cidade'];
     $estado=$_POST['estado'];
-    // $user_adm=$_POST['F']; //true e false maiusculo
+    if($_SESSION['isadm'] == true)
+    $user_adm=$_POST['user']; //true e false maiusculo
+    
 
     move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
     $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/ ')
         $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/user.png';
 
     // Inserção
+    if($_SESSION['isadm'] == true)
+    $sql="INSERT INTO caricactoUsuario
+          (img, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado, user_adm)
+          VALUES (
+                '$imglink',
+                '$nome',
+                '$telefone',
+                '$email', 
+                '$senha',
+                '$sexo',
+                '$data_nasc',
+                '$cpf', 
+                '$cep', 
+                '$endereco', 
+                '$cidade', 
+                '$estado',
+                '$user_adm');
+                ";
+    else
     $sql="INSERT INTO caricactoUsuario
           (img, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
           VALUES (
@@ -38,6 +61,7 @@
                 '$cidade', 
                 '$estado');
                 ";
+    
     
     // Execução
     $resultado=pg_query($conecta,$sql);

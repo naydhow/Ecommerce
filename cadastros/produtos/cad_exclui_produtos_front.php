@@ -88,7 +88,7 @@
                                           <label>
                                                  <p class="campo_label_pequeno">Preço</p>
                                                  <input class="input_pequeno_alt" type="text" name="preco" 
-                                                 value="<?php echo $linha['preco']; ?>"
+                                                 value="<?php echo number_format($linha['preco'], 2, ',', '.'); ?>"
                                                  readonly>
                                           </label>
                                    </div>

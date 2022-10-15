@@ -34,13 +34,21 @@ function onlynumber(evt) {
   }
 }
 
-/* abre e fecha o menu com o clicar no icone: hamburguer e x */
+/* abre e fecha o carrinho com o clicar no icone: carrinho e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
 for (const element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
+  })
+}
+
+/* abre e fecha o perfil do usuário com o clicar no icone: user e x */
+const taggle = document.querySelectorAll('nav .taggle')
+for (const element of taggle) {
+  element.addEventListener('click', function () {
+    nav.classList.toggle('new')
   })
 }
 

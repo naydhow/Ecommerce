@@ -199,6 +199,14 @@ footer img{
   width: 23px;
 }
 
+.icone_topo_user {
+  width: 45px;
+  /* clip-path: circle(); */
+  /* background-color: black; */
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
 .icone_topo:hover{
   width: 27px;
   transition: 0.2s;
@@ -261,8 +269,14 @@ nav .carrinho {
   font-family: var(--title-font);
 }
 
+nav .user {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
 nav #blur {
-  margin-left: 25px;
+  /* margin-left: 25px; */
   visibility: hidden;
   opacity: 0;
   width: 0;
@@ -338,14 +352,79 @@ nav.show .icon-carrinho {
   padding: 0.5rem;
 }
 
-/* toggle menu */
+/* Mostrar perfil */
+
+nav.new .user {
+  opacity: 1;
+  visibility: visible;
+
+  background: var(--color-button-claro);
+
+  height: 80%;
+  width: 1300px;
+
+  border-radius: 10px;
+
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-49.8%, -50%);
+
+  /* display: flex;
+  justify-content: center; */
+
+  /* display: grid;
+  place-content: center; */
+}
+
+nav.new #blur {
+  opacity: 1;
+  visibility: visible;
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  /* transition: 0.2s; */
+
+  backdrop-filter: blur(.25rem);
+}
+
+.dados {
+  margin: 1.5rem;
+}
+
+/* .dados_user {
+  margin: 1.5rem;
+} */
+
+/* toggle carrinho */
 .toggle {
   color: var(--color-button-claro);
   font-size: 1.5rem;
   cursor: pointer;
 }
 
+.taggle {
+  color: var(--color-button-claro);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+
+  /* transition: 0.2s; */
+}
+
+nav .icon-closer {
   visibility: hidden;
   opacity: 0;
 
@@ -362,9 +441,20 @@ nav.show div.icon-close {
   right: 1.5rem;
 }
 
+nav.new div.icon-closer {
+  visibility: visible;
+  opacity: 1;
+
+  /* top: 16.5rem; */
+  /* right: 21.2rem; */
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
 nav .divisao-menu {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 
@@ -385,7 +475,6 @@ nav .divisao-menu {
   height: 54%;
   margin-top: 4%;
   margin-bottom: 4%;
-
 }
 
                         /* <<<<<<<<<< DIV PRINCIPAL - PRODUTOS, USUÁRIOS E SELEÇÃO >>>>>>>>>*/
@@ -412,9 +501,7 @@ nav .divisao-menu {
   text-align: center;
 }
 
-
                         /* <<<<<<<<<< SELEÇÃO_PRODUTOS_FRONT >>>>>>>>>*/
-
 
 .selecaoProdutos{
   margin-top: 4.5%;
@@ -431,7 +518,6 @@ nav .divisao-menu {
   background-color: var(--body-color);
 }
 
-
 .box_produto{
   background-color: var(--color-grid-selecao);
   border-radius: 5px;
@@ -443,8 +529,6 @@ nav .divisao-menu {
   padding: 2% 2%;
   height:430px;
 }
-
-
 
 .img_selecao{
   width:200px;
@@ -489,13 +573,11 @@ nav .divisao-menu {
   align-items: center;
 }
 
-
 #selecao_esgotado{
   font-family:var(--body-font);
   font-size: 14px;
   color: red;
 }
-
 
                             /*<<<<<<<<< CLASS DA SELEÇÃO DETALHES >>>>>>>>>>>>>>>*/
 
@@ -514,7 +596,6 @@ nav .divisao-menu {
   margin-right: 25%;
   margin-left: 25%;
 }
-
 
 .selecao_detalhes_button{
   box-sizing: border-box;
@@ -672,7 +753,6 @@ nav .divisao-menu {
   margin-top: 8%;
 }
 
-
 /* ---------------------------------------------------..-------------------------------------------------*/
 
 
@@ -732,7 +812,6 @@ input[type="file"] {
 #imgPhoto:hover, #imgProduto:hover {
   background:#FAD9E6;
 }
-
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CADASTRO DE PRODUTOS E USUÁRIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -811,7 +890,6 @@ input[type="file"] {
   border-radius: 6px;
 }
 
-
 .input_form_pequeno{
   display: inline-block;
   box-sizing: border-box;
@@ -834,7 +912,6 @@ input[type="file"] {
   box-shadow: 0px 4px 4px rgba(49, 49, 49, 0.25);
   border-radius: 6px;
 }
-
 
 .input-box{
   margin-left: 0px;
@@ -861,7 +938,6 @@ input:hover{
   transition: 0.3s;
 }
 
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FORM ALTERA E EXCLUI PRODUTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .alt_form_prod{
@@ -876,7 +952,6 @@ input:hover{
   box-shadow: 0px 0px 4px rgb(55, 77, 52);
   border-radius: 8px;
 }
-
 
 .input_grande_alt{
   display: block;
@@ -898,7 +973,6 @@ input:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
-
 
 .input_pequeno_alt{
   display: inline-block;
@@ -937,7 +1011,6 @@ input:hover{
   box-shadow: 0px 0px 4px rgb(55, 77, 52);
   border-radius: 8px;
 }
-
 
 .max-width-User{
   /* display: flex;
@@ -981,7 +1054,6 @@ input:hover{
 .input_block{
   display: block;
 }
-
 
 .input_user_medio{
   display: inline-block;
@@ -1048,7 +1120,6 @@ input:hover{
   border-radius: 6px;
 }
 
-
 #imgPhoto {
   justify-content: center;
 
@@ -1109,7 +1180,6 @@ input:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
-
 
 .input_user_medio_alt{
   display: inline-block;
@@ -1178,8 +1248,6 @@ input:hover{
   border-radius: 6px;
 }
 
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<BUTTONS DE CADASTRO, ALTERAÇÃO E EXCLUSÃO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .buttons{
@@ -1192,36 +1260,35 @@ input:hover{
 }
 
 .button_crud{
-    box-sizing: border-box;
-    font: 14px var(--body-font);
+  box-sizing: border-box;
+  font: 14px var(--body-font);
 
-    padding: 14px 32px 15px;
-    display: inline-block;
-    text-align: center;
+  padding: 14px 32px 15px;
+  display: inline-block;
+  text-align: center;
 
-    background: var(--color-button-claro);
-    color: var(--color-texto-escuro-button);
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
 
-    box-shadow:  0 0 3px black;
+  box-shadow:  0 0 3px black;
 
-    border-color: transparent;
-    border-radius: 4px;
+  border-color: transparent;
+  border-radius: 4px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 3%;
-  }
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 3%;
+}
   
 .button_crud:hover{
-      background: var(--color-button-escuto);
-      color: var(--color-texto-claro-button);
-      box-shadow:  0 0 3px black;
-      transition: 0.2s;
-  }
-
+  background: var(--color-button-escuto);
+  color: var(--color-texto-claro-button);
+  box-shadow:  0 0 3px black;
+  transition: 0.2s;
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<TABELA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -1248,7 +1315,6 @@ input:hover{
   align-items: center;
 
   text-decoration: none;
-
 }
 
 .cell a:visited, a:link{
@@ -1265,7 +1331,6 @@ input:hover{
   transform: scale(5,5);
   transition: 0.2s;
 }
-
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CARRINHO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>**/
 
@@ -1645,7 +1710,6 @@ input:hover{
   box-shadow: 3rem -3rem 0 #ffcceb;
 }
 
-
 .img_produto img{
   width: 310px;
   height: 310px;
@@ -1665,8 +1729,6 @@ input:hover{
   margin-right: 2.5%; */
   padding: 2% 2%;
 }
-
-
 
 .alinhamento{
   font-family: var(--body-font);
@@ -1795,8 +1857,6 @@ input:hover{
   transform: translateY(0);
 }
 
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SOBRE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .img_sobre{
   margin-right: 8%;
@@ -1808,12 +1868,11 @@ input:hover{
   box-shadow: 3rem -3rem 0 #C5D8A4;
 }
 
-
 .sobre_titulo{
-    margin-left:4%;
-    width: 30%;
-    font-family: var(--body-font);
-    font-size: 1.4rem; 
+  margin-left:4%;
+  width: 30%;
+  font-family: var(--body-font);
+  font-size: 1.4rem; 
 }
 
 .sobre_textao{
@@ -1864,49 +1923,49 @@ input:hover{
 
 
 .sobre_integrantes{
-    margin-left: 8%;
-    font-family: var(--body-font);
-    font-size: 17px;
-    text-align: justify;
-    line-height: 30px;
+  margin-left: 8%;
+  font-family: var(--body-font);
+  font-size: 17px;
+  text-align: justify;
+  line-height: 30px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<< titulos fofinhos do cadastro >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #titulo_fofo_usu{
-height: 48px;
-top: 25px;
-font-weight: 700;
-font-size: 26px;
-line-height: 48px;
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-color: bolder #243D25;
-justify-content: center;
-align-items: center;
+  height: 48px;
+  top: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: bolder #243D25;
+  justify-content: center;
+  align-items: center;
 }
   
-  .img_fofinhas{
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 50px;
-    height: 50px;
-  }
+.img_fofinhas{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+}
 
-  .alinha_tituloimg{
-    margin-top: 130px;
-    margin-bottom: 2%;
-    align-items: center;
-    justify-content: center;
-    display:flex;
-  }
+.alinha_tituloimg{
+  margin-top: 130px;
+  margin-bottom: 2%;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
 
-  .alinha_tituloimg1{ /* fiz essa pq o topo do exclui_usuario ficou mt grande*/
-    margin-top: 3%;
-    margin-bottom: 2%;
-    margin-left: 35%;
-    display:flex;
-  }
+.alinha_tituloimg1{ /* fiz essa pq o topo do exclui_usuario ficou mt grande*/
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-left: 35%;
+  display:flex;
+}
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< LOGIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1922,9 +1981,8 @@ align-items: center;
 
 #lado2{
   width: 50%;
-  
-  
 }
+
 .borda_fora{
   margin-left: 250px;
   margin-top: 30px;
@@ -2118,97 +2176,97 @@ align-items: center;
    width: 50%;
    float:left;
  }
+
  .borda_fora_form{
-   width: 863px;
-   height: 1104px;
-   left: 251px;
-   top: 132px;
-   background: #FFFFFF;
-   box-shadow: 0px 4px 20px #243D25;
-   border-radius: 12px;
-   /*margin-top: 100px;*/
-   margin-left: 260px;
-   margin-bottom: 100px;
+  width: 863px;
+  height: 1104px;
+  left: 251px;
+  top: 132px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px #243D25;
+  border-radius: 12px;
+  /*margin-top: 100px;*/
+  margin-left: 260px;
+  margin-bottom: 100px;
  }
  
  .borda_rosa{
-   margin-top: 30px;
-   margin-left: 10px;
-   margin-right: 300px;
-   width: 375px;
-   height: 1009px;
-   left: 707px;
-   top: 188px;
-   background: #FAD9E6;
-   box-shadow: 0px 4px 20px #243D25;
-   border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 300px;
+  width: 375px;
+  height: 1009px;
+  left: 707px;
+  top: 188px;
+  background: #FAD9E6;
+  box-shadow: 0px 4px 20px #243D25;
+  border-radius: 12px;
  }
  
  .textos{
-   margin-left: 60px;
-   width: 86px;
-   height: 27px;
-   left: 286px;
-   top: 411px; 
-   font-family: 'Poppins';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 21px;
-   text-align: left;
-   color: #000000;
- 
+  margin-left: 60px;
+  width: 86px;
+  height: 27px;
+  left: 286px;
+  top: 411px; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
  }
  
  #sexo{
-   width: 86px;
-   height: 27px;
-   left: 286px;
-   top: 411px; 
-   font-family: 'Poppins';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 21px;
-   text-align: left;
-   color: #000000;
+  width: 86px;
+  height: 27px;
+  left: 286px;
+  top: 411px; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
  }
  
  #estado{
-   margin-left: 50px;
-   text-align: center;
-   width: 150px;
-   height: 27px;
-   left: 286px;
-   top: 411px; 
-   font-family: 'Poppins';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 21px;
-   color: #000000;
+  margin-left: 50px;
+  text-align: center;
+  width: 150px;
+  height: 27px;
+  left: 286px;
+  top: 411px; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
  }
  
  #datanasc{
-   margin-left: 30px;
-   width: 150px;
-   text-align: center;
-   height: 27px;
-   left: 286px;
-   top: 411px; 
-   font-weight: 700;
-   font-family: 'Poppins';
-   font-style: normal;
-   font-size: 13spx;
-   color: #000000;
+  margin-left: 30px;
+  width: 150px;
+  text-align: center;
+  height: 27px;
+  left: 286px;
+  top: 411px; 
+  font-weight: 700;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 13px;
+  color: #000000;
  }
  
  #margem_img{
-   margin-left: 135px;
+  margin-left: 135px;
  }
  
  #margem_img_cam{
-  margin-left: 60px;
+margin-left: 60px;
 }
 
  .img_form{

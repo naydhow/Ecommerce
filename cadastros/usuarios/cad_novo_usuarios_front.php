@@ -12,7 +12,8 @@
 
 <body>
     <?php
-    include_once "../../utils/header_2.php";
+        include_once "../../utils/header_2.php";
+        session_start();
     ?>
 
     <div>
@@ -26,7 +27,7 @@
             <ul>
                 <li id="form1">
                     <div id="lado1_form">
-                        <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
+                        <form enctype="multipart/form-data" action="cad_novo_usuarios_back.php" method="post">
                             <br> <br>
                         <!--<div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
@@ -77,7 +78,7 @@
                                         <div class="input-box">
                                             <div class="campo_label_peq2">
                                                 <strong class="textos">SEXO: </strong> <br><br> 
-                                                <label class="textos"><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>&nbsp;
+                                                <label class="textos" id="sexo"><input type="radio" name="sexo" value="Feminino" checked />&nbsp;Feminino</label>&nbsp;
                                                 <label id="sexo"><input type="radio" name="sexo" value="Masculino" />&nbsp;Masculino </label>&nbsp;
                                                 <label id="sexo"><input type="radio" name="sexo" value="Prefiro não dizer" />&nbsp;Prefiro não dizer</label>&nbsp;
                                             </div>
@@ -117,7 +118,18 @@
                                             <input id="estado" type="text" name="estado" id="estado" maxlength="2" placeholder="XX" />
                                         </label>
                                     </div>
-
+                                    <?php
+                                        if($_SESSION['isadm'] == true)
+                                        {
+                                            echo "<div class='input-box'>
+                                                    <div class='campo_label_peq2'>
+                                                        <strong class='textos'>Usuário: </strong> <br><br> 
+                                                        <label class='textos' id='user'><input type='radio' name='user' value='false' checked />&nbsp;Comum</label>&nbsp;
+                                                        <label id='user'><input type='radio' name='user' value='true' />&nbsp;Administrador</label>&nbsp;
+                                                    </div>
+                                                </div>";
+                                        }
+                                    ?>
                                     <div>
                                         <input type="submit" name="button" value="Enviar" class="btn_enviar">
                                     </div>

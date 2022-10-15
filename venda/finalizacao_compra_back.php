@@ -13,33 +13,49 @@
 
             $resulta = pg_fetch_array($res);
 
-            if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] == 0){
-                // echo '<script language="javascript">';
-                // echo "alert('Ih, acabou o estoque meu filho')";
-                // echo '</script>';
+            echo '<script language="javascript">';
+            echo "alert('".$linha['id_produto']."')";
+            echo '</script>';
 
-                echo '<script language="javascript">';
-                echo "alert('Não possuimos a quantidade desejada em estoque!')";
-                echo '</script>';
+            echo '<script language="javascript">';
+            echo "alert('".$linha['qtde']."')";
+            echo '</script>';
 
-                echo '<script language="javascript">';
-                echo "alert('Adicionamos a quantidade do estoque ao seu carrinho.')";
-                echo '</script>';
+            echo '<script language="javascript">';
+            echo "alert('".$resulta['estoque']."')";
+            echo '</script>';
 
-                $qtdeEstoque = $resulta['estoque'];
+            // if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] == 0){
+            //     // echo '<script language="javascript">';
+            //     // echo "alert('Ih, acabou o estoque meu filho')";
+            //     // echo '</script>';
 
-                $sqlCarrinho = "UPDATE carrinho
-                                    SET qtde = $qtdeEstoque
-                                    WHERE id_produto = ".$linha['id_produto'].";";
+            //     echo '<script language="javascript">';
+            //     echo "alert('Não possuimos a quantidade desejada em estoque!')";
+            //     echo '</script>';
 
-                pg_query($conecta, $sqlCarrinho);
+            //     echo '<script language="javascript">';
+            //     echo "alert('Adicionamos a quantidade do estoque ao seu carrinho.')";
+            //     echo '</script>';
 
-                // header("location:carrinho_front.php");
+            //     $qtdeEstoque = $resulta['estoque'];
 
-                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=carrinho_front.php'>";
+            //     $sqlCarrinho = "UPDATE carrinho
+            //                         SET qtde = $qtdeEstoque
+            //                         WHERE id_produto = ".$linha['id_produto'].";";
+
+            //     pg_query($conecta, $sqlCarrinho);
+
+            //     // header("location:carrinho_front.php");
+
+            //     echo '<script language="javascript">';
+            //     echo "alert('".$sqlCarrinho."')";
+            //     echo '</script>';
+
+            //     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=carrinho_front.php'>";
                 
                 exit;
-            }
+            // }
             return false;
         }
 

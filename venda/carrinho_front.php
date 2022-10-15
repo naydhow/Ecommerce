@@ -14,10 +14,10 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 */
 	include_once "../utils/header_3.php";
 
-    //session_start();
+    session_start();
     $acao = $_GET['acao'] ?? '';
     $id_produto = $_GET['id_produto'] ?? 0;
-		$id_usuario = 1; // Depois precisamos alterar para pegar da $_SESSION
+		$id_usuario = $_SESSION['usuariologado']['id_usuario']; // Depois precisamos alterar para pegar da $_SESSION
 
 	if ($acao=='up') {
 		if (is_array($_POST['prod']))

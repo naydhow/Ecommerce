@@ -5,12 +5,10 @@
 	<?php
 			include "../utils/conexao.php";
 
-
-			// session_start();
+			session_start();
 			$acao = $_GET['acao'] ?? '';
 			$id_produto = $_GET['id_produto'] ?? 0;
-			// $id_usuario = $_SESSION['id_usuario'];
-			$id_usuario = 1; // Depois precisamos alterar para pegar da $_SESSION
+			$id_usuario = $_SESSION['usuariologado']['id_usuario']; // Depois precisamos alterar para pegar da $_SESSION
 
 		if ($acao=='up') {
 			if (is_array($_POST['prod']))
@@ -34,7 +32,8 @@
 							echo "Não há produtos aqui! :(";
 							exit;
 						}
-
+						if($resultado_lista != null)
+						{	
 						foreach ($resultado_lista as $linha)
 						{ 
 							$idprod = $linha['id_produto'];
@@ -66,7 +65,7 @@
 						</div>
 			<?php 
 				}  
-				// echo "<h3>Total da compra: R$ ".number_format($total, 2, ',', '.');".</h3>";
+				}
 			?>
 			</form>
 		</div>

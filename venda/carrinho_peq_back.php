@@ -94,7 +94,9 @@
     }
 
     /* seleciona todos os itens do carrinho do usuário */
-    $sql="SELECT c.*,
+    if($id_usuario != null)
+    {
+        $sql="SELECT c.*,
                  p.preco,
                  c.qtde * p.preco as subtotal,
                  p.nome,
@@ -106,8 +108,9 @@
            WHERE c.id_usuario = $id_usuario
            ORDER BY p.nome;";
 
-    $resultado= pg_query($conecta, $sql);
-    $qtde=pg_num_rows($resultado);
+        $resultado= pg_query($conecta, $sql);
+        $qtde=pg_num_rows($resultado);
+    }
 
     $resultado_lista = null;
 
