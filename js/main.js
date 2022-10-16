@@ -52,6 +52,18 @@ for (const element of taggle) {
   })
 }
 
+/* abre as configurações do usuário adm com o passar do mouse no icone: engrenagem */
+const oggle = document.querySelectorAll('nav .oggle')
+const conf = document.querySelectorAll('nav .configuration')
+for (const element of oggle) {
+  element.addEventListener('mouseover', function () {
+    nav.classList.add('settings')
+  setTimeout(function() {
+    nav.classList.remove('settings');
+    }, 5000);
+  })
+}
+
 // Botão voltar ao topo
 const backToTopButton = document.querySelector('.back-to-top')
 

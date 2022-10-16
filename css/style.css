@@ -275,6 +275,19 @@ nav .user {
   width: 0;
 }
 
+nav .settings {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+nav .configura {
+  visibility: hidden;
+  opacity: 0;
+
+  width: 0;
+}
+
 nav #blur {
   /* margin-left: 25px; */
   visibility: hidden;
@@ -402,6 +415,59 @@ nav.new #blur {
   margin: 1.5rem;
 } */
 
+/* Mostrar opções */
+
+nav.settings .configuration {
+  /* opacity: 1;
+  visibility: visible;
+
+  background: white;
+
+  border-radius: 10px;
+
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-49.8%, -50%); */
+
+  height: 350px;
+  width: 500px;
+
+  /* width: fit-content; */
+  box-sizing: border-box;
+  /* height: auto; */
+  position: absolute;
+  z-index: 9;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  transition: all 0.3s ease 0s;
+  visibility: visible;
+  opacity: 1;
+  border-radius: 16px;
+  pointer-events: initial;
+  box-shadow: rgb(0 0 0 / 12%) 0px 0px 15px;
+  top: 65px;
+  right: 115px;
+}
+
+.configuration::after {
+  content: "";
+  border-bottom: 10px solid rgb(255, 255, 255);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: -10px;
+  left: 86%;
+}
+
+nav.settings .centraliza_config {
+  margin: 1.5rem;
+
+  display: flex;
+  /* justify-content: ; */
+}
+
 /* toggle carrinho */
 .toggle {
   color: var(--color-button-claro);
@@ -444,6 +510,18 @@ nav.show div.icon-close {
 nav.new div.icon-closer {
   visibility: visible;
   opacity: 1;
+
+  /* top: 16.5rem; */
+  /* right: 21.2rem; */
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+nav.settings .configura {
+  visibility: visible;
+  opacity: 1;
+
+  width: 45%;
 
   /* top: 16.5rem; */
   /* right: 21.2rem; */
