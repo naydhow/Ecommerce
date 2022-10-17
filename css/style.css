@@ -1954,7 +1954,6 @@ input:hover{
 }
 
 .sobre_textao{
-  width: 70%;
   text-align: justify;
   margin-top: -2%;
   padding-left: 4%;
@@ -2462,6 +2461,7 @@ margin-left: 60px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FINALIZAÇÃO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 .fim-compra{
   background-image: url(../img/img_finalizacao.png);
   background-size: cover;

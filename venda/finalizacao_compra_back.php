@@ -82,7 +82,9 @@
     $qtdLinhas = pg_affected_rows($res);
 
     if ($qtdLinhas == 0)
-        echo "<h1>Erro ao Finalizar a Compra!!!</h1>";
+        echo "<div class='text-conf-compra'>
+                    <h1>Erro ao Finalizar a Compra!!!</h1>
+                </div>";
 
     foreach($resultado_lista as $linha)
     { 
