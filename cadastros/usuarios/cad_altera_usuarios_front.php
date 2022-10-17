@@ -11,7 +11,8 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
 
-<div>
+<div class="section">
+    <div class="central">
         <div class="alinha_tituloimg">
             <img class="img_fofinhas" src="../../img/img_suculenta.svg">
             <p id="titulo_fofo_usu">&nbsp;&nbsp; Alteração de Usuários</p>
@@ -169,8 +170,8 @@
             </ul>
 
         </div>
-    </div>
-
+    </div>  
+</div>
   
 <?php
 

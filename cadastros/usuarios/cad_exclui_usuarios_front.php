@@ -10,18 +10,19 @@
 
 <!-- Formulário (após as informações serem carregadas) -->
 
-<div>
+<div class="section">
+    <div class="central">
         <div class="alinha_tituloimg">
-            <img class="img_fofinhas" src="../../img/img_suculenta.svg">
-            <p id="titulo_fofo_usu">&nbsp;&nbsp; Exclusão de Usuários</p>
-            <img class="img_fofinhas" src="../../img/img_cacto.svg">
-        </div>
+                <img class="img_fofinhas" src="../../img/img_suculenta.svg">
+                <p id="titulo_fofo_usu">&nbsp;&nbsp; Exclusão de Usuários</p>
+                <img class="img_fofinhas" src="../../img/img_cacto.svg">
+            </div>
 
-        <div class="borda_fora_form">
-            <ul>
-                <li id="form1">
-                    <div id="lado1_form">
-                        <form action="cad_exclui_usuarios_back.php" method="post">
+            <div class="borda_fora_form">
+                <ul>
+                    <li id="form1">
+                        <div id="lado1_form">
+                            <form action="cad_exclui_usuarios_back.php" method="post">
                             
                         <!--<div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
@@ -35,13 +36,13 @@
                             </div>-->
                             <br><br>
 
-                     <div id="margem_img">
-                            <div class="max-width-User">
-                                   <div class="imageContainer">
-                                          <img src="<?php echo $linha['img']; ?>" alt="Selecione uma foto para o perfil" id="imgPhoto">
-                                   </div>
-                            </div>
-                     </div>
+                        <div id="margem_img">
+                                <div class="max-width-User">
+                                    <div class="imageContainer">
+                                            <img src="<?php echo $linha['img']; ?>" alt="Selecione uma foto para o perfil" id="imgPhoto">
+                                    </div>
+                                </div>
+                        </div>
 
 
                             <br><br>
@@ -160,7 +161,8 @@
             </ul>
 
         </div>
-    </div>
+    </div>        
+</div>
 
   
 <?php

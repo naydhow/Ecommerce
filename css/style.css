@@ -2039,8 +2039,9 @@ input:hover{
 }
 
 .alinha_tituloimg{
-  margin-top: 130px;
-  margin-bottom: 2%;
+  /* margin-top: 130px; */
+  margin-top: 4%;
+  margin-bottom: 4%;
   align-items: center;
   justify-content: center;
   display:flex;
@@ -2268,14 +2269,14 @@ input:hover{
  .borda_fora_form{
   width: 863px;
   height: 1104px;
-  left: 251px;
-  top: 132px;
+  /* left: 251px; */
+  /* top: 132px; */
   background: #FFFFFF;
   box-shadow: 0px 4px 20px #243D25;
   border-radius: 12px;
   /*margin-top: 100px;*/
-  margin-left: 260px;
-  margin-bottom: 100px;
+  /* margin-left: 260px; */
+  /* margin-bottom: 100px; */
  }
  
  .borda_rosa{
