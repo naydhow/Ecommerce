@@ -21,7 +21,7 @@
             <img class="img_fofinhas" src="../../img/img_cacto.svg">
         </div>
 
-        <div class="borda_fora_form">
+        <div class="borda_fora_form_Prod">
             <ul>
                 <li>
                     <div id="lado1_form">
@@ -41,49 +41,49 @@
                             <br><br>
 
                             <div>
-                                <strong class="textos">NOME:  &nbsp; &nbsp; &nbsp;</strong>
+                                <strong class="textos">NOME</strong>
                                 <input type="text" name="nome"  placeholder="Nome" max required class="resposta">
                             </div>
                             <br> <br><br>
                             <div>
-                                <strong class="textos">DESCRIÇÃO:</strong>
+                                <strong class="textos">DESCRIÇÃO</strong>
                                 <input class="resposta" type="text" name="descricao"  placeholder="Descrição"/>
                             </div>
                             <br> <br><br>
                             <div>
-                                <strong class="textos">COD. VISUAL:</strong>
+                                <strong class="textos">COD. VISUAL</strong>
                                 <input type="text" name="codigovisual" maxlength="13" placeholder="Código Visual" required class="resposta">
                             </div>
                             <br> <br><br>
                             <div>
-                                <strong class="textos">ESTOQUE: </strong>
+                                <strong class="textos">ESTOQUE</strong>
                                 <input type="number" name="estoque" placeholder="Estoque" required class="resposta">
                             </div>
                                 <br><br> <br>
 
                             <div>
-                                <strong class="textos">PREÇO:  &nbsp; &nbsp;</strong>
+                                <strong class="textos">PREÇO</strong>
                                 <input type="text" name="preco"  placeholder="Preço" required class="resposta">
                             </div>
                                 <br><br><br>
 
                             <div>
-                                <strong class="textos">CUSTO: &nbsp; &nbsp;</strong>
+                                <strong class="textos">CUSTO</strong>
                                 <input type="text" name="custo"  placeholder="Custo" required class="resposta">
                             </div>
                             <br><br><br>
 
                             <div>
-                                <strong class="textos">M. LUCRO: </strong>
+                                <strong class="textos">MARGEM DE LUCRO</strong>
                                 <input type="text" name="margem_lucro" placeholder="Margem lucro" required class="resposta">
                             </div>
                             <br> <br><br>
                             <div>
-                                <strong class="textos">ICMS: &nbsp; &nbsp; &nbsp; &nbsp;</strong>
+                                <strong class="textos">ICMS</strong>
                                 <input type="text" name="icms" placeholder="ICMS" required class="resposta">
                             </div>
-                            <br> <br><br>
-                            
+                            <br>
+
                             <div>
                                 <input type="submit" name="button" value="Enviar" class="btn_enviar">
                             </div>
@@ -97,7 +97,7 @@
                     <!--  LADO 2 -->
                     <br>
                     <div id="lado2_form">
-                        <div class="borda_rosa">
+                        <div class="borda_rosa_Prod">
                             <br><br>
                             <img class="img_form" src="../../img/cacto_login.svg">
                             <br> <br><br> <br>

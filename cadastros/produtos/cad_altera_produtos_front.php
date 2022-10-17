@@ -20,12 +20,12 @@
             <img class="img_fofinhas" src="../../img/img_cacto.svg">
         </div>
 
-        <div class="borda_fora_form">
+        <div class="borda_fora_form_Prod">
             <ul>
                 <li>
                     <div id="lado1_form">
                         <form action="cad_altera_produtos_back.php" enctype="multipart/form-data" method="post">
-                            <br> <br><br>
+                            <br> <br>
                             <div class="input-box-imagem">
                                           <div>
                                                  <div class="max-width-prod">
@@ -48,55 +48,54 @@
                             <br><br>
 
                             <div>
-                                <strong class="textos">ID PRODUTO:</strong>
+                                <strong class="textos">ID PRODUTO</strong>
                                 <input type="text" name="id_produto" value="<?php echo $linha['id_produto']; ?>" readonly class="resposta">
                             </div>
-                            <br> <br><br>
+                            <br> <br>
 
                             <div>
-                                <strong class="textos">NOME:  &nbsp; &nbsp; &nbsp;</strong>
+                                <strong class="textos">NOME</strong>
                                 <input type="text" name="nome" value="<?php echo $linha['nome']; ?>" class="resposta">
                             </div>
-                            <br> <br><br>
+                            <br> <br>
                             <div>
-                                <strong class="textos">DESCRIÇÃO:</strong>
+                                <strong class="textos">DESCRIÇÃO</strong>
                                 <input class="resposta" type="text" name="descricao" value="<?php echo $linha['descricao']; ?>">
                             </div>
-                            <br> <br><br>
+                            <br> <br>
                             <div>
-                                <strong class="textos">COD. VISUAL:</strong>
+                                <strong class="textos">CÓDIGO VISUAL</strong>
                                 <input type="text" name="codigovisual" value="<?php echo $linha['codigovisual']; ?>" class="resposta">
                             </div>
-                            <br> <br><br>
+                            <br> <br>
                             <div>
-                                <strong class="textos">ESTOQUE: </strong>
+                                <strong class="textos">ESTOQUE</strong>
                                 <input type="number" name="estoque" value="<?php echo $linha['estoque']; ?>" class="resposta">
                             </div>
-                                <br><br> <br>
+                                <br><br> 
 
                             <div>
-                                <strong class="textos">PREÇO:  &nbsp; &nbsp;</strong>
+                                <strong class="textos">PREÇO</strong>
                                 <input type="text" name="preco" value="<?php echo $linha['preco']; ?>" class="resposta">
                             </div>
-                                <br><br><br>
+                                <br><br>
 
                             <div>
-                                <strong class="textos">CUSTO: &nbsp; &nbsp;</strong>
+                                <strong class="textos">CUSTO</strong>
                                 <input type="text" name="custo" value="<?php echo $linha['custo']; ?>" class="resposta">
                             </div>
-                            <br><br><br>
+                            <br><br>
 
                             <div>
-                                <strong class="textos">M. LUCRO: </strong>
+                                <strong class="textos">MARGEM DE LUCRO</strong>
                                 <input type="text" name="margem_lucro" value="<?php echo $linha['margem_lucro']; ?>" class="resposta">
                             </div>
-                            <br> <br><br>
+                            <br> <br>
                             <div>
-                                <strong class="textos">ICMS: &nbsp; &nbsp; &nbsp; &nbsp;</strong>
+                                <strong class="textos">ICMS</strong>
                                 <input type="text" name="icms" value="<?php echo $linha['icms']; ?>" class="resposta">
                             </div>
-                            <br> 
-                            
+                          
                             <div class="espaco_button">
                                 <input type="submit" value="Gravar" class="btn_enviar">
                                 <input type="reset" value="Voltar" onclick="history.back()" class="btn_enviar">
@@ -108,7 +107,7 @@
                     <!--  LADO 2 -->
                     <br>
                     <div id="lado2_form">
-                        <div class="borda_rosa">
+                        <div class="borda_rosa_Prod">
                             <br><br>
                             <img class="img_form" src="../../img/cacto_login.svg">
                             <br> <br>
