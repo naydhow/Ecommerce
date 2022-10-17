@@ -25,7 +25,6 @@
                 <li><a class='title' href='./index.php' target='_parent'>Home</a></li>
                 <li><a class='title' href='./sobre.php' target='_parent'>Sobre</a></li>
                 <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-                <li><a class='title' href='./cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a></li>
                 <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
             </ul>
         </div>
@@ -47,17 +46,18 @@
             <div class='oggle icon-settings'><img class='icone_topo' src='./img/img_settings.svg'></div>
             <div class='configuration'>
               <div class='centraliza_config'>
-                <div class='configura'><a href='./cadastros/produtos/cad_pesq_produtos_front.php'><img src='./img/img_alter.svg'></a></div>
-                <div class='configura'><a href='./cadastros/usuarios/cad_pesq_usuarios_front.php'><img src='./img/img_statistics.svg'></a></div>
-                <div class='configura'><a href='./cadastros/usuarios/cad_novo_usuarios_front.php'><img src='./img/img_new_user.svg'></a></div>
-                <div class='configura'><a href='./cadastros/produtos/cad_novo_produtos_front.php'><img src='./img/img_new_item.svg'></a></div>
+                <div class='configura'><a href='./cadastros/produtos/cad_pesq_produtos_front.php' alt='Produtos' title='Produtos'><img src='./img/img_alter.svg' ></a></div>
+                <div class='configura'><a href='./cadastros/usuarios/cad_pesq_usuarios_front.php' alt='Usuarios' title='Usuarios'><img src='./img/img_statistics.svg'></a></div>
+                <div class='configura'><a href='./cadastros/usuarios/cad_novo_usuarios_front.php' title='Cadastrar usuário' alt='Cadastrar usuário'><img src='./img/img_new_user.svg'></a></div>
+                <div class='configura'><a href='./cadastros/produtos/cad_novo_produtos_front.php' title='Cadastrar produto' alt='Cadastrar produto'><img src='./img/img_new_item.svg'></a></div>
                 <div class='configura'><a href='#quaseprontoduda'><img src='./img/user.png'></a></div>
               </div>
             </div>
+
             <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
             <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
             <div class='user'>
-              <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
+              <div class='toggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
 
               <div class='dados'>
                 <div class='dados_user'>
@@ -82,3 +82,4 @@
   ";
 
 ?>
+

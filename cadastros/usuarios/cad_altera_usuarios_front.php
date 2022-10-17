@@ -58,84 +58,86 @@
                             <br><br>
                             
                             <div>
-                                <strong class="textos">ID USUÁRIO: </strong>
+                                <strong class="textos">ID USUÁRIO</strong>
                                 <input type="text" name="id_usuario" value="<?php echo $linha['id_usuario']; ?>" readonly class="resposta">
                             </div>
                             <br> <br>
                             <div>
-                                <strong class="textos">NOME: </strong>
+                                <strong class="textos">NOME</strong>
                                 <input type="text" name="nome" maxlength="100" value="<?php echo $linha['nome']; ?>" class="resposta">
                             </div>
                             <br> <br>
                             <div>
-                                <strong class="textos">E-MAIL: </strong>
+                                <strong class="textos">E-MAIL</strong>
                                 <input type="text" name="email" maxlength="80" value="<?php echo $linha['email']; ?>" class="resposta">
                             </div>
                             <br><br>
                             <div>
-                                <strong class="textos">SENHA: </strong>
+                                <strong class="textos">SENHA</strong>
                                 <input type="password" name="senha" maxlength="32" value="<?php echo $linha['senha']; ?>" class="resposta">
                             </div>
                             <br><br>
                             <div>
-                                <strong class="textos">FONE: </strong>
+                                <strong class="textos">TELEFONE</strong>
                                 <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" value="<?php echo $linha['telefone']; ?>" class="resposta">
                                 <div>
                                     <br> <br>
 
                                     <div class="input_block">
                                         <div class="input-box">
-                                            <div class="campo_label_peq2">
-                                                <strong class="textos">SEXO: </strong> <br><br> 
-                                                <?php
-                                                        if('Feminino' == $linha['sexo']){              
-                                                               echo " 
-                                                                      <label class='textos'><input type='radio' name='sexo' value='Feminino' checked>&nbsp;Feminino&nbsp;</label>
-                                                                      <label id='sexo'><input type='radio' name='sexo' value='Masculino'>&nbsp;Masculino&nbsp; </label>
-                                                                      <label id='sexo'><input type='radio' name='sexo' value='Prefiro não dizer'>&nbsp;Prefiro não dizer&nbsp;</label>
-                                                                      ";
-                                                        } else if('Masculino' == $linha['sexo']) {
-                                                               echo " 
-                                                                      <label class='textos'><input type='radio' name='sexo' value='Feminino'>&nbsp;Feminino&nbsp;</label>
-                                                                      <label id='sexo'><input type='radio' name='sexo' value='Masculino' checked>&nbsp;Masculino&nbsp; </label>
-                                                                      <label id='sexo'><input type='radio' name='sexo' value='Prefiro não dizer'>&nbsp;Prefiro não dizer&nbsp;</label>
-                                                                      ";
-                                                        } else {
-                                                               echo " 
-                                                                      <label class='textos'><input type='radio' name='sexo' value='Feminino'>&nbsp;Feminino&nbsp;</label>
-                                                                      <label id='sexo'><input type='radio' name='sexo' value='Masculino'>&nbsp;Masculino &nbsp;</label>
-                                                                      <label id='sexo'><input type='radio' name='sexo' value='Prefiro não dizer' checked>&nbsp;Prefiro não dizer&nbsp;</label>
-                                                                      ";
-                                                        }
-                                                 ?>
-                                            </div>
+                                                <strong class="textos">SEXO</strong>
+                                                <div class='espaco'>
+                                                    <?php
+                                                            if('Feminino' == $linha['sexo']){              
+                                                                echo " 
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Feminino' checked>&nbsp;Feminino&nbsp;</label>
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Masculino'>&nbsp;Masculino&nbsp; </label>
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Prefiro não dizer'>&nbsp;Prefiro não dizer&nbsp;</label>
+                                                                        ";
+                                                            } else if('Masculino' == $linha['sexo']) {
+                                                                echo " 
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Feminino'>&nbsp;Feminino&nbsp;</label>
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Masculino' checked>&nbsp;Masculino&nbsp; </label>
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Prefiro não dizer'>&nbsp;Prefiro não dizer&nbsp;</label>
+                                                                        ";
+                                                            } else {
+                                                                echo " 
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Feminino'>&nbsp;Feminino&nbsp;</label>
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Masculino'>&nbsp;Masculino &nbsp;</label>
+                                                                        <label class='opc' id='sexo'><input type='radio' name='sexo' value='Prefiro não dizer' checked>&nbsp;Prefiro não dizer&nbsp;</label>
+                                                                        ";
+                                                            }
+                                                    ?>
+                                                </div>
                                         </div>
                                     </div>
 
+                                    <br><br>
+
                                     <div class="input-box">
                                         <label>
-                                            <strong class="textos">DATA&nbsp;NASC.</strong>
+                                            <strong class="textos">DATA&nbsp;NASCIMENTO</strong>
                                             <input id="datanasc" type="text" name="data_nasc" value="<?php echo $linha['data_nasc']; ?>" />
                                         </label>
                                     </div><br>
 
                                     <div>
-                                        <strong class="textos">CPF: </strong>
+                                        <strong class="textos">CPF</strong>
                                         <input class="resposta" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" value="<?php echo $linha['cpf']; ?>">
                                     </div>
                                     <br> <br>
                                     <div>
-                                        <strong class="textos">CEP: </strong>
+                                        <strong class="textos">CEP</strong>
                                         <input type="text" name="cep" placeholder="00000-000" value="<?php echo $linha['cep']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
-                                        <strong class="textos">ENDEREÇO: </strong>
+                                        <strong class="textos">ENDEREÇO</strong>
                                         <input type="text" name="endereco" maxlength="150"  id="endereco" value="<?php echo $linha['endereco']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
-                                        <strong class="textos">CIDADE: </strong>
+                                        <strong class="textos">CIDADE</strong>
                                         <input type="text" name="cidade" maxlength="30" id="cidade" value="<?php echo $linha['cidade']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
@@ -145,7 +147,7 @@
                                             <input class="resposta" type="text" name="estado" id="estado" maxlength="2" value="<?php echo $linha['estado']; ?>" />
                                         </label>
                                     </div>
-                                   <br><br>
+                                   <br>
                                     <div>
                                         <input type="submit" value="Gravar" class="bnt_menores">
                                         <input class="bnt_menores" type="button" value="Voltar" onclick="location.href='cad_pesq_usuarios_front.php';">
@@ -162,7 +164,7 @@
                         <div class="borda_rosa">
                             <br><br>
                             <img class="img_form" src="../../img/cacto_login.svg">
-                            <br> <br><br> <br>
+                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
                             <img class="img_form" src="../../img/vaso_redondo_mini.svg">
                         </div>
                     </div>
