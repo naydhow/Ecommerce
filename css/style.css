@@ -475,7 +475,7 @@ nav.settings .centraliza_config {
   margin: 1.5rem;
 
   display: flex;
-  /* justify-content: ; */
+  justify-content: space-around;
 }
 
 /* toggle carrinho */
@@ -531,12 +531,17 @@ nav.settings .configura {
   visibility: visible;
   opacity: 1;
 
-  width: 45%;
+  width: 50px;
+  height: 50px;
 
   /* top: 16.5rem; */
   /* right: 21.2rem; */
   top: 1.5rem;
   right: 1.5rem;
+}
+
+nav.settings .configura img {
+  width: 100%;
 }
 
 nav .divisao-menu {

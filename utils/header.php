@@ -57,7 +57,7 @@
             <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
             <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
             <div class='user'>
-              <div class='toggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
+              <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
 
               <div class='dados'>
                 <div class='dados_user'>
