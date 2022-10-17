@@ -10,8 +10,9 @@
     </head>
     <body>
         <?php
-            
+
             include_once "./utils/header.php";
+        
             echo"
                 <main>
                     <div class='container_paginas' id='topo'>

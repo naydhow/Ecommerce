@@ -14,7 +14,8 @@
          include_once "../../utils/header_2.php";
     ?>
 
-<div>
+<div class="section">
+    <div class="central">
         <div class="alinha_tituloimg">
             <img class="img_fofinhas" src="../../img/img_suculenta.svg">
             <p id="titulo_fofo_usu">&nbsp;&nbsp; Cadastro de Produtos</p>
@@ -26,7 +27,7 @@
                 <li>
                     <div id="lado1_form">
                         <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
-                            <br> <br><br>
+                            <br> 
                         <div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
                                     <div class="imageContainer" id="margem_img_cam">
@@ -108,7 +109,8 @@
             </ul>
 
         </div>
-    </div>    
+    </div> 
+</div>   
    
     <?php
 
