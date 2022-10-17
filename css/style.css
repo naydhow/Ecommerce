@@ -475,7 +475,7 @@ nav.settings .centraliza_config {
   margin: 1.5rem;
 
   display: flex;
-  /* justify-content: ; */
+  justify-content: space-around;
 }
 
 /* toggle carrinho */
@@ -531,12 +531,17 @@ nav.settings .configura {
   visibility: visible;
   opacity: 1;
 
-  width: 45%;
+  width: 50px;
+  height: 50px;
 
   /* top: 16.5rem; */
   /* right: 21.2rem; */
   top: 1.5rem;
   right: 1.5rem;
+}
+
+nav.settings .configura img {
+  width: 100%;
 }
 
 nav .divisao-menu {
@@ -2039,8 +2044,9 @@ input:hover{
 }
 
 .alinha_tituloimg{
-  margin-top: 130px;
-  margin-bottom: 2%;
+  /* margin-top: 130px; */
+  margin-top: 4%;
+  margin-bottom: 4%;
   align-items: center;
   justify-content: center;
   display:flex;
@@ -2284,56 +2290,15 @@ input:hover{
 
  .borda_fora_form{
   width: 863px;
-  height: 1425px;
-  left: 251px;
-  top: 132px;
+  height: 1104px;
+  /* left: 251px; */
+  /* top: 132px; */
   background: #FFFFFF;
   box-shadow: 0px 4px 20px #243D25;
   border-radius: 12px;
   /*margin-top: 100px;*/
-  margin-left: 260px;
-  margin-bottom: 100px;
- }
-
- .borda_fora_form_Prod{
-  width: 863px;
-  height: 1200px;
-  left: 251px;
-  top: 132px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px #243D25;
-  border-radius: 12px;
-  /*margin-top: 100px;*/
-  margin-left: 260px;
-  margin-bottom: 100px;
- }
-
-
- .borda_rosa_Prod{
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 300px;
-  width: 375px;
-  height: 1100px;
-  left: 707px;
-  top: 188px;
-  background: #FAD9E6;
-  box-shadow: 0px 4px 20px #243D25;
-  border-radius: 12px;
- }
-
- 
- .borda_fora_form_ALT{
-  width: 863px;
-  height: 1440px;
-  left: 251px;
-  top: 132px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px #243D25;
-  border-radius: 12px;
-  /*margin-top: 100px;*/
-  margin-left: 260px;
-  margin-bottom: 100px;
+  /* margin-left: 260px; */
+  /* margin-bottom: 100px; */
  }
  
  .borda_rosa{
