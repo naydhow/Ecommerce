@@ -59,7 +59,7 @@
 
                     <div class='dados'>
                     <div class='dados_user'>
-                        <img class='' src='".$foto."'>
+                        <img class='imgimg' src='".$foto."'>
                         <label>".$_SESSION['usuariologado']['nome']."</label>
                         <label>".$_SESSION['usuariologado']['email']."</label>
                         <label>".$_SESSION['usuariologado']['cpf']."</label>
@@ -67,9 +67,9 @@
                         <label>".$_SESSION['usuariologado']['']."</label>
                         <label>".$_SESSION['usuariologado']['']."</label>
                         <label>".$_SESSION['usuariologado']['']."</label>
-                    </div>
-                    <div class='button_user'>
-                        ".$botao."
+                        <div class='button_user'>
+                            ".$botao."
+                        </div>
                     </div>
                     </div>
                 </div>

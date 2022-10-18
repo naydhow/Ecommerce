@@ -32,6 +32,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 img{
@@ -381,10 +382,10 @@ nav.new .user {
   opacity: 1;
   visibility: visible;
 
-  background: var(--color-button-claro);
+  background: #ffcceb;
 
   height: 80%;
-  width: 1300px;
+  width: 700px;
 
   border-radius: 10px;
 
@@ -393,7 +394,6 @@ nav.new .user {
   top: 50%;
   left: 50%;
   transform: translate(-49.8%, -50%);
-
   /* display: flex;
   justify-content: center; */
 
@@ -525,6 +525,38 @@ nav.new div.icon-closer {
   /* right: 21.2rem; */
   top: 1.5rem;
   right: 1.5rem;
+}
+
+.imgimg{
+  width: 35%;
+  border-radius: 10px;
+}
+
+.dados{
+  height: 100%;
+}
+
+.dados_user{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--body-font);
+}
+
+.button_user{
+  box-sizing: border-box;
+  display: flex;
+  padding: 14px 32px 15px;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+  box-shadow: 0 0 2px white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 2%;
 }
 
 nav.settings .configura {
@@ -2073,7 +2105,7 @@ input:hover{
 }
 
 .borda_fora{
-  margin-left: 290px;
+  margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 100px;
   width: 863px;
