@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/style.css">
-<link rel="icon" href="../../img/logopeq_caricacto.svg">
+<link rel="icon" href="../../img/cactoIni_final.svg">
 <title>Alteração de Usuário</title>
 
 <!-- Recuperando as informações do produto -->

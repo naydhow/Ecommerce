@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="icon" href="../../img/logopeq_caricacto.svg">
+    <link rel="icon" href="../../img/cactoIni_final.svg">
     
     <title>Cadastro de Produtos</title>
 </head>
@@ -99,9 +99,9 @@
                     <br>
                     <div id="lado2_form">
                         <div class="borda_rosa_Prod">
-                            <br><br>
+                            <br><br><br>
                             <img class="img_form" src="../../img/cacto_login.svg">
-                            <br> <br><br> <br>
+                            <br><br><br><br><br><br><br><br>
                             <img class="img_form" src="../../img/vaso_redondo_mini.svg">
                         </div>
                     </div>

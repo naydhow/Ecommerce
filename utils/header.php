@@ -94,7 +94,6 @@ else{
             <div id='blur'></div>
             <div class='carrinho'>
                 <iframe src='./venda/carrinho_peq_front.php' id='iframers'></iframe>
-
                 <div class='divider-black'></div>
                 <footer id='footer_cart'>
                     <div class='buttons_cart'>
@@ -107,30 +106,33 @@ else{
 
             <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
             <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
-              <div class='user'>
+
+            <div class='user'>
                   <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
 
-                  <div class='dados'>
-                  <div class='dados_user'>
-                      <img class='' src='".$foto."'>
-                      <label>".$_SESSION['usuariologado']['nome']."</label>
-                      <label>".$_SESSION['usuariologado']['email']."</label>
-                      <label>".$_SESSION['usuariologado']['cpf']."</label>
-                      <label>".date('d/m/Y', strtotime($_SESSION['usuariologado']['data_nasc']))."</label>
-                      <label>".$_SESSION['usuariologado']['']."</label>
-                      <label>".$_SESSION['usuariologado']['']."</label>
-                      <label>".$_SESSION['usuariologado']['']."</label>
-                  </div>
-                  <div class='button_user'>
-                      ".$botao."
-                  </div>
-                  </div>
-              </div>
-            <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
-        </div>
-      </nav>
-    </header>
-  ";
+
+                    <div class='dados'>
+                        <div class='dados_user'>
+                            <img class='imgimg' src='".$foto."'>
+                              <label>".$_SESSION['usuariologado']['nome']."</label>
+                              <label>".$_SESSION['usuariologado']['email']."</label>
+                              <label>".$_SESSION['usuariologado']['cpf']."</label>
+                              <label>".date('d/m/Y', strtotime($_SESSION['usuariologado']['data_nasc']))."</label>
+                              <label>".$_SESSION['usuariologado']['']."</label>
+                              <label>".$_SESSION['usuariologado']['']."</label>
+                              <label>".$_SESSION['usuariologado']['']."</label>
+                              <div class='button_user'>
+                                  ".$botao."
+                              </div>
+                          </div>
+                    </div>
+                </div>
+              <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
+          </div>
+        </nav>
+      </header>
+    ";
+
 }
 ?>
 
