@@ -68,7 +68,7 @@
                             </div>
                             <br><br>
                             <div>
-                                <strong class="textos">FONE</strong>
+                                <strong class="textos">TELEFONE</strong>
                                 <input type="text" name="telefone" placeholder="(00) 00000-0000" value="<?php echo $linha['telefone']; ?>" class="resposta">
                                 <div>
                                     <br> <br>
@@ -114,7 +114,7 @@
 
                                     <div>
                                         <strong class="textos">CPF</strong>
-                                        <input class="resposta" type="text" name="cpf" placeholder="000.000.000-00" value="<?php echo $linha['cpf']; ?>">
+                                        <input class="resposta" id="cpf" type="text" name="cpf" placeholder="000.000.000-00" value="<?php echo $linha['cpf']; ?>">
                                     </div>
                                     <br> <br>
                                     <div>
@@ -124,12 +124,12 @@
                                     <br> <br>
                                     <div>
                                         <strong class="textos">ENDEREÇO</strong>
-                                        <input type="text" name="endereco" maxlength="150" value="<?php echo $linha['endereco']; ?>" class="resposta">
+                                        <input type="text"  id="endereco" name="endereco" maxlength="150" value="<?php echo $linha['endereco']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
                                         <strong class="textos">CIDADE</strong>
-                                        <input type="text" name="cidade" maxlength="30" value="<?php echo $linha['cidade']; ?>" class="resposta">
+                                        <input type="text" id="cidade" name="cidade" maxlength="30" value="<?php echo $linha['cidade']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div class="input-box">
@@ -176,3 +176,6 @@ include_once "../../utils/footer_2.php";
 ?>
 
 <script src="../../js/main.js"></script>
+<script src="../../js/cep.js"></script>
+<script src="../../js/masks.js"></script>
+<script src="../../js/perfil_photo.js"></script>

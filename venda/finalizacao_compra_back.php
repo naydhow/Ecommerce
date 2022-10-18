@@ -75,7 +75,7 @@
     $resultado_lista = $_SESSION['produtos'];
 
     // (ainda precisa programar)
-    validarProdutos($conecta, $resultado_lista);
+    //validarProdutos($conecta, $resultado_lista);
 
     $sql = "INSERT INTO venda (id_usuario, datahoravenda, observacoes) VALUES ($idusuario, current_timestamp, 'Venda realizada');";
     $res = pg_query($conecta, $sql);

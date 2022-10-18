@@ -14,72 +14,125 @@
     $botao = "<a href='./login/login.html' target='_parent'>Login</a>";
   }
 
-      echo "
-      <header id='header'>
-        <nav class='container'>
-          <a href='./index.php' target='_parent'><img src='./img/logo_final.svg' class='logo'></a>
-          <div class='menu'>
-              <ul class='grid'>
-                  <li><a class='title' href='./index.php' target='_parent'>Home</a></li>
-                  <li><a class='title' href='./sobre.php' target='_parent'>Sobre</a></li>
-                  <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-                  <li><a class='title' href='./cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a></li>
-              </ul>
-          </div>
-          <div class='divisao-menu'>
-              <div id='blur'></div>
-              <div class='carrinho'>
-                  <iframe src='./venda/carrinho_peq_front.php' id='iframers'></iframe>
+  if ($_SESSION['isadm'] =='t') {
+    echo "
+    <header id='header'>
+      <nav class='container'>
+        <a href='./index.php' target='_parent'><img src='./img/logo_final.svg' class='logo'></a>
+        <div class='menu'>
+            <ul class='grid'>
+                <li><a class='title' href='./index.php' target='_parent'>Home</a></li>
+                <li><a class='title' href='./sobre.php' target='_parent'>Sobre</a></li>
+                <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+            </ul>
+        </div>
+        <div class='divisao-menu'>
+            <div id='blur'></div>
+            <div class='carrinho'>
+                <iframe src='./venda/carrinho_peq_front.php' id='iframers'></iframe>
 
-                  <div class='divider-black'></div>
-                  <footer id='footer_cart'>
-                      <div class='buttons_cart'>
-                          <a href='./venda/selecao_produtos_front.php' id='opcoes'>Continuar Comprando</a>
-                          <a href='./venda/confirmacao_compra_front.php' id='opcoes'>Finalizar</a>
-                          <a href='./venda/carrinho_front.php' id='opcoes'>Carrinho</a>
-                      </div>
-                  </footer>
+                <div class='divider-black'></div>
+                <footer id='footer_cart'>
+                    <div class='buttons_cart'>
+                        <a href='./venda/selecao_produtos_front.php' id='opcoes'>Continuar Comprando</a>
+                        <a href='./venda/confirmacao_compra_front.php' id='opcoes'>Finalizar</a>
+                        <a href='./venda/carrinho_front.php' id='opcoes'>Carrinho</a>
+                    </div>
+                </footer>
+            </div>
+            
+            <div class='oggle icon-settings'><img class='icone_topo' src='./img/img_settings.svg'></div>
+            <div class='configuration'>
+              <div class='centraliza_config'>
+                  <div class='configura'><a href='#estatisticas' alt='Estatísticas' title='Estatísticas'><img src='./img/img_statistics.svg'></a></div>
+                  <div class='configura'><a href='./cadastros/usuarios/cad_pesq_usuarios_front.php' title='Usuários' alt='Usuários'><img src='./img/img_new_user.svg'></a></div>
+                  <div class='configura'><a href='./cadastros/produtos/cad_pesq_produtos_front.php' title='Produtos' alt='Produtos'><img src='./img/img_new_item.svg'></a></div>
               </div>
-              
-              <div class='oggle icon-settings'><img class='icone_topo' src='./img/img_settings.svg'></div>
-              <div class='configuration'>
-                <div class='centraliza_config'>
-                  <div class='configura'><a href='./cadastros/produtos/cad_pesq_produtos_front.php' alt='Produtos' title='Produtos'><img src='./img/img_alter.svg' ></a></div>
-                  <div class='configura'><a href='./cadastros/usuarios/cad_pesq_usuarios_front.php' alt='Usuarios' title='Usuarios'><img src='./img/img_statistics.svg'></a></div>
-                  <div class='configura'><a href='./cadastros/usuarios/cad_novo_usuarios_front.php' title='Cadastrar usuário' alt='Cadastrar usuário'><img src='./img/img_new_user.svg'></a></div>
-                  <div class='configura'><a href='./cadastros/produtos/cad_novo_produtos_front.php' title='Cadastrar produto' alt='Cadastrar produto'><img src='./img/img_new_item.svg'></a></div>
-                  <div class='configura'><a href='#quaseprontoduda'><img src='./img/user.png'></a></div>
-                </div>
+            </div>
+
+            <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
+            <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
+              <div class='user'>
+                  <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
+
+                  <div class='dados'>
+                  <div class='dados_user'>
+                      <img class='' src='".$foto."'>
+                      <label>".$_SESSION['usuariologado']['nome']."</label>
+                      <label>".$_SESSION['usuariologado']['email']."</label>
+                      <label>".$_SESSION['usuariologado']['cpf']."</label>
+                      <label>".date('d/m/Y', strtotime($_SESSION['usuariologado']['data_nasc']))."</label>
+                      <label>".$_SESSION['usuariologado']['']."</label>
+                      <label>".$_SESSION['usuariologado']['']."</label>
+                      <label>".$_SESSION['usuariologado']['']."</label>
+                  </div>
+                  <div class='button_user'>
+                      ".$botao."
+                  </div>
+                  </div>
               </div>
+            <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
+        </div>
+      </nav>
+    </header>
+  ";
+}
 
-              <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
-              <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
-                <div class='user'>
-                    <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
+else{
+  echo "
+    <header id='header'>
+      <nav class='container'>
+        <a href='./index.php' target='_parent'><img src='./img/logo_final.svg' class='logo'></a>
+        <div class='menu'>
+            <ul class='grid'>
+                <li><a class='title' href='./index.php' target='_parent'>Home</a></li>
+                <li><a class='title' href='./sobre.php' target='_parent'>Sobre</a></li>
+                <li><a class='title' href='./venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+            </ul>
+        </div>
+        <div class='divisao-menu'>
+            <div id='blur'></div>
+            <div class='carrinho'>
+                <iframe src='./venda/carrinho_peq_front.php' id='iframers'></iframe>
 
-                    <div class='dados'>
-                    <div class='dados_user'>
-                        <img class='' src='".$foto."'>
-                        <label>".$_SESSION['usuariologado']['nome']."</label>
-                        <label>".$_SESSION['usuariologado']['email']."</label>
-                        <label>".$_SESSION['usuariologado']['cpf']."</label>
-                        <label>".date('d/m/Y', strtotime($_SESSION['usuariologado']['data_nasc']))."</label>
-                        <label>".$_SESSION['usuariologado']['']."</label>
-                        <label>".$_SESSION['usuariologado']['']."</label>
-                        <label>".$_SESSION['usuariologado']['']."</label>
+                <div class='divider-black'></div>
+                <footer id='footer_cart'>
+                    <div class='buttons_cart'>
+                        <a href='./venda/selecao_produtos_front.php' id='opcoes'>Continuar Comprando</a>
+                        <a href='./venda/confirmacao_compra_front.php' id='opcoes'>Finalizar</a>
+                        <a href='./venda/carrinho_front.php' id='opcoes'>Carrinho</a>
                     </div>
-                    <div class='button_user'>
-                        ".$botao."
-                    </div>
-                    </div>
-                </div>
-              <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
-          </div>
-        </nav>
-      </header>
-    ";
+                </footer>
+            </div>
 
-  
-  
+            <div class='toggle icon-carrinho'><img class='icone_topo' src='./img/img_carrinhovazio.svg'></div>
+            <div class='toggle icon-close'><img class='icone_topo' src='./img/img_close.svg'></div>
+              <div class='user'>
+                  <div class='taggle icon-closer'><img class='icone_topo' src='./img/img_close.svg'></div>
+
+                  <div class='dados'>
+                  <div class='dados_user'>
+                      <img class='' src='".$foto."'>
+                      <label>".$_SESSION['usuariologado']['nome']."</label>
+                      <label>".$_SESSION['usuariologado']['email']."</label>
+                      <label>".$_SESSION['usuariologado']['cpf']."</label>
+                      <label>".date('d/m/Y', strtotime($_SESSION['usuariologado']['data_nasc']))."</label>
+                      <label>".$_SESSION['usuariologado']['']."</label>
+                      <label>".$_SESSION['usuariologado']['']."</label>
+                      <label>".$_SESSION['usuariologado']['']."</label>
+                  </div>
+                  <div class='button_user'>
+                      ".$botao."
+                  </div>
+                  </div>
+              </div>
+            <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
+        </div>
+      </nav>
+    </header>
+  ";
+}
 ?>
 
+
+      

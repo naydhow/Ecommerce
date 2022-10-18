@@ -122,8 +122,11 @@
                                         <br> <br>
                                         
                                         <?php
-                                        if ($_SESSION['isadm'] == true) {
-                                            echo "<div class='input-box'>                                              <strong class='textos'>USUÁRIO</strong>
+                                        
+                                        if ($_SESSION['isadm'] =='t') {
+
+                                            echo "<div class='input-box'>                                              
+                                            <strong class='textos'>USUÁRIO</strong>
                                                     <div class='espaco'>
                                                         <label class='opc' id='user'><input type='radio' name='user' value='false' checked />&nbsp;Comum</label>&nbsp;
                                                         <label class='opc' id='user'><input type='radio' name='user' value='true' />&nbsp;Administrador</label>&nbsp;
@@ -131,6 +134,7 @@
                                                 </div>";
                                         }
                                         ?>
+
                                         <div>
                                             <input type="submit" name="button" value="Enviar" class="btn_enviar">
                                         </div>

@@ -128,7 +128,7 @@
                                     <br> <br>
                                     <div>
                                         <strong class="textos">CEP</strong>
-                                        <input type="text" name="cep" placeholder="00000-000" value="<?php echo $linha['cep']; ?>" class="resposta">
+                                        <input type="text" id="cep" name="cep" placeholder="00000-000" value="<?php echo $linha['cep']; ?>" class="resposta">
                                     </div>
                                     <br> <br>
                                     <div>
