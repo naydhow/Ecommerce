@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Produtos</title>
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="../img/logopeq_caricacto.svg">
+        <link rel="icon" href="../img/cactoIni_final.svg">
     </head>
     <body>
         <?php 

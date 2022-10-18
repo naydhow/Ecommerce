@@ -2188,6 +2188,13 @@ input:hover{
   box-shadow: 0 0 0 0;
   border:none;
   border-bottom: 1px solid;
+
+  width: 270px;
+  height: 17px;
+  left: 631.29px;
+  top: 493px;
+  border: 1px solid #000000;
+  /*transform: rotate(180deg);*/
 }
 
 /* .resposta input:focus{
