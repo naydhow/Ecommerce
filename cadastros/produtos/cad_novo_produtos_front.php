@@ -27,7 +27,7 @@
                 <li>
                     <div id="lado1_form">
                         <form enctype="multipart/form-data" action="cad_novo_produtos_back.php" method="post">
-                            <br> 
+                            <br>
                         <div class="input-box-imagem-prod">
                                 <div class="max-width-prod">
                                     <div class="imageContainer" id="margem_img_cam">

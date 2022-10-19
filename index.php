@@ -28,7 +28,7 @@
                                 <a href='./venda/selecao_produtos_front.php' target='_parent' class='btn'>Ver produtos</a>
                             </div>
                             <div class='img'>
-                                <img src='./img/img_topo.jpg' alt='imagem'>
+                                <img src='./img/plantas_mao.jpg' alt='imagem'>
                             </div>
                         </div>
 
@@ -37,10 +37,10 @@
                         <div class='section' id='produtos'>
                             <div class='img_produto'>
                                 <div class='alinhamento'>   
-                                    <img src='./img/img_cacto1.jpg' alt='imagem'> 
-                                    <p class='text_produtos_preco'>Suculenta</p>
+                                    <img src='./img/cacto.jpg' alt='imagem'> 
+                                    <p class='text_produtos_preco'>Cacto com flor</p>
                                     <p class='text_produtos_preco'>R$ 5.00</p> 
-                                    <p class='text_produtos'> Com mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. Confira nosssos produtos!</p>
+                                    <p class='text_produtos'> Mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. &nbsp;Adquira o seu!</p>
                                     <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=1'>Comprar</a>
                                 </div>
                             </div>
@@ -49,22 +49,21 @@
                     
                             <div class='img_produto'>
                                 <div class='alinhamento'> 
-                                    <img src='./img/img_cacto2.jpg' alt='imagem'> 
+                                    <img src='./img/suculenta1.jpg' alt='imagem'> 
                                     <p class='text_produtos_preco'>Suculenta</p>
                                     <p class='text_produtos_preco'>R$ 5.00</p>
                                     <p class='text_produtos'>Como diferencial, são acompanhados com vasinhos 
-                                        de bambu confeccionados por nós de forma sustentável e ecológica.</p>    
+                                        de juta confeccionados por nós de forma sustentável e ecológica.</p>    
                                     <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=2'>Comprar</a>     
                                 </div>
                             </div>
 
-                            <div class='img_produto'>
+                            <div class='img_produto_exc'>
                                 <div class='alinhamento'>
                                     <img src='./img/img_cacto3.jpg' alt='imagem'>                                     
-                                    <p class='text_produtos_preco'>Suculenta</p>
-                                    <p class='text_produtos_preco'>R$ 5.00</p>   
-                                    <p class='text_produtos'>Produtos selecionados especialmente para você, sendo cuidados diariamente com muita dedicação.</p> 
-                                    <a  class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=3'>Comprar</a> 
+                                    <p class='text_produtos_preco'>Mini cactos e suculentas precisam de cuidados especiais?</p>
+                                    <p class='text_produtos'>Descubra os cuidados necessários para que essas plantinhas cresçam saudáveis e bonitas, acessando o site abaixo:</p> 
+                                    <a  class='home_comprar' href='https://cactosesuculentas.com/como-cuidar-de-suculentas/' target='_blank'>Cuidados</a> 
                                 </div> 
                             </div>
 
