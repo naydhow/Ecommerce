@@ -87,7 +87,7 @@ function mais(num){
   var atual = document.getElementById(num).value;
   var novo = atual - (-1); //Evitando Concatenacoes
   document.getElementById(num).value = novo;
-  atualizaDados();
+  atualizaDados('true');
 }
 
 function menos(num){
@@ -95,20 +95,52 @@ function menos(num){
   if(atual > 0) { //evita números negativos
     var novo = atual - 1;
     document.getElementById(num).value = novo;
-    atualizaDados();
+    atualizaDados('true');
   }
 }
 
-function atualizaDados() {  
+function atualizaDados(bool) {  
     var form = document.getElementById("IdForm");
     setTimeout(function() {
       window.location.reload(1);
     }, 180000);
-    form.submit();
+    if(bool == 'true')
+    {
+      form.submit();
+    }
   //   document.getElementById("IdLink").addEventListener("click", function () {
   //   form.submit();
   // });
 }
+
+const senha = document.getElementById('password')
+const olho = document.getElementById('eye')
+
+senha.addEventListener('input', function () {
+  if(senha.value != '')
+  {
+    olho.style.opacity = 1
+    olho.style.visibility = 'visible'
+  }
+  else
+  {
+    olho.style.opacity = 0
+    olho.style.visibility = 'hidden'
+  }
+})
+
+olho.addEventListener('click', function() {
+  if(senha.type == 'text')
+  {
+    senha.type = 'password';
+    olho.setAttribute('src', '../img/img_eye.svg')
+  }
+  else
+  {
+    senha.type = 'text';
+    olho.setAttribute('src', '../img/img_eyeclose.svg')
+  }
+});
 
 document.addEventListener('input', function(){
   atualizaDados();
