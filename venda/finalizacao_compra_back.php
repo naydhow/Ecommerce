@@ -13,18 +13,6 @@
 
             $resulta = pg_fetch_array($res);
 
-            echo '<script language="javascript">';
-            echo "alert('".$linha['id_produto']."')";
-            echo '</script>';
-
-            echo '<script language="javascript">';
-            echo "alert('".$linha['qtde']."')";
-            echo '</script>';
-
-            echo '<script language="javascript">';
-            echo "alert('".$resulta['estoque']."')";
-            echo '</script>';
-
             // if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] == 0){
             //     // echo '<script language="javascript">';
             //     // echo "alert('Ih, acabou o estoque meu filho')";
