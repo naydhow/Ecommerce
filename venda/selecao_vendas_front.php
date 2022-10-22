@@ -24,9 +24,10 @@
           {
             foreach($resultado_lista as $linha)
             {
-              echo $linha['qtde']; echo "<br>";
-              echo $linha['valorunitario'];echo "<br>";
-              echo $linha['valortotal'];echo "<br>";
+              // foreach($results as $line)
+              // {
+              //   echo date('d/m/Y', strtotime($line['datahoravenda']));echo "<br>";  
+              // }
               echo date('d/m/Y', strtotime($linha['datahoravenda']));echo "<br>";
               echo $linha['observacoes'];
               echo "<br>";

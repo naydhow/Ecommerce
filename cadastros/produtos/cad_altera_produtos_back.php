@@ -3,6 +3,8 @@
 
     //É só um teste
 
+    include "cad_getinfo_produtos_back.php";
+
     //dados enviados do script altera_prod_lista.php
     $id_produto = $_POST['id_produto'];
     $nome=$_POST['nome'];
