@@ -156,9 +156,9 @@
                     <div id="lado2_form">
                         <div class="borda_rosa">
                             <br><br>
-                            <img class="img_form" src="../../img/cacto_login.svg">
-                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
-                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
+                            <img class="img_form" src="../../img/cactos.jpg">
+                            <img class="img_form" src="../../img/cacto_fino.jpg">
+                            <img class="img_form" src="../../img/suculentas.jpg">
                         </div>
                     </div>
                 </li>

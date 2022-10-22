@@ -104,10 +104,10 @@
                     <br>
                     <div id="lado2_form">
                         <div class="borda_rosa_Prod">
-                            <br><br>
-                            <img class="img_form" src="../../img/cacto_login.svg">
-                            <br> <br><br> <br>
-                            <img class="img_form" src="../../img/vaso_redondo_mini.svg">
+                            < <br><br><br>
+                            <img class="img_form" src="../../img/suculenta_alta.jpg">
+                            <br><br><br><br><br><br><br><br>
+                            <img class="img_form" src="../../img/cacto_fino.jpg">
                         </div>
                     </div>
                 </li>

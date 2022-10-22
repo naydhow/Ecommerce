@@ -23,7 +23,7 @@
                         </div>
 
                         <div class='img_sobre'>
-                            <img src='./img/img_sobre.jpg'>
+                            <img src='./img/plantas_mao.jpg'>
                         </div>
                 </div>
 
@@ -36,11 +36,27 @@
                         </p>
 
                         <p>O projeto, o qual também é uma startup, está voltado para o comércio de mini cactos e suculentas, a fim de proporcionar lembranças para que você, nosso consumidor, decore sua casa ou
-                        presenteie quem ama. Nossos produtos chegam através de nosso fornecedor e posteriormente são cuidados e preparados, com vasinhos sustentáveis de bambu e lindas embalagens. Esperamos trazer
+                        presenteie quem ama. Nossos produtos chegam através de nosso fornecedor e posteriormente são cuidados e preparados, com vasinhos artesanais. Esperamos trazer
                         uma grande satisfação aos nossos consumidores e disseminar, através de nossas sementes de brinde, um mundo mais sustentável com mais plantas e amor florescendo.
                         </p>
 
                         <p>Contribua para um futuro mais sustentável. Seja um consumidor Caricacto!</p>
+
+                        <br>
+
+                        <p><b>Visão:</b> A Caricacto, como Startup, com seus produtos e serviços oferecidos, aspira o bem-estar, a saúde de si e a liberdade de se expressar através de cada plantinha cuidada.</p>
+
+                        <br>
+                         
+                        <p><b>Valores:</b> 
+                        <ul>
+                            <li>• Respeito;</li>
+                            <li>• Integridade;</li>
+                            <li>• Empatia - consideração com os clientes;</li>
+                            <li>• Humildade;</li>
+                            <li>• Responsabilidade;</li>
+                            <li>• Um mundo mais sustentável.</li>
+                        <ul>
 
                     </div>
                 
