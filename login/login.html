@@ -12,41 +12,36 @@
 </head>
 
 <body>
+    
   <header id='header'>
     <nav class='container'>
       <a href='../index.php' target='_parent'><img src='../img/logo_final.svg' class='logo'></a>
       <div class='menu'>
-        <ul class='grid'>
-          <li><a class='title' href='../index.php' target='_parent'>Home</a></li>
-          <li><a class='title' href='../sobre.php' target='_parent'>Sobre</a></li>
-          <li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
-          <li><a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
-          </li>
-          <li><a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php'
-              target='_parent'>Estatísticas</a></li>
-        </ul>
+          <ul class='grid'>
+              <li><a class='title' href='../index.php' target='_parent'>Home</a></li>
+              <li><a class='title' href='../sobre.php' target='_parent'>Sobre</a></li>
+              <li><a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a></li>
+          </ul>
       </div>
       <div class='divisao-menu'>
-        <div id='blur'></div>
-        <div class='carrinho'>
-          <iframe src='../venda/carrinho_peq_front.php' id='iframers'></iframe>
+          <div id='blur'></div>
+          <div class='carrinho'>
+              <iframe src='../venda/carrinho_peq_front.php' id='iframers'></iframe>
+              <div class='divider-black'></div>
+              <footer id='footer_cart'>
+                  <div class='buttons_cart'>
+                      <a href='../venda/selecao_produtos_front.php' id='opcoes'>Continuar Comprando</a>
+                      <a href='../venda/confirmacao_compra_front.php' id='opcoes'>Finalizar</a>
+                      <a href='../venda/carrinho_front.php' id='opcoes'>Carrinho</a>
+                  </div>
+              </footer>
+          </div>
 
-          <div class='divider-black'></div>
-          <footer id='footer_cart'>
-            <div class='buttons_cart'>
-              <a href='../venda/selecao_produtos_front.php' id='opcoes'>Continuar Comprando</a>
-              <a href='../venda/confirmacao_compra_front.php' id='opcoes'>Finalizar</a>
-              <a href='../venda/carrinho_front.php' id='opcoes'>Carrinho</a>
-            </div>
-          </footer>
+          <div class='toggle icon-carrinho'><img class='icone_topo' src='../img/img_carrinhovazio.svg'></div>
+          <a class="title" href="../login/login.html" target="_parent"><img class="icone_topo" src="../img/img_perfil.svg"></a>
         </div>
-        <div class='toggle icon-carrinho'><img class='icone_topo_car' src='../img/img_carrinhovazio.svg'></div>
-        <div class='toggle icon-close'><img class='icone_topo' src='../img/img_close.svg'></div>
-        <a class='title' href='../login/login.html' target='_parent'><img class='icone_topo'
-            src='../img/img_perfil.svg'></a>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
   <div class="container_paginas">
     <div class="centro_titulo">
@@ -86,45 +81,46 @@
       </div>
       <div id="lado2">
         <div class="borda_dentro">
-          <img class="img_login" src="../img/cacto_login.svg">
+          <img class="img_login" src="../img/cacto_largo.jpg">
         </div>
       </div>
     </div>
   
 
-  <footer id='footerzao'>
-    <img src='../img/logo_final.svg'>
-    <div class='fusao'>
-      <div class='navegacao'>
-
-        <p id='h'>Navegação:</p>
-        <a class='title' href='../index.php' target='_parent'>Home</a>
-        <a class='title' href='../sobre.php' target='_parent'>Sobre</a>
-        <a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
-        <a class='title' href='../cadastros/produtos/cad_pesq_produtos_front.php' target='_parent'>Contato</a>
-        <a class='title' href='../cadastros/usuarios/cad_pesq_usuarios_front.php' target='_parent'>Estatísticas</a>
-      </div>
-
-
-      <div class='devs'>
-        <p class='title' id='h'>Desenvolvedores:</p>
-
-        <div class='devs1'>
-          <p>
-            04 - Beatriz Kaori Sakai <br>
-            05 - Beatriz Osajima Suwa <br>
-            13 - Eduarda Garbullio Silva <br>
-          </p>
+    <footer id='footerzao'>
+      <img src='../img/logo_final.svg'>
+        <div class='fusao'>
+            <div class='navegacao'>
+            
+            <p id='h'>Navegação:</p>
+            <a class='title' href='../index.php' target='_parent'>Home</a>
+            <a class='title' href='../sobre.php' target='_parent'>Sobre</a>
+            <a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
+            <a class='title' href='../venda/carrinho_front.php' target='_parent'>Carrinho</a>
         </div>
-        <div class='devs2'>
-          <p>
-            24 - Lorena Fioruci Caricati dos Santos <br>
-            32 - Naydhow Roberto Mascareli Bertaglia <br>
-          </p>
+
+        
+        <div class='devs'>
+            <p class='title' id='h'>Desenvolvedores:</p>
+
+            <div class='devs1'>
+                <p>
+                    04 - Beatriz Kaori Sakai <br>
+                    05 - Beatriz Osajima Suwa <br>
+                    13  - Eduarda Garbullio Silva <br>
+                </p>
+            </div>
+            <div class='devs2'>
+                <p>
+                    24 - Lorena Fioruci Caricati dos Santos <br>
+                    32 - Naydhow Roberto Mascareli Bertaglia <br>
+                </p>
+            </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+    <a href='#topo' class='back-to-top'><img src='../img/voltar_topo.svg'></a>
 
 </div>
 

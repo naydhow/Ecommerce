@@ -56,7 +56,7 @@
                                 else
                                 {
                                     echo "
-                                    <div>".$linha['estoque']." em estoque</div><br>";
+                                    <div>".$linha['estoque']." em estoque</div><br><br>";
                                     echo "<a class='selecao_comprar' href='carrinho_front.php?acao=add&id_produto=".$linha['id_produto']."'>Comprar</a>";
                                 }
 

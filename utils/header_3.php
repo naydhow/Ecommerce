@@ -65,10 +65,11 @@
                       <label>".$_SESSION['usuariologado']['']."</label>
                       <label>".$_SESSION['usuariologado']['']."</label>
                       <label>".$_SESSION['usuariologado']['']."</label>
-                  </div>
-                  <div class='button_user'>
+                      <div class='button_user'>
                       ".$botao."
+                      </div>
                   </div>
+                 
                   </div>
               </div>
             <div class='taggle icon-user'><img class='icone_topo_user' src='".$foto."'></div>
@@ -122,7 +123,7 @@ else{
                               <label>".$_SESSION['usuariologado']['']."</label>
                               <label>".$_SESSION['usuariologado']['']."</label>
                               <div class='button_user'>
-                                  ".$botao."
+                              ".$botao."
                               </div>
                           </div>
                     </div>

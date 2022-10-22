@@ -384,6 +384,7 @@ nav.new .user {
 
   background: pink;
 
+  padding-bottom: 2%;
   height: 80%;
   width: 700px;
 
@@ -629,17 +630,16 @@ nav .divisao-menu {
                         /* <<<<<<<<<< SELEÇÃO_PRODUTOS_FRONT >>>>>>>>>*/
 
 .selecaoProdutos{
-  margin-top: 4.5%;
-  margin-bottom: 25%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 
   display:grid; 
   justify-content: center;
   text-align: center;
 
-  grid-template-columns: repeat(3,27%); 
-  grid-template-rows: repeat(3, 450px);
-  grid-column-gap: 5%;
-	grid-row-gap: 5%;
+  grid-template-columns: repeat(2,40%);
+  grid-column-gap: 7%;
+	grid-row-gap: 7%;
   background-color: var(--body-color);
 }
 
@@ -652,20 +652,20 @@ nav .divisao-menu {
   font-family:var(--body-font);
   font-size: 14px;
   padding: 2% 2%;
-  height:430px;
+  height:540px;
 }
 
 .img_selecao{
-  width:200px;
-  height:200px;
+  width:300px;
+  height:300px;
   border-radius: 3px;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 4px black;
 }
 
 
 .img_selecao:hover{
-  width:210px;
-  height:210px;
+  width:310px;
+  height:310px;
   border-radius: 3px;
   box-shadow: 0 0 5px black;
   transition: 0.2s;
@@ -674,17 +674,14 @@ nav .divisao-menu {
 .selecao_comprar{
   box-sizing: border-box;
   /* Auto layout */
-  display: flex;
   padding: 14px 32px 15px;
   align-items: center;
   justify-content: center;
-  width: 119px;
   background: var(--color-button-claro);
   color: var(--color-texto-escuro-button);
   box-shadow:  0 0 2px black;
   border-radius: 4px;
   text-decoration: none;
-  margin-left: 33%;
 }
 
 .selecao_comprar:hover{
@@ -1875,6 +1872,16 @@ input:hover{
   margin-top: 1%;
   font-size: 17px;
   font-weight: 300;
+}
+
+#muda_cor{
+  background-color: #ff90accd;
+  color: black;
+}
+
+#muda_cor:hover{
+  background-color: #b4284b;
+  color: black;
 }
 
 .home_comprar{
