@@ -4,7 +4,7 @@
 
 <html>
 	<?php
-			include "../utils/conexao.php";
+			// include "../utils/conexao.php";
 
 			session_start();
 			$acao = $_GET['acao'] ?? '';
