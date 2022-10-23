@@ -12,6 +12,8 @@
 
     <?php
          include_once "../../utils/header_2.php";
+
+         if($_SESSION['isadm'] == 't') {
     ?>
 
 <div class="section">
@@ -113,10 +115,19 @@
 </div>   
    
     <?php
+    }
+    else
+    {
+        echo "<div>";
+        echo "  <div class='section_none'>";
+        echo "      <span>Você não possui permissão para acessar este local.</span>";
+        echo "      <span><b>Contate aos administradores do site.</b></span>";
+        echo "  </div>";
+        echo "</div>";
+    }
 
-        include_once "../../utils/footer_2.php";
-
-    ?>
+    include_once "../../utils/footer_2.php";
+?>
     
     <script src="../../js/main.js"></script>
     <script src="../../js/produto_photo.js"></script>

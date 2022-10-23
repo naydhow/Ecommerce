@@ -7,6 +7,7 @@
 			// include "../utils/conexao.php";
 
 			session_start();
+			if($_SESSION['usuariologado']) {
 			$acao = $_GET['acao'] ?? '';
 			$id_produto = $_GET['id_produto'] ?? 0;
 			$id_usuario = $_SESSION['usuariologado']['id_usuario']; // Depois precisamos alterar para pegar da $_SESSION
@@ -66,6 +67,16 @@
 						</div>
 			<?php 
 				}  
+				}
+				}
+				else
+				{
+					echo "<div>";
+					echo "  <div class='section_none_cart'>";
+					echo "      <span>Você não possui permissão para acessar este local.</span>";
+					echo "      <span><b>Faça o login para acessar essa função.</b></span>";
+					echo "  </div>";
+					echo "</div>";
 				}
 			?>
 			</form>

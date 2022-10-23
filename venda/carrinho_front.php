@@ -16,6 +16,7 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 	include_once "../utils/header_3.php";
 
     session_start();
+		if($_SESSION['usuariologado']) {
     $acao = $_GET['acao'] ?? '';
     $id_produto = $_GET['id_produto'] ?? 0;
 		$id_usuario = $_SESSION['usuariologado']['id_usuario']; // Depois precisamos alterar para pegar da $_SESSION
@@ -58,7 +59,7 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 											
 											<div class='input_number'>
 												<a href="#" id="IdLink" onclick="menos(<?php echo $idprod?>);"><img src="../img/menos.svg"></a>
-												<input type="text" size="3" id="<?php echo $idprod?>" name="prod[<?php echo $idprod; ?>]"
+												<input type="text" size="3" id="press" name="prod[<?php echo $idprod; ?>]"
 													value="<?php echo $linha['qtde']; ?>" onkeypress="onlynumber();"/>
 												<a href="#" id="IdLink" onclick="mais(<?php echo $idprod?>);"><img src="../img/mais.svg"></a>
 											</div>
@@ -121,6 +122,17 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 	</div>
 </main>
 <?php
+		}
+		else
+		{
+			echo "<div>";
+			echo "  <div class='section_none'>";
+			echo "      <span>Você não possui permissão para acessar este local.</span>";
+			echo "      <span><b>Faça o login para acessar essa função.</b></span>";
+			echo "  </div>";
+			echo "</div>";
+		}
+		
 	include_once "../utils/footer_3.php";
 ?>
 

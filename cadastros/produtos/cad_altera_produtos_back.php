@@ -3,8 +3,6 @@
 
     //É só um teste
 
-    include "cad_getinfo_produtos_back.php";
-
     //dados enviados do script altera_prod_lista.php
     $id_produto = $_POST['id_produto'];
     $nome=$_POST['nome'];
@@ -17,12 +15,30 @@
     $margem_lucro=$_POST['margem_lucro'];
     $icms=$_POST['icms'];
 
-    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
-    $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
-        $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/prd.jpg';
+    if($img['tmp_name'] != null)
+    {
+        move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
+        $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
+        if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+            $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/prd.jpg';
+    }
 
-    $sql="UPDATE caricactoProduto 
+    if($img['tmp_name'] == null)
+    {
+        $sql="UPDATE caricactoProduto 
+             SET nome = '$nome',
+                 descricao = '$descricao',
+                 estoque = $estoque,
+                 codigovisual = '$codigovisual',
+                 preco = $preco, 
+                 custo = $custo,
+                 margem_lucro = $margem_lucro,
+                 icms = $icms
+           WHERE id_produto = $id_produto;";
+    }
+    else
+    {
+        $sql="UPDATE caricactoProduto 
              SET nome = '$nome',
                  descricao = '$descricao',
                  estoque = $estoque,
@@ -33,6 +49,7 @@
                  margem_lucro = $margem_lucro,
                  icms = $icms
            WHERE id_produto = $id_produto;";
+    }
     
     $resultado=pg_query($conecta,$sql);
     $qtde=pg_affected_rows($resultado);

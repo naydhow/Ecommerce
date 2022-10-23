@@ -22,7 +22,7 @@
 
     move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
     $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/ ')
+    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
         $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/user.png';
 
     // Inserção
@@ -70,7 +70,7 @@
     if ($linhas > 0)
     {
         echo '<script language="javascript">';
-        echo "alert('Usuario salvo com sucesso!')";
+        echo "alert('Usuário salvo com sucesso!')";
         echo '</script>';	
 
         header("Location: cad_novo_usuarios_front.php");
@@ -78,7 +78,7 @@
     else
     {
         echo '<script language="javascript">';
-        echo "alert('Erro na gravação do produto!')";
+        echo "alert('Erro ao cadastrar o usuário!')";
         echo '</script>';	
     }
 

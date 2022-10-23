@@ -48,7 +48,7 @@
 
                         <br>
                          
-                        <p><b>Valores:</b> 
+                        <p><b>Valores:</b></p>
                         <ul>
                             <li>• Respeito;</li>
                             <li>• Integridade;</li>

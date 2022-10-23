@@ -22,16 +22,20 @@
         <?php
           if($resultado_lista != null)
           {
-            foreach($resultado_lista as $linha)
+            foreach($results as $line)
             {
-              // foreach($results as $line)
-              // {
-              //   echo date('d/m/Y', strtotime($line['datahoravenda']));echo "<br>";  
-              // }
-              echo date('d/m/Y', strtotime($linha['datahoravenda']));echo "<br>";
-              echo $linha['observacoes'];
-              echo "<br>";
+              echo date('d/m/Y', strtotime($line['datahoravenda']));echo "<br>";
+              foreach($resultado_lista as $linha)
+              { 
+                // echo date('d/m/Y', strtotime($linha['datahoravenda']));echo "<br>";
+                echo "ID produto - ".$linha['id_produto'];echo "<br>";
+                echo "Quantidade em estoque - ".$linha['qtde'];echo "<br>";
+                echo "Valor por unidade - ".$linha['valorunitario'];echo "<br>";
+                echo "Valor pela quantidade de produto - ".$linha['subtotal'];echo "<br>";
+                echo "<br>";
+              }  
             }
+            
           }
           else
           {

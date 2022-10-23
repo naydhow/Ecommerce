@@ -116,35 +116,43 @@ function atualizaDados(bool) {
 const senha = document.getElementById('password')
 const olho = document.getElementById('eye')
 
-senha.addEventListener('input', function () {
-  if(senha.value != '')
-  {
-    olho.style.opacity = 1
-    olho.style.visibility = 'visible'
-  }
-  else
-  {
-    olho.style.opacity = 0
-    olho.style.visibility = 'hidden'
-  }
-})
+if(senha)
+{
+  senha.addEventListener('input', function () {
+    if(senha.value != '')
+    {
+      olho.style.opacity = 1
+      olho.style.visibility = 'visible'
+    }
+    else
+    {
+      olho.style.opacity = 0
+      olho.style.visibility = 'hidden'
+    }
+  })
 
-olho.addEventListener('click', function() {
-  if(senha.type == 'text')
-  {
-    senha.type = 'password';
-    olho.setAttribute('src', '../img/img_eye.svg')
-  }
-  else
-  {
-    senha.type = 'text';
-    olho.setAttribute('src', '../img/img_eyeclose.svg')
-  }
-});
+  olho.addEventListener('click', function() {
+    if(senha.type == 'text')
+    {
+      senha.type = 'password';
+      olho.setAttribute('src', '../img/img_eye.svg')
+    }
+    else
+    {
+      senha.type = 'text';
+      olho.setAttribute('src', '../img/img_eyeclose.svg')
+    }
+  });
+}
 
-document.addEventListener('input', function(){
-  atualizaDados();
-})
+if(document.getElementById('press'))
+{
+  document.getElementById('press').addEventListener('input', function(){
+    setTimeout(function() {
+      atualizaDados('true');
+    }, 1000);
+  })
+}
 
 // iframe
 

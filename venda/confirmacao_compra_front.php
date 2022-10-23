@@ -6,6 +6,7 @@
 <?php
 	include_once "../utils/header_3.php";
     session_start();
+		if($_SESSION['usuariologado']) {
     $idusuario = $_SESSION['usuariologado']['id_usuario']; // Depois precisamos alterar para pegar da $_SESSION
     include "confirmacao_compra_back.php";
 ?>
@@ -96,6 +97,16 @@
 </main>
 
 <?php
+		}
+		else
+		{
+			echo "<div>";
+			echo "  <div class='section_none'>";
+			echo "      <span>Você não possui permissão para acessar este local.</span>";
+			echo "      <span><b>Faça o login para acessar essa função.</b></span>";
+			echo "  </div>";
+			echo "</div>";
+		}
 	include_once "../utils/footer_3.php";
 ?>
 

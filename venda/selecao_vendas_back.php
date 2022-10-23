@@ -1,15 +1,17 @@
 <?php
   include "../utils/conexao.php";
 
-  // $sql2="SELECT datahoraVenda
-  //         FROM venda
-  //       WHERE id_usuario = $id_usuario";
+  $sql2="SELECT datahoraVenda
+          FROM venda
+        WHERE id_usuario = $id_usuario";
 
-  // $resultado2 = pg_query($conecta, $sql2);
+  $resultado2 = pg_query($conecta, $sql2);
 
   $sql="SELECT v.*,
+            iv.id_produto,
             iv.qtde,
             iv.valorUnitario,
+            iv.valorUnitario * iv.qtde AS subtotal,
             iv.valorTotal
           FROM itemVenda iv 
           INNER JOIN venda v 
