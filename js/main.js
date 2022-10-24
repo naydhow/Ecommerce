@@ -145,6 +145,15 @@ if(senha)
   });
 }
 
+const opc = document.querySelectorAll('.opcoes')
+const div = document.querySelector('.resumo_venda')
+
+for (const element of opc) {
+  element.addEventListener('click', function () {
+    div.classList.toggle('open')
+  })
+}
+
 if(document.getElementById('press'))
 {
   document.getElementById('press').addEventListener('input', function(){

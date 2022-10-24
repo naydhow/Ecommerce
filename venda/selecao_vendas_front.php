@@ -20,36 +20,49 @@
   <main>
     <div class="container_paginas">
       <div class="section">
-        <?php
-          if($resultado_lista != null)
-          {
-            foreach($results as $line)
+        <div class="table_venda">
+          <?php
+            if($resultado_lista != null)
             {
-              echo date('d/m/Y', strtotime($line['datahoravenda']));echo "<br>";
-              foreach($resultado_lista as $linha)
-              { 
-                // echo date('d/m/Y', strtotime($linha['datahoravenda']));echo "<br>";
-                if($linha['id_venda'] == $line['id_venda'])
-                {
-                  echo "ID produto - ".$linha['id_produto'];echo "<br>";
-                  echo "Quantidade em estoque - ".$linha['qtde'];echo "<br>";
-                  echo "Valor por unidade - ".$linha['valorunitario'];echo "<br>";
-                  echo "Valor pela quantidade de produto - ".$linha['subtotal'];echo "<br>";
-                  echo "<br>";
+              foreach($results as $line)
+              {
+                echo "<div class='division_venda'>";
+                echo "<div class='resumo_venda'>";
+                echo "<span>".$line['observacoes']." #".$line['id_venda']."</span>";
+                echo "<div class='op'>";
+                echo "<span>".date('d/m/Y', strtotime($line['datahoravenda']))."</span>";
+                echo "<div class='opcoes'><b>Mais Opções</b></div>";
+                echo "</div>";
+                echo "</div>";
+                echo "<div class='item_venda'>";
+                foreach($resultado_lista as $linha)
+                { 
+                  // echo date('d/m/Y', strtotime($linha['datahoravenda']));echo "<br>";
+                  if($linha['id_venda'] == $line['id_venda'])
+                  {
+                    echo "<div class='propriety_venda'>";
+                    echo "<span>ID produto - ".$linha['id_produto']."</span>";
+                    echo "<span>Quantidade no carrinho - ".$linha['qtde']."</span>";
+                    echo "<span>Valor por unidade - ".$linha['valorunitario']."</span>";
+                    echo "<span>Valor pela quantidade de produto - ".$linha['subtotal']."</span>";
+                    echo "</div>";
+                  }
                 }
-              }  
+                echo "</div>";
+                echo "</div>";
+              }
+              
             }
-            
-          }
-          else
-          {
-            echo "<div>";
-            echo "  <div class='section_none'>";
-            echo "      <span><b>Você ainda não realizou nenhuma compra! :[</b></span>";
-            echo "  </div>";
-            echo "</div>";
-          }
-        ?>
+            else
+            {
+              echo "<div>";
+              echo "  <div class='section_none'>";
+              echo "      <span><b>Você ainda não realizou nenhuma compra! :[</b></span>";
+              echo "  </div>";
+              echo "</div>";
+            }
+          ?>
+        </div>
       </div>
     </div>
   </main>

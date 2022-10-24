@@ -1,20 +1,23 @@
-<?php
+'<?php
 
   echo "
     <footer id='footerzao'>
-      <img src='../img/logo_final.svg'>
+      <div class='todas_coisas'>
+        <div class='autorais'>
+          <a href='../index.php'><img src='../img/logo_final.svg'></a><br>
+          <span>©2022 Caricacto.</span>
+          <span>Todos os direitos reservados.</span>
+        </div>
         <div class='fusao'>
-            <div class='navegacao'>
-            
+          <div class='navegacao'>  
             <p id='h'>Navegação:</p>
             <a class='title' href='../index.php' target='_parent'>Home</a>
             <a class='title' href='../sobre.php' target='_parent'>Sobre</a>
             <a class='title' href='../venda/selecao_produtos_front.php' target='_parent'>Produtos</a>
             <a class='title' href='../venda/carrinho_front.php' target='_parent'>Carrinho</a>
-        </div>
-
-        
-        <div class='devs'>
+          </div>
+          
+          <div class='devs'>
             <p class='title' id='h'>Desenvolvedores:</p>
 
             <div class='devs1'>
@@ -30,6 +33,7 @@
                     32 - Naydhow Roberto Mascareli Bertaglia <br>
                 </p>
             </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -37,4 +41,4 @@
     <a href='#topo' class='back-to-top'><img src='../img/voltar_topo.svg'></a>
   ";
 
-?>
+?>'

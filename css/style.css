@@ -103,8 +103,8 @@ main {
 footer{
   background-color: var(--color-button-claro);
   /* height: 10%; */
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 
   display: flex;
   justify-content: center;
@@ -119,8 +119,15 @@ footer{
 }
 
 footer img{
-  width: 9%;
-  margin-right: 11rem;
+  width: 25%;
+}
+
+.autorais {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1rem;
+  font-family: var(--title-font);
 }
 
 .divider-1 {
@@ -143,7 +150,7 @@ footer img{
 
 .divider-black {
   position: absolute;
-  bottom: 6.3rem;
+  bottom: 7.55rem;
 
   width: 100%;
   height: 5px;
@@ -529,8 +536,9 @@ nav.new div.icon-closer {
 }
 
 .imgimg{
-  width: 35%;
-  border-radius: 10px;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 70px;
 }
 
 .dados{
@@ -539,26 +547,50 @@ nav.new div.icon-closer {
 
 .dados_user{
   height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
   font-family: var(--body-font);
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .button_user{
   box-sizing: border-box;
+
   display: flex;
-  padding: 14px 32px 15px;
   align-items: center;
   justify-content: center;
+
+  padding: 14px 32px 15px;
+
   background: black;
   color: white;
+
   box-shadow: 0 0 2px white;
   border-radius: 4px;
   text-decoration: none;
+
   margin-bottom: 2%;
+}
+
+.button_alter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_alter a, .button_alter a:link{
+  padding: 14px 32px 15px;
+
+  background: black;
+  color: white;
+
+  box-shadow: 0 0 2px white;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 nav.settings .configura {
@@ -1955,8 +1987,10 @@ input:hover{
   border-radius: 1.5rem;
 }
 
-.fusao{
-  margin-right: 9rem;
+.todas_coisas {
+  display: flex;
+  align-items: center;
+  margin: 0 4.5rem 0 4.5rem;
 }
 
 #h{
@@ -2539,6 +2573,59 @@ margin-left: 60px;
   font-size: 16px;
   text-align: center;
   color: #e7ccd7;
+}
+
+/* SELEÇÃO DE VENDAS */
+
+.table_venda {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.division_venda {
+  width: 100%;
+}
+
+.resumo_venda {
+  width: 100%;
+  padding: 25px;
+
+  background-color: #28b42f;
+  border-radius: 10px 10px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.opcoes {
+  cursor: pointer;
+}
+
+.resumo_venda .open{
+  border-radius: 10px 10px 0 0;
+  background-color: #39acdf;
+}
+
+.item_venda {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid black;
+  /* box-shadow: 1px 1px 5px 5px black; */
+}
+
+.propriety_venda {
+  display: grid;
+  justify-content: left;
+
+  width: 100%;
+
+  padding: 20px;
 }
 
 /* PÁGINAS NÃO ACESSÍVEIS SEM LOGIN */
