@@ -41,7 +41,7 @@
                                     <p class='text_produtos_preco'>Cacto Tipo 1</p>
                                     <p class='text_produtos_preco'>R$ 4.00</p> 
                                     <p class='text_produtos'> Mini cactos e suculentas de diversas espécies, para todos os tipos de gosto. &nbsp;Adquira o seu!</p>
-                                    <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=1'>Comprar</a>
+                                    <a class='home_comprar' href='./venda/selecao_detalhes_front.php?id_produto=1'>Comprar</a>
                                 </div>
                             </div>
 
@@ -54,7 +54,7 @@
                                     <p class='text_produtos_preco'>R$ 4.00</p>
                                     <p class='text_produtos'>Como diferencial, são acompanhados com vasinhos 
                                         de juta confeccionados por nós de forma sustentável e ecológica.</p>    
-                                    <a class='home_comprar' href='http://projetoscti.com.br/projetoscti24/Ecommerce/venda/selecao_detalhes_front.php?id_produto=3'>Comprar</a>     
+                                    <a class='home_comprar' href='./venda/selecao_detalhes_front.php?id_produto=3'>Comprar</a>     
                                 </div>
                             </div>
 

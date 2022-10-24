@@ -1,7 +1,8 @@
 <?php
   include "../utils/conexao.php";
 
-  $sql2="SELECT datahoraVenda
+  $sql2="SELECT datahoraVenda,
+                id_venda
           FROM venda
         WHERE id_usuario = $id_usuario";
 

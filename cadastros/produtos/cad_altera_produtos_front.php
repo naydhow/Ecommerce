@@ -25,7 +25,7 @@
 
         <div class="borda_fora_form_Prod">
             <ul>
-                <li>
+                <li id="form1">
                     <div id="lado1_form">
                         <form action="cad_altera_produtos_back.php" enctype="multipart/form-data" method="post">
                             <br> <br>

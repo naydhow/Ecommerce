@@ -18,9 +18,9 @@
     if($img['tmp_name'] != null)
     {
         move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
-        $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-        if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
-            $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/prd.jpg';
+        $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
+        if($imglink == 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+            $imglink == 'https://projetoscti.com.br/projetoscti24/Ecommerce/img/prd.jpg';
     }
 
     if($img['tmp_name'] == null)
