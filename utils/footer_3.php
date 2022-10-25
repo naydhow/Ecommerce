@@ -1,4 +1,4 @@
-'<?php
+<?php
 
   echo "
     <footer id='footerzao'>
@@ -41,4 +41,4 @@
     <a href='#topo' class='back-to-top'><img src='../img/voltar_topo.svg'></a>
   ";
 
-?>'
+?>
