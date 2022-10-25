@@ -55,22 +55,22 @@
                                 <br>
 
                                 <div>
-                                    <strong class="textos">NOME</strong>
+                                    <strong class="textos">NOME*</strong>
                                     <input type="name" name="nome" maxlength="100" placeholder="Digite seu nome completo" class="resposta">
                                 </div>
                                 <br> <br>
                                 <div>
-                                    <strong class="textos">E-MAIL</strong>
+                                    <strong class="textos">E-MAIL*</strong>
                                     <input type="email" name="email" maxlength="80" placeholder="xxxxxxxx@yyyyyy.com" class="resposta">
                                 </div>
                                 <br><br>
                                 <div>
-                                    <strong class="textos">SENHA</strong>
+                                    <strong class="textos">SENHA*</strong>
                                     <input type="password" name="senha" maxlength="32" placeholder="***********" class="resposta">
                                 </div>
                                 <br><br>
                                 <div>
-                                    <strong class="textos">TELEFONE</strong>
+                                    <strong class="textos">TELEFONE*</strong>
                                     <input type="text" name="telefone" maxlength="15" placeholder="(00) 00000-0000" id="telefone" class="resposta">
                                     <div>
                                         <br> <br>
