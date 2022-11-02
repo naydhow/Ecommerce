@@ -16,9 +16,8 @@
 
     move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
     $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-    echo "<script>alert(".$imglink.")</script>";
     if($imglink == 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
-        $imglink == 'https://projetoscti.com.br/projetoscti24/Ecommerce/img/prd.jpg';
+        $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img/prd.jpg';
 
     // Inserção
     $sql="INSERT INTO caricactoProduto
@@ -45,7 +44,7 @@
         echo "alert('Produto salvo com sucesso!')";
         echo '</script>';	
 
-        header("Location: cad_novo_produtos_front.php");
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_pesq_produtos_front.php'>";
     }   
     else
     {
