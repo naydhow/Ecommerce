@@ -1,8 +1,6 @@
 <?php
     include "../utils/conexao.php"; 
 
-    $compraFinalizada = FALSE;
-
     function validarProdutos($conecta, $resultado_lista)
     {
         // Realizar as validações com os produtos aqui
@@ -13,41 +11,32 @@
 
             $resulta = pg_fetch_array($res);
 
-            // if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] == 0){
-            //     // echo '<script language="javascript">';
-            //     // echo "alert('Ih, acabou o estoque meu filho')";
-            //     // echo '</script>';
+            if($linha['qtde'] > $resulta['estoque'] || $resulta['estoque'] <= 0){
+                $qtdeEstoque = $resulta['estoque'];
 
-            //     echo '<script language="javascript">';
-            //     echo "alert('Não possuimos a quantidade desejada em estoque!')";
-            //     echo '</script>';
+                $sqlCarrinho = "UPDATE carrinho
+                                    SET qtde = $qtdeEstoque
+                                    WHERE id_produto = ".$linha['id_produto'].";";
 
-            //     echo '<script language="javascript">';
-            //     echo "alert('Adicionamos a quantidade do estoque ao seu carrinho.')";
-            //     echo '</script>';
+                pg_query($conecta, $sqlCarrinho);
 
-            //     $qtdeEstoque = $resulta['estoque'];
+                echo '<script type="text/javascript">';
+                echo "alert('Não possuimos a quantidade desejada em estoque.')";
+                echo '</script>';
 
-            //     $sqlCarrinho = "UPDATE carrinho
-            //                         SET qtde = $qtdeEstoque
-            //                         WHERE id_produto = ".$linha['id_produto'].";";
+                echo '<script type="text/javascript">';
+                echo "alert('Colocamos a quantidade do estoque em seu carrinho!')";
+                echo '</script>';
 
-            //     pg_query($conecta, $sqlCarrinho);
+                // header("location:carrinho_front.php");
 
-            //     // header("location:carrinho_front.php");
-
-            //     echo '<script language="javascript">';
-            //     echo "alert('".$sqlCarrinho."')";
-            //     echo '</script>';
-
-            //     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=carrinho_front.php'>";
+                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=carrinho_front.php'>";
                 
-                exit;
-            // }
-            return false;
+                return FALSE;
+            }
         }
 
-        return true;
+        return TRUE;
     }
 
     function atualizarEstoque($conecta, $idproduto, $qtdeVendida)
@@ -62,39 +51,44 @@
     session_start();
     $resultado_lista = $_SESSION['produtos'];
 
-    // (ainda precisa programar)
-    //validarProdutos($conecta, $resultado_lista);
-
-    $sql = "INSERT INTO venda (id_usuario, datahoravenda, observacoes) VALUES ($idusuario, current_timestamp, 'Venda realizada');";
-    $res = pg_query($conecta, $sql);
-    $qtdLinhas = pg_affected_rows($res);
-
-    if ($qtdLinhas == 0)
-        echo "<div class='text-conf-compra'>
-                    <h1>Erro ao Finalizar a Compra!!!</h1>
-                </div>";
+    $val = TRUE;
 
     foreach($resultado_lista as $linha)
     { 
-        $preco = $linha['preco'];
-        $qtde = $linha['qtde'];
-        $idproduto = $linha['id_produto'];
-        $valortotal += floatval($linha['subtotal']);
+      $val = $val && validarProdutos($conecta, $resultado_lista);
+    }
 
-        $sql = "INSERT INTO itemVenda (id_venda, id_produto, qtde, valorUnitario, valorTotal) VALUES (currval('venda_id_venda_seq'), $idproduto, $qtde, $preco, $valortotal);";
+    if($val)
+    {
+        $sql = "INSERT INTO venda (id_usuario, datahoravenda, observacoes) VALUES ($idusuario, current_timestamp, 'Venda realizada');";
         $res = pg_query($conecta, $sql);
+        $qtdLinhas = pg_affected_rows($res);
 
-        atualizarEstoque($conecta, $idproduto, $qtde);
-    }  
+        if ($qtdLinhas == 0)
+            echo "<div class='text-conf-compra'>
+                        <h1>Erro ao Finalizar a Compra!!!</h1>
+                    </div>";
 
-    // Limpar carrinho
-    $sql=" DELETE FROM carrinho
-            where id_usuario = $idusuario";
+        foreach($resultado_lista as $linha)
+        { 
+            $preco = $linha['preco'];
+            $qtde = $linha['qtde'];
+            $idproduto = $linha['id_produto'];
+            $valortotal += floatval($linha['subtotal']);
 
-    pg_query($conecta,$sql);
+            $sql = "INSERT INTO itemVenda (id_venda, id_produto, qtde, valorUnitario, valorTotal) VALUES (currval('venda_id_venda_seq'), $idproduto, $qtde, $preco, $valortotal);";
+            $res = pg_query($conecta, $sql);
+
+            atualizarEstoque($conecta, $idproduto, $qtde);
+        }
+        
+        // Limpar carrinho
+        $sql=" DELETE FROM carrinho
+        where id_usuario = $idusuario";
+
+        pg_query($conecta,$sql);
+    }
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
-
-
 ?>

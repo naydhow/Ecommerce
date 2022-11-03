@@ -21,13 +21,14 @@
     
 
     move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
-    $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
-        $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/user.png';
+    $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
+    if($imglink == 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+        $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img/img_perfil.svg';
 
     // Inserção
     if($_SESSION['isadm'] == true)
-    $sql="INSERT INTO caricactoUsuario
+    {
+        $sql="INSERT INTO caricactoUsuario
           (img, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado, user_adm)
           VALUES (
                 '$imglink',
@@ -44,8 +45,10 @@
                 '$estado',
                 '$user_adm');
                 ";
+    }
     else
-    $sql="INSERT INTO caricactoUsuario
+    {
+        $sql="INSERT INTO caricactoUsuario
           (img, nome, telefone, email, senha, sexo, data_nasc, cpf, cep, endereco, cidade, estado)
           VALUES (
                 '$imglink',
@@ -61,6 +64,7 @@
                 '$cidade', 
                 '$estado');
                 ";
+    }
     
     
     // Execução
@@ -73,14 +77,18 @@
         echo "alert('Usuário salvo com sucesso!')";
         echo '</script>';	
 
-        header("Location: cad_novo_usuarios_front.php");
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../../index.php'>";
     }   
     else
     {
         echo '<script language="javascript">';
         echo "alert('Erro ao cadastrar o usuário!')";
-        echo '</script>';	
+        echo '</script>';
+
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cad_novo_usuarios_front.php'>";
     }
+
+    // header("Location: cad_novo_usuarios_front.php");
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);

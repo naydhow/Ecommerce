@@ -59,8 +59,8 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 											
 											<div class='input_number'>
 												<a href="#" id="IdLink" onclick="menos(<?php echo $idprod?>);"><img src="../img/menos.svg"></a>
-												<input type="text" size="3" id="press" name="prod[<?php echo $idprod; ?>]"
-													value="<?php echo $linha['qtde']; ?>" onkeypress="onlynumber();"/>
+												<input type="text" size="3" id="<?php echo $idprod?>" name="prod[<?php echo $idprod; ?>]"
+													value="<?php echo $linha['qtde']; ?>" onkeypress="onlynumber(); pressionado(<?php echo $idprod; ?>);"/>
 												<a href="#" id="IdLink" onclick="mais(<?php echo $idprod?>);"><img src="../img/mais.svg"></a>
 											</div>
 

@@ -154,14 +154,19 @@ for (const element of opc) {
   })
 }
 
-if(document.getElementById('press'))
+function pressionado(num)
 {
-  document.getElementById('press').addEventListener('input', function(){
+  document.getElementById(num).addEventListener('input', function(){
     setTimeout(function() {
       atualizaDados('true');
     }, 1000);
   })
 }
+
+// if(document.getElementById('press'))
+// {
+
+// }
 
 // iframe
 

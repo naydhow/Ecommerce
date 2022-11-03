@@ -17,12 +17,33 @@
     $estado=$_POST['estado'];
     // $user_adm=$_POST["user_adm"];
 
-    move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
-    $imglink = 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
-    if($imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
-        $imglink == 'http://projetoscti.com.br/projetoscti24/Ecommerce/img/user.png';
+    if($img['tmp_name'] != null)
+    {
+        move_uploaded_file($img['tmp_name'], '/home/projetoscti/www/projetoscti24/Ecommerce/img_upload/'.$img['name']);
+        $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/'.$img['name'];
+        if($imglink == 'https://projetoscti.com.br/projetoscti24/Ecommerce/img_upload/')
+            $imglink = 'https://projetoscti.com.br/projetoscti24/Ecommerce/img/img_perfil.svg';
+    }
 
-    $sql="UPDATE caricactoUsuario
+    if($img['tmp_name'] == null)
+    {
+        $sql="UPDATE caricactoUsuario
+             SET nome = '$nome',
+                 telefone = '$telefone',
+                 email = '$email', 
+                 senha = '$senha',
+                 sexo = '$sexo',
+                 data_nasc = '$data_nasc',
+                 cpf = '$cpf', 
+                 cep = '$cep', 
+                 endereco = '$endereco', 
+                 cidade = '$cidade', 
+                 estado = '$estado'
+           WHERE id_usuario = $id_usuario;";
+    }
+    else
+    {
+        $sql="UPDATE caricactoUsuario
              SET img = '$imglink',
                  nome = '$nome',
                  telefone = '$telefone',
@@ -36,6 +57,7 @@
                  cidade = '$cidade', 
                  estado = '$estado'
            WHERE id_usuario = $id_usuario;";
+    }
     
     $resultado=pg_query($conecta,$sql);
     $qtde=pg_affected_rows($resultado);
