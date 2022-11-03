@@ -139,7 +139,7 @@
                                             <input type="submit" name="button" value="Enviar" class="btn_enviar">
                                         </div>
                                         <div class="voltarr">
-                                            <a href="./cad_pesq_usuarios_front.php">Voltar</a>
+                                            <a href="../../login/login.html">Voltar</a>
                                         </div>
                             </form>
 
