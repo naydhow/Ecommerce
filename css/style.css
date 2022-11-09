@@ -2680,3 +2680,59 @@ margin-left: 60px;
   align-items: center;
   background-color: #FFE8F1;
 }
+
+
+/*******************************Estatísticas*************************************/
+
+.template{
+  margin-top: 5%;
+  margin-bottom: 20%;
+
+  display:grid; 
+  justify-content: center;
+  text-align: center;
+
+  grid-template-columns: repeat(2,40%);
+  grid-column-gap: 7%;
+	grid-row-gap: 7%;
+}
+
+.estatisticas{
+    border-radius: 5px;
+    box-shadow: 0 0 4px #243D25;
+    border: solid 1px;
+    border-color: #C5D8A4;
+    padding: 4% 4%;
+}
+
+.estatisticas_img img{
+  height: 250px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px black;
+}
+
+
+.estatisticas_text{
+  margin-left: 8%;
+  font-family: var(--body-font);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.button_estatistica{
+  box-sizing: border-box;
+
+  padding: 14px 32px 15px;
+
+  width: 90px;
+  height: 30px;
+
+  background: var(--color-button-claro);
+  color: var(--color-texto-escuro-button);
+
+  box-shadow:  0 0 2px black;
+  border-radius: 4px;
+
+  margin-top: 8%;
+}

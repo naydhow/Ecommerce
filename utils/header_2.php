@@ -44,7 +44,7 @@
             <div class='oggle icon-settings'><img class='icone_topo' src='../../img/img_settings.svg'></div>
             <div class='configuration'>
               <div class='centraliza_config'>
-                  <div class='configura'><a href='#estatisticas' alt='Estatísticas' title='Estatísticas'><img src='../../img/img_statistics.svg'></a></div>
+                  <div class='configura'><a href='../../estatisticas.php' alt='Estatísticas' title='Estatísticas'><img src='../../img/img_statistics.svg'></a></div>
                   <div class='configura'><a href='../../cadastros/usuarios/cad_pesq_usuarios_front.php' title='Usuários' alt='Usuários'><img src='../../img/img_new_user.svg'></a></div>
                   <div class='configura'><a href='../../cadastros/produtos/cad_pesq_produtos_front.php' title='Produtos' alt='Produtos'><img src='../../img/img_new_item.svg'></a></div>
               </div>
