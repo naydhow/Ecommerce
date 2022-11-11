@@ -24,6 +24,30 @@
 
                     <div class='template'>
 
+
+
+                    
+                    <div class='estatisticas'>
+                        <div class='info_sobre'>
+
+                            <div class='estatisticas_img'>
+                            <img src='./img/startup.jpg'>
+                            </div>
+
+                            <div class='estatisticas_text'>
+                                <b><p>Documento Startup</p></b>
+                                <p>Trabalho - Gestão de Negócios</p>
+                                <p>2022</p>
+                                <br>
+                                <br>
+                                <a class='button_estatistica' href='./docs_jovita/startupCaricacto.pdf' target='_blank'>Visualizar</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
                         <div class='estatisticas'>
                             <div class='info_sobre'>
 
@@ -114,26 +138,6 @@
                                     <b><p>Movimento do Estoque</p></b>
                                     <p>Cacto Tipo 2</p>
                                     <p>Outubro de 2022</p>
-                                    <br>
-                                    <br>
-                                    <a class='button_estatistica' href='./docs_jovita/mov_estoque_c2.pdf' target='_blank'>Visualizar</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class='estatisticas'>
-                            <div class='info_sobre'>
-
-                                <div class='estatisticas_img'>
-                                <img src='./img/mov_estoque_c2.jpg'>
-                                </div>
-
-                                <div class='estatisticas_text'>
-                                    <b><p>Documento Startup</p></b>
-                                    <p>Trabalho - Gestão de Negócios</p>
-                                    <p>2022</p>
                                     <br>
                                     <br>
                                     <a class='button_estatistica' href='./docs_jovita/mov_estoque_c2.pdf' target='_blank'>Visualizar</a>
